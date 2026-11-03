@@ -1,0 +1,746 @@
+<title>Syracuse 下降证书</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;600&family=Noto+Sans+SC:wght@500;700&family=Noto+Serif+SC:wght@400;600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap">
+<script>
+window.MathJax = {
+  tex: { inlineMath: [['$', '$']], displayMath: [['$$', '$$']] },
+  svg: { fontCache: 'global' },
+  options: { skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'] }
+};
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-svg.js" defer></script>
+<style>
+/* Layout: same reading column as the v0.1 page, opened by a v0.1 → v0.2 comparison ledger.
+   Amber = growth / old version, blue = contraction / new version, plum = gaps and open problems. */
+:root {
+  --paper: #F5F7FA;
+  --surface: #FFFFFF;
+  --ink: #18202C;
+  --muted: #5A6578;
+  --rule: #D8DEE7;
+  --gloss: #EAF0FA;
+  --gloss-rule: #C3D1EA;
+  --grow: #A8661A;
+  --shrink: #2D57B0;
+  --flag: #8A3B6E;
+  --flag-bg: #F6E9F1;
+  --ok: #2E7D4F;
+  --ok-bg: #E5F3EA;
+  --code-bg: #EDF0F5;
+  --f-display: "IBM Plex Sans", "Noto Sans SC", system-ui, sans-serif;
+  --f-body: "Source Serif 4", "Noto Serif SC", Georgia, "Songti SC", serif;
+  --f-mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper: #0F131A; --surface: #161C26; --ink: #E3E8F0; --muted: #98A3B6; --rule: #2A3342;
+    --gloss: #142038; --gloss-rule: #2B3E63; --grow: #E2A955; --shrink: #82A6F2;
+    --flag: #E59BCB; --flag-bg: #2E1C2A; --ok: #7FD1A0; --ok-bg: #16291F; --code-bg: #1B2230; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --paper: #0F131A; --surface: #161C26; --ink: #E3E8F0; --muted: #98A3B6; --rule: #2A3342;
+  --gloss: #142038; --gloss-rule: #2B3E63; --grow: #E2A955; --shrink: #82A6F2;
+  --flag: #E59BCB; --flag-bg: #2E1C2A; --ok: #7FD1A0; --ok-bg: #16291F; --code-bg: #1B2230; color-scheme: dark;
+}
+
+* { box-sizing: border-box; }
+body {
+  background: var(--paper); color: var(--ink);
+  font-family: var(--f-body); font-size: 17px; line-height: 1.75;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+  padding-block: 0 64px;
+}
+.layout { max-width: 1080px; margin: 0 auto; display: grid; grid-template-columns: minmax(0, 1fr); gap: 48px; }
+@media (min-width: 1100px) { .layout { grid-template-columns: 190px minmax(0, 760px); } }
+main { min-width: 0; }
+nav.toc { display: none; }
+@media (min-width: 1100px) {
+  nav.toc { display: block; position: sticky; top: calc(env(safe-area-inset-top, 0px) + 32px); align-self: start; padding-top: 48px; font-family: var(--f-display); font-size: 13px; line-height: 1.5; }
+  nav.toc ol { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; }
+  nav.toc a { color: var(--muted); text-decoration: none; display: block; }
+  nav.toc a:hover, nav.toc a:focus-visible { color: var(--shrink); }
+  nav.toc .lbl { text-transform: uppercase; letter-spacing: .1em; font-size: 11px; color: var(--muted); margin-bottom: 10px; }
+  nav.toc .sep { border-top: 1px solid var(--rule); margin: 6px 0; }
+}
+a { color: var(--shrink); }
+a:focus-visible, button:focus-visible, input:focus-visible { outline: 2px solid var(--shrink); outline-offset: 2px; }
+
+h1, h2, h3, h4 { font-family: var(--f-display); text-wrap: balance; line-height: 1.3; }
+header.hero { padding-block: 48px 8px; display: grid; gap: 14px; }
+.eyebrow { font-family: var(--f-mono); font-size: 12px; letter-spacing: .08em; color: var(--muted); text-transform: uppercase; }
+h1 { font-size: clamp(28px, 4.6vw, 40px); margin: 0; font-weight: 700; }
+.byline { font-family: var(--f-mono); font-size: 13px; color: var(--muted); display: flex; flex-wrap: wrap; gap: 6px 18px; }
+.status { border: 1px solid var(--rule); background: var(--surface); padding: 14px 18px; font-size: 15px; border-radius: 4px; }
+.status strong { font-family: var(--f-display); }
+
+.keynums { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 1px; background: var(--rule); border: 1px solid var(--rule); margin-block: 28px 8px; }
+.keynums div { background: var(--surface); padding: 14px 16px; display: grid; gap: 4px; align-content: start; }
+.keynums .k { font-family: var(--f-mono); font-size: 20px; font-variant-numeric: tabular-nums; }
+.keynums .d { font-size: 13px; color: var(--muted); line-height: 1.45; font-family: var(--f-display); }
+
+section { padding-top: 40px; border-top: 1px solid var(--rule); margin-top: 40px; }
+section h2 { font-size: 24px; margin: 0 0 6px; display: flex; gap: 12px; align-items: baseline; flex-wrap: wrap; }
+section h2 .no { font-family: var(--f-mono); font-weight: 400; color: var(--muted); font-size: 16px; }
+h3 { font-size: 17px; margin: 28px 0 4px; }
+p { margin: 12px 0; }
+.m-disp { overflow-x: auto; overflow-y: hidden; margin: 8px 0; position: relative; }
+
+.prop { border-left: 3px solid var(--shrink); padding: 4px 0 4px 16px; margin: 18px 0; }
+.prop .t { font-family: var(--f-display); font-weight: 600; font-size: 15px; }
+.proof { font-size: 15.5px; }
+.proof .t { font-style: italic; }
+.claim { background: var(--surface); border: 1px solid var(--rule); padding: 14px 18px; margin: 18px 0; border-radius: 4px; }
+.claim .t { font-family: var(--f-display); font-weight: 600; }
+
+.tbl { overflow-x: auto; margin: 16px 0; position: relative; }
+table { border-collapse: collapse; width: 100%; font-size: 14.5px; font-variant-numeric: tabular-nums; }
+th, td { padding: 7px 12px; text-align: right; border-bottom: 1px solid var(--rule); white-space: nowrap; }
+th { font-family: var(--f-display); font-weight: 600; font-size: 13px; color: var(--muted); }
+th:first-child, td:first-child { text-align: left; }
+
+/* comparison table */
+table.cmp { font-size: 14px; line-height: 1.55; }
+table.cmp th, table.cmp td { text-align: left; white-space: normal; vertical-align: top; }
+table.cmp td:first-child { font-family: var(--f-display); font-weight: 600; white-space: nowrap; }
+table.cmp td.old { color: var(--muted); min-width: 170px; }
+table.cmp td.new { min-width: 190px; }
+table.cmp td.vd { min-width: 220px; }
+.chip { display: inline-block; font-family: var(--f-mono); font-size: 11px; letter-spacing: .04em; padding: 1px 7px; border-radius: 3px; white-space: nowrap; margin-bottom: 4px; }
+.chip.ok { color: var(--ok); background: var(--ok-bg); }
+.chip.add { color: var(--shrink); background: var(--gloss); }
+.chip.gap { color: var(--flag); background: var(--flag-bg); }
+.chip.cut { color: var(--grow); border: 1px solid var(--grow); }
+
+.verdict { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 14px; margin: 18px 0; align-items: start; }
+.verdict > div { background: var(--surface); border: 1px solid var(--rule); border-radius: 4px; padding: 12px 16px; font-size: 14.5px; line-height: 1.6; min-width: 0; }
+.verdict h4 { margin: 0 0 6px; font-size: 14px; }
+.verdict ul { margin: 0; padding-left: 18px; display: grid; gap: 6px; }
+
+figure { margin: 24px 0; }
+.chart { overflow-x: auto; }
+svg.c { width: 100%; min-width: 460px; height: auto; display: block; }
+figcaption { font-family: var(--f-display); font-size: 13px; color: var(--muted); line-height: 1.55; margin-top: 8px; }
+.legend { display: flex; flex-wrap: wrap; gap: 6px 16px; font-family: var(--f-display); font-size: 12.5px; color: var(--muted); margin-bottom: 6px; }
+.legend i { display: inline-block; width: 12px; height: 12px; vertical-align: -1px; margin-right: 6px; border-radius: 2px; }
+
+svg.c text { font-family: var(--f-display); font-size: 12px; fill: var(--muted); }
+svg.c .mono { font-family: var(--f-mono); }
+svg.c .ink { fill: var(--ink); }
+svg.c .axis { stroke: var(--rule); stroke-width: 1; fill: none; }
+svg.c .grid { stroke: var(--rule); stroke-width: 1; stroke-dasharray: 2 4; fill: none; }
+svg.c .grow { fill: var(--grow); } svg.c .shrink { fill: var(--shrink); }
+svg.c .grow-l { stroke: var(--grow); fill: none; } svg.c .shrink-l { stroke: var(--shrink); fill: none; }
+svg.c .ink-l { stroke: var(--ink); fill: none; } svg.c .muted-l { stroke: var(--muted); fill: none; }
+svg.c .soft { fill: var(--rule); }
+svg.c .glossfill { fill: var(--gloss); }
+svg.c .flagfill { fill: var(--flag-bg); }
+svg.c .flag-l { stroke: var(--flag); fill: none; } svg.c .flag-t { fill: var(--flag); }
+svg.c .ok-t { fill: var(--ok); }
+svg.c .box { fill: var(--surface); stroke: var(--rule); }
+
+aside.gloss { background: var(--gloss); border: 1px solid var(--gloss-rule); border-radius: 6px; padding: 16px 20px 6px; margin: 28px 0 0; font-size: 15px; line-height: 1.65; }
+aside.gloss h4 { margin: 0 0 8px; font-size: 13px; letter-spacing: .12em; text-transform: uppercase; color: var(--shrink); }
+aside.gloss dl { margin: 0; display: grid; grid-template-columns: minmax(0, 1fr); }
+aside.gloss .row { display: grid; grid-template-columns: minmax(0, 1fr); gap: 2px 18px; padding: 10px 0; border-top: 1px solid var(--gloss-rule); }
+aside.gloss .row:first-child { border-top: 0; }
+@media (min-width: 640px) { aside.gloss .row { grid-template-columns: 170px minmax(0, 1fr); } }
+aside.gloss dt { font-weight: 600; min-width: 0; overflow-x: auto; }
+aside.gloss dd { margin: 0; min-width: 0; }
+.tag { font-family: var(--f-mono); font-size: 10.5px; letter-spacing: .06em; padding: 0 6px; border-radius: 3px; border: 1px solid currentColor; margin-right: 6px; vertical-align: 2px; white-space: nowrap; }
+.tag.sym { color: var(--shrink); } .tag.tech { color: var(--grow); } .tag.note { color: var(--flag); }
+
+.explorer { background: var(--surface); border: 1px solid var(--rule); border-radius: 6px; padding: 16px 18px; margin: 20px 0; }
+.explorer form { display: flex; flex-wrap: wrap; gap: 10px; align-items: end; font-family: var(--f-display); font-size: 14px; }
+.explorer label { display: grid; gap: 4px; color: var(--muted); font-size: 12.5px; }
+.explorer input { font-family: var(--f-mono); font-size: 15px; padding: 7px 10px; border: 1px solid var(--rule); border-radius: 4px; background: var(--paper); color: var(--ink); width: min(220px, 60vw); }
+.explorer button { font-family: var(--f-display); font-size: 14px; padding: 8px 14px; border-radius: 4px; border: 1px solid var(--shrink); background: var(--shrink); color: var(--surface); cursor: pointer; }
+.explorer button.ghost { background: transparent; color: var(--shrink); }
+.explorer .stats { display: flex; flex-wrap: wrap; gap: 6px 22px; font-family: var(--f-mono); font-size: 13px; color: var(--muted); margin: 12px 0 4px; font-variant-numeric: tabular-nums; }
+.explorer .stats b { color: var(--ink); font-weight: 500; }
+.explorer .err { color: var(--flag); font-family: var(--f-display); font-size: 13px; min-height: 1em; margin: 6px 0 0; }
+
+ol.refs { padding-left: 22px; font-size: 15px; display: grid; gap: 8px; }
+.small { font-size: 13.5px; color: var(--muted); font-family: var(--f-display); }
+footer { margin-top: 48px; font-size: 13px; color: var(--muted); font-family: var(--f-display); }
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+</style>
+
+<div class="layout">
+<nav class="toc" aria-label="目录">
+  <div class="lbl">目录</div>
+  <ol>
+    <li><a href="#compare">v0.1 → v0.2 对照</a></li>
+    <li><a href="#review">审读结论</a></li>
+    <li class="sep" aria-hidden="true"></li>
+    <li><a href="#abstract">摘要</a></li>
+    <li><a href="#s1">1 定义与记号</a></li>
+    <li><a href="#s2">2 赋值的密度分布</a></li>
+    <li><a href="#s3">3 漂移与分数阶矩</a></li>
+    <li><a href="#s4">4 精确对数恒等式</a></li>
+    <li><a href="#s5">5 下降证书</a></li>
+    <li><a href="#s6">6 最小反例与循环</a></li>
+    <li><a href="#s7">7 概率论的边界</a></li>
+    <li><a href="#s8">8 比特预算修正</a></li>
+    <li><a href="#s9">9 对 v0.1 的审计</a></li>
+    <li><a href="#s10">10 研究路线</a></li>
+    <li><a href="#refs">11 参考文献</a></li>
+    <li><a href="#s12">12 结论</a></li>
+  </ol>
+</nav>
+
+<main>
+<header class="hero">
+  <div class="eyebrow">严格化尝试 · v0.2 · 2026-10-29 · 不是完整证明</div>
+  <h1>Syracuse 映射的证明尝试：位移统计、下降证书与信息缺口</h1>
+  <div class="byline"><span>作者/思路来源 Ruolin</span><span>基于 v0.1《Open-Loop Contraction in the Syracuse Map》</span></div>
+  <div class="status"><strong>状态。</strong>本文证明了若干精确引理，并把未解决的核心障碍缩减为一个明确的全称命题。本文<b>没有</b>证明考拉兹猜想。本页先给出与 v0.1 的逐项对照和审读结论，再按原文顺序讲解，每节后附"符号与技巧"。</div>
+</header>
+
+<div class="keynums" aria-label="四个核心结论">
+  <div><span class="k">2<sup>−J</sup></span><span class="d">任意有限赋值字串的精确密度：前缀上恰为 i.i.d. 几何分布</span></div>
+  <div><span class="k">q(θ) &lt; 1</span><span class="d">0 &lt; θ &lt; 1 的分数阶矩收缩，修正了"矩方法失败"</span></div>
+  <div><span class="k">V<sub>m</sub>/m ≤ 1.737</span><span class="d">任何不下降轨迹（最小反例）必须满足的低平均赋值条件</span></div>
+  <div><span class="k">n<sup>0.7925</sup></span><span class="d">修正后的比特预算指数 log₄3，与 Korec 定理一致（v0.1 写的是 0.585）</span></div>
+</div>
+
+<!-- ============ COMPARISON ============ -->
+<section id="compare">
+  <h2><span class="no">对照</span>v0.1 → v0.2 逐项对照</h2>
+  <p>标签含义：<span class="chip ok">修正正确</span> 指 v0.2 改掉了 v0.1 的真实错误；<span class="chip add">新增</span> 指 v0.2 新加的严格结果；<span class="chip cut">删去</span> 指 v0.1 有、v0.2 没有了的内容；<span class="chip gap">仍需处理</span> 指 v0.2 自身还存在的问题。表中数字我都按附录代码重新算过一遍。</p>
+  <div class="tbl"><table class="cmp">
+    <thead><tr><th>主题</th><th>v0.1</th><th>v0.2</th><th>评估</th></tr></thead>
+    <tbody>
+      <tr><td>定位</td><td class="old">"计算笔记"，列出若干"作者未在文献中找到"的新发现</td><td class="new">"严格化尝试，不是证明"；逐条区分严格结论、模型结论和启发</td><td class="vd"><span class="chip ok">改进</span><br>表述更诚实，读者知道每句话的证明强度。</td></tr>
+      <tr><td>赋值分布</td><td class="old">单步 $\Pr(v=k)=2^{-k}$</td><td class="new">加命题 2.3：任意有限字串密度 $2^{-J}$，等价于 2-adic Haar 下 i.i.d.</td><td class="vd"><span class="chip add">新增</span><br>正确，属经典结果（Terras / Everett / Lagarias），应注明出处而不是当成新结果。</td></tr>
+      <tr><td>矩方法</td><td class="old">$\mathbb E[\mu]=1$ "解释了矩方法的失败"</td><td class="new">$q(\theta)=\mathbb E[\mu^\theta]&lt;1$（$0&lt;\theta&lt;1$），只是一阶矩不够</td><td class="vd"><span class="chip ok">修正正确</span><br>log-MGF 的凸性给出 $q&lt;1$，论证完整。</td></tr>
+      <tr><td>破产界 $1/y$</td><td class="old">直接套到真实轨迹，并测出 Cramér 常数约 0.43</td><td class="new">只在独立模型中作为鞅极大不等式成立；明确指出 $+1/n_i$ 修正阻止直接套用</td><td class="vd"><span class="chip ok">更严谨</span> <span class="chip cut">删去</span><br>0.43 的实测数据没有保留，作为经验观察其实可以留着。</td></tr>
+      <tr><td>精确恒等式</td><td class="old">只用近似 $S\approx\log_2 3-v$</td><td class="new">$\ln\frac{n_m}{n_0}=m\ln3-V_m\ln2+\sum\ln(1+\frac1{3n_i})$</td><td class="vd"><span class="chip add">新增</span><br>正确，把 $+1$ 的作用精确分离出来。</td></tr>
+      <tr><td>下降证书</td><td class="old">无</td><td class="new">定理 5.1：未下降且 $V_m&gt;m\log_2(3+1/n_0)$ ⇒ $n_m&lt;n_0$</td><td class="vd"><span class="chip add">新增</span> <span class="chip gap">需定位</span><br>证明正确。它与 Terras 的"系数停止时间"非常接近，应引用而不是称为"核心新引理"。实测见 §5 的图。</td></tr>
+      <tr><td>循环</td><td class="old">只在 §8 列出文献</td><td class="new">循环的平均赋值必须落在 $(1.585,\,1.737]$</td><td class="vd"><span class="chip add">新增</span> <span class="chip gap">可加强</span><br>正确。用 $n_{\min}&gt;2^{71}$ 的验证结果，这个区间会缩到宽度约 $2\times10^{-22}$，这正是 Eliahou 等人估计循环长度的出发点。</td></tr>
+      <tr><td>负反馈</td><td class="old">论断 6.3：阻挡所有局部单调 Lyapunov 泛函</td><td class="new">降格：只说明 i.i.d. 条件均值中没有补偿机制</td><td class="vd"><span class="chip ok">修正正确</span><br>$\mathbb E[v\mid r]=3$ 由命题 2.3 直接推出，不能排除依赖状态的 Lyapunov 函数。</td></tr>
+      <tr><td>比特预算</td><td class="old">缺口 2.41 倍；Terras 护送到 $n^{0.585}$</td><td class="new">一个区组消耗 $v_i$ 个奇偶位：需 $4.819\log_2 n$ 步；护送到 $n^{\log_4 3}\approx n^{0.7925}$</td><td class="vd"><span class="chip ok">修正正确</span><br>本次最重要的修正。指数与 Korec (1994) 一致。我的模拟：1024 位起点平均 $2.415\log_2 n$ 个区组、$4.827\log_2 n$ 个 shortcut 步。</td></tr>
+      <tr><td>假设 7.2</td><td class="old">比特强制耦合引理，未定义差异和样本空间</td><td class="new">指出未定义项，并用 $S(1)=1$ 的反例；改写为"异常轨迹排除问题"</td><td class="vd"><span class="chip ok">修正正确</span> <span class="chip gap">仍需处理</span><br>新命题蕴含猜想，但它本质上就是停止时间问题的重述，难度没有降低。v0.2 自己也承认这一点。</td></tr>
+      <tr><td>数据核对</td><td class="old">200,000 条轨迹；用 $N=3\times10^5$ 预测 $v_{\max}$</td><td class="new">实为 199,999 条；$v=20$ 出现在 349,525，应取 $N=4\times10^5$，预测 20.19</td><td class="vd"><span class="chip ok">修正正确</span><br>我复算：199,999 个起点、696,730 个区组、$\mathbb E[v]=2.00123003$，与 v0.2 一致。</td></tr>
+      <tr><td>删去的内容</td><td class="old">§5.3 收缩贡献分解；命题 5.1 最小见证数；注 7.3 负整数反模型；§9 adelic 展望</td><td class="new">均未出现</td><td class="vd"><span class="chip cut">删去</span><br>建议恢复注 7.3。负整数上漂移相同却有循环，这是检验任何"证明尝试"的最好工具。</td></tr>
+      <tr><td>参考文献</td><td class="old">10 条，无页码</td><td class="new">6 条，带页码、DOI；新增 Korec</td><td class="vd"><span class="chip ok">改进</span> <span class="chip cut">删去</span><br>Lagarias 综述、Krasikov–Lagarias、Eliahou、Simons–de Weger 不见了；讨论循环时应补回 Eliahou 与 Simons–de Weger。</td></tr>
+    </tbody>
+  </table></div>
+</section>
+
+<section id="review">
+  <h2><span class="no">审读</span>总体判断</h2>
+  <p>v0.2 明显比 v0.1 好。它改掉了两个真实错误（比特预算的单位，以及"矩方法失败"的说法），把模型结论和关于整数的结论分开，也不再宣称不确定的优先权。它最大的价值在于清晰，不在于推进：新的核心命题与经典停止时间问题等价程度很高，所以这份笔记主要是把障碍说清楚了，而不是让它变小了。</p>
+  <div class="verdict">
+    <div>
+      <h4>做得好的地方</h4>
+      <ul>
+        <li>比特预算修正正确，并与 Korec 的指数 $\log_4 3$ 对上。</li>
+        <li>定理 5.1 的证明短而完整，可以直接形式化。</li>
+        <li>§7 把"Haar 几乎处处"与"每个正整数"的差别、以及极限次序问题讲清楚了。</li>
+        <li>对 v0.1 的审计具体，可以复核。</li>
+      </ul>
+    </div>
+    <div>
+      <h4>还需要修改的地方</h4>
+      <ul>
+        <li>记号冲突：$S(n)$ 是映射，$S_i$ 又是对数增量（§1 与 §3）。</li>
+        <li>定理 5.1 应定位为 Terras 系数停止时间的变体，补引用。</li>
+        <li>§6.1 是 (B) 的直接推论，可以并入或删去。</li>
+        <li>§1.2 末尾重复定义了 $V_m$。</li>
+        <li>建议恢复 v0.1 的注 7.3（负整数反模型）。</li>
+      </ul>
+    </div>
+    <div>
+      <h4>我额外验证的</h4>
+      <ul>
+        <li>199,999 个起点中，下降证书恰好在首次下降的那一个区组触发的有 199,996 个。</li>
+        <li>例外是 27、31、63：它们下降了，但证书没有触发（证书是充分条件而非必要条件）。例如 27 在第 37 个区组时 $V=59$，门槛为 $59.30$。</li>
+        <li>可在 §5 的实验台里自己看这三个数。</li>
+      </ul>
+    </div>
+  </div>
+  <p class="small">v0.1 的可视化版本见 <a href="https://claude.ai/artifact/Xe6ZNGwwVpP1Jbd6S4MS4C" target="_blank" rel="noopener">Syracuse 开环收缩</a>。</p>
+</section>
+
+<!-- ============ THE NOTE ============ -->
+<section id="abstract">
+  <h2>摘要</h2>
+  <p>研究 Syracuse 奇数压缩映射 $S(n)=\frac{3n+1}{2^{v(n)}}$，$v(n)=\nu_2(3n+1)\ge1$，$n$ 为正奇数。要检验的直觉是：虽然一个区组里的首次除以 2 是必然的、倍率可能仍约为 $3/2$，但连续二分的累计量可能迫使系统在更长时间尺度上下降。</p>
+  <p>本文得到五项严格结论：</p>
+  <ol>
+    <li>对自然密度意义下的奇数总体，$\Pr(v=j)=2^{-j}$；更强地，任意固定有限赋值字串的密度为 $2^{-\sum v_i}$，在奇数 2-adic Haar 概率空间中对应 i.i.d. 几何变量。</li>
+    <li>在简化倍率模型 $\mu=3\cdot2^{-v}$ 中，算术平均倍率为 1，对数漂移为 $\log_2 3-2&lt;0$，且任意 $0&lt;\theta&lt;1$ 的分数阶矩满足 $\mathbb E[\mu^\theta]&lt;1$。一阶矩临界不等于所有矩方法都会失败。</li>
+    <li>对真实轨迹有精确的下降判据：若此前尚未低于起点 $n_0$，而当前前缀的平均赋值超过 $\log_2(3+1/n_0)$，则当前末端必低于 $n_0$。</li>
+    <li>任何始终不低于起点 $n_0&gt;1$ 的轨迹，在每个前缀都满足 $\frac1m\sum_{i&lt;m}v_i\le\log_2(3+\frac1{n_0})&lt;2$。这是任何最小反例或非平凡循环必须满足的"低累计二分"条件。</li>
+    <li>统计独立性与强大数定律只能说明典型 2-adic 初值不会长期满足上述低平均条件；正整数在 Haar 测度下是零测集，因此不能排除某个特殊正整数。缺少的正是把统计规律提升为对每个正整数的确定性控制。</li>
+  </ol>
+  <p>此外，v0.1 第 7 节的比特预算需要修正：一个区组对应 $v_i$ 次 shortcut 迭代。$2.409\log_2 n$ 个区组对应约 $4.819\log_2 n$ 次 shortcut 迭代；若只使用约 $\log_2 n$ 个初始奇偶位，模型估计的剩余指数为 $\log_4 3\approx0.79248$，与 Korec 的经典结果一致。这是启发式的一致，不是新的证明。</p>
+</section>
+
+<section id="s1">
+  <h2><span class="no">§1</span>定义与记号</h2>
+  <p>为避免混淆"普通步数"和"奇数区组数"，使用两个映射。</p>
+  <h3>1.1 shortcut 映射</h3>
+  <div class="m-disp">$$C(n)=\begin{cases} n/2, & n\text{ 为偶数},\\ (3n+1)/2, & n\text{ 为奇数}. \end{cases}$$</div>
+  <p>每一次迭代记录一个奇偶位。</p>
+  <h3>1.2 Syracuse 奇数映射</h3>
+  <p>对奇数 $n$，令 $v(n)=\nu_2(3n+1)$，$S(n)=\frac{3n+1}{2^{v(n)}}$。则 $S(n)$ 仍为奇数，并且</p>
+  <div class="m-disp">$$S(n)=C^{v(n)}(n).$$</div>
+  <p>所以一个 Syracuse 区组不是固定长度的单步，它消耗 $v(n)$ 次 shortcut 迭代。记 $n_{i+1}=S(n_i)$，$v_i=v(n_i)$，$V_m=\sum_{i=0}^{m-1}v_i$，即前 $m$ 个区组中消去的因子 2 总数。</p>
+  <aside class="gloss" aria-label="§1 符号与技巧">
+    <h4>符号与技巧</h4>
+    <dl>
+      <div class="row"><dt><span class="tag sym">符号</span>$C(n)$</dt><dd>shortcut（加速）Collatz 映射：奇数时把"乘 3 加 1"和随后必然的一次除以 2 合成一步。每步恰好读一个奇偶位，这是 Terras 定理使用的时间单位。</dd></div>
+      <div class="row"><dt><span class="tag sym">符号</span>$C^{v}$</dt><dd>$C$ 连续迭代 $v$ 次（函数的幂是复合，不是乘方）。$S(n)=C^{v(n)}(n)$：奇数步 1 次加偶数步 $v-1$ 次。</dd></div>
+      <div class="row"><dt><span class="tag sym">符号</span>$V_m$</dt><dd>累计赋值，即前 $m$ 个区组一共除掉了多少个 2，也等于这些区组用掉的 shortcut 步数。</dd></div>
+      <div class="row"><dt><span class="tag note">审读注</span>记号冲突</dt><dd>本文用 $S(n)$ 表示映射，§3 又用 $S_i=\log_2\mu_i$ 表示对数增量。建议把后者改成 $X_i$ 或 $\ell_i$。§1.2 末尾"另记 $V_m$"也与前一句重复。</dd></div>
+    </dl>
+  </aside>
+</section>
+
+<section id="s2">
+  <h2><span class="no">§2</span>严格结果 I：赋值的自然密度分布</h2>
+  <div class="prop"><span class="t">命题 2.1。</span>对自然密度下均匀抽取的正奇数，$\Pr(v=j)=2^{-j}$，$\Pr(v\ge j)=2^{-(j-1)}$。</div>
+  <p class="proof"><span class="t">证明。</span>$v\ge j$ 等价于 $3n+1\equiv0\pmod{2^j}$。3 模 $2^j$ 可逆，故有唯一剩余类解，且为奇数。奇数在模 $2^j$ 下有 $2^{j-1}$ 个剩余类，所以比例为 $2^{-(j-1)}$；相减得 $\Pr(v=j)=2^{-j}$。$\square$</p>
+  <p><b>推论 2.2。</b>$\mathbb E[v]=\sum j/2^j=2$，$\mathbb E[v^2]=6$，$\operatorname{Var}(v)=2$。这些由剩余类计数精确得到，不是从模拟归纳的。</p>
+  <div class="prop"><span class="t">命题 2.3（有限字串的联合分布）。</span>固定 $(j_0,\dots,j_{m-1})$，$j_i\ge1$，$J=\sum j_i$。前 $m$ 个赋值恰为该字串的奇数，在全体正奇数中的自然密度为
+    <div class="m-disp">$$2^{-J}.$$</div>
+    因此在奇数 2-adic Haar 概率空间中（忽略满足 $3n+1=0$ 的唯一零测点），$v_0,v_1,\dots$ 是 i.i.d. 几何变量。</div>
+  <p class="proof"><span class="t">证明思路。</span>指定 $v_0=j_0$ 把起点限制在一个模 $2^{j_0+1}$ 的奇剩余类。之后下一状态是原起点的仿射函数，指定 $v_1=j_1$ 又固定 $j_1$ 个低位，依此类推。共固定 $J$ 个额外低位，密度为 $2^{-J}$。</p>
+  <p><b>关键限定。</b>这是关于"初值总体"的密度陈述，不是说某个固定正整数的轨迹每一步都重新抽样。</p>
+  <aside class="gloss" aria-label="§2 符号与技巧">
+    <h4>符号与技巧</h4>
+    <dl>
+      <div class="row"><dt><span class="tag sym">术语</span>自然密度</dt><dd>满足条件的数在 $1..N$ 中所占比例当 $N\to\infty$ 的极限。"概率"指对起点均匀抽样。</dd></div>
+      <div class="row"><dt><span class="tag sym">符号</span>2-adic Haar 测度</dt><dd>$\mathbb Z_2$ 上的"均匀分布"：二进制每一位都是独立的公平硬币。模 $2^k$ 的每个剩余类测度都是 $2^{-k}$。</dd></div>
+      <div class="row"><dt><span class="tag sym">术语</span>柱集</dt><dd>只限定前有限个坐标的集合，例如"前 $m$ 个赋值等于给定字串"。测度论里先在柱集上定义概率，再扩展到整个空间。</dd></div>
+      <div class="row"><dt><span class="tag tech">技巧</span>逐步固定低位</dt><dd>每指定一个赋值，就把起点限制到更细的剩余类。指定 $v=j$ 相当于固定 $j$ 个新的二进制位，所以概率逐项相乘，得到独立性。</dd></div>
+      <div class="row"><dt><span class="tag sym">术语</span>仿射函数</dt><dd>形如 $an+b$ 的函数。固定前几步的赋值后，$n_k = (3^k n + c)/2^{V_k}$ 关于起点 $n$ 是仿射的。</dd></div>
+      <div class="row"><dt><span class="tag note">审读注</span>出处</dt><dd>命题 2.3 是 Terras (1976) 与 Everett (1977) 的经典结果在 Syracuse 坐标下的写法，Lagarias (1985) 的综述里也有，应注明。</dd></div>
+    </dl>
+  </aside>
+</section>
+
+<section id="s3">
+  <h2><span class="no">§3</span>严格结果 II：简化倍率的漂移与矩</h2>
+  <p>暂时忽略 $+1$，定义简化倍率 $\mu_i=3\cdot2^{-v_i}$，$S_i=\log_2\mu_i=\log_2 3-v_i$。这是随机模型倍率，不是真实倍率的精确表达式。</p>
+  <h3>3.1 算术平均与对数平均</h3>
+  <div class="m-disp">$$\mathbb E[\mu]=3\sum_{j\ge1}4^{-j}=1,\qquad \mathbb E[S]=\log_2 3-2=-0.4150375\ldots,\qquad \exp(\mathbb E[\ln\mu])=\tfrac34 .$$</div>
+  <h3>3.2 修正"矩方法失败"</h3>
+  <p>对任意 $0&lt;\theta&lt;1$，</p>
+  <div class="m-disp">$$\mathbb E[\mu^\theta]=3^\theta\sum_{j\ge1}2^{-j}2^{-\theta j}=\frac{3^\theta}{2^{1+\theta}-1}=:q(\theta),\qquad q(0)=q(1)=1,\quad q(\theta)&lt;1\ (0&lt;\theta&lt;1).$$</div>
+  <p>最后一个不等式由 $\log q$ 的严格凸性推出：它在 0 与 1 处为零，所以在两点之间严格小于 0。因此在独立模型里，一阶矩等于 1，分数阶矩却收缩。一阶矩本身不足以证明收缩；分数阶矩对随机模型有用，但不能直接升级为对每个确定性轨迹的结论。</p>
+  <figure>
+    <div class="legend"><span><i style="background:var(--shrink)"></i>q(θ) = E[μ^θ]</span><span><i style="background:var(--ok)"></i>收缩区间 0 &lt; θ &lt; 1</span></div>
+    <div class="chart" id="ch-q"></div>
+    <figcaption>图 1　$q(\theta)$ 是凸函数，在 0 与 1 处等于 1。整段 $0&lt;\theta&lt;1$ 都落在 1 以下，最低点 $q(0.5)\approx0.947$。v0.1 只看到了 $\theta=1$ 这一端。</figcaption>
+  </figure>
+  <h3>3.3 Lundberg 系数与最大值界</h3>
+  <p>$\mathbb E[2^{\theta S}]=q(\theta)$，正根为 $\theta=1$。在独立模型中 $M_m=2^{\sum_{i&lt;m}S_i}$ 是非负鞅，于是</p>
+  <div class="m-disp">$$\Pr\Big(\sup_{m\ge0}M_m\ge y\Big)\le\frac1y .$$</div>
+  <p>这只对模型乘积成立。真实倍率是 $\frac{n_{i+1}}{n_i}=\frac{3+1/n_i}{2^{v_i}}$，多出了依赖状态的正修正项 $1/n_i$。</p>
+  <aside class="gloss" aria-label="§3 符号与技巧">
+    <h4>符号与技巧</h4>
+    <dl>
+      <div class="row"><dt><span class="tag sym">符号</span>$q(\theta)$、分数阶矩</dt><dd>$\mathbb E[\mu^\theta]$，$\theta$ 可以不是整数。它和 $\mathbb E[2^{\theta S}]$ 是同一个量。</dd></div>
+      <div class="row"><dt><span class="tag tech">技巧</span>对数凸性</dt><dd>矩母函数的对数 $\log\mathbb E[e^{\theta X}]$ 是 $\theta$ 的凸函数（由 Hölder 不等式）。凸函数在两个零点之间严格为负，所以只要知道 $q(0)=q(1)=1$ 且 $q$ 不是常数，就得到中间小于 1。</dd></div>
+      <div class="row"><dt><span class="tag tech">技巧</span>分数阶矩法</dt><dd>若 $\mathbb E[\mu^\theta]=q&lt;1$，则 $\mathbb E[M_m^\theta]=q^m\to0$，再用 Markov 不等式得到 $\Pr(M_m&gt;\varepsilon)\le q^m/\varepsilon^\theta$，指数衰减。这就是一阶矩临界时仍能证明收缩的办法。</dd></div>
+      <div class="row"><dt><span class="tag sym">术语</span>非负鞅</dt><dd>满足 $\mathbb E[M_{m+1}\mid\text{过去}]=M_m$ 的非负过程，即"公平赌局"下的资金。因为 $\mathbb E[\mu]=1$，乘积 $M_m$ 是鞅。</dd></div>
+      <div class="row"><dt><span class="tag tech">技巧</span>Ville 极大不等式</dt><dd>非负鞅在整个时间轴上的上确界超过 $y$ 的概率不超过 $\mathbb E[M_0]/y$。这里 $M_0=1$，得到 $1/y$。</dd></div>
+      <div class="row"><dt><span class="tag sym">符号</span>$\sup$</dt><dd>上确界，可以理解为整个序列能达到的最大值（可能取不到）。</dd></div>
+    </dl>
+  </aside>
+</section>
+
+<section id="s4">
+  <h2><span class="no">§4</span>严格结果 III：真实轨迹的精确对数恒等式</h2>
+  <p>对真实轨迹，$\frac{n_{i+1}}{n_i}=\frac{3n_i+1}{2^{v_i}n_i}=\frac{3+1/n_i}{2^{v_i}}$。取对数并累加：</p>
+  <div class="m-disp">$$\ln\frac{n_m}{n_0}=m\ln3-(\ln2)V_m+\sum_{i=0}^{m-1}\ln\Big(1+\frac1{3n_i}\Big).$$</div>
+  <p>三项分别是：每个区组乘 3 的增长；全部二分带来的收缩；$+1$ 的精确修正。所以"平均 $v=2$"本身不是真实轨迹收缩的完整证明，还必须控制末项，并说明平均规律对哪一类轨迹成立。</p>
+  <aside class="gloss" aria-label="§4 符号与技巧">
+    <h4>符号与技巧</h4>
+    <dl>
+      <div class="row"><dt><span class="tag tech">技巧</span>望远镜乘积</dt><dd>$\frac{n_m}{n_0}=\prod_{i&lt;m}\frac{n_{i+1}}{n_i}$，中间项全部约掉。取对数后成为可逐项控制的和。</dd></div>
+      <div class="row"><dt><span class="tag tech">技巧</span>分离修正项</dt><dd>把 $3+1/n$ 写成 $3(1+\frac1{3n})$，主项与修正项分开。修正项为正且随 $n$ 增大而变小：$n\ge3$ 时每项不超过 $\ln(10/9)\approx0.105$。</dd></div>
+      <div class="row"><dt><span class="tag sym">符号</span>$\ln$ 与 $\log_2$</dt><dd>本节用自然对数，其他节用以 2 为底。两者只差常数因子 $\ln2\approx0.693$。</dd></div>
+    </dl>
+  </aside>
+</section>
+
+<section id="s5">
+  <h2><span class="no">§5</span>核心引理：不下降轨迹必须缺少足够的二分</h2>
+  <div class="prop"><span class="t">定理 5.1（下降证书与必要条件）。</span>设 $n_0&gt;1$ 为奇数，$n_{i+1}=S(n_i)$。
+    <p><b>(A) 有限下降证书。</b>若 $n_i\ge n_0$ 对所有 $0\le i&lt;m$ 成立，且某个 $m\ge1$ 满足</p>
+    <div class="m-disp">$$V_m&gt;m\log_2\Big(3+\frac1{n_0}\Big),$$</div>
+    <p>则 $n_m&lt;n_0$。</p>
+    <p><b>(B) 不下降的必要条件。</b>若对所有 $m$ 都有 $n_m\ge n_0$，则每个 $m\ge1$ 都满足</p>
+    <div class="m-disp">$$\frac{V_m}{m}\le\log_2\Big(3+\frac1{n_0}\Big).$$</div>
+    <p>特别地，$n_0\ge3$ 时右端 $\le\log_2(10/3)\approx1.7369656&lt;2$；$n_0\to\infty$ 时趋向 $\log_2 3\approx1.5849625$。</p>
+  </div>
+  <p class="proof"><span class="t">证明。</span>在 $n_i\ge n_0$ 的前缀里，$\frac{n_{i+1}}{n_i}=\frac{3+1/n_i}{2^{v_i}}\le\frac{3+1/n_0}{2^{v_i}}$。相乘得 $\frac{n_m}{n_0}\le\frac{(3+1/n_0)^m}{2^{V_m}}$。若 $V_m&gt;m\log_2(3+1/n_0)$，右边小于 1，得 (A)。若轨迹始终不低于起点，左边至少为 1，反过来得到 (B)。$\square$</p>
+  <p><b>这条定理能做什么。</b>它把"因子 2 累计得够不够多"变成可判定的有限前缀条件。若能证明每个奇数 $n_0&gt;1$ 都会出现满足 (A) 的前缀，则每个起点都会降到自身以下，再由强归纳推出每个正整数到达 1。但目前还没有证明这样的前缀一定出现，所以这是严格的下降判据，不是完整证明。</p>
+
+  <h3>实验台：看证书何时触发</h3>
+  <p>纵轴是 $V_m-m\log_2 3$，即累计赋值比"刚好不增不减"多出多少。证书门槛是一条斜率极小的直线 $m\,(\log_2(3+1/n_0)-\log_2 3)$。黑线越过门槛（蓝线）时证书触发；竖线标出轨迹实际首次低于 $n_0$ 的区组。</p>
+  <div class="explorer">
+    <form id="cert-form">
+      <label for="cert-n">起始奇数 n₀（&gt; 1）
+        <input id="cert-n" name="n" inputmode="numeric" autocomplete="off" value="27">
+      </label>
+      <button type="submit">计算</button>
+      <button type="button" class="ghost" data-n="27">27</button>
+      <button type="button" class="ghost" data-n="31">31</button>
+      <button type="button" class="ghost" data-n="63">63</button>
+      <button type="button" class="ghost" data-n="703">703</button>
+      <button type="button" class="ghost" data-n="77671">77671</button>
+    </form>
+    <p class="err" id="cert-err" role="status"></p>
+    <div class="stats" id="cert-stats"></div>
+    <div class="legend"><span><i style="background:var(--ink)"></i>V_m − m·log₂3</span><span><i style="background:var(--shrink)"></i>证书门槛</span><span><i style="background:var(--muted)"></i>0（log₂3 线）</span><span><i style="background:var(--flag)"></i>实际首次下降</span></div>
+    <div class="chart" id="ch-cert"></div>
+  </div>
+  <p class="small">在 3 到 399,999 的全部 199,999 个奇数起点中，证书恰好在实际下降的那个区组触发的有 199,996 个。27、31、63 是例外：它们下降了，证书却没有触发，因为门槛用的是最坏情况 $3+1/n_0$，而真实修正项 $1/n_i$ 更小。</p>
+
+  <aside class="gloss" aria-label="§5 符号与技巧">
+    <h4>符号与技巧</h4>
+    <dl>
+      <div class="row"><dt><span class="tag tech">技巧</span>逐项放大取最坏情况</dt><dd>在"尚未下降"的前提下 $n_i\ge n_0$，于是 $1/n_i\le1/n_0$，每一项都能用同一个常数控制，乘起来得到干净的上界。代价是界变松，所以证书只是充分条件。</dd></div>
+      <div class="row"><dt><span class="tag tech">技巧</span>逆否</dt><dd>(B) 是 (A) 的逆否命题：如果永远不下降，那么证书条件永远不成立。</dd></div>
+      <div class="row"><dt><span class="tag tech">技巧</span>强归纳法</dt><dd>假设所有小于 $n_0$ 的数都到达 1，证明 $n_0$ 也到达 1。只要 $n_0$ 的轨迹进入某个更小的数，就沿用那个数的结论。所以"每个数都会降到自身以下"就足以推出整个猜想。</dd></div>
+      <div class="row"><dt><span class="tag sym">术语</span>停止时间</dt><dd>轨迹首次低于起点的步数 $\sigma(n)$。Collatz 猜想等价于对所有 $n&gt;1$，$\sigma(n)&lt;\infty$。</dd></div>
+      <div class="row"><dt><span class="tag note">审读注</span>与经典结果的关系</dt><dd>Terras 定义了"系数停止时间" $\tau(n)$：shortcut 轨迹中 $3^{(\text{奇数步数})}/2^{(\text{总步数})}$ 首次小于 1 的时刻，并证明 $\tau(n)\le\sigma(n)$。定理 5.1 是同一思路加上 $+1$ 的显式修正，应在文中说明这一关系。</dd></div>
+    </dl>
+  </aside>
+</section>
+
+<section id="s6">
+  <h2><span class="no">§6</span>推论：最小反例与循环都是异常的低赋值轨迹</h2>
+  <p>假设猜想为假，令 $n_0$ 为最小的不能到达 1 的奇数起点。若轨迹中有任何奇数状态低于 $n_0$，按最小性它会到达 1，矛盾。所以 $n_i\ge n_0$ 对所有 $i$ 成立，由定理 5.1，</p>
+  <div class="m-disp">$$\frac{V_m}{m}\le\log_2\Big(3+\frac1{n_0}\Big)&lt;2\qquad\text{对所有 }m.$$</div>
+  <p>最小反例不能有随机模型的典型平均赋值 2，它必须属于持续偏低的特殊集合。</p>
+  <h3>6.1 若轨迹始终 ≥ 3 且平均赋值趋近 2</h3>
+  <p>此时 $\ln(1+\frac1{3n_i})\le\ln(10/9)$，于是 $\ln\frac{n_m}{n_0}\le m\ln3-V_m\ln2+m\ln(10/9)$。若 $V_m/m\to2$，除以 $m$ 的上极限不超过 $\ln3-2\ln2+\ln(10/9)=\ln(5/6)&lt;0$，$n_m$ 指数下降，矛盾。</p>
+  <h3>6.2 非平凡循环</h3>
+  <p>若 $n_m=n_0$，则 $1=\prod_{i&lt;m}\frac{3+1/n_i}{2^{v_i}}$，故</p>
+  <div class="m-disp">$$\frac{V_m}{m}=\frac1m\sum_{i=0}^{m-1}\log_2\Big(3+\frac1{n_i}\Big),\qquad \log_2 3&lt;\frac{V_m}{m}\le\log_2\Big(3+\frac1{n_{\min}}\Big).$$</div>
+  <p>非平凡正奇数循环有 $n_{\min}\ge3$，所以平均赋值必须落在 $1.5849625\ldots&lt;V_m/m\le1.7369656\ldots$，而不是 2。负漂移的随机直觉不能单独排除循环。</p>
+  <figure>
+    <div class="chart" id="ch-band"></div>
+    <figcaption>图 2　平均赋值 $V_m/m$ 的数轴。典型轨迹在 2；任何不下降的轨迹被压在 1.737 以下；循环只能活在 $(\log_2 3,\,1.737]$ 这条窄带里。若用已验证的 $n_{\min}&gt;2^{71}$，这条带的宽度只剩约 $2\times10^{-22}$。</figcaption>
+  </figure>
+  <aside class="gloss" aria-label="§6 符号与技巧">
+    <h4>符号与技巧</h4>
+    <dl>
+      <div class="row"><dt><span class="tag tech">技巧</span>最小反例法</dt><dd>假设有反例，取其中最小的一个，利用"最小"推出额外性质（这里是轨迹永不低于起点），再找矛盾或刻画它。</dd></div>
+      <div class="row"><dt><span class="tag sym">符号</span>$\limsup$（上极限）</dt><dd>序列尾部能反复接近的最大值。上极限为负表示最终一直为负，于是 $\ln(n_m/n_0)\to-\infty$。</dd></div>
+      <div class="row"><dt><span class="tag tech">技巧</span>循环的乘积恒等式</dt><dd>绕一圈回到原点，所有倍率之积等于 1。这把"存在循环"转成 $2^{V_m}$ 与 $\prod(3+1/n_i)$ 的精确相等，是排除循环的标准起点。</dd></div>
+      <div class="row"><dt><span class="tag note">审读注</span>可以更强</dt><dd>已验证所有 $n&lt;2^{71}$ 都到达 1，所以非平凡循环有 $n_{\min}&gt;2^{71}$，上界变为 $\log_2 3+O(2^{-71})$。于是 $2^{V_m}$ 必须极其接近 $3^m$，再结合 $\log_23$ 的连分数可推出循环长度的巨大下界（Eliahou 1993，Simons–de Weger 2005）。另外 §6.1 已被 (B) 包含，可以删去。</dd></div>
+    </dl>
+  </aside>
+</section>
+
+<section id="s7">
+  <h2><span class="no">§7</span>为什么概率论还不能给出"100% 不发散"</h2>
+  <h3>7.1 概率模型能严格证明的</h3>
+  <p>在奇数 2-adic Haar 空间中 $v_i$ i.i.d.，$\mathbb E[v_i]=2$。由强大数定律，几乎处处 $\frac1m\sum_{i&lt;m}v_i\to2$。所以对任何固定 $c&lt;2$，几乎每个赋值字串都会在某个有限前缀满足 $V_m/m&gt;c$。但 2-adic 点没有与正整数相同的阿基米德大小关系，这不能直接说明某个给定正整数一定下降。</p>
+  <h3>7.2 为什么这不排除每一个正整数</h3>
+  <p>正整数在 $\mathbb Z_2$ 中是可数集，每个单点测度为零，所以全体正整数的 Haar 测度为零。"Haar 几乎每个初值满足某规律"推不出"每个正整数满足该规律"。下面两件事也不能混为一谈：</p>
+  <ul>
+    <li>对每个固定前缀，随初值范围扩大，赋值字串趋于独立分布；</li>
+    <li>对每个固定初值，沿无限长轨迹的平均赋值趋于 2。</li>
+  </ul>
+  <p>它们的极限次序不同。Terras–Everett 证明几乎所有正整数在有限时间内降到起点以下；Korec 证明对任意 $c&gt;\log_4 3$，几乎所有起点会低于 $n^c$；Tao 在对数密度下证明几乎所有轨迹会低于任意趋于无穷的函数。它们都很强，但都不是"每个正整数"。</p>
+  <figure>
+    <div class="chart" id="ch-logic"></div>
+    <figcaption>图 3　v0.2 的论证链。左边每一步都已严格成立；断开的是"测度为零的集合"与"空集"之间的那一步。</figcaption>
+  </figure>
+  <h3>7.3 原假设 7.2 需要重写</h3>
+  <p>原"比特强制耦合引理"没有定义差异、样本空间、均匀性的对象，也没说常数是否对所有 $n,k$ 一致。若理解为"每条轨迹的后续赋值都保持几何分布"，则显然不成立：$S(1)=1$，$v(1)=2$，起点 1 的赋值序列是 $2,2,2,\dots$。建议改写为可验证的桥接命题：</p>
+  <div class="claim"><span class="t">异常轨迹排除问题。</span>不存在正奇数 $n_0&gt;1$，使得其 Syracuse 赋值字串对所有 $m\ge1$ 都满足
+    <div class="m-disp">$$\sum_{i=0}^{m-1}v_i\le m\log_2\Big(3+\frac1{n_0}\Big).$$</div></div>
+  <p>若能证明它，定理 5.1 立即给出每个起点的有限下降，再由强归纳推出猜想。但这个命题实质上已经非常接近经典停止时间问题本身。</p>
+  <aside class="gloss" aria-label="§7 符号与技巧">
+    <h4>符号与技巧</h4>
+    <dl>
+      <div class="row"><dt><span class="tag sym">术语</span>强大数定律</dt><dd>i.i.d. 变量的样本均值以概率 1 收敛到期望。"以概率 1"允许一个测度为零的例外集合。</dd></div>
+      <div class="row"><dt><span class="tag sym">术语</span>几乎处处</dt><dd>除去一个测度为零的集合外都成立。正整数本身就在这样的集合里，所以"几乎处处"对正整数什么也没保证。</dd></div>
+      <div class="row"><dt><span class="tag tech">技巧</span>可数集测度为零</dt><dd>每个单点的 Haar 测度为 0（它落在每个模 $2^k$ 的剩余类里，测度 $\le2^{-k}$）。可数个零相加仍为零。</dd></div>
+      <div class="row"><dt><span class="tag sym">术语</span>阿基米德大小</dt><dd>通常意义下数的大小 $|x|_\infty$。2-adic 世界只有 $|x|_2$，"下降到起点以下"在那里没有意义，这是概率结论无法直接搬回整数的原因之一。</dd></div>
+      <div class="row"><dt><span class="tag tech">技巧</span>极限次序</dt><dd>"先固定 $m$ 再让 $N\to\infty$"和"先固定 $n$ 再让 $m\to\infty$"是两个不同的命题。交换极限需要一致性估计，而这正是缺的部分。</dd></div>
+      <div class="row"><dt><span class="tag note">审读注</span>桥接命题的强度</dt><dd>该命题蕴含猜想；反过来，若某个 $n_0$ 永不下降，它就满足条件 (B)。所以它与"每个 $n&gt;1$ 的停止时间有限"几乎等价，是对障碍的精确重述，难度没有降低。</dd></div>
+    </dl>
+  </aside>
+</section>
+
+<section id="s8">
+  <h2><span class="no">§8</span>v0.1 比特预算的修正</h2>
+  <p>v0.1 用 $\frac{\log_2 n}{2-\log_2 3}\approx2.409\log_2 n$ 估计区组数。这是让模型对数尺度减少约 $\log_2 n$ 所需的区组数，不是"到达 1 的精确步数"：进入小数区间后 $+1$ 不可忽略，$S(1)=1$ 的不动点也要单独处理。</p>
+  <p>更关键的是，一个区组长 $v_i$ 个 shortcut 步，$\mathbb E[v_i]=2$，所以总 shortcut 步数约为</p>
+  <div class="m-disp">$$2\cdot2.409\log_2 n\approx4.819\log_2 n .$$</div>
+  <p>Terras 定理控制的是 shortcut 步的奇偶位前缀。只用约 $\log_2 n$ 个初始奇偶位，对应约 $\tfrac12\log_2 n$ 个区组，剩余规模为</p>
+  <div class="m-disp">$$\log_2 n_{\mathrm{res}}\approx\log_2 n-\tfrac12(2-\log_2 3)\log_2 n=\tfrac12\log_2 3\,\log_2 n,\qquad n_{\mathrm{res}}\approx n^{\log_4 3}\approx n^{0.79248}.$$</div>
+  <p>这个指数与 Korec 的结果一致：对每个 $c&gt;\log_4 3$，几乎所有起点会降到 $n^c$ 以下。这只是解释同一指数为何自然出现，不是 Korec 定理的证明。还要把这一点表述为"统计模型可控制的奇偶前缀长度"，而不是"整数只携带这些位、之后就不能有规律"。</p>
+  <figure>
+    <div class="legend"><span><i style="background:var(--shrink)"></i>Terras 保证的奇偶位</span><span><i style="background:var(--flag-bg);outline:1px dashed var(--flag)"></i>没有保证的部分</span><span><i style="background:var(--grow)"></i>v0.1 的结论</span></div>
+    <div class="chart" id="ch-bits"></div>
+    <figcaption>图 4　单位修正。v0.1 把区组数直接与比特数比较；一个区组平均用掉 2 个奇偶位，所以 $\log_2 n$ 个比特只够约 $0.5\log_2 n$ 个区组，Terras 能护送到的位置从 $n^{0.585}$ 变成 $n^{0.7925}$。</figcaption>
+  </figure>
+  <div class="tbl"><table>
+    <thead><tr><th>起点位数（各 300 个随机奇数）</th><th>区组数 / log₂n</th><th>shortcut 步数 / log₂n</th></tr></thead>
+    <tbody>
+      <tr><td>64 位</td><td>2.351</td><td>4.723</td></tr>
+      <tr><td>256 位</td><td>2.409</td><td>4.817</td></tr>
+      <tr><td>1024 位</td><td>2.415</td><td>4.827</td></tr>
+      <tr><td>模型预测</td><td>2.409</td><td>4.819</td></tr>
+    </tbody>
+  </table></div>
+  <p class="small">这张表是我为本页另外跑的模拟（跑到 1 为止），不在 v0.2 原文中。</p>
+  <aside class="gloss" aria-label="§8 符号与技巧">
+    <h4>符号与技巧</h4>
+    <dl>
+      <div class="row"><dt><span class="tag sym">符号</span>$\log_4 3$</dt><dd>$=\frac{\log_2 3}{2}\approx0.7925$，即 $4^{0.7925}=3$。它是"每两步乘 3、除 4"的平衡指数。</dd></div>
+      <div class="row"><dt><span class="tag tech">技巧</span>量纲检查</dt><dd>比较两个量之前先确认单位一致。v0.1 的错误是拿"区组"和"比特"直接比较，而一个区组平均消耗 2 比特。</dd></div>
+      <div class="row"><dt><span class="tag sym">术语</span>Korec 定理</dt><dd>Korec (1994)：对任意 $c&gt;\log_4 3$，几乎所有 $n$ 的轨迹会到达小于 $n^c$ 的值。这是 Terras 型论证在 $\log_2 n$ 步内能达到的最佳指数。</dd></div>
+      <div class="row"><dt><span class="tag sym">符号</span>$n_{\mathrm{res}}$</dt><dd>"剩余规模"：用完初始比特的保证之后，轨迹典型地停在的大小。</dd></div>
+    </dl>
+  </aside>
+</section>
+
+<section id="s9">
+  <h2><span class="no">§9</span>对 v0.1 的审计（原文要点）</h2>
+  <h3>9.1 可以保留</h3>
+  <ul>
+    <li>$\Pr(v=j)=2^{-j}$、$\mathbb E[v]=2$、$\operatorname{Var}(v)=2$：严格的自然密度结果。</li>
+    <li>$\mathbb E[\mu]=1$、几何平均 $3/4$：严格的模型计算。</li>
+    <li>Lundberg 正根为 1 与 $1/y$ 界：在独立模型假设下成立。</li>
+    <li>$\mathbb E[v\mid v\ge2]=3$：由几何分布精确推出。</li>
+  </ul>
+  <h3>9.2 应降格或重写</h3>
+  <ol>
+    <li>"矩方法失败"：改为"不能单靠一阶矩推出收缩"。</li>
+    <li>"没有负反馈阻碍所有局部单调 Lyapunov 函数"：至多说明 i.i.d. 条件均值模型中没有补偿机制。</li>
+    <li>"终止赋值恒为 3 是新反馈测量"：在 i.i.d. 几何模型中它自然为 3，模拟只是实现检查。</li>
+    <li>"比特预算缺口 2.41"：单位要乘平均区组长度 2，指数应为 $\log_4 3$，不是 0.585。</li>
+    <li>"所有正整数轨迹都依此统计规律"：须明确概率空间与极限次序。</li>
+    <li>"非交换性和时间箭头唯一来自 $+1$"：可作启发，但需先定义代数对象。</li>
+  </ol>
+  <h3>9.3 复算</h3>
+  <p>$\texttt{range(3, 400001, 2)}$ 实际有 <b>199,999</b> 个起点，区组 <b>696,730</b> 个；$\mathbb E[v]\approx2.00123003$，简化倍率均值 $\approx0.99972836$，漂移 $\approx-0.41626753$。由于在首次下降处截断，这些区组不是固定深度的独立样本，只适合描述该停止规则下的经验统计。$v=20$ 出现在 $349{,}525$，应取 $N=400{,}000$：$\log_2(3N)\approx20.19$，而不是用 $N=300{,}000$ 得出的 19.78。</p>
+  <aside class="gloss" aria-label="§9 符号与技巧">
+    <h4>符号与技巧</h4>
+    <dl>
+      <div class="row"><dt><span class="tag sym">术语</span>选择效应</dt><dd>停止规则决定了哪些区组被计入。被截断的轨迹偏向于"刚下降"的结尾，所以样本不是从同一分布独立抽取的。</dd></div>
+      <div class="row"><dt><span class="tag sym">术语</span>降格</dt><dd>把"定理/论断"改称"观察/启发"，使表述强度与证据相符。</dd></div>
+      <div class="row"><dt><span class="tag note">审读注</span>注 7.3 被遗漏</dt><dd>v0.2 的审计没有提到 v0.1 的注 7.3（负整数上漂移相同却有 $-1,-5,-17$ 三个循环）。这条是正确且有用的，建议保留。</dd></div>
+    </dl>
+  </aside>
+</section>
+
+<section id="s10">
+  <h2><span class="no">§10</span>继续研究的路线</h2>
+  <p><b>路线 A：把下降证书形式化。</b>定理 5.1 与强归纳推论是初等的，可以完全放进 Lean 或 Isabelle，但它不会自动证明证书总会出现。</p>
+  <p><b>路线 B：精确定义异常赋值字串。</b>对初值 $n_0$ 定义</p>
+  <div class="m-disp">$$\mathcal E(n_0)=\Big\{(v_i)_{i\ge0}:\ \sum_{i=0}^{m-1}v_i\le m\log_2\Big(3+\frac1{n_0}\Big)\ \text{对所有 }m\ge1\Big\}.$$</div>
+  <p>每条不低于起点的轨迹都编码为 $\mathcal E(n_0)$ 中的字串。i.i.d. 模型说明这类字串是零测集；真正要证明的是没有正整数的轨迹落入其中。不要把"测度为零"当成"空集"。</p>
+  <p><b>路线 C：用固定前缀检验概率结构。</b>对每个固定区组索引 $j$，从同一批奇数起点计算第 $j$ 个赋值的分布及联合字串频率，避免首次下降截断带来的选择效应；不要让 $m$ 以未经证明的方式随 $\log n$ 增长。</p>
+  <p><b>路线 D：把 H1 与 H2 分开。</b>H1 要排除不下降且无界的轨迹；H2 要排除所有不经过 1 的循环。周期问题还涉及 $2^V$ 对 $3^m$ 的逼近，需要额外的数论控制。</p>
+  <aside class="gloss" aria-label="§10 符号与技巧">
+    <h4>符号与技巧</h4>
+    <dl>
+      <div class="row"><dt><span class="tag sym">符号</span>$\mathcal E(n_0)$</dt><dd>异常集合：所有前缀平均赋值都不超过门槛的无限字串。它依赖 $n_0$，因为门槛 $\log_2(3+1/n_0)$ 依赖 $n_0$。</dd></div>
+      <div class="row"><dt><span class="tag tech">技巧</span>编码</dt><dd>把整数轨迹映成一个赋值字串，再问"哪些字串能由正整数实现"。难点在于整数的字串由确定的算术决定，不由抽样决定。</dd></div>
+      <div class="row"><dt><span class="tag sym">术语</span>Lean / Isabelle</dt><dd>交互式定理证明器，每一步推理都由计算机检查。</dd></div>
+    </dl>
+  </aside>
+</section>
+
+<section id="refs">
+  <h2><span class="no">§11</span>参考文献</h2>
+  <ol class="refs">
+    <li>R. Terras (1976). A stopping time problem on the positive integers. <i>Acta Arithmetica</i> 30, 241–252. DOI: <a href="https://doi.org/10.4064/aa-30-3-241-252" target="_blank" rel="noopener">10.4064/aa-30-3-241-252</a>.</li>
+    <li>C. J. Everett (1977). Iteration of the number-theoretic function $f(2n)=n$, $f(2n+1)=3n+2$. <i>Advances in Mathematics</i> 25(1), 42–45. <a href="https://www.sciencedirect.com/science/article/pii/0001870877900871" target="_blank" rel="noopener">ScienceDirect</a>.</li>
+    <li>I. Korec (1994). A density estimate for the $3x+1$ problem. <i>Mathematica Slovaca</i> 44(1), 85–89. <a href="https://www.dml.cz/handle/10338.dmlcz/133225" target="_blank" rel="noopener">DML-CZ</a>.</li>
+    <li>T. Tao (2019 预印本；2022 发表). Almost all orbits of the Collatz map attain almost bounded values. <i>Forum of Mathematics, Pi</i> 10, e12. DOI: <a href="https://doi.org/10.1017/fmp.2022.8" target="_blank" rel="noopener">10.1017/fmp.2022.8</a>; <a href="https://arxiv.org/abs/1909.03562" target="_blank" rel="noopener">arXiv:1909.03562</a>.</li>
+    <li>D. Barina (2025). Improved verification limit for the convergence of the Collatz conjecture. <i>Journal of Supercomputing</i> 81, article 810. DOI: <a href="https://doi.org/10.1007/s11227-025-07337-0" target="_blank" rel="noopener">10.1007/s11227-025-07337-0</a>.</li>
+    <li>J. Park (2026). A Machine-Verified Conditional Theory of the Collatz Conjecture. <a href="https://www.researchgate.net/publication/405718077_A_Machine-Verified_Conditional_Theory_of_the_Collatz_Conjecture" target="_blank" rel="noopener">ResearchGate 预印本</a>。作者自述为条件理论，应按预印本审慎引用。</li>
+  </ol>
+  <p class="small">以上按 v0.2 原文列出，我没有逐条核对 DOI 与链接。建议从 v0.1 补回：J. C. Lagarias, The 3x+1 problem and its generalizations, <i>Amer. Math. Monthly</i> 92 (1985)；S. Eliahou, <i>Discrete Math.</i> 118 (1993)；J. L. Simons and B. M. M. de Weger, <i>Acta Arith.</i> 117 (2005)。后两篇正是 §6.2 循环区间的经典延伸。</p>
+</section>
+
+<section id="s12">
+  <h2><span class="no">§12</span>结论</h2>
+  <p>本文给出的严格进展不是完整证明，而是以下组合：</p>
+  <ol>
+    <li>在自然密度/2-adic 模型中，有限前缀的赋值字串确实精确服从独立几何分布；简化倍率模型的对数漂移为负。</li>
+    <li>真实整数轨迹有精确的下降证书：在尚未低于起点的前提下，若累计平均赋值越过 $\log_2(3+1/n_0)$，当前末端必低于起点。</li>
+    <li>所有不下降的最小反例都必须在每个前缀维持低于约 1.585–1.737 的平均赋值，而典型值是 2。</li>
+    <li>难点：这类异常字串在 Haar 意义下是零测的，但还不能证明它们不含任何正整数轨迹。从"零测异常集合"到"没有正整数落入其中"就是缺少的确定性桥梁。</li>
+  </ol>
+  <p>本文没有证明"100% 不发散"，但把目标缩减为一个精确的全称命题，并修正了 v0.1 比特预算的单位。下一步应当研究异常赋值字串与正整数编码之间的约束，而不是继续从几何分布的均值推导全称收敛。</p>
+</section>
+
+<footer>v0.2 — 2026-10-29。本页的对照、审读注与额外模拟由审读者添加，原文内容以作者文本为准。</footer>
+</main>
+</div>
+
+<script>
+(function () {
+  const L3 = Math.log2(3);
+  function frame(id, W, H, m, xd, yd) {
+    const host = document.getElementById(id);
+    const sx = x => m.l + (x - xd[0]) / (xd[1] - xd[0]) * (W - m.l - m.r);
+    const sy = y => H - m.b - (y - yd[0]) / (yd[1] - yd[0]) * (H - m.t - m.b);
+    const parts = [];
+    return { sx, sy, W, H, m, add(s) { parts.push(s); },
+      draw(label) { host.innerHTML = `<svg class="c" viewBox="0 0 ${W} ${H}" role="img" aria-label="${label}">${parts.join('')}</svg>`; } };
+  }
+  function yTicks(f, ticks, fn) { ticks.forEach(t => { const y = f.sy(t); f.add(`<line class="grid" x1="${f.m.l}" x2="${f.W - f.m.r}" y1="${y}" y2="${y}"/><text class="mono" x="${f.m.l - 8}" y="${y + 4}" text-anchor="end">${fn ? fn(t) : t}</text>`); }); }
+  function xTicks(f, ticks, fn) { ticks.forEach(t => f.add(`<text class="mono" x="${f.sx(t)}" y="${f.H - f.m.b + 18}" text-anchor="middle">${fn ? fn(t) : t}</text>`)); }
+  function axis(f) { f.add(`<line class="axis" x1="${f.m.l}" x2="${f.W - f.m.r}" y1="${f.H - f.m.b}" y2="${f.H - f.m.b}"/>`); }
+  function path(pts, f) { return pts.map((p, i) => (i ? 'L' : 'M') + f.sx(p[0]).toFixed(1) + ' ' + f.sy(p[1]).toFixed(1)).join(''); }
+
+  // Fig 1: q(theta)
+  (function () {
+    const q = t => Math.pow(3, t) / (Math.pow(2, 1 + t) - 1);
+    const f = frame('ch-q', 640, 280, { l: 56, r: 20, t: 16, b: 44 }, [-0.3, 1.5], [0.9, 1.18]);
+    f.add(`<rect class="glossfill" x="${f.sx(0)}" y="${f.m.t}" width="${f.sx(1) - f.sx(0)}" height="${f.H - f.m.b - f.m.t}"/>`);
+    yTicks(f, [0.9, 0.95, 1.0, 1.05, 1.1, 1.15], t => t.toFixed(2)); axis(f);
+    xTicks(f, [-0.25, 0, 0.25, 0.5, 0.75, 1, 1.25, 1.5]);
+    f.add(`<text x="${f.W - f.m.r}" y="${f.H - 4}" text-anchor="end">θ</text>`);
+    const pts = []; for (let t = -0.3; t <= 1.5001; t += 0.01) pts.push([t, q(t)]);
+    f.add(`<path class="muted-l" stroke-dasharray="4 4" d="${path([[-0.3, 1], [1.5, 1]], f)}"/>`);
+    f.add(`<path class="shrink-l" stroke-width="2.5" d="${path(pts, f)}"/>`);
+    f.add(`<text class="ok-t" x="${f.sx(0.5)}" y="${f.m.t + 16}" text-anchor="middle">E[μ^θ] &lt; 1：分数阶矩收缩</text>`);
+    [[0, 'θ = 0'], [1, 'θ = 1：E[μ] = 1（v0.1 只看这里）']].forEach(([t, s]) => {
+      f.add(`<circle style="fill:var(--ink)" cx="${f.sx(t)}" cy="${f.sy(1)}" r="5"/>`);
+      f.add(`<text class="ink" x="${f.sx(t) + (t ? 8 : -8)}" y="${f.sy(1) - 12}" text-anchor="${t ? 'start' : 'end'}">${s}</text>`);
+    });
+    f.add(`<text class="mono" x="${f.sx(0.5)}" y="${f.sy(q(0.5)) + 20}" text-anchor="middle">q(0.5) ≈ ${q(0.5).toFixed(3)}</text>`);
+    f.draw('分数阶矩曲线');
+  })();
+
+  // Fig 2: band
+  (function () {
+    const f = frame('ch-band', 640, 160, { l: 30, r: 30, t: 20, b: 30 }, [1.5, 2.1], [0, 1]);
+    const y = 80;
+    f.add(`<rect class="soft" x="${f.sx(1.5)}" y="${y - 3}" width="${f.sx(2.1) - f.sx(1.5)}" height="6" rx="3"/>`);
+    f.add(`<rect class="flagfill" x="${f.sx(L3)}" y="${y - 14}" width="${f.sx(Math.log2(10 / 3)) - f.sx(L3)}" height="28" rx="3"/>`);
+    f.add(`<text class="flag-t" x="${(f.sx(L3) + f.sx(Math.log2(10 / 3))) / 2}" y="${y - 22}" text-anchor="middle">循环只能在这里</text>`);
+    f.add(`<path class="grow-l" stroke-width="2" d="M${f.sx(1.5)} ${y + 22}L${f.sx(Math.log2(10 / 3))} ${y + 22}"/>`);
+    f.add(`<text x="${f.sx(1.52)}" y="${y + 38}" style="fill:var(--grow)">不下降轨迹（n₀ ≥ 3）只能在 1.737 以左</text>`);
+    [[L3, 'log₂3 = 1.585'], [Math.log2(10 / 3), 'log₂(10/3) = 1.737'], [2, '典型值 2']].forEach(([x, s], i) => {
+      f.add(`<line class="ink-l" x1="${f.sx(x)}" x2="${f.sx(x)}" y1="${y - 14}" y2="${y + 14}" stroke-width="1.5"/>`);
+      f.add(`<text class="mono ink" x="${f.sx(x)}" y="${i === 2 ? y - 22 : 18}" text-anchor="middle">${s}</text>`);
+    });
+    f.add(`<circle class="shrink" cx="${f.sx(2)}" cy="${y}" r="7"/>`);
+    f.draw('平均赋值数轴');
+  })();
+
+  // Fig 3: logic chain
+  (function () {
+    const W = 680, H = 230, host = document.getElementById('ch-logic');
+    const box = (x, y, w, t1, t2, cls) => `<rect class="box" x="${x}" y="${y}" width="${w}" height="54" rx="4" ${cls || ''}/><text class="ink" x="${x + w / 2}" y="${y + 23}" text-anchor="middle">${t1}</text><text x="${x + w / 2}" y="${y + 41}" text-anchor="middle">${t2}</text>`;
+    const arrow = (x1, y1, x2, y2, cls) => `<path class="${cls || 'muted-l'}" stroke-width="1.5" d="M${x1} ${y1}L${x2} ${y2}"/>`;
+    host.innerHTML = `<svg class="c" viewBox="0 0 ${W} ${H}" role="img" aria-label="论证链">
+      ${box(10, 20, 150, '命题 2.3', '柱集测度 2^−J')}
+      ${arrow(160, 47, 190, 47)}
+      ${box(190, 20, 150, '强大数定律', 'Haar 几乎处处 V_m/m→2')}
+      ${arrow(340, 47, 370, 47)}
+      ${box(370, 20, 150, '𝓔(n₀) 测度为零', '异常字串罕见')}
+      <path class="flag-l" stroke-width="2" stroke-dasharray="5 4" d="M520 47L560 47"/>
+      <text class="flag-t" x="540" y="38" text-anchor="middle" style="font-size:16px">✕</text>
+      ${box(565, 20, 105, '𝓔(n₀) 中', '没有正整数', 'style="fill:var(--flag-bg);stroke:var(--flag)"')}
+      ${box(190, 140, 150, '定理 5.1', '下降证书（严格）')}
+      ${arrow(340, 167, 370, 167)}
+      ${box(370, 140, 150, '每个 n₀ 都会下降', '强归纳')}
+      ${arrow(520, 167, 565, 167)}
+      ${box(565, 140, 105, 'Collatz', '猜想成立')}
+      <path class="muted-l" stroke-width="1.5" d="M617 74L617 140"/>
+      <text class="flag-t" x="540" y="112" text-anchor="middle">缺失的确定性桥梁</text>
+    </svg>`;
+  })();
+
+  // Fig 4: bit budget old vs new
+  (function () {
+    const f = frame('ch-bits', 680, 300, { l: 130, r: 20, t: 10, b: 30 }, [0, 5.0], [0, 1]);
+    const x0 = f.sx(0), x1 = f.sx(1);
+    const row = (y, lab, len, sub, gapCls) => {
+      f.add(`<text class="ink" x="${f.m.l - 10}" y="${y + 15}" text-anchor="end">${lab}</text>`);
+      f.add(`<rect class="shrink" x="${x0}" y="${y}" width="${x1 - x0}" height="20" rx="2"/>`);
+      f.add(`<rect class="flagfill" x="${x1}" y="${y}" width="${f.sx(len) - x1}" height="20" rx="2"/>`);
+      f.add(`<rect class="flag-l" stroke-dasharray="4 3" x="${x1}" y="${y}" width="${f.sx(len) - x1}" height="20" rx="2"/>`);
+      f.add(`<text class="mono" x="${f.sx(len) - 6}" y="${y + 15}" text-anchor="end" style="fill:var(--flag)">${sub}</text>`);
+    };
+    f.add(`<text x="${f.m.l}" y="22">每格单位 = log₂ n</text>`);
+    row(36, 'v0.1：区组数', 2.409, '2.41 log₂ n 个区组');
+    row(76, 'v0.2：shortcut 步', 4.819, '4.82 log₂ n 个奇偶位');
+    f.add(`<text class="mono" x="${(x0 + x1) / 2}" y="${126}" text-anchor="middle" style="fill:var(--shrink)">log₂ n 位</text>`);
+    // exponent line
+    const ex = frame('ch-bits', 680, 300, { l: 130, r: 20, t: 10, b: 30 }, [0.5, 1.0], [0, 1]);
+    const yL = 210;
+    f.add(`<text class="ink" x="${f.m.l - 10}" y="${yL + 4}" text-anchor="end">护送终点 n^c</text>`);
+    f.add(`<rect class="soft" x="${ex.sx(0.5)}" y="${yL - 3}" width="${ex.sx(1) - ex.sx(0.5)}" height="6" rx="3"/>`);
+    [[0.5, '0.5'], [0.75, '0.75'], [1, 'c = 1（起点）']].forEach(([c, s]) => f.add(`<text class="mono" x="${ex.sx(c)}" y="${yL + 44}" text-anchor="${c === 1 ? 'end' : 'middle'}">${s}</text>`));
+    f.add(`<circle class="grow" cx="${ex.sx(0.585)}" cy="${yL}" r="7"/>`);
+    f.add(`<text x="${ex.sx(0.585)}" y="${yL - 16}" text-anchor="middle" style="fill:var(--grow)">v0.1：0.585 ✕</text>`);
+    f.add(`<circle class="shrink" cx="${ex.sx(Math.log2(3) / 2)}" cy="${yL}" r="7"/>`);
+    f.add(`<text x="${ex.sx(Math.log2(3) / 2)}" y="${yL - 16}" text-anchor="middle" style="fill:var(--shrink)">v0.2：log₄3 ≈ 0.7925 = Korec</text>`);
+    f.add(`<path class="muted-l" stroke-dasharray="3 3" d="M${ex.sx(0.585) + 10} ${yL + 20}L${ex.sx(0.7925) - 10} ${yL + 20}"/>`);
+    f.add(`<text class="mono" x="${(ex.sx(0.585) + ex.sx(0.7925)) / 2}" y="${yL + 32}" text-anchor="middle">单位 ×2</text>`);
+    f.draw('比特预算修正');
+  })();
+
+  // Certificate explorer
+  (function () {
+    const form = document.getElementById('cert-form'), input = document.getElementById('cert-n');
+    const err = document.getElementById('cert-err'), stats = document.getElementById('cert-stats');
+    function run(raw) {
+      err.textContent = '';
+      const t = String(raw).trim().replace(/[,_\s]/g, '');
+      if (!/^\d{1,15}$/.test(t)) { err.textContent = '请输入一个不超过 15 位的正整数，例如 27。'; return; }
+      let n0 = BigInt(t);
+      if (n0 % 2n === 0n || n0 < 3n) { err.textContent = '请输入大于 1 的奇数。'; return; }
+      const thr = Math.log2(3 + 1 / Number(n0)), slope = thr - L3;
+      let n = n0, m = 0, V = 0, cert = null, desc = null;
+      const pts = [[0, 0]];
+      while (m < 3000) {
+        const x = 3n * n + 1n; let v = 0, q = x;
+        while (q % 2n === 0n) { q /= 2n; v++; }
+        n = q; m++; V += v;
+        pts.push([m, V - m * L3]);
+        if (cert === null && V > m * thr) cert = m;
+        if (n < n0) { desc = m; break; }
+      }
+      stats.innerHTML = `<span>n₀ <b>${n0}</b></span><span>门槛 log₂(3+1/n₀) <b>${thr.toFixed(6)}</b></span>` +
+        `<span>首次下降于区组 <b>${desc ?? '— (3000 内未下降)'}</b></span><span>证书触发于区组 <b>${cert ?? '未触发'}</b></span>` +
+        `<span>此时 V_m <b>${V}</b> / 门槛 m·log₂(3+1/n₀) <b>${(m * thr).toFixed(2)}</b></span>`;
+      const ys = pts.map(p => p[1]);
+      const lo = Math.min(...ys, -1), hi = Math.max(...ys, slope * m, 1);
+      const pad = (hi - lo) * 0.08;
+      const f = frame('ch-cert', 680, 300, { l: 48, r: 16, t: 14, b: 36 }, [0, Math.max(m, 1)], [lo - pad, hi + pad]);
+      const span = hi - lo, st = span > 20 ? 5 : span > 8 ? 2 : span > 3 ? 1 : 0.5, tk = [];
+      for (let v = Math.ceil((lo - pad) / st) * st; v <= hi + pad; v += st) tk.push(+v.toFixed(2));
+      yTicks(f, tk); axis(f);
+      const xs = m > 200 ? 50 : m > 60 ? 10 : m > 20 ? 5 : 1, xt = []; for (let i = 0; i <= m; i += xs) xt.push(i); xTicks(f, xt);
+      f.add(`<path class="muted-l" stroke-width="1.2" d="${path([[0, 0], [m, 0]], f)}"/>`);
+      f.add(`<path class="shrink-l" stroke-width="2" d="${path([[0, 0], [m, slope * m]], f)}"/>`);
+      const step = []; pts.forEach((p, i) => { if (i) step.push([p[0], pts[i - 1][1]]); step.push(p); });
+      f.add(`<path class="ink-l" stroke-width="2" d="${path(step, f)}"/>`);
+      if (desc !== null) {
+        f.add(`<line class="flag-l" stroke-width="1.5" stroke-dasharray="4 3" x1="${f.sx(desc)}" x2="${f.sx(desc)}" y1="${f.m.t}" y2="${f.H - f.m.b}"/>`);
+        f.add(`<text class="flag-t" x="${f.sx(desc) - 6}" y="${f.m.t + 12}" text-anchor="end">首次下降</text>`);
+      }
+      if (cert !== null) f.add(`<circle class="shrink" cx="${f.sx(cert)}" cy="${f.sy(pts[cert][1])}" r="5"/>`);
+      f.add(`<text x="${f.m.l + 4}" y="${f.m.t + 12}">V_m − m·log₂3</text>`);
+      f.draw('下降证书图');
+    }
+    form.addEventListener('submit', e => { e.preventDefault(); run(input.value); });
+    form.querySelectorAll('button[data-n]').forEach(b => b.addEventListener('click', () => { input.value = b.dataset.n; run(b.dataset.n); }));
+    run(input.value);
+  })();
+})();
+</script>
