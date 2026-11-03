@@ -11,9 +11,36 @@
     ],
     "cast_title": "人物",
     "cast": [
-      {"img": "ye-zhixing", "name": "叶知行", "line": "开学就记了过。说话冲，跑圈的时候鞋带一直是散的。"},
-      {"img": "gu-xuerong", "name": "顾雪融", "line": "袖口永远扣到手腕。游戏全服第七，函数题却看不懂。"},
-      {"img": "lin-xiaoman", "name": "林小满", "line": "顾雪融的室友。圆脸短发，总给她留一盘饭。"}
+      {
+        "img": "ye-zhixing",
+        "name": "叶知行",
+        "line": "开学就记了过。说话冲，跑圈的时候鞋带一直是散的。"
+      },
+      {
+        "img": "gu-xuerong",
+        "name": "顾雪融",
+        "line": "袖口永远扣到手腕。游戏全服第七，函数题却看不懂。"
+      },
+      {
+        "img": "lin-xiaoman",
+        "name": "林小满",
+        "line": "顾雪融的室友。圆脸短发，总给她留一盘饭。"
+      },
+      {
+        "img": "ye-zhixia",
+        "name": "叶知夏",
+        "line": "他妹妹，读初三。鼻子很灵，一闻就知道哥哥去过哪儿。"
+      },
+      {
+        "img": "chen-xi",
+        "name": "陈曦",
+        "line": "七班的，帽子总戴歪。开学第一天就和半个班称兄道弟。"
+      },
+      {
+        "img": "instructor-wang",
+        "name": "王教官",
+        "line": "去年刚退伍，带新生很较真。第一天就让三个人进了校医室。"
+      }
     ]
   },
   "en": {
@@ -28,9 +55,36 @@
     ],
     "cast_title": "Characters",
     "cast": [
-      {"img": "ye-zhixing", "name": "Ye Zhixing", "line": "A demerit before term has even started. Blunt, and his shoelace came undone on every lap."},
-      {"img": "gu-xuerong", "name": "Gu Xuerong", "line": "Cuffs always buttoned to the wrist. Seventh on the whole server, stuck on a quadratic."},
-      {"img": "lin-xiaoman", "name": "Lin Xiaoman", "line": "Gu Xuerong’s roommate. Round face, short hair, always saves her a plate of dinner."}
+      {
+        "img": "ye-zhixing",
+        "name": "Ye Zhixing",
+        "line": "A demerit before term has even started. Blunt, and his shoelace came undone on every lap."
+      },
+      {
+        "img": "gu-xuerong",
+        "name": "Gu Xuerong",
+        "line": "Cuffs always buttoned to the wrist. Seventh on the whole server, stuck on a quadratic."
+      },
+      {
+        "img": "lin-xiaoman",
+        "name": "Lin Xiaoman",
+        "line": "Gu Xuerong’s roommate. Round face, short hair, always saves her a plate of dinner."
+      },
+      {
+        "img": "ye-zhixia",
+        "name": "Ye Zhixia",
+        "line": "His sister, in her last year of middle school. One sniff and she knows where her brother has been."
+      },
+      {
+        "img": "chen-xi",
+        "name": "Chen Xi",
+        "line": "Class Seven, cap always crooked. Best friends with half the class by the end of day one."
+      },
+      {
+        "img": "instructor-wang",
+        "name": "Instructor Wang",
+        "line": "Out of the army only a year and very serious about it. Three people in the clinic on day one."
+      }
     ]
   }
 }
