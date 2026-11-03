@@ -1,0 +1,412 @@
+<title>量子力学推理语料 v0.1</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;600&family=Noto+Sans+SC:wght@400;500;700&family=Noto+Serif+SC:wght@400;600&display=swap">
+<style>
+/* Layout: two halves on one page. First a public primer with three live calculations
+   (interference, spin measurement, Bell/CHSH); then the training corpus browser, correction log,
+   usage notes and sources. Indigo = quantum amplitude; amber = classical comparison;
+   green / indigo / plum = 已确立 / 前沿 / 推测. */
+:root {
+  --paper: #F5F6FA;
+  --surface: #FFFFFF;
+  --ink: #171B2B;
+  --muted: #5C6378;
+  --rule: #D9DCE7;
+  --q: #3646A8; --q-bg: #E7EAF7;
+  --cl: #A8661A; --cl-bg: #F7ECDD;
+  --est: #2E7D4F; --est-bg: #E3F2E8;
+  --spec: #8A3B6E; --spec-bg: #F5E8F0;
+  --common: #4A5F8C; --common-bg: #E8EDF6;
+  --f-display: "IBM Plex Sans", "Noto Sans SC", system-ui, sans-serif;
+  --f-body: "Noto Serif SC", "Songti SC", Georgia, serif;
+  --f-mono: "IBM Plex Mono", ui-monospace, Menlo, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper: #0E1018; --surface: #161925; --ink: #E3E6F0; --muted: #9AA0B5; --rule: #2A2F40;
+    --q: #93A2F5; --q-bg: #1C2242; --cl: #E2A955; --cl-bg: #2E2414; --est: #7FD1A0; --est-bg: #15291D;
+    --spec: #E59BCB; --spec-bg: #2E1C2A; --common: #9DB2E6; --common-bg: #1A2236; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --paper: #0E1018; --surface: #161925; --ink: #E3E6F0; --muted: #9AA0B5; --rule: #2A2F40;
+  --q: #93A2F5; --q-bg: #1C2242; --cl: #E2A955; --cl-bg: #2E2414; --est: #7FD1A0; --est-bg: #15291D;
+  --spec: #E59BCB; --spec-bg: #2E1C2A; --common: #9DB2E6; --common-bg: #1A2236; color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body { background: var(--paper); color: var(--ink); font-family: var(--f-body); font-size: 16px; line-height: 1.75;
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); padding-block: 0 64px; }
+.wrap { max-width: 920px; margin: 0 auto; display: grid; gap: 32px; }
+h1, h2, h3, h4 { font-family: var(--f-display); text-wrap: balance; line-height: 1.3; margin: 0; }
+p { margin: 0; }
+a { color: var(--q); }
+button:focus-visible, input:focus-visible, summary:focus-visible { outline: 2px solid var(--q); outline-offset: 2px; }
+.eyebrow { font-family: var(--f-mono); font-size: 12px; letter-spacing: .08em; color: var(--muted); text-transform: uppercase; }
+header { padding-top: 44px; display: grid; gap: 12px; }
+h1 { font-size: clamp(28px, 4.5vw, 38px); }
+.lead { font-size: 17px; max-width: 46em; }
+.meta { display: flex; flex-wrap: wrap; gap: 6px 20px; font-family: var(--f-display); font-size: 13.5px; color: var(--muted); }
+.meta b { color: var(--ink); font-weight: 600; }
+.label { border: 1px solid var(--rule); background: var(--surface); border-radius: 4px; padding: 12px 16px; font-size: 14px; font-family: var(--f-display); line-height: 1.6; }
+code { font-family: var(--f-mono); font-size: 12.5px; background: var(--q-bg); color: var(--q); padding: 1px 5px; border-radius: 3px; word-break: break-all; }
+nav.jump { display: flex; flex-wrap: wrap; gap: 8px; font-family: var(--f-display); font-size: 13.5px; }
+nav.jump a { text-decoration: none; border: 1px solid var(--rule); border-radius: 999px; padding: 3px 12px; background: var(--surface); }
+
+section.part { display: grid; gap: 18px; padding-top: 28px; border-top: 1px solid var(--rule); }
+section.part > h2 { font-size: 24px; }
+.sub { color: var(--muted); font-family: var(--f-display); font-size: 14px; }
+
+.demo { background: var(--surface); border: 1px solid var(--rule); border-radius: 6px; padding: 18px; display: grid; gap: 12px; min-width: 0; }
+.demo h3 { font-size: 18px; }
+.demo .txt { font-size: 15.5px; display: grid; gap: 8px; }
+.ctrl { display: flex; flex-wrap: wrap; gap: 10px 24px; align-items: center; font-family: var(--f-display); font-size: 13.5px; }
+.ctrl label { display: flex; gap: 10px; align-items: center; color: var(--muted); }
+.ctrl input[type=range] { width: min(240px, 60vw); accent-color: var(--q); }
+.ctrl output { font-family: var(--f-mono); color: var(--ink); min-width: 4.5em; font-variant-numeric: tabular-nums; }
+.readout { display: flex; flex-wrap: wrap; gap: 6px 22px; font-family: var(--f-mono); font-size: 13.5px; color: var(--muted); font-variant-numeric: tabular-nums; }
+.readout b { color: var(--ink); font-weight: 500; }
+.chart { overflow-x: auto; }
+svg.c { width: 100%; min-width: 440px; height: auto; display: block; }
+svg.c text { font-family: var(--f-display); font-size: 12px; fill: var(--muted); }
+svg.c .mono { font-family: var(--f-mono); }
+svg.c .ink { fill: var(--ink); }
+svg.c .grid { stroke: var(--rule); stroke-dasharray: 2 4; fill: none; }
+svg.c .axis { stroke: var(--rule); fill: none; }
+.legend { display: flex; flex-wrap: wrap; gap: 6px 16px; font-family: var(--f-display); font-size: 12.5px; color: var(--muted); }
+.legend i { display: inline-block; width: 12px; height: 12px; vertical-align: -1px; margin-right: 6px; border-radius: 2px; }
+.two { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; align-items: center; }
+.pbars { display: grid; gap: 10px; font-family: var(--f-display); font-size: 14px; }
+.pbars .r { display: grid; grid-template-columns: 70px 1fr 56px; gap: 10px; align-items: center; }
+.pbars .track { height: 16px; background: var(--paper); border-radius: 3px; overflow: hidden; border: 1px solid var(--rule); }
+.pbars .fill { height: 100%; background: var(--q); transition: width .15s; }
+.pbars .fill.dn { background: var(--cl); }
+.pbars .v { font-family: var(--f-mono); text-align: right; font-variant-numeric: tabular-nums; }
+.facts3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1px; background: var(--rule); border: 1px solid var(--rule); }
+.facts3 div { background: var(--surface); padding: 14px 16px; display: grid; gap: 4px; align-content: start; }
+.facts3 .k { font-family: var(--f-mono); font-size: 20px; }
+.facts3 .d { font-family: var(--f-display); font-size: 13px; color: var(--muted); line-height: 1.5; }
+.ladder { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; }
+.ladder div { border-radius: 4px; padding: 12px 14px; font-family: var(--f-display); font-size: 13.5px; line-height: 1.55; display: grid; gap: 4px; }
+.ladder b { font-size: 15px; }
+
+/* corpus */
+.summary { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 14px; }
+.panel { background: var(--surface); border: 1px solid var(--rule); border-radius: 6px; padding: 14px 16px; display: grid; gap: 10px; align-content: start; font-family: var(--f-display); }
+.panel h3 { font-size: 13px; letter-spacing: .08em; color: var(--muted); font-weight: 600; }
+.rows { display: grid; gap: 8px; }
+.rows .r { display: grid; grid-template-columns: 56px 1fr 26px; gap: 10px; align-items: center; font-size: 13.5px; }
+.rows .track { height: 10px; background: var(--paper); border-radius: 5px; overflow: hidden; }
+.rows .fill { display: block; height: 100%; border-radius: 5px; }
+.rows .v { font-family: var(--f-mono); text-align: right; }
+.filters { display: grid; gap: 10px; background: var(--surface); border: 1px solid var(--rule); border-radius: 6px; padding: 14px 16px; font-family: var(--f-display); font-size: 13.5px; }
+.filters .line { display: flex; flex-wrap: wrap; gap: 6px 8px; align-items: center; }
+.filters .lab { color: var(--muted); width: 56px; flex: none; }
+.filters input[type=search] { flex: 1 1 220px; min-width: 0; font: inherit; font-size: 15px; padding: 7px 10px; border: 1px solid var(--rule); border-radius: 4px; background: var(--paper); color: var(--ink); }
+.fb { font: inherit; font-size: 13px; padding: 3px 10px; border-radius: 999px; border: 1px solid var(--rule); background: transparent; color: var(--ink); cursor: pointer; }
+.fb[aria-pressed="true"] { background: var(--q); border-color: var(--q); color: var(--surface); }
+.count { font-family: var(--f-mono); font-size: 12.5px; color: var(--muted); }
+.tools { display: flex; gap: 8px; margin-left: auto; }
+.tools button { font: inherit; font-size: 13px; padding: 3px 10px; border-radius: 4px; border: 1px solid var(--q); background: transparent; color: var(--q); cursor: pointer; }
+.list { display: grid; gap: 14px; }
+.card { background: var(--surface); border: 1px solid var(--rule); border-radius: 6px; padding: 16px 18px; display: grid; gap: 10px; min-width: 0; }
+.card .top { display: flex; flex-wrap: wrap; gap: 6px 10px; align-items: baseline; font-family: var(--f-display); }
+.card .id { font-family: var(--f-mono); font-size: 13px; color: var(--q); font-weight: 500; }
+.card h3 { font-size: 17px; flex: 1 1 200px; }
+.pips { font-family: var(--f-mono); font-size: 12px; color: var(--muted); white-space: nowrap; }
+.pips i { display: inline-block; width: 8px; height: 8px; border-radius: 50%; border: 1px solid var(--q); margin-left: 3px; }
+.pips i.on { background: var(--q); }
+.tags { display: flex; flex-wrap: wrap; gap: 6px; font-family: var(--f-display); font-size: 12px; }
+.tag { padding: 0 8px; border-radius: 3px; background: var(--paper); color: var(--muted); border: 1px solid var(--rule); }
+.ty { padding: 0 8px; border-radius: 3px; border: 1px solid var(--ink); color: var(--ink); }
+.cr { padding: 0 8px; border-radius: 3px; font-weight: 500; }
+.cr.已确立 { color: var(--est); background: var(--est-bg); } .cr.前沿 { color: var(--q); background: var(--q-bg); }
+.cr.推测 { color: var(--spec); background: var(--spec-bg); } .cr.建议 { color: var(--muted); background: var(--paper); border: 1px solid var(--rule); }
+.intu { font-family: var(--f-display); font-size: 13.5px; background: var(--cl-bg); border-radius: 4px; padding: 6px 10px; }
+.intu b { color: var(--cl); }
+.q { font-size: 17px; line-height: 1.7; }
+.q::before { content: "问"; font-family: var(--f-display); font-size: 12px; color: var(--muted); margin-right: 8px; border: 1px solid var(--rule); border-radius: 3px; padding: 0 5px; vertical-align: 2px; }
+.ans { border-left: 3px solid var(--q); padding: 2px 0 2px 14px; }
+.ans b { font-family: var(--f-display); font-size: 12px; letter-spacing: .06em; color: var(--q); display: block; }
+details { border-top: 1px solid var(--rule); padding-top: 8px; }
+summary { cursor: pointer; font-family: var(--f-display); font-size: 13.5px; color: var(--muted); list-style: none; }
+summary::-webkit-details-marker { display: none; }
+summary::before { content: "▸ "; } details[open] > summary::before { content: "▾ "; }
+.blk { display: grid; gap: 4px; margin-top: 12px; }
+.blk h4 { font-size: 12.5px; letter-spacing: .06em; color: var(--muted); font-weight: 600; }
+ol.chain { margin: 0; padding: 0; list-style: none; counter-reset: s; display: grid; gap: 6px; }
+ol.chain > li { counter-increment: s; display: grid; grid-template-columns: 26px minmax(0, 1fr); gap: 8px; }
+ol.chain > li::before { content: counter(s); font-family: var(--f-mono); font-size: 12px; color: var(--q); border: 1px solid var(--q); border-radius: 50%; width: 22px; height: 22px; display: grid; place-items: center; margin-top: 3px; }
+ul.plain { margin: 0; padding-left: 18px; display: grid; gap: 4px; }
+.vs { font-family: var(--f-mono); font-size: 11.5px; padding: 0 6px; border-radius: 3px; white-space: nowrap; }
+.vs.已核对 { color: var(--est); background: var(--est-bg); } .vs.常识 { color: var(--common); background: var(--common-bg); } .vs.待核对 { color: var(--cl); background: var(--cl-bg); }
+.src { font-family: var(--f-display); font-size: 13px; color: var(--muted); }
+.err li::marker { color: var(--spec); }
+.chk { background: var(--q-bg); border-radius: 4px; padding: 8px 12px; font-family: var(--f-mono); font-size: 13.5px; overflow-x: auto; }
+.empty { font-family: var(--f-display); color: var(--muted); padding: 24px; text-align: center; border: 1px dashed var(--rule); border-radius: 6px; }
+.tbl { overflow-x: auto; position: relative; }
+table { border-collapse: collapse; width: 100%; font-size: 14px; font-family: var(--f-display); }
+th, td { text-align: left; padding: 8px 12px; border-bottom: 1px solid var(--rule); vertical-align: top; }
+th { font-size: 12.5px; color: var(--muted); font-weight: 600; white-space: nowrap; }
+td.nw { white-space: nowrap; }
+td.mono { font-family: var(--f-mono); color: var(--q); white-space: nowrap; }
+.usage { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 14px; }
+.usage div { background: var(--surface); border: 1px solid var(--rule); border-radius: 6px; padding: 14px 16px; font-size: 14.5px; line-height: 1.65; display: grid; gap: 6px; align-content: start; }
+.usage h4 { font-size: 15px; }
+ol.refs { padding-left: 22px; font-size: 14.5px; display: grid; gap: 6px; margin: 0; }
+footer { font-family: var(--f-display); font-size: 13px; color: var(--muted); }
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+</style>
+
+<div class="wrap">
+<header>
+  <div class="eyebrow">科普入门 + 推理型训练语料 · v0.1 · 简体中文</div>
+  <h1>量子力学推理语料</h1>
+  <p class="lead">一页两用。前半部分写给所有人：用三个可以拖动的小计算，看清量子力学和日常直觉哪里不同。后半部分是 22 条结构化的问答语料，每条都有逐步推理、答案、带出处的关键事实、常见错误和可验算的结果，可直接用于训练或评测模型。</p>
+  <div class="meta"><span>来源 <b>Ruolin 的提问与《量子力学笔记》</b></span><span>整理 <b>Claude，2026-11-03</b></span><span>条目 <b id="m-n">22</b></span><span>纠错记录 <b id="m-c">10</b></span></div>
+  <div class="label"><b>存放说明。</b>独立数据集，位于 <code>datasets/qm-reasoning-corpus/</code>：原笔记 <code>quantum-mechanics-notes-original.md</code>（未改动）、语料 <code>qm-reasoning-corpus-v0.1.jsonl</code> 与可读版 <code>.md</code>、本页 <code>qm-corpus.html</code>。标为“已核对”的事实都在本次整理时用网络搜索核对过，并附有链接。</div>
+  <nav class="jump" aria-label="页内跳转"><a href="#primer">科普：三个小计算</a><a href="#corpus">语料浏览</a><a href="#corrections">纠错记录</a><a href="#usage">训练使用说明</a><a href="#sources">已核对来源</a></nav>
+</header>
+
+<section class="part" id="primer">
+  <h2>写给所有人：量子力学的三个反直觉之处</h2>
+  <p class="sub">每个小计算都对应语料里的一条（标在标题后），拖动滑块可以看到公式在算什么。</p>
+
+  <div class="demo">
+    <h3>1. 概率不能抵消，振幅可以（QM-14）</h3>
+    <div class="txt"><p>掷骰子时，两种走法的概率只能相加。量子力学先把两条路径的<b>振幅</b>相加，再取平方得到概率。振幅带有相位，相位相反时两条路会互相抵消：两条缝都开着，某些位置反而一个粒子也到不了。这就是双缝实验里的暗纹。</p></div>
+    <div class="ctrl"><label for="phi">两条路径的相位差 Δφ <input id="phi" type="range" min="0" max="360" value="180" step="1"></label><output id="phi-o" for="phi">180°</output></div>
+    <div class="legend"><span><i style="background:var(--q)"></i>量子：P = ½(1 + cos Δφ)</span><span><i style="background:var(--cl)"></i>经典概率相加：P = ½</span></div>
+    <div class="chart" id="ch-int"></div>
+    <div class="readout" id="int-r"></div>
+  </div>
+
+  <div class="demo">
+    <h3>2. 测量方向决定你看到什么（QM-17）</h3>
+    <div class="txt"><p>电子的自旋只有“上”“下”两个测量结果，但它的状态可以指向任意方向。蓝色箭头是状态，灰色轴是你选择的测量方向。得到“+”的概率是 ½(1 + cos 夹角)。“上和下的等权叠加”沿 z 测是 50/50，沿 x 测却是 100%：它本身就是一个指向 x 的确定状态。</p></div>
+    <div class="ctrl">
+      <label for="st">状态方向 α（从 z 轴量起）<input id="st" type="range" min="0" max="360" value="90" step="1"></label><output id="st-o" for="st">90°</output>
+      <label for="ms">测量方向 θ <input id="ms" type="range" min="0" max="360" value="0" step="1"></label><output id="ms-o" for="ms">0°</output>
+    </div>
+    <div class="two">
+      <div class="chart" id="ch-spin"></div>
+      <div class="pbars" id="spin-bars"></div>
+    </div>
+    <div class="readout" id="spin-r"></div>
+  </div>
+
+  <div class="demo">
+    <h3>3. 结果不是事先写好的：贝尔不等式（QM-19）</h3>
+    <div class="txt"><p>如果两个纠缠粒子的测量结果出发时就已经“写好”，那么两人测量结果的相关程度有一个上限：CHSH 组合 |S| 最多是 2。量子力学预言可以达到 2√2 ≈ 2.83，实验测到了超过 2 的值，2022 年诺贝尔物理学奖表彰了这些实验。下图是两个测量方向相差 Δ 时的相关系数：曲线是量子力学，折线是“事先写好答案”的模型能做到的最好结果。</p></div>
+    <div class="legend"><span><i style="background:var(--q)"></i>量子单态 E = −cos Δ</span><span><i style="background:var(--cl)"></i>预先确定答案的最佳模型（线性）</span></div>
+    <div class="chart" id="ch-bell"></div>
+    <div class="readout"><span>CHSH 取 a=0°, a′=90°, b=45°, b′=135°</span><span>量子 |S| = <b>2.828</b></span><span>局域上限 <b>2</b></span></div>
+  </div>
+
+  <div class="facts3" aria-label="三个已核对的数字">
+    <div><span class="k">6 : 10¹⁰</span><span class="d">宇宙中重子与光子之比约 6.1×10⁻¹⁰：正反物质几乎全部湮灭，剩下的这一点构成了所有星系（QM-05）</span></div>
+    <div><span class="k">0.75 g</span><span class="d">2023 年 ALPHA-g 测得反氢原子向下落，误差约 ±25%，排除了“反重力”（QM-03）</span></div>
+    <div><span class="k">10⁻¹⁵</span><span class="d">2017 年引力波与伽马射线暴几乎同时到达：引力与光速之差小于约 10⁻¹⁵（QM-11）</span></div>
+  </div>
+
+  <div>
+    <h3 style="font-size:16px;margin-bottom:10px">可信度标签：读每一条时先看它</h3>
+    <div class="ladder">
+      <div style="background:var(--est-bg)"><b style="color:var(--est)">已确立</b>实验和理论都很牢靠，例如叠加、不确定性原理、贝尔不等式被违反。</div>
+      <div style="background:var(--q-bg)"><b style="color:var(--q)">前沿</b>有理论或实验，但没有定论，例如物质为什么多于反物质、时间是否涌现。</div>
+      <div style="background:var(--spec-bg)"><b style="color:var(--spec)">推测</b>目前没有可检验的证据，例如热时间假说、“宇宙在渲染”。</div>
+    </div>
+  </div>
+</section>
+
+<section class="part" id="corpus">
+  <h2>语料浏览</h2>
+  <p class="sub">格式：问题 → 推理链 → 答案 → 关键事实（带核对状态与出处）→ 常见错误 → 验算。来自用户直觉的条目保留了原始说法和判断，可用作纠错训练。</p>
+  <div class="summary">
+    <div class="panel"><h3>题型</h3><div class="rows" id="p-type"></div></div>
+    <div class="panel"><h3>可信度（可多选）</h3><div class="rows" id="p-cred"></div></div>
+    <div class="panel"><h3>关键事实核对状态</h3><div class="rows" id="p-ver"></div></div>
+  </div>
+  <div class="filters" role="search">
+    <div class="line"><span class="lab">搜索</span><input id="q" type="search" placeholder="关键词，例如 反物质、贝尔、时间" autocomplete="off"></div>
+    <div class="line"><span class="lab">题型</span><span id="f-type"></span></div>
+    <div class="line"><span class="lab">可信度</span><span id="f-cred"></span></div>
+    <div class="line"><span class="lab">难度</span><span id="f-diff"></span></div>
+    <div class="line"><span class="lab">其他</span><span id="f-other"></span><span class="tools"><button type="button" id="open-all">全部展开</button><button type="button" id="close-all">全部收起</button></span></div>
+    <div class="count" id="count" role="status"></div>
+  </div>
+  <div class="list" id="list"></div>
+</section>
+
+<section class="part" id="corrections">
+  <h2>纠错记录</h2>
+  <p class="sub">“用户直觉”来自原始提问；“原笔记”是整理时在笔记中发现并已在语料里改正的问题。每一行都可以构成一对“错误说法 / 正确说法”的偏好数据。</p>
+  <div class="tbl"><table><thead><tr><th>来源</th><th>原说法</th><th>问题</th><th>修正</th><th>条目</th></tr></thead><tbody id="corr"></tbody></table></div>
+</section>
+
+<section class="part" id="usage">
+  <h2>训练使用说明</h2>
+  <div class="usage">
+    <div><h4>监督微调</h4><p>输入用 <code>question</code>，输出依次拼接 <code>reasoning_chain</code> 与 <code>answer</code>。保留可信度标签，让模型学会在回答里区分“已确立”和“前沿”。</p></div>
+    <div><h4>偏好 / 负例</h4><p><code>common_errors</code> 与纠错记录给出了常见的错误说法。可以把同一问题下“含该错误的回答”作为被拒绝的一侧。</p></div>
+    <div><h4>可验证奖励</h4><p>类型为“计算”的 4 条（QM-02、14、17、19）有确定的数值答案；另有 QM-05、15、16、20 也带验算。<code>check</code> 字段给出验算过程，适合自动判分。</p></div>
+    <div><h4>使用前</h4><p>“常识”标记的事实没有逐条重查；引用到正式场合前请再核对原文。本语料是对话衍生数据，许可证尚未指定，公开发布前请由作者确认。</p></div>
+  </div>
+  <div class="tbl"><table><thead><tr><th>JSONL 键</th><th>类型</th><th>含义</th></tr></thead><tbody>
+    <tr><td class="mono">id</td><td class="nw">string</td><td>QM-XX</td></tr>
+    <tr><td class="mono">title / domains</td><td class="nw">string / string[]</td><td>标题与主题标签</td></tr>
+    <tr><td class="mono">difficulty</td><td class="nw">int 1–5</td><td>1 入门，5 研究级</td></tr>
+    <tr><td class="mono">type</td><td class="nw">string</td><td>概念 / 纠错 / 计算 / 事实 / 前沿 / 有争议 / 学习</td></tr>
+    <tr><td class="mono">credibility</td><td class="nw">string[]</td><td>已确立 / 前沿 / 推测 / 建议</td></tr>
+    <tr><td class="mono">user_intuition / verdict</td><td class="nw">string | null</td><td>用户原始说法及判断（纠错条目）</td></tr>
+    <tr><td class="mono">question</td><td class="nw">string</td><td>口语化的问题</td></tr>
+    <tr><td class="mono">reasoning_chain</td><td class="nw">string[]</td><td>逐步推理，每步只做一件事</td></tr>
+    <tr><td class="mono">answer</td><td class="nw">string</td><td>先给结论的最终答案</td></tr>
+    <tr><td class="mono">key_facts</td><td class="nw">object[]</td><td>{text, status, source, url?}</td></tr>
+    <tr><td class="mono">common_errors</td><td class="nw">string[]</td><td>常见错误，用于负例或评测</td></tr>
+    <tr><td class="mono">check</td><td class="nw">string | null</td><td>数值验算</td></tr>
+  </tbody></table></div>
+</section>
+
+<section class="part" id="sources">
+  <h2>已核对来源</h2>
+  <p class="sub">以下是本次整理时用网络搜索核对过的事实及其来源链接，其余文献见各条目的“关键事实”。</p>
+  <ol class="refs" id="refs"></ol>
+</section>
+
+<footer>量子力学推理语料 v0.1 · 由 Claude 根据 Ruolin 的提问与笔记整理 · 2026-11-03</footer>
+</div>
+
+<script id="data" type="application/json">{"items": [{"id": "QM-01", "title": "反物质是什么", "domains": ["粒子物理", "反物质"], "difficulty": 1, "credibility": ["已确立"], "type": "纠错", "user_intuition": "反物质是另一种物质，像正负电子一样。", "verdict": "对", "question": "反物质是不是一种跟普通物质不一样的东西？比如正电子和电子那样？", "reasoning_chain": ["先给定义：每种粒子都有对应的反粒子，二者质量相同、自旋相同，电荷以及重子数、轻子数等守恒量子数相反。", "举最常见的一对：电子带 −e，它的反粒子正电子带 +e，质量都是约 0.511 MeV/c²。", "反粒子组成的原子就是反物质，例如一个反质子加一个正电子构成反氢原子，CERN 已能大量制备并囚禁它。", "所以反物质不是“另一种性质的物质”，而是同一套物理规律下电荷等量子数取相反值的物质。"], "answer": "对。反物质由反粒子组成，反粒子与对应粒子质量、自旋相同，电荷等量子数相反；电子的反粒子是正电子。", "key_facts": [{"text": "电子静能 mₑc² ≈ 0.511 MeV，正电子相同", "status": "常识", "source": "CODATA 推荐值"}, {"text": "反氢原子已在 CERN 反质子减速器上被制备和囚禁（ALPHA、ATRAP 等实验）", "status": "常识", "source": "CERN"}], "common_errors": ["以为反物质的质量或能量是负的。", "以为反物质是某种“暗物质”。两者无关。"], "check": null}, {"id": "QM-02", "title": "湮灭：为什么是两个 511 keV 光子", "domains": ["粒子物理", "反物质"], "difficulty": 2, "credibility": ["已确立"], "type": "计算", "user_intuition": "湮灭是因为它和正常物质发生了反应。", "verdict": "基本对", "question": "正电子碰到电子会湮灭，这是一种化学反应吗？为什么出来的是光？", "reasoning_chain": ["湮灭不是化学反应，而是基本粒子之间的相互作用：粒子和反粒子的全部静质量可以转化为其他粒子。", "最简单的情况：电子和正电子几乎静止，总能量 = 2mₑc² ≈ 1.022 MeV，总动量 ≈ 0。", "单个光子总带有动量 E/c，不可能总动量为零，所以至少要产生两个光子。", "两个光子动量相反、能量相等，各自 mₑc² ≈ 511 keV，方向背对背。", "细节：电子和正电子先结合成正电子素。自旋单态（仲正电子素）衰变成 2 个光子，寿命约 0.125 ns；自旋三重态（正正电子素）只能衰变成 3 个光子，寿命约 142 ns。", "应用：医院的 PET 扫描就是同时探测这一对背对背的 511 keV 光子来定位病灶。"], "answer": "基本对，但它是基本粒子相互作用而不是化学反应。静止的电子–正电子对把 1.022 MeV 静能全部变成光子；动量守恒要求至少两个光子，所以最常见的是两个背对背、各 511 keV 的光子（三重态正电子素则衰变为三个光子）。", "key_facts": [{"text": "仲正电子素 → 2γ，寿命约 125 ps；正正电子素 → 3γ，寿命约 142 ns", "status": "常识", "source": "标准原子物理教材"}, {"text": "PET 成像利用 511 keV 光子对的符合探测", "status": "常识", "source": "医学物理教材"}], "common_errors": ["说“湮灭总是产生两个光子”，忽略三重态正电子素产生三个光子。", "以为湮灭能产生单个光子（违反动量守恒）。", "把湮灭当成化学反应（化学反应不改变粒子种类，也只涉及 eV 量级能量）。"], "check": "静止电子–正电子对：Σp = 0。若只产生一个光子，则 p_γ = E/c = 2mₑc ≠ 0，矛盾；两个光子时 p₁ = −p₂，E₁ = E₂ = mₑc² = 511 keV。"}, {"id": "QM-03", "title": "反物质受重力向上还是向下", "domains": ["反物质", "引力"], "difficulty": 2, "credibility": ["已确立"], "type": "事实", "user_intuition": "反物质必定有质量。", "verdict": "对", "question": "反物质有质量吗？会不会被重力往上推？", "reasoning_chain": ["惯性质量：CERN 的 BASE 实验在潘宁阱里比较反质子和质子的荷质比，二者在万亿分之 16 的精度内相同。", "引力质量：理论上（广义相对论 + CPT）预期反物质同样受吸引，但直到 2023 年才有直接测量。", "ALPHA-g 实验让反氢原子从磁阱中缓慢释放，统计向上和向下逃逸的比例，测得加速度约为 (0.75 ± 0.13 ± 0.16) g。", "这个精度约 25%，足以排除“反重力”（向上加速），但还不足以检验与 g 的微小差别。"], "answer": "有，而且是正的质量。惯性上，反质子与质子的荷质比在 16 ppt 精度内相同；引力上，2023 年 ALPHA-g 直接观测到反氢原子向下落，加速度约 0.75 g，误差约 ±25%，与普通物质一致，排除了反重力。", "key_facts": [{"text": "ALPHA-g：反氢原子重力加速度 (0.75 ± 0.13 (统计+系统) ± 0.16 (模拟)) g；Anderson et al., Nature 621, 716–722 (2023)", "status": "已核对", "source": "Berkeley News 2023-09-27；APS DNP 2024 摘要", "url": "https://news.berkeley.edu/2023/09/27/antimatter-embraces-earth-falling-downward-like-normal-matter/"}, {"text": "BASE：反质子/质子荷质比 = 1.000000000003(16)，即 16 ppt 内相同；Borchert et al., Nature 601, 53–57 (2022)", "status": "已核对", "source": "CERN Courier；GSI 新闻", "url": "https://cerncourier.com/a/base-breaks-new-ground-in-matter-antimatter-tests/"}], "common_errors": ["把 ALPHA-g 的结果说成“精确等于 g”。目前误差约 25%。", "以为反物质会被引力排斥。"], "check": null}, {"id": "QM-04", "title": "“反能量”这个说法", "domains": ["反物质", "概念辨析"], "difficulty": 2, "credibility": ["已确立"], "type": "纠错", "user_intuition": "反能量有质量。", "verdict": "需要修正", "question": "反物质对应的是不是“反能量”？反能量有没有质量？", "reasoning_chain": ["物理学里没有叫“反能量”的对象。反物质由反粒子组成，携带的是普通的正能量；湮灭释放的光子能量也是正的。", "这个说法很可能来自狄拉克方程的历史：1928 年的方程出现了“负能量解”，狄拉克后来用它预言了反电子。", "在量子场论的现代表述里，这些负能量解被重新解释为正能量的反粒子，不存在负能量的粒子。", "另一个容易混淆的概念是“负能量密度”：例如两块金属板之间的卡西米尔效应，局部真空能量密度低于外部。这是场的能量分布，与反物质无关。"], "answer": "需要修正：没有“反能量”。反物质携带正能量，也有正质量。狄拉克方程的负能量解在量子场论里被解释为正能量的反粒子；“负能量密度”（如卡西米尔效应）是另一个与反物质无关的概念。", "key_facts": [{"text": "狄拉克方程（1928）出现负能量解；1931 年狄拉克提出反电子", "status": "常识", "source": "Dirac, Proc. R. Soc. A 117, 610 (1928); Proc. R. Soc. A 133, 60 (1931)"}, {"text": "卡西米尔效应（1948 年预言，1997 年 Lamoreaux 精确测量）", "status": "常识", "source": "物理学史"}], "common_errors": ["把“反物质”和“负能量”当成同一件事。", "以为狄拉克的负能量解今天仍被解释为负能量粒子。"], "check": null}, {"id": "QM-05", "title": "宇宙为什么物质比反物质多", "domains": ["宇宙学", "反物质"], "difficulty": 3, "credibility": ["已确立", "前沿"], "type": "前沿", "user_intuition": "宇宙必然是不对称的，否则正反湮灭成一片能量，不太可能形成现实。", "verdict": "事实部分对，“必然”尚无解释", "question": "如果大爆炸产生了等量的物质和反物质，它们不就全湮灭了吗？为什么还有我们？", "reasoning_chain": ["观测事实：可观测宇宙几乎全是物质，没有发现大块反物质区域（否则交界处会有强烈的湮灭伽马射线）。", "定量：重子数与光子数之比 η ≈ 6.1 × 10⁻¹⁰，即大约每 100 亿个光子对应 6 个重子。今天的光子大多是早期正反物质湮灭留下的。", "解读：早期宇宙中物质只比反物质多出极小的比例，几乎所有成对的都湮灭了，剩下的这一点点构成了所有星系。", "萨哈罗夫（1967）指出，要从对称的初态产生净物质，必须同时满足三条：重子数可以改变；C 和 CP 对称性破缺；宇宙某阶段偏离热平衡。", "标准模型里三条都有原则上的来源，但已知的 CP 破坏太弱，算出的不对称比观测小很多个数量级，所以普遍认为需要标准模型以外的物理（候选：轻子生成、电弱重子生成等），尚未确认。", "关于“必然”：物理学能说“事实上不对称，否则不会有星系和人”，但还不能解释为什么必然如此。"], "answer": "你的直觉与宇宙学一致：若完全对称，今天几乎只剩辐射。实际观测到 η ≈ 6.1 × 10⁻¹⁰（约每 100 亿个光子 6 个重子）。产生这种不对称需要萨哈罗夫三条件，而标准模型的 CP 破坏不够，具体机制仍是未解问题。", "key_facts": [{"text": "η = n_b/n_γ = (6.104 ± 0.058) × 10⁻¹⁰（Planck 2018 CMB）", "status": "已核对", "source": "Fields et al., Big-Bang Nucleosynthesis after Planck (2020)", "url": "https://arxiv.org/abs/1912.01132"}, {"text": "萨哈罗夫条件：A. D. Sakharov, JETP Lett. 5, 24 (1967)", "status": "常识", "source": "原始论文"}], "common_errors": ["说“每十亿个光子有几个重子”（实际约 0.6 个，数量级差约 10 倍；原笔记即有此误）。", "以为标准模型已经解释了这种不对称。", "把“人存在”当作不对称的物理解释（这是观测选择，不是机制）。"], "check": "η ≈ 6.1×10⁻¹⁰ ⇒ 每 10¹⁰ 个光子约 6.1 个重子 ⇒ 每 10⁹ 个光子约 0.61 个重子。"}, {"id": "QM-06", "title": "CP 破坏：从 K 介子到重子", "domains": ["粒子物理", "对称性"], "difficulty": 3, "credibility": ["已确立", "前沿"], "type": "事实", "user_intuition": null, "verdict": null, "question": "正反物质的规律真的完全一样吗？有没有实验看到过差别？", "reasoning_chain": ["C 是把粒子换成反粒子，P 是空间反射。若 CP 守恒，一个过程和它的“镜像反物质版本”发生的概率相同。", "1964 年，Christenson、Cronin、Fitch、Turlay 在中性 K 介子衰变中首次观测到 CP 破坏，Cronin 和 Fitch 因此获 1980 年诺贝尔奖。", "此后在 B 介子、D 介子中也观测到 CP 破坏，但都是介子（夸克 + 反夸克）。", "2025 年，LHCb 在 Λb⁰ → p K⁻ π⁺ π⁻ 衰变中测得正反重子衰变率相差约 2.45%，显著性 5.2σ，这是重子中首次观测到 CP 破坏。", "这些都能用标准模型的 CKM 机制描述，因此它们本身不足以解释宇宙中的物质剩余（见 QM-05）。"], "answer": "不完全一样。CP 对称性在弱相互作用中被破坏：1964 年在 K 介子中首次发现，2025 年 LHCb 首次在重子衰变中观测到（约 2.45%，5.2σ）。但已知的 CP 破坏都在标准模型预期之内，强度不足以解释宇宙中的物质剩余。", "key_facts": [{"text": "Christenson, Cronin, Fitch, Turlay, PRL 13, 138 (1964)", "status": "常识", "source": "原始论文"}, {"text": "LHCb：Λb⁰ → pK⁻π⁺π⁻ 的 CP 不对称 (2.45 ± 0.46 ± 0.10)%，5.2σ；Nature 643, 1223–1228 (2025)", "status": "已核对", "source": "CERN 新闻；LHCb outreach", "url": "https://home.cern/news/news/physics/new-piece-matter-antimatter-puzzle"}], "common_errors": ["认为 CP 破坏的发现已经解决了物质–反物质不对称问题。", "混淆 CP 破坏与 CPT 破坏（CPT 至今未发现破坏）。"], "check": null}, {"id": "QM-07", "title": "时间在量子力学里是不是可观测量", "domains": ["量子基础", "时间"], "difficulty": 3, "credibility": ["已确立"], "type": "概念", "user_intuition": null, "verdict": null, "question": "位置、动量都有算符，时间为什么没有？", "reasoning_chain": ["在薛定谔方程 iħ ∂ψ/∂t = Ĥψ 中，t 是外部给定的参数，不是作用在态上的算符。", "泡利的论证：若存在与哈密顿量 Ĥ 正则共轭的自伴时间算符 T（[T, Ĥ] = iħ），则 e^{iaT} 会把能量平移任意 a，使 Ĥ 的谱充满整个实轴。", "但物理系统的能量有下界（存在基态），矛盾。所以一般不存在这样的时间算符。", "因此能量–时间“不确定关系”与位置–动量的不确定原理性质不同：Δt 通常指系统发生显著变化所需的时间，而不是一个算符的标准差。"], "answer": "因为时间在标准量子力学中是外部参数。泡利论证过：如果存在与 Ĥ 共轭的自伴时间算符，能量谱就不能有下界，与基态存在矛盾。所以能量–时间关系不能像位置–动量那样直接由算符对易关系推出。", "key_facts": [{"text": "泡利定理（1933，《物理学手册》）", "status": "常识", "source": "Pauli, Handbuch der Physik 24 (1933)"}], "common_errors": ["把 ΔE·Δt ≥ ħ/2 当成和 Δx·Δp ≥ ħ/2 完全同类的算符关系。"], "check": null}, {"id": "QM-08", "title": "时间能否从纠缠中涌现：佩奇–伍特斯机制", "domains": ["量子基础", "时间", "量子引力"], "difficulty": 4, "credibility": ["前沿"], "type": "前沿", "user_intuition": "时间是现实变化运动产生的。", "verdict": "有严肃的理论在讨论", "question": "如果整个宇宙的量子态不随时间变化，我们怎么会感到时间在流动？", "reasoning_chain": ["在量子引力的惠勒–德威特方程 Ĥ|Ψ⟩ = 0 中，宇宙的总态满足“能量为零”的约束，没有外部时间参数，这就是“时间问题”。", "佩奇和伍特斯（1983）提出：把宇宙分成“时钟”C 和“其余部分”S，总态是静止的，但 C 与 S 纠缠。", "如果以时钟读数为条件（问“时钟显示 t 时 S 处于什么态”），条件态 |ψ_S(t)⟩ 会满足薛定谔方程，看起来在演化。", "所以“演化”是子系统之间的关联，对整体而言并无变化，论文标题即“没有演化的演化”。", "2014 年 Moreva 等人用两个光子的偏振做了玩具演示：内部观察者（与时钟光子关联）看到另一个光子在变；只测整体性质的外部观察者确认总态是静止的。", "这只是原理演示，不等于证明真实宇宙的时间就是这样产生的。"], "answer": "佩奇–伍特斯机制给出一种可能：宇宙总态静止，但“时钟”与“其余部分”纠缠，以时钟读数为条件时其余部分看起来在演化。2014 年已有光子实验演示了这一机制的玩具版本。它是前沿理论，不是定论。", "key_facts": [{"text": "Page & Wootters, “Evolution without evolution”, Phys. Rev. D 27, 2885 (1983)", "status": "常识", "source": "原始论文"}, {"text": "Moreva et al., “Time from quantum entanglement: an experimental illustration”, Phys. Rev. A 89, 052122 (2014)", "status": "已核对", "source": "arXiv:1310.4691", "url": "https://arxiv.org/abs/1310.4691"}], "common_errors": ["说“实验证明了时间是由纠缠产生的”。实验只演示了机制在玩具系统中自洽。", "把佩奇–伍特斯机制当作量子力学的主流共识。"], "check": null}, {"id": "QM-09", "title": "关系时间与热时间", "domains": ["量子基础", "时间", "哲学"], "difficulty": 4, "credibility": ["前沿", "推测"], "type": "前沿", "user_intuition": "底层的时间变化由物理现实的变化决定。", "verdict": "与关系时间、热时间假说相近", "question": "能不能说时间本身就是由事物的变化产生的？", "reasoning_chain": ["关系时间：时间不是独立的背景容器，而是物理量之间变化的关系（一个量相对另一个量的变化）。罗韦利等人在圈量子引力的框架中发展了这一观点。", "热时间假说（Connes & Rovelli, 1994）：在没有优先时间的理论中，系统的统计状态（热力学态）本身可以确定一个“时间流”，称为热时间。", "这两种观点和“时间由变化产生”的直觉非常接近：前者对应“变化的关系”，后者对应“统计状态决定流向”。", "但它们目前没有能与标准理论区分开的实验检验，所以热时间仍属推测，关系时间更多是一种理论框架的选择。"], "answer": "有对应的理论：关系时间认为时间就是物理量之间变化的关系；热时间假说认为系统的统计状态决定时间流。它们与你的直觉接近，但都还没有可区分的实验证据。", "key_facts": [{"text": "Connes & Rovelli, Class. Quantum Grav. 11, 2899 (1994)", "status": "常识", "source": "原始论文"}], "common_errors": ["把哲学上的可能性当成已被证实的物理结论。"], "check": null}, {"id": "QM-10", "title": "时间箭头", "domains": ["热力学", "时间", "宇宙学"], "difficulty": 3, "credibility": ["已确立", "前沿"], "type": "概念", "user_intuition": null, "verdict": null, "question": "物理方程大多对时间是对称的，为什么我们只能记得过去、不能记得未来？", "reasoning_chain": ["微观动力学方程（牛顿、薛定谔）在时间反演下基本对称（弱相互作用中的微小 T 破坏不是日常时间箭头的来源）。", "热力学第二定律：孤立系统的熵几乎总是增加，这给出了方向。", "但熵增本身需要一个前提：过去的熵比现在低。追溯下去，宇宙必须开始于一个熵极低的状态（“过去假设”）。", "记忆、因果、衰老等方向性都可以追溯到熵梯度。", "为什么初始熵如此之低，目前没有公认的解释。"], "answer": "主流解释是熵增：时间方向就是熵增加的方向。熵之所以能持续增加，是因为宇宙起始于一个极低熵的状态，而这个低熵初始条件本身的来源尚未解决。", "key_facts": [{"text": "“过去假设”（Past Hypothesis），见 David Albert《Time and Chance》(2000)", "status": "常识", "source": "科学哲学文献"}], "common_errors": ["说“熵增定律解释了一切”，忽略了它依赖低熵初始条件。"], "check": null}, {"id": "QM-11", "title": "光速是“最低渲染”吗", "domains": ["相对论", "概念辨析"], "difficulty": 2, "credibility": ["已确立", "推测"], "type": "纠错", "user_intuition": "光是最低渲染以及宇宙极限速度。", "verdict": "后半句对，前半句是比喻", "question": "光速是不是宇宙的“渲染速度”，所以没有东西能比它快？", "reasoning_chain": ["光速 c 在所有惯性参考系中相同，这是狭义相对论的出发点。自 1983 年起 c = 299 792 458 m/s 被定义为精确值。", "更准确的理解：c 是因果影响能传播的最大速度。光恰好以这个速度运动，是因为光子没有静止质量；任何无质量的东西都以 c 运动。", "例证：2017 年 GW170817 的引力波与伽马射线暴相隔约 1.7 秒到达，经过约 1.3 亿光年的旅程，二者速度差被限制在约 10⁻¹⁵ 量级以内，引力也以 c 传播。", "“渲染”来自计算机：把宇宙比作逐帧计算的模拟。要成为物理命题，它必须预言现有理论没有预言、并可以测量的现象（例如时空离散导致的某种色散）。", "目前没有这样的预言被证实，所以它停留在比喻或哲学层面。"], "answer": "后半句对：c 是因果传播的速度上限，光、引力波都以它传播，GW170817 把引力波与光速的差别限制在约 10⁻¹⁵ 以内。前半句“渲染”是比喻，目前没有可检验的预言或实验支持。", "key_facts": [{"text": "GW170817 / GRB 170817A：(v_gw − c)/c 介于 −3×10⁻¹⁵ 与 +7×10⁻¹⁶；ApJL 848, L13 (2017)", "status": "已核对", "source": "LIGO/Virgo/Fermi/INTEGRAL, arXiv:1710.05834", "url": "https://arxiv.org/abs/1710.05834"}, {"text": "1983 年第 17 届国际计量大会把米定义为光在 1/299 792 458 秒内走过的距离", "status": "常识", "source": "BIPM"}], "common_errors": ["说“光速是光的属性”。更准确地说，c 是时空结构的属性，光只是恰好以它运动。", "把“模拟宇宙”当作物理学已有的结论。"], "check": null}, {"id": "QM-12", "title": "光子经历时间吗", "domains": ["相对论", "概念辨析"], "difficulty": 3, "credibility": ["已确立"], "type": "概念", "user_intuition": null, "verdict": null, "question": "听说光子“不经历时间”，这是真的吗？", "reasoning_chain": ["有质量的物体沿类时世界线运动，其固有时 τ 是它自己的钟走过的时间。", "光子沿类光世界线运动，线元 ds² = 0，所以沿途累积的固有时为零。", "但光子没有静止参考系：洛伦兹变换在 v → c 时发散，无法定义“光子看到的世界”。", "所以“光子经历零时间”只是对 ds² = 0 的通俗说法，严格地说“光子经历的时间”这个问题在相对论中没有良好定义。"], "answer": "通俗说法。光子世界线的固有时为零，但光子没有静止参考系，“光子自己经历了多少时间”在相对论中没有良好定义。", "key_facts": [], "common_errors": ["说“从光子的角度看，宇宙是瞬间的”，好像存在光子的参考系。"], "check": null}, {"id": "QM-13", "title": "叠加不是“不知道”", "domains": ["量子基础"], "difficulty": 1, "credibility": ["已确立"], "type": "概念", "user_intuition": null, "verdict": null, "question": "量子叠加是不是说粒子其实在某个确定的地方，只是我们不知道？", "reasoning_chain": ["如果粒子“其实走了某一条缝，只是我们不知道”，那么双缝实验的结果应该是两条单缝图样的简单相加。", "实验看到的是干涉条纹：某些位置的概率比单开一条缝时还小。", "单个电子逐个发射也会积累出条纹（Tonomura 等人 1989 年的实验），说明干涉不是多个粒子之间的相互作用。", "所以叠加态是一种实际的状态，两条路径的振幅会相互叠加、抵消。", "一旦设法测出走了哪条缝，干涉就消失。"], "answer": "不是。叠加是一种实际的物理状态，振幅会干涉：单个电子的双缝实验在某些位置的概率比只开一条缝时还低，这用“只是不知道”无法解释。", "key_facts": [{"text": "Tonomura et al., Am. J. Phys. 57, 117 (1989)：单电子双缝干涉", "status": "常识", "source": "原始论文"}], "common_errors": ["把叠加理解为经典的概率混合（无知）。"], "check": null}, {"id": "QM-14", "title": "玻恩规则：振幅能抵消，概率不能", "domains": ["量子基础"], "difficulty": 2, "credibility": ["已确立"], "type": "计算", "user_intuition": null, "verdict": null, "question": "量子力学的概率和掷骰子的概率有什么本质区别？", "reasoning_chain": ["量子力学给每个可能结果一个复数振幅 a，测得该结果的概率是 P = |a|²（玻恩规则）。", "当一个结果可以经由两条不可区分的路径实现时，先把振幅相加，再取模平方：P = |a₁ + a₂|²。", "设两条路径振幅大小相同 a₁ = ½·e^{iφ₁}，a₂ = ½·e^{iφ₂}，相位差 Δφ = φ₂ − φ₁。", "则 P = ¼|1 + e^{iΔφ}|² = ½(1 + cos Δφ)：Δφ = 0 时 P = 1（相长），Δφ = π 时 P = 0（相消）。", "经典概率只能把概率相加：P = ¼ + ¼ = ½，与相位无关，永远不会出现 0。"], "answer": "经典概率只能相加，量子力学是振幅相加再取模平方。两条路径的振幅可以因相位相反而完全抵消，于是出现“两条路都开着反而到不了”的暗纹，这是经典概率做不到的。", "key_facts": [{"text": "玻恩规则（Born, 1926）", "status": "常识", "source": "Z. Phys. 37, 863 (1926)"}], "common_errors": ["先把各路径概率相加，再讨论干涉。", "以为振幅就是概率的平方根，因而总是正数。"], "check": "P(Δφ) = ½(1 + cos Δφ)；Δφ = π/2 时 P = ½，与经典值恰好相同；Δφ = π 时 P = 0。"}, {"id": "QM-15", "title": "可观测量是厄米算符", "domains": ["量子基础", "线性代数"], "difficulty": 2, "credibility": ["已确立"], "type": "概念", "user_intuition": null, "verdict": null, "question": "为什么说“线性代数是量子力学的母语”？", "reasoning_chain": ["量子态是复向量空间（希尔伯特空间）中的单位向量。", "每个可观测量对应一个厄米算符 A = A†。厄米保证特征值是实数（测量读数是实数），不同特征值的特征向量正交。", "测量结果只能是 A 的某个特征值 λ，得到它的概率是态在对应特征向量上投影的模平方。", "自旋这类有限维情形，算符就是有限矩阵，例如 σ_z = diag(1, −1)，特征值 ±1（乘 ħ/2）。", "位置、动量是无穷维空间上的无界算符，谱是连续的，没有可归一化的特征向量，需要更多的泛函分析，但思想相同。"], "answer": "因为态是向量、可观测量是厄米矩阵（算符）、测量结果是特征值、概率是投影长度的平方。有限维（如自旋）完全是矩阵；位置和动量是无穷维、连续谱的推广。", "key_facts": [{"text": "冯·诺依曼《量子力学的数学基础》(1932) 建立了希尔伯特空间表述", "status": "常识", "source": "标准文献"}], "common_errors": ["说“可观测量就是矩阵”而不提位置、动量是无穷维、连续谱的情形。", "以为任何矩阵都可以是可观测量（必须是厄米的）。"], "check": "σ_z 的特征向量 |↑⟩ = (1,0)ᵀ、|↓⟩ = (0,1)ᵀ，特征值 +1、−1；两者内积为 0。"}, {"id": "QM-16", "title": "不确定性原理不是仪器误差", "domains": ["量子基础"], "difficulty": 3, "credibility": ["已确立"], "type": "概念", "user_intuition": null, "verdict": null, "question": "位置和动量测不准，是因为仪器不够精确吗？", "reasoning_chain": ["罗伯逊不等式：对任意两个可观测量 A、B，σ_A σ_B ≥ ½|⟨[A, B]⟩|，其中 [A, B] = AB − BA。", "位置和动量满足 [x̂, p̂] = iħ，代入得 σ_x σ_p ≥ ħ/2。", "这是对“同一个态”的两个分布宽度的约束：不存在一个态，使位置和动量的分布同时任意窄。", "它不限制单次测量的精度：可以把位置测得很准，代价是测后的态动量分布很宽。", "根源是数学结构：位置表象和动量表象互为傅里叶变换，一个越窄另一个越宽。"], "answer": "不是。它来自位置和动量算符不对易（[x, p] = iħ），等价于傅里叶变换的性质：没有任何量子态的位置分布和动量分布能同时任意窄。这与仪器好坏无关。", "key_facts": [{"text": "Heisenberg (1927)；Kennard (1927) 与 Robertson (1929) 给出严格形式", "status": "常识", "source": "标准文献"}], "common_errors": ["说“不确定性来自测量对粒子的扰动”（这是海森堡显微镜的启发图像，不是原理本身）。", "说“位置不能被精确测量”。"], "check": "高斯波包 ψ(x) ∝ e^{−x²/4σ²}：σ_x = σ，σ_p = ħ/(2σ)，乘积恰好等于 ħ/2，取到下界。"}, {"id": "QM-17", "title": "自检题：自旋 1/2 的测量概率", "domains": ["量子基础", "线性代数"], "difficulty": 2, "credibility": ["已确立"], "type": "计算", "user_intuition": null, "verdict": null, "question": "一个自旋处在“向上”和“向下”的等权叠加中，沿 z 方向和沿 x 方向测量，各得到什么概率？沿任意方向呢？", "reasoning_chain": ["写出态：等权叠加 |ψ⟩ = (|↑⟩ + |↓⟩)/√2 = (1, 1)ᵀ/√2。", "沿 z 测量：本征态 |↑⟩ = (1,0)ᵀ、|↓⟩ = (0,1)ᵀ。P(↑) = |⟨↑|ψ⟩|² = |1/√2|² = ½，P(↓) = ½。", "沿 x 测量：σ_x = [[0,1],[1,0]]，本征态 |±x⟩ = (1, ±1)ᵀ/√2。⟨+x|ψ⟩ = 1，所以 P(+x) = 1，P(−x) = 0：这个态就是 x 方向的“向上”。", "任意方向：沿 xz 平面内与 z 轴夹角 θ 的方向 n 测量，本征态 |+n⟩ = (cos θ/2, sin θ/2)ᵀ。", "⟨+n|ψ⟩ = (cos θ/2 + sin θ/2)/√2，P(+n) = ½(1 + sin θ)。检验：θ = 0 给 ½，θ = 90° 给 1。", "一般公式：态的布洛赫向量为 s，测量方向为 n，则 P(+n) = ½(1 + s·n)。"], "answer": "沿 z：上、下各 ½；沿 x：+x 的概率为 1。这个“等权叠加”其实就是 x 方向的确定态。沿与 z 轴夹 θ 的方向：P(+) = ½(1 + sin θ)；一般地 P = ½(1 + s·n)。", "key_facts": [], "common_errors": ["以为等权叠加在任何方向测量都是 50/50。", "忘记取模平方，直接把振幅 1/√2 当概率。"], "check": "θ = 30°：P(+) = ½(1 + 0.5) = 0.75；θ = 180°（−z 方向）：P(+) = ½。"}, {"id": "QM-18", "title": "测量问题与主要诠释", "domains": ["量子基础", "哲学"], "difficulty": 4, "credibility": ["前沿"], "type": "有争议", "user_intuition": null, "verdict": null, "question": "薛定谔方程是连续的，为什么测量时只看到一个结果？哪种解释是对的？", "reasoning_chain": ["薛定谔演化是线性、确定的，会把仪器也带进叠加；但我们每次只看到一个读数。这就是测量问题。", "哥本哈根：测量导致坍缩，不追问坍缩的机制。", "多世界（埃弗雷特，1957）：不坍缩，所有结果在不同分支中实现，退相干解释为何分支互不干涉。", "玻姆力学：粒子始终有确定位置，由波函数导引，是非局域的确定性理论。", "自发坍缩：GRW（1986）让每个粒子以极小的固定概率随机局域化，与引力无关；Diósi–Penrose 模型才把坍缩和引力联系起来。2020 年格兰萨索地下实验排除了无参数版本的 Diósi–Penrose 模型。", "QBism：波函数代表行动者的信念。", "除自发坍缩类模型外，各诠释对现有实验的预言相同，所以选择更多取决于哲学偏好。"], "answer": "没有共识。各主要诠释（哥本哈根、多世界、玻姆、QBism）对现有实验预言相同；自发坍缩类模型是例外，它们预言可测的偏差（如微弱辐射），实验正在检验，2020 年已排除最简单的引力坍缩模型。", "key_facts": [{"text": "Ghirardi, Rimini, Weber, Phys. Rev. D 34, 470 (1986)", "status": "常识", "source": "原始论文"}, {"text": "Donadi et al.（2020，Nature Physics）：格兰萨索锗探测器测到 576 个光子，背景预期约 506 个，排除无参数 Diósi–Penrose 模型", "status": "已核对", "source": "Physics World 2020-09", "url": "https://physicsworld.com/a/physicists-place-fresh-limits-on-gravitys-role-in-wavefunction-collapse/"}], "common_errors": ["说 GRW 是与引力有关的坍缩模型（原笔记即有此混淆）。", "宣称某种诠释已被实验证实。", "说“意识导致坍缩”是主流观点。"], "check": null}, {"id": "QM-19", "title": "贝尔定理与 CHSH 计算", "domains": ["量子基础", "纠缠"], "difficulty": 4, "credibility": ["已确立"], "type": "计算", "user_intuition": null, "verdict": null, "question": "爱因斯坦认为粒子的结果事先就定好了，贝尔是怎么证明这不对的？", "reasoning_chain": ["设想 Alice 在 a 或 a′ 两个方向中选一个测量，Bob 在 b 或 b′ 中选一个，结果都是 ±1。", "若结果事先确定且不受对方选择影响（局域隐变量），则 S = E(a,b) − E(a,b′) + E(a′,b) + E(a′,b′) 满足 |S| ≤ 2（CHSH 不等式，1969）。", "量子力学：对自旋单态，E(a,b) = −cos(θ_a − θ_b)。", "取 a = 0°，a′ = 90°，b = 45°，b′ = 135°：四项分别为 −0.707、+0.707、−0.707、−0.707，S = −2√2 ≈ −2.83，|S| = 2√2 > 2。", "2√2 也是量子力学能达到的最大值（齐雷尔松界）。", "实验：Clauser（1972）、Aspect（1982）等逐步逼近，2015 年三组实验同时关闭主要漏洞；2022 年诺贝尔物理学奖授予阿斯佩、克劳泽、蔡林格。"], "answer": "贝尔证明任何局域、预先确定结果的理论都满足 |S| ≤ 2，而量子力学预言单态可以达到 2√2 ≈ 2.83。实验多次测到超过 2 的值，2015 年实现了无主要漏洞的检验，所以局域隐变量理论被排除。", "key_facts": [{"text": "Bell, Physics 1, 195 (1964)；Clauser, Horne, Shimony, Holt, PRL 23, 880 (1969)", "status": "常识", "source": "原始论文"}, {"text": "2015 年无漏洞贝尔检验：Hensen et al.（代尔夫特）、Giustina et al.（维也纳）、Shalm et al.（NIST）", "status": "常识", "source": "Nature / PRL 2015"}, {"text": "2022 年诺贝尔物理学奖：Aspect、Clauser、Zeilinger", "status": "常识", "source": "nobelprize.org"}], "common_errors": ["说贝尔定理证明了“量子力学是非局域的”。严格说，它排除的是“局域 + 结果预先确定”的组合。", "把 |S| ≤ 2 记成 |S| ≤ 1。"], "check": "cos 45° = 0.7071。S = −cos45° − (−cos135°) − cos45° − cos(−45°) = −4 × 0.7071 = −2.828。"}, {"id": "QM-20", "title": "纠缠能不能超光速传信", "domains": ["量子基础", "纠缠", "相对论"], "difficulty": 3, "credibility": ["已确立"], "type": "概念", "user_intuition": null, "verdict": null, "question": "既然纠缠的两个粒子瞬间相关，能不能用它超光速发消息？", "reasoning_chain": ["Alice 测量自己的粒子，结果是随机的，她无法选择得到哪个结果。", "Bob 单独看自己的结果，无论 Alice 测了什么方向、甚至测没测，他的统计分布都不变（无通信定理：Bob 的约化密度矩阵不受 Alice 操作影响）。", "相关性只有在两人通过普通信道（不超过光速）比较记录后才能看出来。", "所以纠缠产生超强的相关，但不能传递信息，与相对论不冲突。"], "answer": "不能。Bob 自己的测量统计不受 Alice 任何操作的影响（无通信定理），相关性只有在用普通信道比较结果后才显现，因此不能超光速传信。", "key_facts": [{"text": "无通信定理：Ghirardi, Rimini, Weber (1980) 等", "status": "常识", "source": "标准文献"}], "common_errors": ["说“量子隐形传态实现了超光速传输”。隐形传态需要经典信道传送两比特信息。"], "check": "单态中 Bob 沿任意方向测量：P(+) = P(−) = ½，与 Alice 的测量方向无关。"}, {"id": "QM-21", "title": "反粒子为什么是必然的", "domains": ["量子场论", "反物质"], "difficulty": 4, "credibility": ["已确立"], "type": "概念", "user_intuition": null, "verdict": null, "question": "反物质是理论里额外假设的，还是非有不可？", "reasoning_chain": ["把量子力学和狭义相对论结合：粒子数不再守恒（足够能量可以产生新粒子），单粒子波函数的描述不再自洽，需要量子场论。", "在量子场论中，粒子是场的激发。要求场满足洛伦兹不变性，并且类空间隔的测量互不影响（微因果性），带电场的展开就必须同时包含粒子和反粒子的部分。", "所以对带电粒子来说，反粒子不是额外假设，而是理论自洽的结果。", "补充：中性粒子可以是自身的反粒子，例如光子、π⁰ 介子。中微子是否是自身的反粒子（马约拉纳粒子）还没有确定，无中微子双β衰变实验正在寻找。"], "answer": "对带电粒子是必然的：相对论 + 量子力学 + 因果性要求带电场同时描述粒子和反粒子。中性粒子可以是自身的反粒子（如光子）；中微子是否如此仍是开放问题。", "key_facts": [{"text": "Weinberg《The Quantum Theory of Fields》第 1 卷 (1995)，第 5 章", "status": "常识", "source": "标准教材"}], "common_errors": ["说“每种粒子都有一个不同的反粒子”，忽略光子等是自身的反粒子。"], "check": null}, {"id": "QM-22", "title": "学量子力学先学什么", "domains": ["学习路线"], "difficulty": 1, "credibility": ["建议"], "type": "学习", "user_intuition": null, "verdict": null, "question": "我想自学量子力学，数学该从哪里开始？", "reasoning_chain": ["量子态是向量、可观测量是矩阵，所以线性代数最优先：向量空间、内积、特征值、厄米矩阵。", "振幅是复数：复数运算和欧拉公式 e^{iφ} = cos φ + i sin φ。", "概率：期望和方差，对应测量结果的统计。", "微积分与微分方程：薛定谔方程是偏微分方程，先学一维情形。", "傅里叶分析：位置和动量的关系就是傅里叶变换，也是不确定性原理的根源。", "物理上的顺序：两能级系统（自旋 1/2，只需 2×2 矩阵）→ 一维问题（无限深势阱、谐振子、隧穿）→ 氢原子与角动量 → 狄拉克方程与量子场论入门。", "检验办法：能独立完成 QM-17 的计算，就跨过了门槛。"], "answer": "先学线性代数和复数，从自旋 1/2 这类 2×2 矩阵问题入手；再学一维薛定谔方程、氢原子；最后是狄拉克方程和量子场论。入门教材可用 Griffiths《量子力学概论》，偏数学可用 Sakurai《现代量子力学》。", "key_facts": [], "common_errors": ["从波函数和偏微分方程起步，绕过线性代数，结果看不清测量与叠加的结构。"], "check": null}], "corrections": [{"origin": "用户直觉", "original": "反能量有质量", "problem": "物理学中没有“反能量”这个对象", "fix": "反物质携带普通的正能量、正质量；狄拉克方程的负能量解在量子场论中被解释为正能量的反粒子；负能量密度（卡西米尔效应）是另一个概念", "ref": "QM-04"}, {"origin": "用户直觉", "original": "光是最低渲染", "problem": "比喻，没有可检验的预言", "fix": "c 是因果传播的速度上限；“渲染”需要给出可测量的新预言才能成为物理命题", "ref": "QM-11"}, {"origin": "用户直觉", "original": "宇宙必然是不对称的", "problem": "“事实上不对称”成立，“必然”尚无解释", "fix": "η ≈ 6.1×10⁻¹⁰ 是观测事实；不对称的机制仍是未解问题", "ref": "QM-05"}, {"origin": "用户直觉", "original": "湮灭是因为它和正常物质发生了反应", "problem": "措辞像化学反应", "fix": "是基本粒子相互作用，静质量全部转化为其他粒子", "ref": "QM-02"}, {"origin": "原笔记", "original": "每十亿个光子对应几个重子", "problem": "数量级偏大约 10 倍", "fix": "约每 100 亿个光子 6 个重子（每十亿个约 0.6 个）", "ref": "QM-05"}, {"origin": "原笔记", "original": "客观坍缩（如 GRW）……可能和引力有关", "problem": "把 GRW 与引力坍缩混为一谈", "fix": "GRW 与引力无关；与引力相关的是 Diósi–Penrose 模型", "ref": "QM-18"}, {"origin": "原笔记", "original": "电子和正电子湮灭，产生两个各 511 keV 的光子", "problem": "条件不全", "fix": "近静止的自旋单态产生两个光子；自旋三重态正电子素产生三个光子", "ref": "QM-02"}, {"origin": "原笔记", "original": "1928 年狄拉克……最终把它解释为一种电荷相反的新粒子", "problem": "时间线压缩", "fix": "1930 年的空穴理论曾把空穴等同于质子，1931 年才提出反电子，1932 年安德森发现正电子", "ref": "QM-04"}, {"origin": "原笔记", "original": "可观测量对应一个算符（可以理解成矩阵）", "problem": "对位置、动量不严格", "fix": "有限维时是厄米矩阵；位置、动量是无穷维上的无界算符，谱连续", "ref": "QM-15"}, {"origin": "原笔记", "original": "场的数学结构自然要求反粒子存在", "problem": "需要补充", "fix": "对带电场成立；中性粒子可以是自身的反粒子（光子、π⁰）", "ref": "QM-21"}]}</script>
+<script>
+(function () {
+  const D = JSON.parse(document.getElementById('data').textContent), items = D.items;
+  const esc = s => String(s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+  const NS = 'http://www.w3.org/2000/svg', rad = d => d * Math.PI / 180;
+  document.getElementById('m-n').textContent = items.length;
+  document.getElementById('m-c').textContent = D.corrections.length;
+
+  function frame(W, H, m, xd, yd) {
+    const sx = x => m.l + (x - xd[0]) / (xd[1] - xd[0]) * (W - m.l - m.r);
+    const sy = y => H - m.b - (y - yd[0]) / (yd[1] - yd[0]) * (H - m.t - m.b);
+    return { sx, sy, W, H, m };
+  }
+  const path = (pts, f) => pts.map((p, i) => (i ? 'L' : 'M') + f.sx(p[0]).toFixed(1) + ' ' + f.sy(p[1]).toFixed(1)).join('');
+
+  // 1. interference
+  const phi = document.getElementById('phi');
+  function drawInt() {
+    const d = +phi.value, f = frame(640, 250, { l: 48, r: 18, t: 14, b: 40 }, [0, 360], [0, 1.05]);
+    let s = '';
+    [0, 0.25, 0.5, 0.75, 1].forEach(y => s += `<line class="grid" x1="${f.m.l}" x2="${f.W - f.m.r}" y1="${f.sy(y)}" y2="${f.sy(y)}"/><text class="mono" x="${f.m.l - 8}" y="${f.sy(y) + 4}" text-anchor="end">${y}</text>`);
+    [0, 90, 180, 270, 360].forEach(x => s += `<text class="mono" x="${f.sx(x)}" y="${f.H - f.m.b + 18}" text-anchor="middle">${x}°</text>`);
+    s += `<text x="${f.W - f.m.r}" y="${f.H - 4}" text-anchor="end">相位差 Δφ</text><text x="${f.m.l + 4}" y="${f.m.t + 10}">到达该点的概率 P</text>`;
+    const pts = []; for (let x = 0; x <= 360; x += 3) pts.push([x, 0.5 * (1 + Math.cos(rad(x)))]);
+    s += `<path d="${path([[0, .5], [360, .5]], f)}" stroke="var(--cl)" stroke-width="2" stroke-dasharray="6 4" fill="none"/>`;
+    s += `<path d="${path(pts, f)}" stroke="var(--q)" stroke-width="2.5" fill="none"/>`;
+    const p = 0.5 * (1 + Math.cos(rad(d)));
+    s += `<line x1="${f.sx(d)}" x2="${f.sx(d)}" y1="${f.m.t}" y2="${f.H - f.m.b}" stroke="var(--ink)" stroke-dasharray="3 3"/><circle cx="${f.sx(d)}" cy="${f.sy(p)}" r="6" fill="var(--q)" stroke="var(--surface)" stroke-width="2"/>`;
+    document.getElementById('ch-int').innerHTML = `<svg class="c" viewBox="0 0 640 250" role="img" aria-label="干涉概率随相位差变化">${s}</svg>`;
+    document.getElementById('phi-o').textContent = d + '°';
+    document.getElementById('int-r').innerHTML = `<span>振幅和 |½ + ½e^{iΔφ}|² = <b>${p.toFixed(3)}</b></span><span>经典 ¼ + ¼ = <b>0.500</b></span><span>${p < 0.02 ? '<b>暗纹：两条路完全抵消</b>' : p > 0.98 ? '<b>亮纹：两条路完全相长</b>' : ''}</span>`;
+  }
+  phi.addEventListener('input', drawInt); drawInt();
+
+  // 2. spin
+  const st = document.getElementById('st'), ms = document.getElementById('ms');
+  function drawSpin() {
+    const a = +st.value, t = +ms.value, cx = 150, cy = 140, R = 105;
+    const pt = (ang, r) => [cx + r * Math.sin(rad(ang)), cy - r * Math.cos(rad(ang))];
+    const P = 0.5 * (1 + Math.cos(rad(a - t)));
+    const [mx, my] = pt(t, R + 14), [nx, ny] = pt(t + 180, R + 14), [sx, sy] = pt(a, R);
+    let s = `<circle cx="${cx}" cy="${cy}" r="${R}" fill="none" stroke="var(--rule)"/>`;
+    s += `<line x1="${cx}" y1="${cy - R - 6}" x2="${cx}" y2="${cy + R + 6}" stroke="var(--rule)" stroke-dasharray="2 4"/><line x1="${cx - R - 6}" y1="${cy}" x2="${cx + R + 6}" y2="${cy}" stroke="var(--rule)" stroke-dasharray="2 4"/>`;
+    s += `<text x="${cx + 6}" y="${cy - R - 10}">z</text><text x="${cx + R + 10}" y="${cy + 4}">x</text>`;
+    s += `<line x1="${nx}" y1="${ny}" x2="${mx}" y2="${my}" stroke="var(--muted)" stroke-width="3" stroke-linecap="round"/>`;
+    s += `<text class="ink" x="${pt(t, R + 28)[0]}" y="${pt(t, R + 28)[1] + 4}" text-anchor="middle">+</text><text class="ink" x="${pt(t + 180, R + 28)[0]}" y="${pt(t + 180, R + 28)[1] + 4}" text-anchor="middle">−</text>`;
+    s += `<line x1="${cx}" y1="${cy}" x2="${sx}" y2="${sy}" stroke="var(--q)" stroke-width="4" stroke-linecap="round"/><circle cx="${sx}" cy="${sy}" r="6" fill="var(--q)"/>`;
+    document.getElementById('ch-spin').innerHTML = `<svg class="c" style="min-width:0;max-width:320px" viewBox="0 0 300 290" role="img" aria-label="自旋状态与测量方向">${s}</svg>`;
+    document.getElementById('st-o').textContent = a + '°'; document.getElementById('ms-o').textContent = t + '°';
+    document.getElementById('spin-bars').innerHTML = `<div class="r"><span>得到 +</span><span class="track"><span class="fill" style="display:block;width:${100 * P}%"></span></span><span class="v">${P.toFixed(3)}</span></div><div class="r"><span>得到 −</span><span class="track"><span class="fill dn" style="display:block;width:${100 * (1 - P)}%"></span></span><span class="v">${(1 - P).toFixed(3)}</span></div>`;
+    const d = ((a - t) % 360 + 360) % 360;
+    document.getElementById('spin-r').innerHTML = `<span>夹角 <b>${d}°</b></span><span>P(+) = ½(1 + cos ${d}°) = <b>${P.toFixed(3)}</b></span><span>${a === 90 && t === 0 ? '等权叠加沿 z 测：50/50' : a === 90 && t === 90 ? '等权叠加沿 x 测：必得 +' : ''}</span>`;
+  }
+  st.addEventListener('input', drawSpin); ms.addEventListener('input', drawSpin); drawSpin();
+
+  // 3. bell
+  (function () {
+    const f = frame(640, 250, { l: 48, r: 18, t: 14, b: 40 }, [0, 180], [-1.08, 1.08]);
+    let s = '';
+    [-1, -0.5, 0, 0.5, 1].forEach(y => s += `<line class="grid" x1="${f.m.l}" x2="${f.W - f.m.r}" y1="${f.sy(y)}" y2="${f.sy(y)}"/><text class="mono" x="${f.m.l - 8}" y="${f.sy(y) + 4}" text-anchor="end">${y}</text>`);
+    [0, 45, 90, 135, 180].forEach(x => s += `<text class="mono" x="${f.sx(x)}" y="${f.H - f.m.b + 18}" text-anchor="middle">${x}°</text>`);
+    s += `<text x="${f.W - f.m.r}" y="${f.H - 4}" text-anchor="end">两个测量方向的夹角 Δ</text><text x="${f.m.l + 4}" y="${f.m.t + 10}">相关系数 E</text>`;
+    const q = []; for (let x = 0; x <= 180; x += 2) q.push([x, -Math.cos(rad(x))]);
+    s += `<path d="${path([[0, -1], [180, 1]], f)}" stroke="var(--cl)" stroke-width="2" stroke-dasharray="6 4" fill="none"/>`;
+    s += `<path d="${path(q, f)}" stroke="var(--q)" stroke-width="2.5" fill="none"/>`;
+    [45, 135].forEach(x => { const yq = -Math.cos(rad(x)), yl = -1 + 2 * x / 180;
+      s += `<line x1="${f.sx(x)}" x2="${f.sx(x)}" y1="${f.sy(yq)}" y2="${f.sy(yl)}" stroke="var(--ink)" stroke-width="1.5"/><circle cx="${f.sx(x)}" cy="${f.sy(yq)}" r="5" fill="var(--q)"/>`;
+      s += `<text class="ink mono" x="${f.sx(x) + 8}" y="${(f.sy(yq) + f.sy(yl)) / 2 + 4}">差 ${Math.abs(yq - yl).toFixed(3)}</text>`; });
+    document.getElementById('ch-bell').innerHTML = `<svg class="c" viewBox="0 0 640 250" role="img" aria-label="贝尔相关曲线">${s}</svg>`;
+  })();
+
+  // corpus
+  const types = ['概念', '纠错', '计算', '事实', '前沿', '有争议', '学习'], creds = ['已确立', '前沿', '推测', '建议'], VS = ['已核对', '常识', '待核对'];
+  const CC = { '已确立': 'var(--est)', '前沿': 'var(--q)', '推测': 'var(--spec)', '建议': 'var(--muted)' }, VC = { '已核对': 'var(--est)', '常识': 'var(--common)', '待核对': 'var(--cl)' };
+  const rows = (id, list, count, color) => { const mx = Math.max(...list.map(count), 1);
+    document.getElementById(id).innerHTML = list.map(k => { const c = count(k); return `<div class="r"><span>${k}</span><span class="track"><span class="fill" style="width:${100 * c / mx}%;background:${color(k)}"></span></span><span class="v">${c}</span></div>`; }).join(''); };
+  rows('p-type', types, k => items.filter(i => i.type === k).length, () => 'var(--q)');
+  rows('p-cred', creds, k => items.filter(i => i.credibility.includes(k)).length, k => CC[k]);
+  rows('p-ver', VS, k => items.reduce((a, i) => a + i.key_facts.filter(f => f.status === k).length, 0), k => VC[k]);
+
+  const state = { q: '', type: new Set(), cred: new Set(), diff: new Set(), intu: false, chk: false };
+  function chips(id, opts, set, lab) {
+    const host = document.getElementById(id);
+    host.innerHTML = opts.map(o => `<button type="button" class="fb" aria-pressed="false" data-v="${o}">${lab ? lab(o) : o}</button>`).join(' ');
+    host.querySelectorAll('button').forEach(b => b.addEventListener('click', () => { const v = isNaN(+b.dataset.v) ? b.dataset.v : +b.dataset.v; set.has(v) ? set.delete(v) : set.add(v); b.setAttribute('aria-pressed', set.has(v)); render(); }));
+  }
+  chips('f-type', types.filter(t => items.some(i => i.type === t)), state.type);
+  chips('f-cred', creds, state.cred);
+  chips('f-diff', [1, 2, 3, 4].filter(d => items.some(i => i.difficulty === d)), state.diff, d => '难度 ' + d);
+  document.getElementById('f-other').innerHTML = `<button type="button" class="fb" aria-pressed="false" id="f-intu">来自用户直觉</button> <button type="button" class="fb" aria-pressed="false" id="f-chk">有验算</button>`;
+  [['f-intu', 'intu'], ['f-chk', 'chk']].forEach(([id, k]) => document.getElementById(id).addEventListener('click', e => { state[k] = !state[k]; e.currentTarget.setAttribute('aria-pressed', state[k]); render(); }));
+  document.getElementById('q').addEventListener('input', e => { state.q = e.target.value.trim().toLowerCase(); render(); });
+  document.getElementById('open-all').addEventListener('click', () => document.querySelectorAll('#list details').forEach(d => d.open = true));
+  document.getElementById('close-all').addEventListener('click', () => document.querySelectorAll('#list details').forEach(d => d.open = false));
+
+  function card(it, open) {
+    const pips = [1, 2, 3, 4, 5].map(d => `<i class="${d <= it.difficulty ? 'on' : ''}"></i>`).join('');
+    const facts = it.key_facts.length ? `<div class="blk"><h4>关键事实</h4><ul class="plain">${it.key_facts.map(f => `<li>${esc(f.text)} <span class="vs ${f.status}">${f.status}</span> <span class="src">来源：${f.url ? `<a href="${esc(f.url)}" target="_blank" rel="noopener">${esc(f.source)}</a>` : esc(f.source)}</span></li>`).join('')}</ul></div>` : '';
+    const errs = it.common_errors.length ? `<div class="blk err"><h4>常见错误</h4><ul class="plain">${it.common_errors.map(e => `<li>${esc(e)}</li>`).join('')}</ul></div>` : '';
+    const chk = it.check ? `<div class="blk"><h4>验算</h4><div class="chk">${esc(it.check)}</div></div>` : '';
+    return `<article class="card" id="${it.id}">
+      <div class="top"><span class="id">${it.id}</span><h3>${esc(it.title)}</h3><span class="pips" aria-label="难度 ${it.difficulty}">难度${pips}</span></div>
+      <div class="tags"><span class="ty">${it.type}</span>${it.credibility.map(c => `<span class="cr ${c}">${c}</span>`).join('')}${it.domains.map(d => `<span class="tag">${esc(d)}</span>`).join('')}</div>
+      ${it.user_intuition ? `<div class="intu"><b>用户原始说法：</b>${esc(it.user_intuition)}　<b>判断：</b>${esc(it.verdict)}</div>` : ''}
+      <div class="q">${esc(it.question)}</div>
+      <div class="ans"><b>答案</b>${esc(it.answer)}</div>
+      <details ${open ? 'open' : ''}><summary>推理链 ${it.reasoning_chain.length} 步 · 关键事实 ${it.key_facts.length} 条 · 常见错误 ${it.common_errors.length} 条${it.check ? ' · 验算' : ''}</summary>
+        <div class="blk"><h4>推理链</h4><ol class="chain">${it.reasoning_chain.map(s => `<li><div>${esc(s)}</div></li>`).join('')}</ol></div>${facts}${errs}${chk}
+      </details></article>`;
+  }
+  let first = true;
+  function render() {
+    const hits = items.filter(it => {
+      if (state.type.size && !state.type.has(it.type)) return false;
+      if (state.cred.size && !it.credibility.some(c => state.cred.has(c))) return false;
+      if (state.diff.size && !state.diff.has(it.difficulty)) return false;
+      if (state.intu && !it.user_intuition) return false;
+      if (state.chk && !it.check) return false;
+      if (state.q && !JSON.stringify(it).toLowerCase().includes(state.q)) return false;
+      return true;
+    });
+    document.getElementById('list').innerHTML = hits.length ? hits.map((it, i) => card(it, first && i === 0)).join('') : '<div class="empty">没有符合条件的条目。试试清除筛选或换一个关键词。</div>';
+    document.getElementById('count').textContent = `显示 ${hits.length} / ${items.length} 条`;
+    first = false;
+  }
+  render();
+  document.getElementById('corr').innerHTML = D.corrections.map(c => `<tr><td class="nw">${esc(c.origin)}</td><td>${esc(c.original)}</td><td>${esc(c.problem)}</td><td>${esc(c.fix)}</td><td class="mono"><a href="#${c.ref}">${c.ref}</a></td></tr>`).join('');
+  const refs = []; items.forEach(i => i.key_facts.forEach(f => { if (f.url) refs.push(`<li>${esc(f.text)}（${i.id}）— <a href="${esc(f.url)}" target="_blank" rel="noopener">${esc(f.source)}</a></li>`); }));
+  document.getElementById('refs').innerHTML = refs.join('');
+})();
+</script>
