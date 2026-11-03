@@ -168,10 +168,17 @@ ol.refs li { padding-left: 4px; }
 .small { font-size: 13.5px; color: var(--muted); font-family: var(--f-display); }
 footer { margin-top: 48px; font-size: 13px; color: var(--muted); font-family: var(--f-display); }
 @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+
+.langsw { position: fixed; z-index: 20; top: calc(env(safe-area-inset-top, 0px) + 12px); right: max(12px, env(safe-area-inset-right, 0px)); display: inline-flex; border: 1px solid var(--shrink); border-radius: 999px; overflow: hidden; font-family: var(--f-display); font-size: 13px; background: var(--surface); box-shadow: 0 1px 4px rgba(0,0,0,.08); }
+.langsw button { font: inherit; padding: 4px 14px; border: 0; background: transparent; color: var(--shrink); cursor: pointer; }
+.langsw button[aria-pressed="true"] { background: var(--shrink); color: var(--surface); }
+:root:not([data-lang="en"]) .en, :root[data-lang="en"] .zh { display: none !important; }
 </style>
 
+<div class="langsw" role="group" aria-label="Language / 语言"><button type="button" data-set-lang="zh" aria-pressed="true">中文</button><button type="button" data-set-lang="en" aria-pressed="false">English</button></div>
+
 <div class="layout">
-<nav class="toc" aria-label="目录">
+<nav class="toc zh" aria-label="目录">
   <div class="lbl">目录</div>
   <ol>
     <li><a href="#abstract">摘要</a></li>
@@ -190,7 +197,7 @@ footer { margin-top: 48px; font-size: 13px; color: var(--muted); font-family: va
   </ol>
 </nav>
 
-<main>
+<main class="zh">
 <header class="hero">
   <div class="eyebrow">计算笔记 · v0.1 草稿 · MSC 2020: 11B37, 60G50, 37A05</div>
   <h1>Syracuse 映射中的开环收缩</h1>
@@ -653,6 +660,462 @@ for r in range(10):
 
 <footer>草稿 v0.1。欢迎指正和提供已有文献线索。</footer>
 </main>
+<nav class="toc en" aria-label="Contents">
+  <div class="lbl">Contents</div>
+  <ol>
+    <li><a href="#abstract-en">Abstract</a></li>
+    <li><a href="#s1-en">1 The block coordinate</a></li>
+    <li><a href="#s2-en">2 The valuation law</a></li>
+    <li><a href="#s3-en">3 Arithmetic and geometric means</a></li>
+    <li><a href="#s4-en">4 The Lundberg coefficient</a></li>
+    <li><a href="#s5-en">5 Measurements</a></li>
+    <li><a href="#s6-en">6 No negative feedback</a></li>
+    <li><a href="#s7-en">7 The bit budget</a></li>
+    <li><a href="#s8-en">8 Relation to known work</a></li>
+    <li><a href="#s9-en">9 What would move this forward</a></li>
+    <li><a href="#explore-en">Orbit explorer</a></li>
+    <li><a href="#appendix-en">Appendix: reproduction</a></li>
+    <li><a href="#refs-en">References</a></li>
+  </ol>
+</nav>
+
+<main class="en" lang="en">
+<header class="hero">
+  <div class="eyebrow">Computational note · v0.1 draft · MSC 2020: 11B37, 60G50, 37A05</div>
+  <h1>Open-Loop Contraction in the Syracuse Map</h1>
+  <p class="en-title">Multiplier Statistics, an Exact Ruin Coefficient, and the Bit-Budget Gap</p>
+  <div class="byline"><span>Author: Ruolin</span><span>2026-08-28</span><span>Keywords: Collatz conjecture · 2-adic valuation · Lundberg coefficient · random walk with negative drift</span></div>
+  <div class="status"><strong>Status note.</strong> This is a computational note, not a theorem paper. Section 8 separates results that are certainly classical from those the author has not been able to locate in the literature. Items marked <span class="flag">UNVERIFIED</span> require a systematic search of the Collatz bibliography before any priority claim is made. The author welcomes correction. The note text below is the author’s original English; the glossary panels, figures and review notes were added for this page.</div>
+</header>
+
+<div class="keynums">
+  <div><span class="k">E[μ] = 1</span><span class="d">The block multiplier’s arithmetic mean is exactly 1: critical in first moment</span></div>
+  <div><span class="k">GM = 3/4</span><span class="d">Its geometric mean is exactly 3/4: strictly contracting in log</span></div>
+  <div><span class="k">θ* = 1</span><span class="d">The Lundberg adjustment coefficient is exactly 1, giving a 1/y ruin bound</span></div>
+  <div><span class="k">2.41×</span><span class="d">Blocks needed to reach 1, relative to the bits in the initial value</span></div>
+</div>
+
+<section id="abstract-en">
+  <h2>Abstract</h2>
+  <p>We study the Syracuse (odd-block) reduction of the Collatz map, in which each odd integer $n$ is sent to $(3n+1)/2^{v}$ with $v = \nu_2(3n+1)$. Working in this coordinate we record four facts about the block multiplier $\mu = 3 \cdot 2^{-v}$.</p>
+  <p><b>First</b>, the arithmetic mean of $\mu$ is <em>exactly</em> $1$ while its geometric mean is <em>exactly</em> $3/4$; the process is therefore critical in first moment and strictly contracting in log, which explains the failure of moment methods.</p>
+  <p><b>Second</b>, the Lundberg adjustment coefficient of the associated random walk is <em>exactly</em> $\theta^{\ast}=1$, arising as the nontrivial root of $3^{\theta} = 2\cdot 2^{\theta} - 1$. Under the standard independence heuristic this yields the clean bound $\Pr[\max_k n_k / n_0 \ge y] \le 1/y$.</p>
+  <p><b>Third</b>, and empirically: contraction is carried by a small minority of blocks — blocks with $v \ge 4$ constitute $12.54\%$ of all blocks but supply $60.4\%$ of the total downward drift.</p>
+  <p><b>Fourth</b>, and this is the point of the note: <strong>the system exhibits no negative feedback.</strong> Conditioned on a run of $r$ consecutive non-contracting ($v=1$) blocks, the expected valuation of the block that terminates the run is $3.00$ for every $r$ from $0$ to $9$, matching $\mathbb{E}[v \mid v \ge 2] = 3$ exactly and carrying no additional information. The valuation required to cancel such a run grows linearly in $r$. Contraction is therefore <em>open-loop</em>: it is guaranteed only in long-run average, never locally.</p>
+  <p>We conclude by quantifying the resulting obstruction as a <strong>bit budget</strong>: reaching $1$ requires approximately $2.41\log_2 n$ blocks, while Terras’ theorem supplies independence guarantees for only $\log_2 n$ bits. The shortfall is a factor of $2.41$, not an $\varepsilon$. We state the missing ingredient as an explicit hypothesis (the <em>bit-forcing coupling lemma</em>).</p>
+</section>
+
+<section id="s1-en">
+  <h2><span class="no">§1</span>Setup: the block coordinate</h2>
+  <p>Let $n$ be an odd positive integer. Define the Syracuse map</p>
+  <div class="m-disp">$$T(n) = \frac{3n+1}{2^{v(n)}}, \qquad v(n) = \nu_2(3n+1) \ge 1 .$$</div>
+  <p>$T$ sends odd integers to odd integers. The Collatz conjecture is equivalent to the statement that every $T$-orbit reaches $1$.</p>
+  <p>We call one application of $T$ a <b>block</b>. The <b>block multiplier</b> is</p>
+  <div class="m-disp">$$\mu(n) = \frac{T(n)}{n} \approx 3\cdot 2^{-v(n)},$$</div>
+  <p>with the approximation exact up to the $O(1/n)$ contribution of the $+1$. In $\log_2$ coordinates the per-block increment is</p>
+  <div class="m-disp">$$S = \log_2 \mu = \log_2 3 - v \approx 1.5849625 - v . \tag{1.1}$$</div>
+  <p>The block coordinate is not new; it is the standard reduction and appears in recent formalisation work (see §8).</p>
+  <h3>Example: one block in binary</h3>
+  <div class="bits">
+    n = 13 = 1101₂<br>
+    3n+1 = 40 = 101<span class="z">000</span>₂ &nbsp;→ 3 trailing zeros, v = 3<br>
+    T(13) = 40 / 2³ = 5 &nbsp;&nbsp;μ = 5/13 ≈ 0.385 &nbsp;(approximation 3·2⁻³ = 0.375)
+  </div>
+  <div class="prop"><span class="t">Remark 1.1 (what the $+1$ does).</span> Multiplication by $3$ is a unit in $\mathbb{Z}_2$ and acts bijectively on odd residues mod $2^k$. It therefore contributes no irreversibility. The entire non-commutativity of the block monoid — and hence the arrow of time in the orbit — originates in the inhomogeneous term $+1$, which is the unique source of carry propagation into high-order bits.</div>
+  <aside class="gloss" aria-label="§1 notation and techniques">
+    <h4>Notation and techniques</h4>
+    <dl>
+      <div class="row"><dt><span class="tag sym">notation</span>$\nu_2(m)$</dt><dd>2-adic valuation: the number of factors of $2$ in $m$, i.e. the number of trailing zeros in binary. For example $\nu_2(40)=3$.</dd></div>
+      <div class="row"><dt><span class="tag sym">notation</span>$T(n)$</dt><dd>The Syracuse map. It compresses Collatz’s “times 3 plus 1, then halve repeatedly” into one step, jumping from one odd number straight to the next.</dd></div>
+      <div class="row"><dt><span class="tag sym">notation</span>$\mu,\ S$</dt><dd>$\mu$ is the scale factor of one step; $S=\log_2\mu$ is its increment on a log scale. $S&gt;0$ means growth, $S&lt;0$ shrinkage. Only $v=1$ gives $S\approx+0.585$; every other value is negative.</dd></div>
+      <div class="row"><dt><span class="tag tech">technique</span>Logs turn products into sums</dt><dd>An orbit’s size is a product of many multipliers, $n_k = n_0\prod\mu_i$. Taking $\log_2$ turns it into a sum $\sum S_i$, so tools for sums apply: random walks, the law of large numbers, ruin theory.</dd></div>
+      <div class="row"><dt><span class="tag sym">notation</span>$O(1/n)$</dt><dd>Big-O: the error is at most a constant times $1/n$. Here $\mu = 3\cdot2^{-v}(1+\tfrac{1}{3n})$, negligible for large $n$.</dd></div>
+      <div class="row"><dt><span class="tag sym">notation</span>$\mathbb{Z}_2$, unit</dt><dd>The ring of 2-adic integers, think “binary numbers extending infinitely to the left”. A unit is an element with a multiplicative inverse; $3$ is odd, so it is invertible in $\mathbb{Z}_2$.</dd></div>
+      <div class="row"><dt><span class="tag tech">technique</span>Bijection mod $2^k$</dt><dd>Because $3$ is invertible, multiplying by $3$ just permutes the odd residues mod $2^k$ and loses no information. So any “information loss” can only come from carries caused by the $+1$.</dd></div>
+      <div class="row"><dt><span class="tag sym">notation</span>Monoid, non-commutative</dt><dd>The affine map $x\mapsto 3x+1$ and division by $2^v$ form a monoid under composition (associative, with an identity, but not necessarily invertible). The order of composition changes the result: that is “non-commutative”.</dd></div>
+    </dl>
+  </aside>
+</section>
+
+<section id="s2-en">
+  <h2><span class="no">§2</span>The valuation law (classical)</h2>
+  <div class="prop"><span class="t">Proposition 2.1.</span> <em>Over odd $n$ in natural density,</em>
+    <div class="m-disp">$$\Pr[v \ge k] = 2^{-(k-1)}, \qquad \Pr[v = k] = 2^{-k}, \qquad k \ge 1.$$</div></div>
+  <p class="proof"><span class="t">Proof.</span> $v \ge k$ requires $3n+1 \equiv 0 \pmod{2^k}$, i.e. $n \equiv -3^{-1} \pmod{2^k}$. Since $3$ is invertible mod $2^k$ the solution is unique, and it is odd (if $n$ were even, $3n+1$ would be odd). Among the $2^{k-1}$ odd residues mod $2^k$ exactly one qualifies. $\square$</p>
+  <div class="tbl"><table>
+    <thead><tr><th>$v$</th><th>holds iff</th><th>frequency</th><th>multiplier</th></tr></thead>
+    <tbody>
+      <tr><td>1</td><td>$n\equiv 3 \pmod 4$</td><td>1/2</td><td class="g">×1.5 (growth)</td></tr>
+      <tr><td>2</td><td>$n\equiv 1 \pmod 8$</td><td>1/4</td><td class="s">×0.75</td></tr>
+      <tr><td>3</td><td>$n\equiv 13 \pmod{16}$</td><td>1/8</td><td class="s">×0.375</td></tr>
+      <tr><td>4</td><td>$n\equiv 5 \pmod{32}$</td><td>1/16</td><td class="s">×0.1875</td></tr>
+    </tbody>
+  </table></div>
+  <figure>
+    <div class="legend"><span><i style="background:var(--grow)"></i>v = 1: growth</span><span><i style="background:var(--shrink)"></i>v ≥ 2: contraction</span><span><i style="background:var(--ink)"></i>◆ measured frequency (§5.1)</span></div>
+    <div class="chart" id="ch-val-en"></div>
+    <figcaption>Figure 1. The valuation law $\Pr[v=k]=2^{-k}$ (bars) against measured frequencies over 696,730 blocks (diamonds). Each bar is labelled with the multiplier for that valuation.</figcaption>
+  </figure>
+  <p><b>Moments.</b> From $\sum_{k\ge1} kx^k = x/(1-x)^2$ and $\sum_{k\ge1}k^2x^k = x(1+x)/(1-x)^3$ at $x = 1/2$:</p>
+  <div class="m-disp">$$\mathbb{E}[v] = 2, \qquad \mathbb{E}[v^2] = 6, \qquad \operatorname{Var}(v) = 2 . \tag{2.1}$$</div>
+  <p>Hence exactly one halving per block is forced and exactly one is “extra” on average, and the odd-step to even-step ratio along a full Collatz orbit is $1:2$.</p>
+  <p>Proposition 2.1 and (2.1) are due to Terras (1976) and Everett (1977) and are stated here only to fix constants. Terras’ stronger theorem — that the first $k$ parity outcomes are determined by $n \bmod 2^k$, and that as $n$ ranges over residues mod $2^k$ each of the $2^k$ patterns occurs exactly once — is used in §6.</p>
+  <aside class="gloss" aria-label="§2 notation and techniques">
+    <h4>Notation and techniques</h4>
+    <dl>
+      <div class="row"><dt><span class="tag sym">notation</span>$\Pr[\cdot]$, natural density</dt><dd>“Probability” here means natural density: the proportion of odd numbers in $1..N$ satisfying the condition, in the limit $N\to\infty$. The integers are not random; the randomness is uniform sampling of the starting point.</dd></div>
+      <div class="row"><dt><span class="tag sym">notation</span>$a\equiv b \pmod m$</dt><dd>Congruence: $m$ divides $a-b$. $n \bmod 2^k$ is the lowest $k$ bits of $n$ in binary.</dd></div>
+      <div class="row"><dt><span class="tag sym">notation</span>$3^{-1} \pmod{2^k}$</dt><dd>Modular inverse: the $x$ with $3x\equiv 1$. Mod $16$, $3^{-1}=11$, so $-3^{-1}\equiv 5$, which is exactly the $v\ge4$ condition $n\equiv 5\pmod{16}$.</dd></div>
+      <div class="row"><dt><span class="tag tech">technique</span>Counting residue classes</dt><dd>Turn “probability” into “how many of the $2^{k-1}$ odd residue classes qualify”. A unique solution gives $1/2^{k-1}$; differencing gives $\Pr[v=k]=2^{-k}$, a geometric distribution.</dd></div>
+      <div class="row"><dt><span class="tag tech">technique</span>Differentiating a geometric series</dt><dd>Differentiate $\sum x^k = \frac{1}{1-x}$ and multiply by $x$ to get $\sum kx^k$; repeat for $\sum k^2x^k$. This is the standard way to get the moments of a geometric distribution.</dd></div>
+      <div class="row"><dt><span class="tag sym">notation</span>$\mathbb{E}$, $\operatorname{Var}$</dt><dd>Expectation and variance; $\operatorname{Var}(v)=\mathbb{E}[v^2]-(\mathbb{E}[v])^2 = 6-4 = 2$.</dd></div>
+      <div class="row"><dt><span class="tag tech">technique</span>Terras’ equidistribution theorem</dt><dd>The parity pattern of the first $k$ steps is in one-to-one correspondence with the lowest $k$ bits of $n$. This makes “the first $k$ steps behave like $k$ fair coin flips” rigorous, and the bit-budget argument rests on it.</dd></div>
+    </dl>
+  </aside>
+</section>
+
+<section id="s3-en">
+  <h2><span class="no">§3</span>Arithmetic mean exactly one, geometric mean exactly three quarters</h2>
+  <div class="prop"><span class="t">Proposition 3.1.</span> <em>Under the law of Proposition 2.1,</em>
+    <div class="m-disp">$$\mathbb{E}[\mu] = 3\sum_{k\ge1} 2^{-k}\cdot 2^{-k} = 3\sum_{k\ge1}4^{-k} = 3\cdot\tfrac13 = 1 ,$$</div>
+    <em>while</em>
+    <div class="m-disp">$$\exp_2\!\big(\mathbb{E}[\log_2\mu]\big) = 2^{\log_2 3 - 2} = \tfrac34 .$$</div></div>
+  <p>The arithmetic mean is not approximately $1$; it is $1$. This is the structural reason first-moment and moment-generating methods see the Syracuse map as exactly critical while the orbit itself, being a product of many draws, follows the geometric mean and contracts.</p>
+  <p>We have not found this stated as a proposition, though it is an immediate consequence of Proposition 2.1 and is likely folklore. <span class="flag">UNVERIFIED</span></p>
+  <p>The per-block drift is</p>
+  <div class="m-disp">$$\mathbb{E}[S] = \log_2 3 - 2 = -0.4150375 . \tag{3.1}$$</div>
+  <figure>
+    <div class="legend"><span><i style="background:var(--muted)"></i>24 sample paths under the i.i.d. model</span><span><i style="background:var(--shrink)"></i>geometric-mean trend −0.415·k</span><span><i style="background:var(--grow)"></i>arithmetic mean E[∏μ] = 1</span></div>
+    <div class="chart" id="ch-paths-en"></div>
+    <figcaption>Figure 2. One multiplier distribution, two kinds of “average”. The expected product stays at 1 (horizontal line), but typical paths fall at 0.415 bits per step. The expectation is held up by a few paths that shoot very high.</figcaption>
+  </figure>
+  <div class="prop"><span class="t">Remark 3.2 (why 3).</span> If the multiplier base were $b$ instead of $3$, the drift would be $\log_2 b - 2$, negative iff $b &lt; 4$. Among odd bases only $b=3$ lies below the threshold; $5n+1$ has $\log_2 5 = 2.32 &gt; 2$ and indeed possesses divergent orbits. The Collatz problem sits in a gap of width $0.415$.</div>
+  <figure>
+    <div class="chart" id="ch-base-en"></div>
+    <figcaption>Figure 3. Per-block drift $\log_2 b-2$ for maps of the form $bn+1$. Left of zero contracts, right of zero expands; $b=3$ is only 0.415 from zero.</figcaption>
+  </figure>
+  <aside class="gloss" aria-label="§3 notation and techniques">
+    <h4>Notation and techniques</h4>
+    <dl>
+      <div class="row"><dt><span class="tag sym">notation</span>$\exp_2(x)$</dt><dd>That is, $2^x$. $\exp_2(\mathbb{E}[\log_2\mu])$ is the geometric mean of $\mu$.</dd></div>
+      <div class="row"><dt><span class="tag tech">technique</span>Jensen’s inequality</dt><dd>$\log$ is concave, so $\mathbb{E}[\log\mu]\le\log\mathbb{E}[\mu]$: the geometric mean never exceeds the arithmetic mean. Here the gap is $3/4$ versus $1$, and that gap is exactly where contraction comes from.</dd></div>
+      <div class="row"><dt><span class="tag tech">technique</span>Substituting into a geometric series</dt><dd>$\mathbb{E}[\mu]=\sum\Pr[v=k]\cdot 3\cdot2^{-k} = 3\sum 4^{-k}$, a series with ratio $1/4$ summing to $1/3$.</dd></div>
+      <div class="row"><dt><span class="tag sym">term</span>Drift, criticality</dt><dd>Drift is the expected increment per step of a random walk. “Critical in first moment” means $\mathbb{E}[n_{k+1}/n_k]=1$: the expectation neither grows nor shrinks, so looking at expectations alone cannot show contraction.</dd></div>
+      <div class="row"><dt><span class="tag tech">technique</span>Typical versus average behaviour</dt><dd>The expectation of a product is dominated by rare large values; the typical value is governed by the expectation of the log (the law of large numbers acting on $\sum S_i$). For multiplicative processes, average on the log scale.</dd></div>
+      <div class="row"><dt><span class="tag note">review note</span>Divergence of $5n+1$</dt><dd>That $5n+1$ has divergent orbits is a widely believed conjecture (the orbit of $7$, for example, looks unbounded numerically) but is not proven. “Indeed possesses” should read “is believed to possess”. Also $b=1$ is below the threshold, so “only $b=3$” should be restricted to $b&gt;1$.</dd></div>
+    </dl>
+  </aside>
+</section>
+
+<section id="s4-en">
+  <h2><span class="no">§4</span>The Lundberg coefficient is exactly one</h2>
+  <p>Model $\{S_i\}$ as i.i.d. with the law of (1.1) — this is the standard heuristic, whose failure is precisely the subject of §6–7.</p>
+  <div class="prop"><span class="t">Proposition 4.1.</span> <em>The adjustment (Lundberg) coefficient of the walk $\sum S_i$, defined as the positive root $\theta^{\ast}$ of $\mathbb{E}[2^{\theta S}] = 1$, equals exactly $1$.</em></div>
+  <p class="proof"><span class="t">Proof.</span> $\mathbb{E}[2^{\theta S}] = 3^{\theta}\,\mathbb{E}[2^{-\theta v}]$ and</p>
+  <div class="m-disp">$$\mathbb{E}[2^{-\theta v}] = \sum_{k\ge1}2^{-k}2^{-\theta k} = \frac{2^{-(1+\theta)}}{1-2^{-(1+\theta)}} = \frac{1}{2^{1+\theta}-1}.$$</div>
+  <p class="proof">The equation $\mathbb{E}[2^{\theta S}]=1$ becomes</p>
+  <div class="m-disp">$$3^{\theta} = 2^{1+\theta} - 1 = 2\cdot 2^{\theta} - 1 . \tag{4.1}$$</div>
+  <p class="proof">$\theta=0$ is the trivial root. Substituting $\theta=1$ gives $3 = 4-1$. $\square$</p>
+  <figure>
+    <div class="chart" id="ch-phi-en"></div>
+    <figcaption>Figure 4. $\varphi(\theta)=\mathbb{E}[2^{\theta S}] = 3^\theta/(2^{1+\theta}-1)$. It is convex, has slope equal to the drift $-0.415$ (times $\ln 2$) at $\theta=0$, and returns to $1$ at $\theta=1$.</figcaption>
+  </figure>
+  <div class="prop"><span class="t">Corollary 4.2 (Cramér–Lundberg bound).</span> Heuristically,
+    <div class="m-disp">$$\Pr\Big[\max_k \frac{n_k}{n_0} \ge y\Big] \;\le\; \frac1y . \tag{4.2}$$</div></div>
+  <p>Numerically (§5) the measured probability converges to $\approx 0.43/y$, consistent with a Cramér constant near $0.43$.</p>
+  <p>The exactness of $\theta^{\ast}=1$ appears to be a small curiosity worth recording; ruin-theoretic treatments of Collatz exist and this may be known. <span class="flag">UNVERIFIED</span></p>
+  <aside class="gloss" aria-label="§4 notation and techniques">
+    <h4>Notation and techniques</h4>
+    <dl>
+      <div class="row"><dt><span class="tag sym">term</span>i.i.d.</dt><dd>Independent and identically distributed. The assumption is that neighbouring blocks’ $v$ values do not influence each other and all follow the geometric law. For real integer orbits this is a heuristic, not a theorem.</dd></div>
+      <div class="row"><dt><span class="tag sym">notation</span>$\theta^\ast$</dt><dd>The adjustment coefficient, the central constant of insurance ruin theory: the nonzero root of $\mathbb{E}[e^{\theta X}]=1$. Here the base $e$ is replaced by $2$.</dd></div>
+      <div class="row"><dt><span class="tag tech">technique</span>Moment-generating function</dt><dd>$\mathbb{E}[2^{\theta S}]$ is the (base-2) moment-generating function of $S$. It is convex and equals $1$ at $0$; with negative drift it first dips and then rises, so it must equal $1$ again at some positive $\theta$.</dd></div>
+      <div class="row"><dt><span class="tag tech">technique</span>The same fact as §3</dt><dd>At $\theta=1$, $2^{\theta S}=2^S=\mu$, so $\mathbb{E}[2^{S}]=1$ is exactly Proposition 3.1’s $\mathbb{E}[\mu]=1$. $\theta^\ast=1$ and “the arithmetic mean is exactly 1” are two readings of one equation.</dd></div>
+      <div class="row"><dt><span class="tag tech">technique</span>Martingales and the maximal inequality</dt><dd>Because $\mathbb{E}[\mu]=1$, $M_k = n_k/n_0$ is a nonnegative martingale under the i.i.d. model. Ville’s (or Doob’s) maximal inequality gives $\Pr[\sup_k M_k\ge y]\le \mathbb{E}[M_0]/y = 1/y$, which is (4.2).</dd></div>
+      <div class="row"><dt><span class="tag sym">term</span>Cramér constant</dt><dd>The constant $C\le1$ in the exact asymptotics $\Pr[\cdot]\sim C/y$. The bound $1/y$ is not tight because the walk overshoots the threshold when it crosses.</dd></div>
+    </dl>
+  </aside>
+</section>
+
+<section id="s5-en">
+  <h2><span class="no">§5</span>Measurements</h2>
+  <p>All measurements use the <b>Terras stopping convention</b>: each trajectory is run only until it first drops below its starting value. This is essential. Running trajectories to $1$ introduces severe confluence bias, since every trajectory shares the terminal segment $5 \to 16 \to 1$; in a run of $149{,}999$ full trajectories the measured frequency of $v=4$ was $0.0867$ against a theoretical $0.0625$, and the excess ($\approx 1.52\times10^5$) matches the trajectory count almost exactly.</p>
+  <p>Sample: all odd $3 \le n &lt; 400{,}001$; $200{,}000$ trajectories, $696{,}730$ blocks.</p>
+  <h3>5.1 Valuation law</h3>
+  <div class="tbl"><table>
+    <thead><tr><th>$v$</th><th>measured</th><th>theory $2^{-k}$</th><th>ratio</th></tr></thead>
+    <tbody>
+      <tr><td>1</td><td>0.499941</td><td>0.500000</td><td>0.9999</td></tr>
+      <tr><td>2</td><td>0.249729</td><td>0.250000</td><td>0.9989</td></tr>
+      <tr><td>3</td><td>0.124957</td><td>0.125000</td><td>0.9997</td></tr>
+      <tr><td>4</td><td>0.062604</td><td>0.062500</td><td>1.0017</td></tr>
+      <tr><td>5</td><td>0.031358</td><td>0.031250</td><td>1.0035</td></tr>
+    </tbody>
+  </table></div>
+  <p>$\mathbb{E}[v] = 2.001230$ (theory $2$); $\operatorname{Var}(v) = 2.003958$ (theory $2$); $\mathbb{E}[\mu] = 0.999728$ (theory $1$); $\mathbb{E}[S] = -0.416268$ (theory $-0.415037$).</p>
+  <p>Maximal runs of consecutive $v=1$ are geometric to four places (measured $0.500109$, $0.249986$, $0.124487$, $0.062155$ for lengths $1,2,3,4$), mean $2.000184$, longest observed $17$ — consistent with $\log_2(\text{number of runs}) \approx 17.4$.</p>
+  <h3>5.2 Maximum excursion versus the ruin bound</h3>
+  <div class="tbl"><table>
+    <thead><tr><th>$y$</th><th>measured $\Pr$</th><th>bound $1/y$</th><th>ratio</th></tr></thead>
+    <tbody>
+      <tr><td>4</td><td>0.111341</td><td>0.250000</td><td>0.445</td></tr>
+      <tr><td>16</td><td>0.027925</td><td>0.062500</td><td>0.447</td></tr>
+      <tr><td>64</td><td>0.006585</td><td>0.015625</td><td>0.421</td></tr>
+      <tr><td>256</td><td>0.001690</td><td>0.003906</td><td>0.433</td></tr>
+    </tbody>
+  </table></div>
+  <figure>
+    <div class="legend"><span><i style="background:var(--muted)"></i>bound 1/y</span><span><i style="background:var(--shrink)"></i>0.43/y</span><span><i style="background:var(--ink)"></i>● measured</span></div>
+    <div class="chart" id="ch-exc-en"></div>
+    <figcaption>Figure 5. Maximum excursion probability on log-log axes. The measured points run parallel to $1/y$ and sit about $0.43$ times lower: the slope is set by $\theta^\ast=1$, the offset is the Cramér constant.</figcaption>
+  </figure>
+  <h3>5.3 Who does the contraction</h3>
+  <p>Total downward contribution $D = -\sum_{k\ge2}\Pr[v=k]\,S_k$. Share of $D$ by valuation:</p>
+  <div class="tbl"><table>
+    <thead><tr><th>threshold</th><th>share of blocks</th><th>share of $D$</th></tr></thead>
+    <tbody>
+      <tr><td>$v \ge 3$</td><td>25.03%</td><td><strong>85.38%</strong></td></tr>
+      <tr><td>$v \ge 4$</td><td>12.54%</td><td><strong>60.43%</strong></td></tr>
+      <tr><td>$v \ge 5$</td><td>6.28%</td><td><strong>39.09%</strong></td></tr>
+      <tr><td>$v \ge 6$</td><td>3.14%</td><td>23.98%</td></tr>
+    </tbody>
+  </table></div>
+  <figure>
+    <div class="legend"><span><i style="background:var(--rule)"></i>share of blocks</span><span><i style="background:var(--shrink)"></i>share of downward contribution D</span></div>
+    <div class="chart" id="ch-work-en"></div>
+    <figcaption>Figure 6. A minority of high-valuation blocks does most of the contraction. A quarter of the blocks supply 85% of the descent.</figcaption>
+  </figure>
+  <p>Blocks with $v \in \{1,2\}$ constitute $75\%$ of all blocks and supply under $15\%$ of the contraction. <strong>The Syracuse map contracts by rare heavy events, not by attrition.</strong></p>
+  <p>We have not found this decomposition tabulated. <span class="flag">UNVERIFIED</span></p>
+  <h3>5.4 Extremal valuations</h3>
+  <p>The largest single valuation observed was $v=20$, at the block $n = 349{,}525$, where $3n+1 = 1{,}048{,}576 = 2^{20}$ exactly — a single block descending to $1$.</p>
+  <div class="prop"><span class="t">Proposition 5.1.</span> <em>For even $k$, the least odd $n$ with $\nu_2(3n+1) = k$ is $n = (2^k-1)/3$, with quotient $1$. For odd $k$ the least such $n$ has quotient $5$.</em></div>
+  <p>Values: $k=3:13$, $k=4:5$, $k=5:53$, $k=6:21$, $k=10:341$, $k=20:349{,}525$. In both families the least witness satisfies $n \approx 2^k/3$; consequently within $[1,N]$ the largest attainable valuation is $\log_2(3N)$. For $N = 3\times10^5$ this predicts $19.8$ against an observed maximum of $20$.</p>
+  <aside class="gloss" aria-label="§5 notation and techniques">
+    <h4>Notation and techniques</h4>
+    <dl>
+      <div class="row"><dt><span class="tag tech">technique</span>Terras stopping convention</dt><dd>Count only up to “first drop below the start” (the stopping time). Each trajectory then contributes only its own segment, instead of many trajectories recounting the same shared tail.</dd></div>
+      <div class="row"><dt><span class="tag sym">term</span>Confluence bias</dt><dd>Orbits from different starts merge (they all pass through $5\to16\to1$, where $3\cdot5+1=16$ has $v=4$). Running to $1$ counts that tail once per trajectory, so $v=4$ gains about one extra count per trajectory.</dd></div>
+      <div class="row"><dt><span class="tag tech">technique</span>Log-log axes</dt><dd>A power law $P=C/y$ is a straight line of slope $-1$ when $\log P$ is plotted against $\log y$, and the constant $C$ appears as a vertical shift. This separates the exponent from the constant.</dd></div>
+      <div class="row"><dt><span class="tag sym">notation</span>$D$, $S_k$</dt><dd>$S_k=\log_2 3-k$ is the log increment of a block with valuation $k$; $D$ is the frequency-weighted total descent from all contracting blocks, split into shares.</dd></div>
+      <div class="row"><dt><span class="tag tech">technique</span>Heavy-tail decomposition</dt><dd>Compare “share of events” with “share of effect”. If the second is much larger, the effect is driven by rare large events, the opposite of many small losses.</dd></div>
+      <div class="row"><dt><span class="tag tech">technique</span>Least witnesses</dt><dd>For even $k$, $4^{k/2}\equiv1\pmod3$, so $(2^k-1)/3$ is an integer and $3n+1=2^k$ exactly. For odd $k$, $2^k-1$ is not divisible by 3, so the best is $3n+1=5\cdot2^k$, e.g. $k=3$: $3\cdot13+1=40=5\cdot8$.</dd></div>
+      <div class="row"><dt><span class="tag sym">term</span>Maximal run</dt><dd>A stretch of consecutive $v=1$ that cannot be extended at either end. Its length is geometric, so the longest of $M$ runs is about $\log_2 M$.</dd></div>
+    </dl>
+  </aside>
+</section>
+
+<section id="s6-en">
+  <h2><span class="no">§6</span>No negative feedback</h2>
+  <p class="lede">This is the central measurement.</p>
+  <p>If large valuations arrived preferentially after growth — if the machine “knew” it was running high — the conjecture would admit a Lyapunov argument. It does not.</p>
+  <p><b>Measurement 6.1 (pairwise).</b> $\mathbb{E}[v_{i+1} \mid v_i = j]$ for $j = 1,\dots,5$: $2.0030,\ 1.9939,\ 2.0108,\ 2.0385,\ 1.9866$. Flat at $2$.</p>
+  <p><b>Measurement 6.2 (run-terminating valuation).</b> Let $r$ be the length of the maximal run of consecutive $v=1$ blocks immediately preceding a block with $v \ge 2$.</p>
+  <div class="tbl"><table>
+    <thead><tr><th>$r$</th><th>samples</th><th>measured $\mathbb{E}[v \mid r]$</th><th>valuation needed to cancel</th></tr></thead>
+    <tbody>
+      <tr><td>0</td><td>174,260</td><td>2.9983</td><td>1.58</td></tr>
+      <tr><td>1</td><td>87,092</td><td>3.0090</td><td>2.17</td></tr>
+      <tr><td>3</td><td>21,679</td><td>2.9992</td><td>3.34</td></tr>
+      <tr><td>6</td><td>2,756</td><td>2.9837</td><td>5.09</td></tr>
+      <tr><td>9</td><td>359</td><td>2.8886</td><td>6.85</td></tr>
+    </tbody>
+  </table></div>
+  <figure>
+    <div class="legend"><span><i style="background:var(--ink)"></i>● measured E[v | r]</span><span><i style="background:var(--shrink)"></i>E[v | v≥2] = 3</span><span><i style="background:var(--grow)"></i>needed to cancel k*(r) = 0.585r + 1.585</span><span><i style="background:var(--flag)"></i>debt not repaid</span></div>
+    <div class="chart" id="ch-feed-en"></div>
+    <figcaption>Figure 7. The terminating block’s valuation does not depend on the length of the preceding run, while the valuation needed to repay it rises linearly; the lines cross at $r\approx2.42$. To the right of the crossing, the terminating block does not repay the debt on average.</figcaption>
+  </figure>
+  <p>The terminating valuation is <b>constant at $3.00$</b>, which is exactly $\mathbb{E}[v \mid v\ge2] = (2 - \tfrac12)/\tfrac12 = 3$ — a pure conditioning artefact carrying no information about $r$. The cancellation requirement is $k^{\ast}(r) = 0.585r + 1.585$, linear in $r$, crossing $3.00$ at $r \approx 2.42$.</p>
+  <p><b>Consequence.</b> Runs of length $\ge 3$ — a fraction $1/8$ of all runs — are not repaid on average by the block that terminates them. The debt is discharged only later, by unconditioned events. There is no restoring force.</p>
+  <div class="claim"><span class="t">Claim 6.3 (open-loop contraction).</span> In the Syracuse map, contraction is guaranteed in long-run average but is not locally self-correcting. Every construction of a locally monotone Lyapunov functional in the block coordinate is obstructed by Measurement 6.2.</div>
+  <p><span class="flag">UNVERIFIED</span> The absence of feedback is implicit in the i.i.d. heuristic, so this may be regarded as known; we have not found it measured and stated as an obstruction.</p>
+  <aside class="gloss" aria-label="§6 notation and techniques">
+    <h4>Notation and techniques</h4>
+    <dl>
+      <div class="row"><dt><span class="tag sym">notation</span>$\mathbb{E}[X\mid A]$</dt><dd>Conditional expectation: average $X$ only over cases where event $A$ happens. $\mathbb{E}[v_{i+1}\mid v_i=j]$ asks “when the last step was $j$, what is the next step on average?”</dd></div>
+      <div class="row"><dt><span class="tag tech">technique</span>Memorylessness of the geometric law</dt><dd>Given $v\ge2$, $v-1$ has the same law as $v$, so $\mathbb{E}[v\mid v\ge2]=1+\mathbb{E}[v]=3$. Directly: $\mathbb{E}[v;\,v\ge2]=\mathbb{E}[v]-1\cdot\Pr[v=1]=1.5$, divided by $\Pr[v\ge2]=\tfrac12$.</dd></div>
+      <div class="row"><dt><span class="tag sym">notation</span>$k^\ast(r)$</dt><dd>The cancellation threshold. $r$ blocks with $v=1$ rise by $r(\log_2 3-1)\approx0.585r$ in total; the terminating block must cancel that plus its own $\log_2 3$, so it needs $v\ge0.585r+1.585$.</dd></div>
+      <div class="row"><dt><span class="tag sym">term</span>Lyapunov function</dt><dd>A quantity that decreases monotonically along orbits of a dynamical system. If one exists and is minimised only at $1$, every orbit converges. The search here is for a locally decreasing one, and the measurement shows there is no local correction mechanism.</dd></div>
+      <div class="row"><dt><span class="tag sym">term</span>Open loop / closed loop</dt><dd>Control theory terms. A closed-loop system applies corrections based on its current state (negative feedback, a restoring force); in an open-loop system the output does not affect later inputs. Here, being “high” does not make later valuations larger.</dd></div>
+      <div class="row"><dt><span class="tag tech">technique</span>Stratifying by the preceding run</dt><dd>Beyond pairwise correlations (Measurement 6.1), group terminating events by “how much debt has built up”. Even when pairwise correlations are zero, this stratification can catch longer-range dependence; here it confirms there is none.</dd></div>
+    </dl>
+  </aside>
+</section>
+
+<section id="s7-en">
+  <h2><span class="no">§7</span>The bit budget</h2>
+  <p>Terras’ theorem guarantees that the first $k$ parity outcomes of the orbit of $n$ are determined by, and equidistributed over, $n \bmod 2^k$. Each block therefore consumes low-order bits of the initial datum.</p>
+  <p>By (3.1), descending from $n$ to $1$ requires</p>
+  <div class="m-disp">$$k \;\approx\; \frac{\log_2 n}{0.415} \;\approx\; 2.41\,\log_2 n \tag{7.1}$$</div>
+  <p>blocks. But $n$ carries only $\log_2 n$ bits.</p>
+  <figure>
+    <div class="chart" id="ch-bits-en"></div>
+    <figcaption>Figure 8. The bit budget. Top: bits supplied by the initial value versus blocks needed to finish the orbit. Bottom: the average course of the height $\log_2 n_k$. Terras covers the first $\log_2 n$ blocks, by which point the height has only fallen to $0.585\log_2 n$, i.e. $n^{0.585}$. (Version 0.2 corrects the units here: see the v0.2 page.)</figcaption>
+  </figure>
+  <div class="prop"><span class="t">Observation 7.1 (bit-budget gap).</span> The number of independent bits required to run the orbit to completion exceeds the number supplied by the initial datum by a factor of $\approx 2.41$. Equivalently, Terras’ theorem escorts an orbit only from $n$ down to $n^{0.585}$; beyond that point the bits consumed are not fresh.</div>
+  <p>The gap is not marginal. It is a factor of more than two.</p>
+  <div class="claim"><span class="t">Hypothesis 7.2 (bit-forcing coupling lemma).</span> <em>There exists a constant $C$ such that for every odd $n$, after consuming $k$ low-order bits of $n$ the residual low-order structure of the orbit remains equidistributed to within $C$-bounded discrepancy over a further $k$ blocks.</em></div>
+  <p>Hypothesis 7.2 is what §5 measures and cannot prove: at every sample size tested, the residual bits are statistically indistinguishable from fresh ones (§5.1, to four decimal places). Statistical indistinguishability at finite scale is not equidistribution for all $n$; the null set is exactly where a counterexample would live.</p>
+  <div class="prop"><span class="t">Remark 7.3 (why the heuristic cannot suffice).</span> Transport the map to negative integers. The valuation law, the drift $-0.415$, the $\times 1.5$ ceiling and the unbounded floor all persist verbatim. Yet three nontrivial cycles exist there ($-1$; $-5$; $-17$). Any argument using only drift, boundedness of growth, and unboundedness of contraction proves a false statement on $\mathbb{Z}_{&lt;0}$ and is therefore structurally incomplete. The missing input must distinguish the sign — Hypothesis 7.2 is a candidate for its location.</div>
+  <aside class="gloss" aria-label="§7 notation and techniques">
+    <h4>Notation and techniques</h4>
+    <dl>
+      <div class="row"><dt><span class="tag tech">technique</span>Bit-counting argument</dt><dd>A $\log_2 n$-bit number can “encode” at most $\log_2 n$ independent fair coin flips. If a process needs more independent randomness, the later randomness must be a reworking of earlier information, and its independence has to be proved separately.</dd></div>
+      <div class="row"><dt><span class="tag tech">technique</span>$2.41 = 1/0.415$</dt><dd>You need to descend $\log_2 n$ bits at an average of $0.415$ bits per block, so the number of blocks is $\log_2 n/0.415$.</dd></div>
+      <div class="row"><dt><span class="tag sym">notation</span>$n^{0.585}$</dt><dd>After $\log_2 n$ blocks the height has fallen by $0.415\log_2 n$ from $\log_2 n$, leaving $0.585\log_2 n$, i.e. $n^{0.585}$ on the original scale. $0.585=\log_2 3-1$.</dd></div>
+      <div class="row"><dt><span class="tag sym">term</span>Equidistribution, discrepancy</dt><dd>Equidistribution means every low-bit pattern appears with frequency tending to equal; discrepancy measures the deviation from perfect uniformity. “$C$-bounded discrepancy” requires that deviation to be controlled by a constant independent of $n$.</dd></div>
+      <div class="row"><dt><span class="tag sym">term</span>Null set</dt><dd>An exceptional set of density zero. Statistical experiments never see it, and a counterexample needs only one integer, which would sit in exactly such a set.</dd></div>
+      <div class="row"><dt><span class="tag tech">technique</span>Testing an argument with a counter-model</dt><dd>If every premise of an argument also holds in another model (here the negative integers) where the conclusion is false, the argument cannot prove the original statement. On the negatives, $-5\to-7\to-5$ and $-17\to\dots\to-17$ are nontrivial cycles.</dd></div>
+      <div class="row"><dt><span class="tag sym">notation</span>$\mathbb{Z}_{&lt;0}$</dt><dd>The set of negative integers.</dd></div>
+    </dl>
+  </aside>
+</section>
+
+<section id="s8-en">
+  <h2><span class="no">§8</span>Relation to known work, and an honest accounting</h2>
+  <div class="ledger">
+    <div>
+      <h4>Certainly classical</h4>
+      <ul>
+        <li>Proposition 2.1 and equation (2.1): Terras (1976), Everett (1977).</li>
+        <li>The block/Syracuse reduction is standard and has recently been formalised; a reduced-coordinate formulation compressing each valuation run into a single block, with cycles in bijection, appears in current Lean 4 formalisation work (ccchallenge.org).</li>
+        <li>Density results: Krasikov and Lagarias, and Tao (2019) for almost-all in logarithmic density.</li>
+        <li>Cycle exclusion via linear forms in logarithms: Baker; Steiner; Simons and de Weger; Eliahou (1993), giving a nontrivial cycle length of at least $17{,}087{,}915$; Hercher, excluding $m$-cycles for $m \le 91$; Barina’s verification for $n &lt; 2^{71}$.</li>
+      </ul>
+    </div>
+    <div>
+      <h4>Plausibly folklore, stated here for the record</h4>
+      <ul>
+        <li>Proposition 3.1 (arithmetic mean exactly $1$).</li>
+        <li>Proposition 4.1 ($\theta^{\ast}=1$).</li>
+        <li>Proposition 5.1 (least witnesses).</li>
+      </ul>
+    </div>
+    <div>
+      <h4>Not located in the literature by the author</h4>
+      <ul>
+        <li>The contraction-work decomposition of §5.3.</li>
+        <li>The feedback measurement of §6.2 and Claim 6.3.</li>
+        <li>The bit-budget quantification of §7.1 with the constant $2.41$.</li>
+      </ul>
+    </div>
+  </div>
+  <p>The author has <b>not</b> performed a systematic search of the Collatz bibliography (Lagarias’ annotated bibliography alone runs to several hundred entries) and makes no priority claim for any item above. This note is timestamped so that such a search can be conducted afterwards rather than as a precondition.</p>
+  <aside class="gloss" aria-label="§8 notation and techniques">
+    <h4>Notation and techniques</h4>
+    <dl>
+      <div class="row"><dt><span class="tag sym">term</span>Logarithmic density</dt><dd>Density counted with weight $1/n$, somewhat weaker than natural density. Tao proved that for any $f$ tending to infinity, almost all orbits (in logarithmic density) fall below $f(n)$.</dd></div>
+      <div class="row"><dt><span class="tag tech">technique</span>Linear forms in logarithms (Baker theory)</dt><dd>A cycle requires $2^a\approx3^b$ extremely closely, i.e. $|a\log2-b\log3|$ very small. Baker’s transcendence theory gives lower bounds for such linear forms, ruling out short cycles.</dd></div>
+      <div class="row"><dt><span class="tag sym">term</span>$m$-cycle</dt><dd>A cycle containing exactly $m$ “ascending runs” per period. Simons–de Weger and Hercher progressively excluded small $m$.</dd></div>
+      <div class="row"><dt><span class="tag sym">term</span>Folklore</dt><dd>A result widely known among specialists but not necessarily written down in the formal literature.</dd></div>
+    </dl>
+  </aside>
+</section>
+
+<section id="s9-en">
+  <h2><span class="no">§9</span>What would move this forward</h2>
+  <p>Recent formalisation work splits the conjecture into H1 (exclusion of divergent orbits) and H2 (exclusion of nontrivial cycles), verifying a conditional theory end-to-end in Lean 4 with the residual inputs isolated as explicit hypotheses. H2 has a working tool — transcendence theory — and is quantitative progress. H1 has none.</p>
+  <figure>
+    <div class="chart" id="ch-h-en"></div>
+    <figcaption>Figure 9. The two halves of the conjecture. H2 already has transcendence theory as a tool; H1 lacks one, and the next step proposed here is to formally verify “Hypothesis 7.2 ⇒ H1”.</figcaption>
+  </figure>
+  <p>Hypothesis 7.2 is stated in a form intended to be droppable into that framework as an explicit assumption. The tractable next step is therefore not a proof of the conjecture but a formal verification of</p>
+  <div class="m-disp">$$\text{Hypothesis 7.2} \;\Longrightarrow\; \text{H1},$$</div>
+  <p>which isolates the obstruction in machine-checkable form.</p>
+  <p>More speculatively: what §7 describes is the need to control the archimedean valuation $|x|_{\infty}$ and the 2-adic valuation $|x|_2$ simultaneously along a single orbit. Number theory possesses tools for each place separately, joined for algebraic objects by the product formula. A Collatz orbit is a word of growing length in a non-commutative affine monoid and is not an algebraic object; no product formula applies. The tool this problem appears to require is an adelic coupling valid along non-algebraic orbits. To the author’s knowledge no such theory exists.</p>
+  <aside class="gloss" aria-label="§9 notation and techniques">
+    <h4>Notation and techniques</h4>
+    <dl>
+      <div class="row"><dt><span class="tag sym">notation</span>H1, H2</dt><dd>H1: no orbit tends to infinity. H2: no cycle other than $1\to1$. Together they are equivalent to the Collatz conjecture.</dd></div>
+      <div class="row"><dt><span class="tag sym">term</span>Lean 4</dt><dd>An interactive theorem prover. Every inference is checked by computer, and the unproved parts of a conditional theory must be written as explicit hypotheses.</dd></div>
+      <div class="row"><dt><span class="tag sym">notation</span>$|x|_\infty$, $|x|_2$</dt><dd>$|x|_\infty$ is the usual absolute value (a number’s size); $|x|_2 = 2^{-\nu_2(x)}$ is the 2-adic absolute value (the more often divisible by 2, the “smaller”). Orbit growth is about the first; valuations are about the second.</dd></div>
+      <div class="row"><dt><span class="tag tech">technique</span>Product formula</dt><dd>For nonzero rational $x$, $\prod_{p\le\infty}|x|_p = 1$: the product of the absolute values over all places is always 1. It ties the places together and is the basic tool for using them jointly in algebraic number theory.</dd></div>
+      <div class="row"><dt><span class="tag sym">term</span>Adelic</dt><dd>The adele viewpoint handles the real place and all $p$-adic places in a single object. An “adelic coupling” would control both places along the same orbit at once.</dd></div>
+    </dl>
+  </aside>
+</section>
+
+<section id="explore-en">
+  <h2><span class="no">Lab</span>Orbit explorer</h2>
+  <p>Enter a positive integer (even inputs are first divided down to odd) to see its Syracuse orbit. Bar colour shows each block’s valuation: amber for $v=1$ (growth), blue for $v\ge2$ (contraction), bar height is $v$. The line is $\log_2 n_k$; the dashed line is the average trend from the start, slope $-0.415$.</p>
+  <div class="explorer">
+    <form id="orbit-form-en">
+      <label for="orbit-n-en">Starting value n
+        <input id="orbit-n-en" name="n" inputmode="numeric" autocomplete="off" value="27">
+      </label>
+      <button type="submit">Compute orbit</button>
+      <button type="button" class="ghost" data-n="349525">349525</button>
+      <button type="button" class="ghost" data-n="77031">77031</button>
+      <button type="button" class="ghost" data-n="837799">837799</button>
+    </form>
+    <p class="err" id="orbit-err-en" role="status"></p>
+    <div class="stats" id="orbit-stats-en"></div>
+    <div class="chart" id="ch-orbit-en"></div>
+    <div class="vseq" id="orbit-v-en" aria-label="valuation sequence"></div>
+  </div>
+</section>
+
+<section id="appendix-en">
+  <h2><span class="no">Appendix A</span>Reproduction</h2>
+  <pre class="code"><code>from collections import Counter, defaultdict
+from math import log2
+
+LIM = 400001                      # odd starts 3 .. LIM
+pair       = defaultdict(list)    # v_i -> list of v_{i+1}
+after_run  = defaultdict(list)    # preceding v=1 run length -> terminating v
+work, cnt  = Counter(), Counter()
+
+for s in range(3, LIM, 2):
+    n, prev, run = s, None, 0
+    while n >= s:                 # Terras stopping convention
+        m = 3 * n + 1
+        v = (m &amp; -m).bit_length() - 1
+        cnt[v]  += 1
+        work[v] += log2(3) - v
+        if prev is not None:
+            pair[prev].append(v)
+        if v == 1:
+            run += 1
+        else:
+            after_run[run].append(v)
+            run = 0
+        prev = v
+        n = m &gt;&gt; v
+
+tot = sum(cnt.values())
+print("blocks:", tot)
+print("E[v]  =", sum(k * c for k, c in cnt.items()) / tot)
+print("E[mu] =", 3 * sum(c * 2.0 ** -k for k, c in cnt.items()) / tot)
+print("drift =", sum(work.values()) / tot)
+for r in range(10):
+    L = after_run[r]
+    if len(L) &gt; 300:
+        print(f"run {r}: E[terminating v] = {sum(L)/len(L):.4f}"
+              f"  needed = {0.585*r + 1.585:.2f}")</code></pre>
+  <p class="small">Runtime approximately 20 s on a single core. All figures in §5 and §6 are produced by this script or by trivial variants of it (full-to-1 runs for §5.4, excursion histogram for §5.2). In the code, <code>(m &amp; -m).bit_length() - 1</code> isolates the lowest set bit, giving $\nu_2(m)$ directly.</p>
+</section>
+
+<section id="refs-en">
+  <h2>References</h2>
+  <ol class="refs">
+    <li>R. Terras, A stopping time problem on the positive integers, <i>Acta Arith.</i> <b>30</b> (1976).</li>
+    <li>C. J. Everett, Iteration of the number-theoretic function $f(2n)=n$, $f(2n+1)=3n+2$, <i>Adv. Math.</i> <b>25</b> (1977).</li>
+    <li>J. C. Lagarias, The $3x+1$ problem and its generalizations, <i>Amer. Math. Monthly</i> <b>92</b> (1985); and the annotated bibliographies.</li>
+    <li>I. Krasikov and J. C. Lagarias, Bounds for the $3x+1$ problem using difference inequalities, <i>Acta Arith.</i> <b>109</b> (2003).</li>
+    <li>T. Tao, Almost all orbits of the Collatz map attain almost bounded values, <i>Forum Math. Pi</i> <b>10</b> (2022).</li>
+    <li>S. Eliahou, The $3x+1$ problem: new lower bounds on nontrivial cycle lengths, <i>Discrete Math.</i> <b>118</b> (1993).</li>
+    <li>J. L. Simons and B. M. M. de Weger, Theoretical and computational bounds for $m$-cycles of the $3n+1$ problem, <i>Acta Arith.</i> <b>117</b> (2005).</li>
+    <li>D. Barina, Convergence verification of the Collatz problem, <i>J. Supercomput.</i> (2021).</li>
+    <li>J. Park, A machine-verified conditional theory of the Collatz conjecture (2026).</li>
+    <li>The Collatz Conjecture Challenge, ccchallenge.org.</li>
+  </ol>
+  <p class="small">References as in the original draft; volume and page details to be completed before submission. Baker, Steiner and Hercher, mentioned in §8, are not yet in this list and should be added.</p>
+</section>
+
+<footer>Draft v0.1. Corrections and prior-art pointers welcome.</footer>
+</main>
+
 </div>
 
 <script>
@@ -934,5 +1397,302 @@ for r in range(10):
     form.querySelectorAll('button[data-n]').forEach(b => b.addEventListener('click', () => { input.value = b.dataset.n; run(b.dataset.n); }));
     run(input.value);
   })();
+})();
+</script>
+<script>
+(function () {
+  const NS = 'http://www.w3.org/2000/svg';
+  const L3 = Math.log2(3);
+  const fmt = (x, d) => Number(x).toFixed(d);
+
+  // Build an SVG chart frame with linear scales.
+  function frame(id, W, H, m, xd, yd) {
+    const host = document.getElementById(id);
+    const sx = x => m.l + (x - xd[0]) / (xd[1] - xd[0]) * (W - m.l - m.r);
+    const sy = y => H - m.b - (y - yd[0]) / (yd[1] - yd[0]) * (H - m.t - m.b);
+    const parts = [];
+    return {
+      sx, sy, W, H, m, parts,
+      add(s) { parts.push(s); },
+      draw(label) {
+        host.innerHTML = `<svg class="c" viewBox="0 0 ${W} ${H}" role="img" aria-label="${label}">${parts.join('')}</svg>`;
+      }
+    };
+  }
+  function yTicks(f, ticks, fmtFn) {
+    ticks.forEach(t => {
+      const y = f.sy(t);
+      f.add(`<line class="grid" x1="${f.m.l}" x2="${f.W - f.m.r}" y1="${y}" y2="${y}"/>`);
+      f.add(`<text class="mono" x="${f.m.l - 8}" y="${y + 4}" text-anchor="end">${fmtFn ? fmtFn(t) : t}</text>`);
+    });
+  }
+  function xTicks(f, ticks, fmtFn) {
+    ticks.forEach(t => {
+      const x = f.sx(t);
+      f.add(`<text class="mono" x="${x}" y="${f.H - f.m.b + 18}" text-anchor="middle">${fmtFn ? fmtFn(t) : t}</text>`);
+    });
+  }
+  function axes(f) {
+    f.add(`<line class="axis" x1="${f.m.l}" x2="${f.W - f.m.r}" y1="${f.H - f.m.b}" y2="${f.H - f.m.b}"/>`);
+  }
+  function path(pts, f) { return pts.map((p, i) => (i ? 'L' : 'M') + f.sx(p[0]).toFixed(1) + ' ' + f.sy(p[1]).toFixed(1)).join(''); }
+
+  // Fig 1: valuation law
+  (function () {
+    const meas = [0.499941, 0.249729, 0.124957, 0.062604, 0.031358];
+    const f = frame('ch-val-en', 640, 270, { l: 52, r: 16, t: 16, b: 52 }, [0.4, 7.6], [0, 0.55]);
+    yTicks(f, [0, 0.1, 0.2, 0.3, 0.4, 0.5], t => t.toFixed(1));
+    axes(f);
+    for (let k = 1; k <= 7; k++) {
+      const p = Math.pow(2, -k), x = f.sx(k), w = 46;
+      f.add(`<rect class="${k === 1 ? 'grow' : 'shrink'}" x="${x - w / 2}" y="${f.sy(p)}" width="${w}" height="${f.sy(0) - f.sy(p)}" rx="2"/>`);
+      f.add(`<text class="mono ink" x="${x}" y="${f.sy(p) - 8}" text-anchor="middle">1/${Math.pow(2, k)}</text>`);
+      f.add(`<text class="mono" x="${x}" y="${f.H - f.m.b + 18}" text-anchor="middle">v=${k}</text>`);
+      f.add(`<text class="mono" x="${x}" y="${f.H - f.m.b + 36}" text-anchor="middle">×${+(3 * p).toPrecision(3)}</text>`);
+      if (meas[k - 1]) {
+        const y = f.sy(meas[k - 1]);
+        f.add(`<path class="ink" style="fill:var(--ink)" d="M${x + 30} ${y - 5}L${x + 35} ${y}L${x + 30} ${y + 5}L${x + 25} ${y}Z"/>`);
+      }
+    }
+    f.draw('Valuation law bar chart');
+  })();
+
+  // Fig 2: sample paths of log2 of the product
+  (function () {
+    function rng(seed) { return function () { seed |= 0; seed = seed + 0x6D2B79F5 | 0; let t = Math.imul(seed ^ seed >>> 15, 1 | seed); t = t + Math.imul(t ^ t >>> 7, 61 | t) ^ t; return ((t ^ t >>> 14) >>> 0) / 4294967296; }; }
+    const R = rng(20260828), K = 60, paths = [];
+    let lo = 0, hi = 0;
+    for (let p = 0; p < 24; p++) {
+      let s = 0; const pts = [[0, 0]];
+      for (let k = 1; k <= K; k++) { let v = 1; while (R() < 0.5) v++; s += L3 - v; pts.push([k, s]); lo = Math.min(lo, s); hi = Math.max(hi, s); }
+      paths.push(pts);
+    }
+    lo = Math.floor(Math.min(lo, -0.415 * K) / 5) * 5; hi = Math.ceil(hi / 5) * 5 + 2;
+    const f = frame('ch-paths-en', 640, 300, { l: 52, r: 120, t: 14, b: 40 }, [0, K], [lo, hi]);
+    const tk = []; for (let t = lo; t <= hi; t += 10) tk.push(t);
+    yTicks(f, tk);
+    axes(f);
+    xTicks(f, [0, 10, 20, 30, 40, 50, 60]);
+    f.add(`<text x="${f.m.l}" y="${f.H - 4}">blocks k</text>`);
+    paths.forEach(p => f.add(`<path class="muted-l" stroke-opacity=".35" stroke-width="1.2" d="${path(p, f)}"/>`));
+    f.add(`<path class="grow-l" stroke-width="2" stroke-dasharray="6 4" d="${path([[0, 0], [K, 0]], f)}"/>`);
+    f.add(`<path class="shrink-l" stroke-width="2.5" d="${path([[0, 0], [K, -0.415 * K]], f)}"/>`);
+    f.add(`<text x="${f.sx(K) + 8}" y="${f.sy(0) + 4}" style="fill:var(--grow)">log₂ E[∏μ] = 0</text>`);
+    f.add(`<text x="${f.sx(K) + 8}" y="${f.sy(-0.415 * K) + 4}" style="fill:var(--shrink)">−0.415·k</text>`);
+    f.add(`<text x="${f.m.l + 4}" y="${f.m.t + 10}">log₂(n_k / n₀)</text>`);
+    f.draw('Sample paths of the product');
+  })();
+
+  // Fig 3: drift by base
+  (function () {
+    const f = frame('ch-base-en', 640, 130, { l: 30, r: 30, t: 20, b: 40 }, [-1.6, 1.0], [0, 1]);
+    const y0 = f.sy(0.45);
+    f.add(`<rect class="soft" x="${f.sx(-1.6)}" y="${y0 - 3}" width="${f.sx(1.0) - f.sx(-1.6)}" height="6" rx="3"/>`);
+    f.add(`<line class="ink-l" stroke-width="1.5" x1="${f.sx(0)}" x2="${f.sx(0)}" y1="${y0 - 26}" y2="${y0 + 26}"/>`);
+    f.add(`<text class="ink" x="${f.sx(0)}" y="${y0 - 32}" text-anchor="middle">drift = 0 (b = 4)</text>`);
+    f.add(`<text x="${f.sx(-1.2)}" y="${y0 - 32}" text-anchor="middle" style="fill:var(--shrink)">← contraction</text>`);
+    f.add(`<text x="${f.sx(0.6)}" y="${y0 - 32}" text-anchor="middle" style="fill:var(--grow)">expansion →</text>`);
+    [[3, 'shrink'], [5, 'grow'], [7, 'grow']].forEach(([b, c]) => {
+      const d = Math.log2(b) - 2, x = f.sx(d);
+      f.add(`<circle class="${c}" cx="${x}" cy="${y0}" r="7"/>`);
+      f.add(`<text class="mono ink" x="${x}" y="${y0 + 26}" text-anchor="middle">${b}n+1</text>`);
+      f.add(`<text class="mono" x="${x}" y="${y0 + 42}" text-anchor="middle">${d >= 0 ? '+' : '−'}${Math.abs(d).toFixed(3)}</text>`);
+    });
+    f.draw('Drift by base');
+  })();
+
+  // Fig 4: phi(theta)
+  (function () {
+    const phi = t => Math.pow(3, t) / (Math.pow(2, 1 + t) - 1);
+    const f = frame('ch-phi-en', 640, 290, { l: 56, r: 20, t: 16, b: 44 }, [-0.3, 1.5], [0.9, 1.18]);
+    yTicks(f, [0.9, 0.95, 1.0, 1.05, 1.1, 1.15], t => t.toFixed(2));
+    axes(f);
+    xTicks(f, [-0.25, 0, 0.25, 0.5, 0.75, 1, 1.25, 1.5]);
+    f.add(`<text x="${f.W - f.m.r}" y="${f.H - 4}" text-anchor="end">θ</text>`);
+    const pts = []; for (let t = -0.3; t <= 1.5001; t += 0.01) pts.push([t, phi(t)]);
+    f.add(`<path class="muted-l" stroke-dasharray="4 4" d="${path([[-0.3, 1], [1.5, 1]], f)}"/>`);
+    f.add(`<path class="shrink-l" stroke-width="2.5" d="${path(pts, f)}"/>`);
+    // tangent at 0, slope = ln2 * E[S]
+    const sl = Math.LN2 * (L3 - 2);
+    f.add(`<path class="grow-l" stroke-width="1.5" stroke-dasharray="6 4" d="${path([[-0.2, 1 - 0.2 * sl], [0.25, 1 + 0.25 * sl]], f)}"/>`);
+    f.add(`<text x="${f.sx(0.27)}" y="${f.sy(1 + 0.25 * sl) + 4}" style="fill:var(--grow)">slope ∝ drift −0.415</text>`);
+    [[0, 'trivial root θ = 0'], [1, 'θ* = 1: 3 = 4 − 1']].forEach(([t, s]) => {
+      f.add(`<circle style="fill:var(--ink)" cx="${f.sx(t)}" cy="${f.sy(1)}" r="5"/>`);
+      f.add(`<text class="ink" x="${f.sx(t) + (t ? -6 : 8)}" y="${f.sy(1) - 12}" text-anchor="${t ? 'end' : 'start'}">${s}</text>`);
+    });
+    f.add(`<text class="mono" x="${f.sx(0.5)}" y="${f.sy(phi(0.5)) + 20}" text-anchor="middle">minimum ${phi(0.5).toFixed(3)}</text>`);
+    f.draw('Lundberg equation');
+  })();
+
+  // Fig 5: excursion, log2 axes
+  (function () {
+    const data = [[4, 0.111341], [16, 0.027925], [64, 0.006585], [256, 0.001690]];
+    const f = frame('ch-exc-en', 640, 280, { l: 64, r: 20, t: 16, b: 44 }, [1.5, 8.5], [-10, -1]);
+    yTicks(f, [-10, -8, -6, -4, -2], t => '2^' + t);
+    axes(f);
+    xTicks(f, [2, 4, 6, 8], t => 'y=' + Math.pow(2, t));
+    f.add(`<path class="muted-l" stroke-width="2" d="${path([[1.5, -1.5], [8.5, -8.5]], f)}"/>`);
+    const c = Math.log2(0.43);
+    f.add(`<path class="shrink-l" stroke-width="2" stroke-dasharray="6 4" d="${path([[1.5, -1.5 + c], [8.5, -8.5 + c]], f)}"/>`);
+    data.forEach(([y, p]) => f.add(`<circle style="fill:var(--ink)" cx="${f.sx(Math.log2(y))}" cy="${f.sy(Math.log2(p))}" r="5"/>`));
+    f.add(`<text x="${f.sx(7.8)}" y="${f.sy(-7.8) - 10}" text-anchor="end">1/y</text>`);
+    f.add(`<text x="${f.sx(3)}" y="${f.sy(-3 + c) + 22}" style="fill:var(--shrink)">0.43/y</text>`);
+    f.add(`<text x="${f.m.l + 4}" y="${f.m.t + 10}">Pr[max n_k/n₀ ≥ y]</text>`);
+    f.draw('Maximum excursion log-log plot');
+  })();
+
+  // Fig 6: contraction shares
+  (function () {
+    const rows = [['v ≥ 3', 25.03, 85.38], ['v ≥ 4', 12.54, 60.43], ['v ≥ 5', 6.28, 39.09], ['v ≥ 6', 3.14, 23.98]];
+    const f = frame('ch-work-en', 640, 240, { l: 64, r: 60, t: 10, b: 30 }, [0, 100], [0, rows.length]);
+    [0, 25, 50, 75, 100].forEach(t => { const x = f.sx(t); f.add(`<line class="grid" x1="${x}" x2="${x}" y1="${f.m.t}" y2="${f.H - f.m.b}"/><text class="mono" x="${x}" y="${f.H - 10}" text-anchor="middle">${t}%</text>`); });
+    rows.forEach(([lab, a, b], i) => {
+      const y = f.m.t + i * 50 + 8;
+      f.add(`<text class="mono ink" x="${f.m.l - 10}" y="${y + 20}" text-anchor="end">${lab}</text>`);
+      f.add(`<rect class="soft" x="${f.sx(0)}" y="${y}" width="${f.sx(a) - f.sx(0)}" height="14" rx="2"/>`);
+      f.add(`<text class="mono" x="${f.sx(a) + 6}" y="${y + 11}">${a}%</text>`);
+      f.add(`<rect class="shrink" x="${f.sx(0)}" y="${y + 17}" width="${f.sx(b) - f.sx(0)}" height="14" rx="2"/>`);
+      f.add(`<text class="mono ink" x="${f.sx(b) + 6}" y="${y + 28}">${b}%</text>`);
+    });
+    f.draw('Contraction work decomposition');
+  })();
+
+  // Fig 7: feedback
+  (function () {
+    const meas = [[0, 2.9983], [1, 3.0090], [3, 2.9992], [6, 2.9837], [9, 2.8886]];
+    const f = frame('ch-feed-en', 640, 300, { l: 44, r: 20, t: 16, b: 44 }, [-0.3, 10], [0, 8]);
+    yTicks(f, [0, 2, 4, 6, 8]);
+    axes(f);
+    xTicks(f, [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);
+    f.add(`<text x="${f.W - f.m.r}" y="${f.H - 4}" text-anchor="end">preceding v=1 run length r</text>`);
+    const rc = (3 - 1.585) / 0.585;
+    f.add(`<path class="flagfill" d="M${f.sx(rc)} ${f.sy(3)}L${f.sx(10)} ${f.sy(3)}L${f.sx(10)} ${f.sy(0.585 * 10 + 1.585)}Z"/>`);
+    f.add(`<path class="shrink-l" stroke-width="2" d="${path([[-0.3, 3], [10, 3]], f)}"/>`);
+    f.add(`<path class="grow-l" stroke-width="2.5" d="${path([[-0.3, 1.585 - 0.3 * 0.585], [10, 1.585 + 5.85]], f)}"/>`);
+    f.add(`<line class="flag-l" stroke-dasharray="3 3" x1="${f.sx(rc)}" x2="${f.sx(rc)}" y1="${f.sy(3)}" y2="${f.sy(0)}"/>`);
+    f.add(`<text class="flag-t mono" x="${f.sx(rc) + 6}" y="${f.sy(0.4)}">r ≈ 2.42</text>`);
+    f.add(`<text class="flag-t" x="${f.sx(8.2)}" y="${f.sy(4.3)}" text-anchor="middle">debt not repaid</text>`);
+    meas.forEach(([r, v]) => f.add(`<circle style="fill:var(--ink)" cx="${f.sx(r)}" cy="${f.sy(v)}" r="5"/>`));
+    f.add(`<text x="${f.sx(4.6)}" y="${f.sy(7.2)}" style="fill:var(--grow)">k*(r) = 0.585r + 1.585</text>`);
+    f.add(`<text x="${f.sx(0.2)}" y="${f.sy(3) - 10}" style="fill:var(--shrink)">E[v | r] ≈ 3.00</text>`);
+    f.draw('Terminating vs required valuation');
+  })();
+
+  // Fig 8: bit budget
+  (function () {
+    const f = frame('ch-bits-en', 640, 300, { l: 120, r: 30, t: 16, b: 40 }, [0, 2.55], [0, 1]);
+    const x0 = f.sx(0), x1 = f.sx(1), x2 = f.sx(1 / 0.415);
+    f.add(`<text class="ink" x="${f.m.l - 10}" y="40" text-anchor="end">supplied</text>`);
+    f.add(`<rect class="shrink" x="${x0}" y="26" width="${x1 - x0}" height="20" rx="2"/>`);
+    f.add(`<text class="mono" x="${x1 + 8}" y="41">log₂ n bits</text>`);
+    f.add(`<text class="ink" x="${f.m.l - 10}" y="82" text-anchor="end">required</text>`);
+    f.add(`<rect class="shrink" x="${x0}" y="68" width="${x1 - x0}" height="20" rx="2"/>`);
+    f.add(`<rect class="flagfill" x="${x1}" y="68" width="${x2 - x1}" height="20" rx="2"/>`);
+    f.add(`<rect class="flag-l" x="${x1}" y="68" width="${x2 - x1}" height="20" rx="2" stroke-dasharray="4 3"/>`);
+    f.add(`<text class="mono" x="${(x1 + x2) / 2}" y="83" text-anchor="middle" style="fill:var(--flag)">no independence guarantee · 1.41 log₂ n</text>`);
+    f.add(`<text class="mono ink" x="${x2}" y="108" text-anchor="end">2.41 log₂ n blocks</text>`);
+    // descent panel
+    const top = 130, bot = 250, hy = h => bot - h * (bot - top);
+    f.add(`<line class="axis" x1="${x0}" x2="${x2}" y1="${bot}" y2="${bot}"/>`);
+    f.add(`<line class="axis" x1="${x0}" x2="${x0}" y1="${top}" y2="${bot}"/>`);
+    f.add(`<text x="${f.m.l - 10}" y="${hy(1) + 4}" text-anchor="end" class="mono">log₂ n</text>`);
+    f.add(`<text x="${f.m.l - 10}" y="${hy(0.585) + 4}" text-anchor="end" class="mono">0.585 log₂ n</text>`);
+    f.add(`<text x="${f.m.l - 10}" y="${hy(0) + 4}" text-anchor="end" class="mono">0 (reach 1)</text>`);
+    f.add(`<line class="grid" x1="${x0}" x2="${x1}" y1="${hy(0.585)}" y2="${hy(0.585)}"/>`);
+    f.add(`<line class="flag-l" stroke-dasharray="3 3" x1="${x1}" x2="${x1}" y1="${top - 8}" y2="${bot}"/>`);
+    f.add(`<path class="shrink-l" stroke-width="3" d="M${x0} ${hy(1)}L${x1} ${hy(0.585)}"/>`);
+    f.add(`<path class="flag-l" stroke-width="3" stroke-dasharray="7 5" d="M${x1} ${hy(0.585)}L${x2} ${hy(0)}"/>`);
+    f.add(`<circle style="fill:var(--ink)" cx="${x1}" cy="${hy(0.585)}" r="5"/>`);
+    f.add(`<text class="ink" x="${x1 + 10}" y="${hy(0.585) - 10}">n^0.585: Terras escort ends here</text>`);
+    f.add(`<text x="${x0}" y="${bot + 20}" class="mono">0</text><text x="${x1}" y="${bot + 20}" class="mono" text-anchor="middle">log₂ n</text><text x="${x2}" y="${bot + 20}" class="mono" text-anchor="end">2.41 log₂ n</text>`);
+    f.add(`<text x="${(x0 + x2) / 2}" y="${bot + 40}" text-anchor="middle">blocks k</text>`);
+    f.draw('Bit budget diagram');
+  })();
+
+  // Fig 9: H1/H2 split
+  (function () {
+    const host = document.getElementById('ch-h-en');
+    host.innerHTML = `<svg class="c" viewBox="0 0 640 190" role="img" aria-label="H1 and H2">
+      <rect x="230" y="12" width="180" height="40" rx="4" style="fill:var(--surface);stroke:var(--ink)"/>
+      <text class="ink" x="320" y="37" text-anchor="middle">Collatz conjecture</text>
+      <path class="muted-l" d="M290 52 L150 92 M350 52 L490 92"/>
+      <rect x="40" y="92" width="220" height="44" rx="4" style="fill:var(--flag-bg);stroke:var(--flag)"/>
+      <text class="ink" x="150" y="112" text-anchor="middle">H1: no divergent orbits</text>
+      <text x="150" y="128" text-anchor="middle" style="fill:var(--flag)">no tool yet</text>
+      <rect x="380" y="92" width="220" height="44" rx="4" style="fill:var(--gloss);stroke:var(--shrink)"/>
+      <text class="ink" x="490" y="112" text-anchor="middle">H2: no nontrivial cycles</text>
+      <text x="490" y="128" text-anchor="middle" style="fill:var(--shrink)">transcendence theory · Baker-type bounds</text>
+      <path class="flag-l" stroke-width="1.5" stroke-dasharray="5 4" d="M150 176 L150 140"/>
+      <path class="flag-t" d="M144 146 L150 136 L156 146 Z"/>
+      <text class="flag-t" x="162" y="172">Hypothesis 7.2 ⇒ H1 (to be formalised in Lean 4)</text>
+    </svg>`;
+  })();
+
+  // Orbit explorer
+  (function () {
+    const form = document.getElementById('orbit-form-en');
+    const input = document.getElementById('orbit-n-en');
+    const err = document.getElementById('orbit-err-en');
+    const stats = document.getElementById('orbit-stats-en');
+    const vbox = document.getElementById('orbit-v-en');
+    function log2big(x) { const s = x.toString(2); const k = Math.min(s.length, 52); return Math.log2(parseInt(s.slice(0, k), 2)) + (s.length - k); }
+    function run(raw) {
+      err.textContent = '';
+      const t = String(raw).trim().replace(/[,_\s]/g, '');
+      if (!/^\d{1,300}$/.test(t) || /^0+$/.test(t)) { err.textContent = 'Enter a positive integer, for example 27.'; return; }
+      let n = BigInt(t), note = '';
+      while (n % 2n === 0n) n /= 2n;
+      if (n.toString() !== t) note = ` (even input reduced to odd ${n})`;
+      const n0 = n, pts = [[0, log2big(n)]], vs = [];
+      let peak = n, stop = null;
+      while (n !== 1n && vs.length < 5000) {
+        const m = 3n * n + 1n; let v = 0; let q = m;
+        while (q % 2n === 0n) { q /= 2n; v++; }
+        vs.push(v); n = q; if (n > peak) peak = n;
+        if (stop === null && n < n0) stop = vs.length;
+        pts.push([vs.length, log2big(n)]);
+      }
+      const K = vs.length, ev = K ? vs.reduce((a, b) => a + b, 0) / K : 0;
+      const ones = vs.filter(v => v === 1).length;
+      stats.innerHTML = `<span>start <b>${n0}</b>${note}</span><span>blocks <b>${K}</b>${n === 1n ? '' : ' (truncated)'}</span>` +
+        `<span>predicted 2.41·log₂n ≈ <b>${(2.41 * log2big(n0)).toFixed(1)}</b></span><span>mean v <b>${ev.toFixed(3)}</b></span>` +
+        `<span>v=1 share <b>${K ? (100 * ones / K).toFixed(1) : '0'}%</b></span><span>peak log₂ <b>${log2big(peak).toFixed(2)}</b></span>` +
+        `<span>Terras stopping time <b>${stop === null ? '—' : stop}</b></span>`;
+      const ymax = Math.max(...pts.map(p => p[1]), 1), vmax = Math.max(...vs, 2);
+      const top = Math.ceil(Math.max(ymax, vmax) + 1);
+      const f = frame('ch-orbit-en', 680, 300, { l: 40, r: 16, t: 14, b: 36 }, [0, Math.max(K, 1)], [0, top]);
+      const step = top > 40 ? 10 : top > 16 ? 5 : 2, tk = []; for (let i = 0; i <= top; i += step) tk.push(i);
+      yTicks(f, tk); axes(f);
+      const xs = K > 200 ? 100 : K > 60 ? 20 : K > 20 ? 5 : 1, xt = []; for (let i = 0; i <= K; i += xs) xt.push(i);
+      xTicks(f, xt);
+      const bw = Math.max(1, (f.sx(1) - f.sx(0)) * 0.8);
+      vs.forEach((v, i) => { const x = f.sx(i + 0.5) - bw / 2; f.add(`<rect class="${v === 1 ? 'grow' : 'shrink'}" fill-opacity=".55" x="${x.toFixed(1)}" y="${f.sy(v).toFixed(1)}" width="${bw.toFixed(1)}" height="${(f.sy(0) - f.sy(v)).toFixed(1)}"/>`); });
+      const l0 = pts[0][1], kEnd = Math.min(K, l0 / 0.415);
+      f.add(`<path class="muted-l" stroke-width="1.5" stroke-dasharray="6 4" d="${path([[0, l0], [kEnd, l0 - 0.415 * kEnd]], f)}"/>`);
+      f.add(`<path class="ink-l" stroke-width="2" d="${path(pts, f)}"/>`);
+      f.add(`<text x="${f.m.l + 4}" y="${f.m.t + 10}">log₂ n_k  |  bar height = v</text>`);
+      f.draw('Orbit plot');
+      vbox.innerHTML = vs.map(v => `<span class="${v === 1 ? 'v1' : 'vb'}">${v}</span>`).join('');
+    }
+    form.addEventListener('submit', e => { e.preventDefault(); run(input.value); });
+    form.querySelectorAll('button[data-n]').forEach(b => b.addEventListener('click', () => { input.value = b.dataset.n; run(b.dataset.n); }));
+    run(input.value);
+  })();
+})();
+</script>
+
+<script>
+(function () {
+  const titles = { zh: 'Syracuse 开环收缩', en: 'Syracuse Open-Loop Contraction' };
+  function setLang(l) {
+    document.documentElement.dataset.lang = l; document.documentElement.lang = l === 'en' ? 'en' : 'zh-CN';
+    document.title = titles[l];
+    document.querySelectorAll('[data-set-lang]').forEach(b => b.setAttribute('aria-pressed', b.dataset.setLang === l));
+    try { localStorage.setItem('corpus-lang', l); } catch (e) {}
+  }
+  let l = 'zh';
+  try { l = location.hash === '#en' ? 'en' : (localStorage.getItem('corpus-lang') || 'zh'); } catch (e) { if (location.hash === '#en') l = 'en'; }
+  document.querySelectorAll('[data-set-lang]').forEach(b => b.addEventListener('click', () => setLang(b.dataset.setLang)));
+  setLang(l);
 })();
 </script>

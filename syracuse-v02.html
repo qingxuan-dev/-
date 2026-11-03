@@ -167,10 +167,17 @@ ol.refs { padding-left: 22px; font-size: 15px; display: grid; gap: 8px; }
 .small { font-size: 13.5px; color: var(--muted); font-family: var(--f-display); }
 footer { margin-top: 48px; font-size: 13px; color: var(--muted); font-family: var(--f-display); }
 @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+
+.langsw { position: fixed; z-index: 20; top: calc(env(safe-area-inset-top, 0px) + 12px); right: max(12px, env(safe-area-inset-right, 0px)); display: inline-flex; border: 1px solid var(--shrink); border-radius: 999px; overflow: hidden; font-family: var(--f-display); font-size: 13px; background: var(--surface); box-shadow: 0 1px 4px rgba(0,0,0,.08); }
+.langsw button { font: inherit; padding: 4px 14px; border: 0; background: transparent; color: var(--shrink); cursor: pointer; }
+.langsw button[aria-pressed="true"] { background: var(--shrink); color: var(--surface); }
+:root:not([data-lang="en"]) .en, :root[data-lang="en"] .zh { display: none !important; }
 </style>
 
+<div class="langsw" role="group" aria-label="Language / 语言"><button type="button" data-set-lang="zh" aria-pressed="true">中文</button><button type="button" data-set-lang="en" aria-pressed="false">English</button></div>
+
 <div class="layout">
-<nav class="toc" aria-label="目录">
+<nav class="toc zh" aria-label="目录">
   <div class="lbl">目录</div>
   <ol>
     <li><a href="#compare">v0.1 → v0.2 对照</a></li>
@@ -192,7 +199,7 @@ footer { margin-top: 48px; font-size: 13px; color: var(--muted); font-family: va
   </ol>
 </nav>
 
-<main>
+<main class="zh">
 <header class="hero">
   <div class="eyebrow">严格化尝试 · v0.2 · 2026-10-29 · 不是完整证明</div>
   <h1>Syracuse 映射的证明尝试：位移统计、下降证书与信息缺口</h1>
@@ -585,6 +592,419 @@ footer { margin-top: 48px; font-size: 13px; color: var(--muted); font-family: va
 
 <footer>v0.2 — 2026-10-29。本页的对照、审读注与额外模拟由审读者添加，原文内容以作者文本为准。</footer>
 </main>
+<nav class="toc en" aria-label="Contents">
+  <div class="lbl">Contents</div>
+  <ol>
+    <li><a href="#compare-en">v0.1 → v0.2 comparison</a></li>
+    <li><a href="#review-en">Review verdict</a></li>
+    <li class="sep" aria-hidden="true"></li>
+    <li><a href="#abstract-en">Abstract</a></li>
+    <li><a href="#s1-en">1 Definitions and notation</a></li>
+    <li><a href="#s2-en">2 Density of valuations</a></li>
+    <li><a href="#s3-en">3 Drift and fractional moments</a></li>
+    <li><a href="#s4-en">4 Exact log identity</a></li>
+    <li><a href="#s5-en">5 Descent certificate</a></li>
+    <li><a href="#s6-en">6 Minimal counterexamples and cycles</a></li>
+    <li><a href="#s7-en">7 Limits of probability</a></li>
+    <li><a href="#s8-en">8 Bit-budget correction</a></li>
+    <li><a href="#s9-en">9 Audit of v0.1</a></li>
+    <li><a href="#s10-en">10 Research routes</a></li>
+    <li><a href="#refs-en">11 References</a></li>
+    <li><a href="#s12-en">12 Conclusion</a></li>
+  </ol>
+</nav>
+
+<main class="en" lang="en">
+<header class="hero">
+  <div class="eyebrow">Attempt at rigour · v0.2 · 2026-10-29 · not a complete proof</div>
+  <h1>A Proof Attempt for the Syracuse Map: Valuation Statistics, Descent Certificates and the Information Gap</h1>
+  <div class="byline"><span>Author / ideas: Ruolin</span><span>Based on v0.1, “Open-Loop Contraction in the Syracuse Map”</span></div>
+  <div class="status"><strong>Status.</strong> This note proves several exact lemmas and reduces the unresolved core obstruction to one explicit universal statement. It does <b>not</b> prove the Collatz conjecture. This page first gives an item-by-item comparison with v0.1 and a review verdict, then walks through the note in order, with a “notation and techniques” panel after each section. The note was written in Chinese; this English version was translated by Claude.</div>
+</header>
+
+<div class="keynums">
+  <div><span class="k">2<sup>−J</sup></span><span class="d">Exact density of any finite valuation string: on prefixes the law is exactly i.i.d. geometric</span></div>
+  <div><span class="k">q(θ) &lt; 1</span><span class="d">Fractional moments with 0 &lt; θ &lt; 1 contract, correcting “moment methods fail”</span></div>
+  <div><span class="k">V<sub>m</sub>/m ≤ 1.737</span><span class="d">The low mean-valuation condition any non-descending orbit (minimal counterexample) must meet</span></div>
+  <div><span class="k">n<sup>0.7925</sup></span><span class="d">Corrected bit-budget exponent log₄3, matching Korec’s theorem (v0.1 said 0.585)</span></div>
+</div>
+
+<section id="compare-en">
+  <h2><span class="no">Compare</span>v0.1 → v0.2, item by item</h2>
+  <p>Labels: <span class="chip ok">correct fix</span> v0.2 fixes a real error in v0.1; <span class="chip add">new</span> a new rigorous result in v0.2; <span class="chip cut">dropped</span> in v0.1 but missing from v0.2; <span class="chip gap">still open</span> a problem in v0.2 itself. I recomputed every number in the table with the appendix code.</p>
+  <div class="tbl"><table class="cmp">
+    <thead><tr><th>Topic</th><th>v0.1</th><th>v0.2</th><th>Assessment</th></tr></thead>
+    <tbody>
+      <tr><td>Framing</td><td class="old">“Computational note” listing several findings “not located in the literature”</td><td class="new">“An attempt at rigour, not a proof”; separates rigorous results, model results and heuristics</td><td class="vd"><span class="chip ok">better</span><br>More honest framing; readers can see how strongly each sentence is supported.</td></tr>
+      <tr><td>Valuation law</td><td class="old">Single step $\Pr(v=k)=2^{-k}$</td><td class="new">Adds Prop. 2.3: any finite string has density $2^{-J}$, i.e. i.i.d. under 2-adic Haar measure</td><td class="vd"><span class="chip add">new</span><br>Correct and classical (Terras / Everett / Lagarias); should be cited rather than presented as new.</td></tr>
+      <tr><td>Moment methods</td><td class="old">$\mathbb E[\mu]=1$ “explains the failure of moment methods”</td><td class="new">$q(\theta)=\mathbb E[\mu^\theta]&lt;1$ for $0&lt;\theta&lt;1$; only the first moment is insufficient</td><td class="vd"><span class="chip ok">correct fix</span><br>Convexity of the log-MGF gives $q&lt;1$; the argument is complete.</td></tr>
+      <tr><td>Ruin bound $1/y$</td><td class="old">Applied directly to real orbits; Cramér constant measured near 0.43</td><td class="new">Holds only in the independent model, as a martingale maximal inequality; notes that the $+1/n_i$ term blocks direct transfer</td><td class="vd"><span class="chip ok">more rigorous</span> <span class="chip cut">dropped</span><br>The 0.43 measurement was not kept; as an empirical observation it could stay.</td></tr>
+      <tr><td>Exact identity</td><td class="old">Only the approximation $S\approx\log_2 3-v$</td><td class="new">$\ln\frac{n_m}{n_0}=m\ln3-V_m\ln2+\sum\ln(1+\frac1{3n_i})$</td><td class="vd"><span class="chip add">new</span><br>Correct; isolates the effect of the $+1$ exactly.</td></tr>
+      <tr><td>Descent certificate</td><td class="old">None</td><td class="new">Thm 5.1: not yet descended and $V_m&gt;m\log_2(3+1/n_0)$ ⇒ $n_m&lt;n_0$</td><td class="vd"><span class="chip add">new</span> <span class="chip gap">needs placing</span><br>Proof is correct. It is very close to Terras’ “coefficient stopping time” and should cite it rather than call itself a “new core lemma”. See the plot in §5.</td></tr>
+      <tr><td>Cycles</td><td class="old">Only lists literature in §8</td><td class="new">A cycle’s mean valuation must lie in $(1.585,\,1.737]$</td><td class="vd"><span class="chip add">new</span> <span class="chip gap">can be sharpened</span><br>Correct. Using the verified $n_{\min}&gt;2^{71}$, the interval shrinks to width about $2\times10^{-22}$, the starting point for Eliahou-style cycle-length bounds.</td></tr>
+      <tr><td>Negative feedback</td><td class="old">Claim 6.3: obstructs every locally monotone Lyapunov functional</td><td class="new">Downgraded: only shows no compensation in i.i.d. conditional means</td><td class="vd"><span class="chip ok">correct fix</span><br>$\mathbb E[v\mid r]=3$ follows directly from Prop. 2.3 and cannot rule out state-dependent Lyapunov functions.</td></tr>
+      <tr><td>Bit budget</td><td class="old">Gap of 2.41×; Terras escorts to $n^{0.585}$</td><td class="new">A block uses $v_i$ parity bits: $4.819\log_2 n$ steps needed; escort reaches $n^{\log_4 3}\approx n^{0.7925}$</td><td class="vd"><span class="chip ok">correct fix</span><br>The most important fix. The exponent matches Korec (1994). My simulation: 1024-bit starts average $2.415\log_2 n$ blocks and $4.827\log_2 n$ shortcut steps.</td></tr>
+      <tr><td>Hypothesis 7.2</td><td class="old">Bit-forcing coupling lemma, discrepancy and sample space undefined</td><td class="new">Points out undefined terms and the $S(1)=1$ counterexample; rewritten as the “anomalous orbit exclusion problem”</td><td class="vd"><span class="chip ok">correct fix</span> <span class="chip gap">still open</span><br>The new statement implies the conjecture but is essentially a restatement of the stopping-time problem; difficulty is not reduced. v0.2 admits as much.</td></tr>
+      <tr><td>Data checks</td><td class="old">200,000 trajectories; $v_{\max}$ predicted with $N=3\times10^5$</td><td class="new">Actually 199,999; $v=20$ occurs at 349,525, so use $N=4\times10^5$, predicting 20.19</td><td class="vd"><span class="chip ok">correct fix</span><br>My rerun: 199,999 starts, 696,730 blocks, $\mathbb E[v]=2.00123003$, matching v0.2.</td></tr>
+      <tr><td>Dropped content</td><td class="old">§5.3 contraction decomposition; Prop. 5.1 least witnesses; Remark 7.3 negative-integer counter-model; §9 adelic outlook</td><td class="new">None of these appear</td><td class="vd"><span class="chip cut">dropped</span><br>Suggest restoring Remark 7.3. The negative integers have the same drift yet have cycles, which makes them the best test for any “proof attempt”.</td></tr>
+      <tr><td>References</td><td class="old">10 entries, no page numbers</td><td class="new">6 entries with pages and DOIs; adds Korec</td><td class="vd"><span class="chip ok">better</span> <span class="chip cut">dropped</span><br>Lagarias’ survey, Krasikov–Lagarias, Eliahou and Simons–de Weger are gone; Eliahou and Simons–de Weger should return for the cycle discussion.</td></tr>
+    </tbody>
+  </table></div>
+</section>
+
+<section id="review-en">
+  <h2><span class="no">Review</span>Overall verdict</h2>
+  <p>v0.2 is clearly better than v0.1. It fixes two real errors (the units of the bit budget, and the claim that “moment methods fail”), separates model results from statements about integers, and no longer claims uncertain priority. Its main value is clarity rather than progress: the new core statement is close to equivalent to the classical stopping-time problem, so the note mainly states the obstruction clearly rather than making it smaller.</p>
+  <div class="verdict">
+    <div>
+      <h4>What it does well</h4>
+      <ul>
+        <li>The bit-budget fix is correct and matches Korec’s exponent $\log_4 3$.</li>
+        <li>Theorem 5.1 has a short, complete proof that can be formalised directly.</li>
+        <li>§7 explains the gap between “Haar-almost everywhere” and “every positive integer”, and the issue of the order of limits.</li>
+        <li>The audit of v0.1 is specific and checkable.</li>
+      </ul>
+    </div>
+    <div>
+      <h4>What still needs changing</h4>
+      <ul>
+        <li>Notation clash: $S(n)$ is the map and $S_i$ is also the log increment (§1 and §3).</li>
+        <li>Theorem 5.1 should be placed as a variant of Terras’ coefficient stopping time, with a citation.</li>
+        <li>§6.1 follows directly from (B) and can be merged or removed.</li>
+        <li>$V_m$ is defined twice at the end of §1.2.</li>
+        <li>Suggest restoring v0.1’s Remark 7.3 (negative-integer counter-model).</li>
+      </ul>
+    </div>
+    <div>
+      <h4>What I checked additionally</h4>
+      <ul>
+        <li>Of the 199,999 starts, 199,996 fire the descent certificate exactly at the block of first descent.</li>
+        <li>The exceptions are 27, 31 and 63: they descend, but the certificate never fires (it is sufficient, not necessary). For 27, at block 37, $V=59$ against a threshold of $59.30$.</li>
+        <li>Try these three numbers in the explorer in §5.</li>
+      </ul>
+    </div>
+  </div>
+  <p class="small">The visual version of v0.1 is at <a href="https://claude.ai/artifact/Xe6ZNGwwVpP1Jbd6S4MS4C" target="_blank" rel="noopener">Syracuse Open-Loop Contraction</a>.</p>
+</section>
+
+<section id="abstract-en">
+  <h2>Abstract</h2>
+  <p>We study the Syracuse odd-compression map $S(n)=\frac{3n+1}{2^{v(n)}}$, $v(n)=\nu_2(3n+1)\ge1$, for positive odd $n$. The intuition under test: although the first halving in each block is forced and the multiplier may still be about $3/2$, the accumulated halvings might force the system downwards on a longer time scale.</p>
+  <p>The note obtains five rigorous conclusions:</p>
+  <ol>
+    <li>Over odd integers in natural density, $\Pr(v=j)=2^{-j}$; more strongly, any fixed finite valuation string has density $2^{-\sum v_i}$, corresponding to i.i.d. geometric variables in the odd 2-adic Haar probability space.</li>
+    <li>In the simplified multiplier model $\mu=3\cdot2^{-v}$, the arithmetic mean multiplier is 1, the log drift is $\log_2 3-2&lt;0$, and every fractional moment with $0&lt;\theta&lt;1$ satisfies $\mathbb E[\mu^\theta]&lt;1$. Being critical in the first moment does not mean every moment method fails.</li>
+    <li>Real orbits have an exact descent criterion: if the orbit has not yet gone below $n_0$ and the current prefix’s mean valuation exceeds $\log_2(3+1/n_0)$, the current endpoint is below $n_0$.</li>
+    <li>Any orbit that never goes below its start $n_0&gt;1$ satisfies $\frac1m\sum_{i&lt;m}v_i\le\log_2(3+\frac1{n_0})&lt;2$ on every prefix. This is the “low accumulated halving” condition any minimal counterexample or nontrivial cycle must meet.</li>
+    <li>Statistical independence and the strong law of large numbers show only that typical 2-adic starting points cannot satisfy this low-average condition forever; positive integers form a null set under 2-adic Haar measure, so a special positive integer is not excluded. What is missing is a way to lift statistical regularity to deterministic control of every positive integer’s orbit.</li>
+  </ol>
+  <p>In addition, the bit-budget calculation in §7 of v0.1 needs correcting: a Syracuse block corresponds to $v_i$ iterations of the shortcut map, not exactly one. $2.409\log_2 n$ blocks correspond to about $4.819\log_2 n$ shortcut iterations; using only about $\log_2 n$ initial parity bits, the model’s residual exponent is $\log_4 3\approx0.79248$, matching Korec’s classical result. This is heuristic agreement, not a new proof.</p>
+</section>
+
+<section id="s1-en">
+  <h2><span class="no">§1</span>Definitions and notation</h2>
+  <p>To avoid confusing “ordinary steps” with “odd blocks”, two maps are used.</p>
+  <h3>1.1 The shortcut map</h3>
+  <div class="m-disp">$$C(n)=\begin{cases} n/2, & n\text{ even},\\ (3n+1)/2, & n\text{ odd}. \end{cases}$$</div>
+  <p>Each iteration records one parity bit.</p>
+  <h3>1.2 The Syracuse odd map</h3>
+  <p>For odd $n$, let $v(n)=\nu_2(3n+1)$ and $S(n)=\frac{3n+1}{2^{v(n)}}$. Then $S(n)$ is odd and</p>
+  <div class="m-disp">$$S(n)=C^{v(n)}(n).$$</div>
+  <p>So a Syracuse block is not a fixed-length step; it uses $v(n)$ shortcut iterations. Write $n_{i+1}=S(n_i)$, $v_i=v(n_i)$, $V_m=\sum_{i=0}^{m-1}v_i$, the total number of factors of 2 removed in the first $m$ blocks.</p>
+  <aside class="gloss" aria-label="§1 notation and techniques">
+    <h4>Notation and techniques</h4>
+    <dl>
+      <div class="row"><dt><span class="tag sym">notation</span>$C(n)$</dt><dd>The shortcut (accelerated) Collatz map: for odd numbers it merges “times 3 plus 1” with the halving that must follow. Each step reads exactly one parity bit; this is the time unit Terras’ theorem uses.</dd></div>
+      <div class="row"><dt><span class="tag sym">notation</span>$C^{v}$</dt><dd>$C$ iterated $v$ times (a power of a function means composition, not exponentiation). $S(n)=C^{v(n)}(n)$: one odd step plus $v-1$ even steps.</dd></div>
+      <div class="row"><dt><span class="tag sym">notation</span>$V_m$</dt><dd>Cumulative valuation: how many factors of 2 the first $m$ blocks removed in total, which is also the number of shortcut steps they used.</dd></div>
+      <div class="row"><dt><span class="tag note">review note</span>Notation clash</dt><dd>The note uses $S(n)$ for the map, and §3 also uses $S_i=\log_2\mu_i$ for the log increment. Suggest renaming the latter $X_i$ or $\ell_i$. $V_m$ is also defined twice at the end of §1.2.</dd></div>
+    </dl>
+  </aside>
+</section>
+
+<section id="s2-en">
+  <h2><span class="no">§2</span>Rigorous result I: natural density of valuations</h2>
+  <div class="prop"><span class="t">Proposition 2.1.</span> For positive odd integers drawn uniformly in natural density, $\Pr(v=j)=2^{-j}$ and $\Pr(v\ge j)=2^{-(j-1)}$.</div>
+  <p class="proof"><span class="t">Proof.</span> $v\ge j$ is equivalent to $3n+1\equiv0\pmod{2^j}$. Since 3 is invertible mod $2^j$, there is a unique residue class of solutions, and it is odd. Odd numbers occupy $2^{j-1}$ residue classes mod $2^j$, so the proportion is $2^{-(j-1)}$; differencing gives $\Pr(v=j)=2^{-j}$. $\square$</p>
+  <p><b>Corollary 2.2.</b> $\mathbb E[v]=\sum j/2^j=2$, $\mathbb E[v^2]=6$, $\operatorname{Var}(v)=2$. These follow exactly from counting residue classes, not from extrapolating simulations.</p>
+  <div class="prop"><span class="t">Proposition 2.3 (joint law of finite strings).</span> Fix $(j_0,\dots,j_{m-1})$ with $j_i\ge1$ and $J=\sum j_i$. The odd integers whose first $m$ valuations equal this string have natural density
+    <div class="m-disp">$$2^{-J}$$</div>
+    among all positive odd integers. Hence in the odd 2-adic Haar probability space (ignoring the single null point with $3n+1=0$), $v_0,v_1,\dots$ are i.i.d. geometric variables.</div>
+  <p class="proof"><span class="t">Proof sketch.</span> Specifying $v_0=j_0$ restricts the start to one odd residue class mod $2^{j_0+1}$. After that, the next state is an affine function of the original start, and specifying $v_1=j_1$ fixes $j_1$ more low bits, and so on. In total $J$ extra low bits are fixed, giving density $2^{-J}$.</p>
+  <p><b>Key caveat.</b> This is a statement about the population of starting values, not a claim that a fixed positive integer’s orbit is resampled at each step.</p>
+  <aside class="gloss" aria-label="§2 notation and techniques">
+    <h4>Notation and techniques</h4>
+    <dl>
+      <div class="row"><dt><span class="tag sym">term</span>Natural density</dt><dd>The limit as $N\to\infty$ of the proportion of numbers in $1..N$ satisfying a condition. “Probability” means uniformly sampling the start.</dd></div>
+      <div class="row"><dt><span class="tag sym">notation</span>2-adic Haar measure</dt><dd>The “uniform distribution” on $\mathbb Z_2$: every binary digit is an independent fair coin. Each residue class mod $2^k$ has measure $2^{-k}$.</dd></div>
+      <div class="row"><dt><span class="tag sym">term</span>Cylinder set</dt><dd>A set constrained only on finitely many coordinates, e.g. “the first $m$ valuations equal a given string”. Measure theory defines probabilities on cylinders first, then extends them to the whole space.</dd></div>
+      <div class="row"><dt><span class="tag tech">technique</span>Fixing low bits step by step</dt><dd>Each specified valuation restricts the start to a finer residue class. Specifying $v=j$ fixes $j$ new binary digits, so probabilities multiply, giving independence.</dd></div>
+      <div class="row"><dt><span class="tag sym">term</span>Affine function</dt><dd>A function of the form $an+b$. Once the first few valuations are fixed, $n_k = (3^k n + c)/2^{V_k}$ is affine in the start $n$.</dd></div>
+      <div class="row"><dt><span class="tag note">review note</span>Attribution</dt><dd>Proposition 2.3 is the classical result of Terras (1976) and Everett (1977) written in Syracuse coordinates; it also appears in Lagarias’ 1985 survey and should be cited.</dd></div>
+    </dl>
+  </aside>
+</section>
+
+<section id="s3-en">
+  <h2><span class="no">§3</span>Rigorous result II: drift and moments of the simplified multiplier</h2>
+  <p>Ignoring the $+1$ for now, define the simplified multiplier $\mu_i=3\cdot2^{-v_i}$ and $S_i=\log_2\mu_i=\log_2 3-v_i$. This is the random-model multiplier, not an exact expression for the real one.</p>
+  <h3>3.1 Arithmetic and log averages</h3>
+  <div class="m-disp">$$\mathbb E[\mu]=3\sum_{j\ge1}4^{-j}=1,\qquad \mathbb E[S]=\log_2 3-2=-0.4150375\ldots,\qquad \exp(\mathbb E[\ln\mu])=\tfrac34 .$$</div>
+  <h3>3.2 Correcting “moment methods fail”</h3>
+  <p>For any $0&lt;\theta&lt;1$,</p>
+  <div class="m-disp">$$\mathbb E[\mu^\theta]=3^\theta\sum_{j\ge1}2^{-j}2^{-\theta j}=\frac{3^\theta}{2^{1+\theta}-1}=:q(\theta),\qquad q(0)=q(1)=1,\quad q(\theta)&lt;1\ (0&lt;\theta&lt;1).$$</div>
+  <p>The last inequality follows from the strict convexity of $\log q$: it vanishes at 0 and 1, so it is strictly negative between them. In the independent model the first moment equals 1 while fractional moments contract. The first moment alone cannot prove contraction; fractional moments help in the random model but cannot be lifted directly to every deterministic orbit.</p>
+  <figure>
+    <div class="legend"><span><i style="background:var(--shrink)"></i>q(θ) = E[μ^θ]</span><span><i style="background:var(--ok)"></i>contracting range 0 &lt; θ &lt; 1</span></div>
+    <div class="chart" id="ch-q-en"></div>
+    <figcaption>Figure 1. $q(\theta)$ is convex and equals 1 at 0 and 1. The whole range $0&lt;\theta&lt;1$ lies below 1, with minimum $q(0.5)\approx0.947$. v0.1 only looked at the $\theta=1$ end.</figcaption>
+  </figure>
+  <h3>3.3 Lundberg coefficient and maximal bound</h3>
+  <p>$\mathbb E[2^{\theta S}]=q(\theta)$, with positive root $\theta=1$. In the independent model $M_m=2^{\sum_{i&lt;m}S_i}$ is a nonnegative martingale, so</p>
+  <div class="m-disp">$$\Pr\Big(\sup_{m\ge0}M_m\ge y\Big)\le\frac1y .$$</div>
+  <p>This holds only for the model product. The real multiplier is $\frac{n_{i+1}}{n_i}=\frac{3+1/n_i}{2^{v_i}}$, with an extra state-dependent positive term $1/n_i$.</p>
+  <aside class="gloss" aria-label="§3 notation and techniques">
+    <h4>Notation and techniques</h4>
+    <dl>
+      <div class="row"><dt><span class="tag sym">notation</span>$q(\theta)$, fractional moments</dt><dd>$\mathbb E[\mu^\theta]$ where $\theta$ need not be an integer. It is the same quantity as $\mathbb E[2^{\theta S}]$.</dd></div>
+      <div class="row"><dt><span class="tag tech">technique</span>Log-convexity</dt><dd>The log of a moment-generating function, $\log\mathbb E[e^{\theta X}]$, is convex in $\theta$ (by Hölder’s inequality). A convex function is strictly negative between two zeros, so $q(0)=q(1)=1$ with $q$ non-constant gives $q&lt;1$ in between.</dd></div>
+      <div class="row"><dt><span class="tag tech">technique</span>Fractional moment method</dt><dd>If $\mathbb E[\mu^\theta]=q&lt;1$, then $\mathbb E[M_m^\theta]=q^m\to0$, and Markov’s inequality gives $\Pr(M_m&gt;\varepsilon)\le q^m/\varepsilon^\theta$, exponential decay. This is how contraction can be proved even when the first moment is critical.</dd></div>
+      <div class="row"><dt><span class="tag sym">term</span>Nonnegative martingale</dt><dd>A nonnegative process with $\mathbb E[M_{m+1}\mid\text{past}]=M_m$, like a gambler’s fortune in a fair game. Because $\mathbb E[\mu]=1$, the product $M_m$ is a martingale.</dd></div>
+      <div class="row"><dt><span class="tag tech">technique</span>Ville’s maximal inequality</dt><dd>The probability that a nonnegative martingale ever exceeds $y$ is at most $\mathbb E[M_0]/y$. Here $M_0=1$, giving $1/y$.</dd></div>
+      <div class="row"><dt><span class="tag sym">notation</span>$\sup$</dt><dd>Supremum, roughly the largest value the sequence reaches (it may not be attained).</dd></div>
+    </dl>
+  </aside>
+</section>
+
+<section id="s4-en">
+  <h2><span class="no">§4</span>Rigorous result III: an exact log identity for real orbits</h2>
+  <p>For a real orbit, $\frac{n_{i+1}}{n_i}=\frac{3n_i+1}{2^{v_i}n_i}=\frac{3+1/n_i}{2^{v_i}}$. Taking logs and summing:</p>
+  <div class="m-disp">$$\ln\frac{n_m}{n_0}=m\ln3-(\ln2)V_m+\sum_{i=0}^{m-1}\ln\Big(1+\frac1{3n_i}\Big).$$</div>
+  <p>The three terms are: growth from multiplying by 3 in each block; contraction from all the halvings; and the exact correction from the $+1$. So “average $v=2$” is not by itself a complete proof that real orbits contract; one must also control the last term and say which orbits the average law applies to.</p>
+  <aside class="gloss" aria-label="§4 notation and techniques">
+    <h4>Notation and techniques</h4>
+    <dl>
+      <div class="row"><dt><span class="tag tech">technique</span>Telescoping product</dt><dd>$\frac{n_m}{n_0}=\prod_{i&lt;m}\frac{n_{i+1}}{n_i}$; all intermediate terms cancel. Taking logs gives a sum that can be controlled term by term.</dd></div>
+      <div class="row"><dt><span class="tag tech">technique</span>Separating the correction</dt><dd>Write $3+1/n$ as $3(1+\frac1{3n})$ to split the main term from the correction. The correction is positive and shrinks as $n$ grows: for $n\ge3$ each term is at most $\ln(10/9)\approx0.105$.</dd></div>
+      <div class="row"><dt><span class="tag sym">notation</span>$\ln$ and $\log_2$</dt><dd>This section uses natural logs, the others base 2. They differ only by the constant factor $\ln2\approx0.693$.</dd></div>
+    </dl>
+  </aside>
+</section>
+
+<section id="s5-en">
+  <h2><span class="no">§5</span>Core lemma: non-descending orbits must lack enough halvings</h2>
+  <div class="prop"><span class="t">Theorem 5.1 (descent certificate and necessary condition).</span> Let $n_0&gt;1$ be odd and $n_{i+1}=S(n_i)$.
+    <p><b>(A) Finite descent certificate.</b> If $n_i\ge n_0$ for all $0\le i&lt;m$, and some $m\ge1$ satisfies</p>
+    <div class="m-disp">$$V_m&gt;m\log_2\Big(3+\frac1{n_0}\Big),$$</div>
+    <p>then $n_m&lt;n_0$.</p>
+    <p><b>(B) Necessary condition for never descending.</b> If $n_m\ge n_0$ for all $m$, then every $m\ge1$ satisfies</p>
+    <div class="m-disp">$$\frac{V_m}{m}\le\log_2\Big(3+\frac1{n_0}\Big).$$</div>
+    <p>In particular, for $n_0\ge3$ the right side is $\le\log_2(10/3)\approx1.7369656&lt;2$; as $n_0\to\infty$ it tends to $\log_2 3\approx1.5849625$.</p>
+  </div>
+  <p class="proof"><span class="t">Proof.</span> On a prefix with $n_i\ge n_0$, $\frac{n_{i+1}}{n_i}=\frac{3+1/n_i}{2^{v_i}}\le\frac{3+1/n_0}{2^{v_i}}$. Multiplying gives $\frac{n_m}{n_0}\le\frac{(3+1/n_0)^m}{2^{V_m}}$. If $V_m&gt;m\log_2(3+1/n_0)$ the right side is below 1, giving (A). If the orbit never goes below its start, the left side is at least 1, giving (B). $\square$</p>
+  <p><b>What the theorem does.</b> It turns “are there enough accumulated factors of 2” into a decidable condition on finite prefixes. If one could prove that every odd $n_0&gt;1$ has a prefix satisfying (A), every start would fall below itself, and strong induction would give that every positive integer reaches 1. But no one has shown such a prefix must appear, so this is a rigorous descent criterion, not a complete proof.</p>
+
+  <h3>Explorer: when does the certificate fire?</h3>
+  <p>The vertical axis is $V_m-m\log_2 3$, how far the accumulated valuation is ahead of “exactly break-even”. The certificate threshold is a line of tiny slope, $m\,(\log_2(3+1/n_0)-\log_2 3)$. The certificate fires when the black line crosses the threshold (blue line); the vertical line marks the block where the orbit first actually goes below $n_0$.</p>
+  <div class="explorer">
+    <form id="cert-form-en">
+      <label for="cert-n-en">Odd starting value n₀ (&gt; 1)
+        <input id="cert-n-en" name="n" inputmode="numeric" autocomplete="off" value="27">
+      </label>
+      <button type="submit">Compute</button>
+      <button type="button" class="ghost" data-n="27">27</button>
+      <button type="button" class="ghost" data-n="31">31</button>
+      <button type="button" class="ghost" data-n="63">63</button>
+      <button type="button" class="ghost" data-n="703">703</button>
+      <button type="button" class="ghost" data-n="77671">77671</button>
+    </form>
+    <p class="err" id="cert-err-en" role="status"></p>
+    <div class="stats" id="cert-stats-en"></div>
+    <div class="legend"><span><i style="background:var(--ink)"></i>V_m − m·log₂3</span><span><i style="background:var(--shrink)"></i>certificate threshold</span><span><i style="background:var(--muted)"></i>0 (log₂3 line)</span><span><i style="background:var(--flag)"></i>actual first descent</span></div>
+    <div class="chart" id="ch-cert-en"></div>
+  </div>
+  <p class="small">Among all 199,999 odd starts from 3 to 399,999, the certificate fires exactly at the block of actual descent for 199,996. The exceptions are 27, 31 and 63: they descend, but the certificate never fires, because the threshold uses the worst case $3+1/n_0$ while the real correction terms $1/n_i$ are smaller.</p>
+  <aside class="gloss" aria-label="§5 notation and techniques">
+    <h4>Notation and techniques</h4>
+    <dl>
+      <div class="row"><dt><span class="tag tech">technique</span>Bounding each term by the worst case</dt><dd>While the orbit has “not yet descended”, $n_i\ge n_0$, so $1/n_i\le1/n_0$ and every term is controlled by the same constant, giving a clean product bound. The cost is a looser bound, so the certificate is only sufficient.</dd></div>
+      <div class="row"><dt><span class="tag tech">technique</span>Contrapositive</dt><dd>(B) is the contrapositive of (A): if the orbit never descends, the certificate condition never holds.</dd></div>
+      <div class="row"><dt><span class="tag tech">technique</span>Strong induction</dt><dd>Assume every number below $n_0$ reaches 1 and prove $n_0$ does too. As soon as $n_0$’s orbit enters a smaller number, that number’s result carries over. So “every number falls below itself” is enough to give the whole conjecture.</dd></div>
+      <div class="row"><dt><span class="tag sym">term</span>Stopping time</dt><dd>The number of steps until the orbit first goes below its start, $\sigma(n)$. The Collatz conjecture is equivalent to $\sigma(n)&lt;\infty$ for all $n&gt;1$.</dd></div>
+      <div class="row"><dt><span class="tag note">review note</span>Relation to classical results</dt><dd>Terras defined the “coefficient stopping time” $\tau(n)$: the first time in the shortcut orbit when $3^{(\text{odd steps})}/2^{(\text{total steps})}$ drops below 1, and proved $\tau(n)\le\sigma(n)$. Theorem 5.1 is the same idea with an explicit correction for the $+1$; the note should say so.</dd></div>
+    </dl>
+  </aside>
+</section>
+
+<section id="s6-en">
+  <h2><span class="no">§6</span>Corollary: minimal counterexamples and cycles are anomalous low-valuation orbits</h2>
+  <p>Suppose the conjecture is false and let $n_0$ be the least odd start that never reaches 1. If its orbit contains any odd state below $n_0$, minimality says that state reaches 1, and so does $n_0$, a contradiction. So $n_i\ge n_0$ for all $i$, and by Theorem 5.1,</p>
+  <div class="m-disp">$$\frac{V_m}{m}\le\log_2\Big(3+\frac1{n_0}\Big)&lt;2\qquad\text{for all }m.$$</div>
+  <p>A minimal counterexample cannot have the random model’s typical mean valuation 2; it must belong to a special set with persistently low values.</p>
+  <h3>6.1 An orbit that stays ≥ 3 with mean valuation tending to 2</h3>
+  <p>Then $\ln(1+\frac1{3n_i})\le\ln(10/9)$, so $\ln\frac{n_m}{n_0}\le m\ln3-V_m\ln2+m\ln(10/9)$. If $V_m/m\to2$, the limsup of the right side divided by $m$ is at most $\ln3-2\ln2+\ln(10/9)=\ln(5/6)&lt;0$, so $n_m$ decreases exponentially, a contradiction.</p>
+  <h3>6.2 Nontrivial cycles</h3>
+  <p>If $n_m=n_0$, then $1=\prod_{i&lt;m}\frac{3+1/n_i}{2^{v_i}}$, so</p>
+  <div class="m-disp">$$\frac{V_m}{m}=\frac1m\sum_{i=0}^{m-1}\log_2\Big(3+\frac1{n_i}\Big),\qquad \log_2 3&lt;\frac{V_m}{m}\le\log_2\Big(3+\frac1{n_{\min}}\Big).$$</div>
+  <p>A nontrivial positive odd cycle has $n_{\min}\ge3$, so its mean valuation must lie in $1.5849625\ldots&lt;V_m/m\le1.7369656\ldots$, not at 2. Negative-drift intuition alone cannot exclude cycles.</p>
+  <figure>
+    <div class="chart" id="ch-band-en"></div>
+    <figcaption>Figure 2. The number line of mean valuations $V_m/m$. Typical orbits sit at 2; any non-descending orbit is pushed below 1.737; cycles can only live in the narrow band $(\log_2 3,\,1.737]$. Using the verified $n_{\min}&gt;2^{71}$, the band’s width shrinks to about $2\times10^{-22}$.</figcaption>
+  </figure>
+  <aside class="gloss" aria-label="§6 notation and techniques">
+    <h4>Notation and techniques</h4>
+    <dl>
+      <div class="row"><dt><span class="tag tech">technique</span>Minimal counterexample</dt><dd>Assume a counterexample exists, take the smallest one, and use minimality to derive extra properties (here, the orbit never goes below its start), then find a contradiction or characterise it.</dd></div>
+      <div class="row"><dt><span class="tag sym">notation</span>$\limsup$</dt><dd>The largest value the tail of a sequence keeps returning to. A negative limsup means the sequence is eventually always negative, so $\ln(n_m/n_0)\to-\infty$.</dd></div>
+      <div class="row"><dt><span class="tag tech">technique</span>The product identity of a cycle</dt><dd>Going once round a cycle, the product of all multipliers is 1. This turns “a cycle exists” into an exact equality between $2^{V_m}$ and $\prod(3+1/n_i)$, the standard starting point for excluding cycles.</dd></div>
+      <div class="row"><dt><span class="tag note">review note</span>It can be sharper</dt><dd>All $n&lt;2^{71}$ are verified to reach 1, so a nontrivial cycle has $n_{\min}&gt;2^{71}$ and the upper bound becomes $\log_2 3+O(2^{-71})$. Then $2^{V_m}$ must be extraordinarily close to $3^m$, and with the continued fraction of $\log_23$ this gives huge lower bounds on cycle length (Eliahou 1993, Simons–de Weger 2005). Also, §6.1 is already covered by (B) and can be removed.</dd></div>
+    </dl>
+  </aside>
+</section>
+
+<section id="s7-en">
+  <h2><span class="no">§7</span>Why probability cannot yet give “100% no divergence”</h2>
+  <h3>7.1 What the probabilistic model proves rigorously</h3>
+  <p>In the odd 2-adic Haar space the $v_i$ are i.i.d. with $\mathbb E[v_i]=2$. By the strong law of large numbers, almost surely $\frac1m\sum_{i&lt;m}v_i\to2$. So for any fixed $c&lt;2$, almost every valuation string has some finite prefix with $V_m/m&gt;c$. But 2-adic points do not carry the archimedean ordering of positive integers, so this cannot directly show that a given positive integer’s orbit descends.</p>
+  <h3>7.2 Why this does not cover every positive integer</h3>
+  <p>The positive integers form a countable subset of $\mathbb Z_2$; each point has Haar measure zero, so all positive integers together have measure zero. “Haar-almost every start obeys a law” does not imply “every positive integer obeys it”. Nor should these two statements be confused:</p>
+  <ul>
+    <li>for each fixed prefix, as the range of starts grows, the valuation strings tend to independence;</li>
+    <li>for each fixed start, the mean valuation along the infinite orbit tends to 2.</li>
+  </ul>
+  <p>They take limits in different orders. Terras–Everett proved that almost all positive integers fall below their start in finite time; Korec proved that for any $c&gt;\log_4 3$ almost all starts go below $n^c$; Tao proved in logarithmic density that almost all orbits go below any function tending to infinity. All are strong, and none covers every positive integer.</p>
+  <figure>
+    <div class="chart" id="ch-logic-en"></div>
+    <figcaption>Figure 3. v0.2’s chain of argument. Every step on the left is rigorous; the break is the step from “a set of measure zero” to “the empty set”.</figcaption>
+  </figure>
+  <h3>7.3 The original Hypothesis 7.2 needs rewriting</h3>
+  <p>The original “bit-forcing coupling lemma” did not define discrepancy, the sample space, or what is uniform, nor whether the constant is uniform in $n,k$. Read as “every orbit’s later valuations stay geometrically distributed”, it is plainly false: $S(1)=1$ and $v(1)=2$, so the orbit of 1 has valuations $2,2,2,\dots$. The note proposes a checkable bridge statement instead:</p>
+  <div class="claim"><span class="t">Anomalous orbit exclusion problem.</span> There is no odd positive integer $n_0&gt;1$ whose Syracuse valuation string satisfies, for all $m\ge1$,
+    <div class="m-disp">$$\sum_{i=0}^{m-1}v_i\le m\log_2\Big(3+\frac1{n_0}\Big).$$</div></div>
+  <p>If this were proved, Theorem 5.1 would immediately give finite descent from every start, and strong induction would give the conjecture. But this statement is already very close to the classical stopping-time problem itself.</p>
+  <aside class="gloss" aria-label="§7 notation and techniques">
+    <h4>Notation and techniques</h4>
+    <dl>
+      <div class="row"><dt><span class="tag sym">term</span>Strong law of large numbers</dt><dd>The sample mean of i.i.d. variables converges to the expectation with probability 1. “With probability 1” allows an exceptional set of measure zero.</dd></div>
+      <div class="row"><dt><span class="tag sym">term</span>Almost everywhere</dt><dd>True except on a set of measure zero. The positive integers themselves lie in such a set, so “almost everywhere” guarantees nothing about them.</dd></div>
+      <div class="row"><dt><span class="tag tech">technique</span>Countable sets have measure zero</dt><dd>Each single point has Haar measure 0 (it lies in a residue class mod $2^k$ of measure $\le2^{-k}$ for every $k$). Countably many zeros still sum to zero.</dd></div>
+      <div class="row"><dt><span class="tag sym">term</span>Archimedean size</dt><dd>The usual size of a number, $|x|_\infty$. The 2-adic world has only $|x|_2$, where “falling below the start” has no meaning; this is one reason probabilistic results cannot be carried straight back to the integers.</dd></div>
+      <div class="row"><dt><span class="tag tech">technique</span>Order of limits</dt><dd>“Fix $m$, then let $N\to\infty$” and “fix $n$, then let $m\to\infty$” are different statements. Swapping limits needs a uniform estimate, which is exactly what is missing.</dd></div>
+      <div class="row"><dt><span class="tag note">review note</span>Strength of the bridge statement</dt><dd>It implies the conjecture; conversely, any $n_0$ that never descends satisfies condition (B). So it is nearly equivalent to “every $n&gt;1$ has finite stopping time”: an exact restatement of the obstruction, not a reduction in difficulty.</dd></div>
+    </dl>
+  </aside>
+</section>
+
+<section id="s8-en">
+  <h2><span class="no">§8</span>Correcting the v0.1 bit budget</h2>
+  <p>v0.1 estimated the number of blocks as $\frac{\log_2 n}{2-\log_2 3}\approx2.409\log_2 n$. This is the number of blocks for the model’s log scale to drop by about $\log_2 n$, not “the exact number of steps to reach 1”: once the orbit reaches small values the $+1$ is not negligible, and the fixed point $S(1)=1$ needs separate treatment.</p>
+  <p>More importantly, a block is $v_i$ shortcut steps long and $\mathbb E[v_i]=2$, so the total number of shortcut steps is about</p>
+  <div class="m-disp">$$2\cdot2.409\log_2 n\approx4.819\log_2 n .$$</div>
+  <p>Terras’ theorem controls the parity prefix of shortcut steps. Using only about $\log_2 n$ initial parity bits covers about $\tfrac12\log_2 n$ blocks, leaving a residual size of</p>
+  <div class="m-disp">$$\log_2 n_{\mathrm{res}}\approx\log_2 n-\tfrac12(2-\log_2 3)\log_2 n=\tfrac12\log_2 3\,\log_2 n,\qquad n_{\mathrm{res}}\approx n^{\log_4 3}\approx n^{0.79248}.$$</div>
+  <p>This exponent matches Korec: for every $c&gt;\log_4 3$, almost all starts fall below $n^c$. This only explains why the same exponent appears naturally; it is not a proof of Korec’s theorem. The point should also be stated as “the parity-prefix length the statistical model can control”, not “an integer carries only these bits and can have no regularity afterwards”.</p>
+  <figure>
+    <div class="legend"><span><i style="background:var(--shrink)"></i>parity bits covered by Terras</span><span><i style="background:var(--flag-bg);outline:1px dashed var(--flag)"></i>no guarantee</span><span><i style="background:var(--grow)"></i>v0.1’s conclusion</span></div>
+    <div class="chart" id="ch-bits-en"></div>
+    <figcaption>Figure 4. The unit correction. v0.1 compared blocks directly with bits; a block uses 2 parity bits on average, so $\log_2 n$ bits cover only about $0.5\log_2 n$ blocks, and the point Terras can escort to moves from $n^{0.585}$ to $n^{0.7925}$.</figcaption>
+  </figure>
+  <div class="tbl"><table>
+    <thead><tr><th>Start size (300 random odd numbers each)</th><th>blocks / log₂n</th><th>shortcut steps / log₂n</th></tr></thead>
+    <tbody>
+      <tr><td>64 bits</td><td>2.351</td><td>4.723</td></tr>
+      <tr><td>256 bits</td><td>2.409</td><td>4.817</td></tr>
+      <tr><td>1024 bits</td><td>2.415</td><td>4.827</td></tr>
+      <tr><td>Model prediction</td><td>2.409</td><td>4.819</td></tr>
+    </tbody>
+  </table></div>
+  <p class="small">This table is a simulation I ran for this page (run to 1); it is not in the v0.2 text.</p>
+  <aside class="gloss" aria-label="§8 notation and techniques">
+    <h4>Notation and techniques</h4>
+    <dl>
+      <div class="row"><dt><span class="tag sym">notation</span>$\log_4 3$</dt><dd>$=\frac{\log_2 3}{2}\approx0.7925$, i.e. $4^{0.7925}=3$. It is the balance exponent of “multiply by 3, divide by 4, every two steps”.</dd></div>
+      <div class="row"><dt><span class="tag tech">technique</span>Unit check</dt><dd>Before comparing two quantities, make sure the units agree. v0.1’s error was comparing “blocks” with “bits” directly, when a block uses 2 bits on average.</dd></div>
+      <div class="row"><dt><span class="tag sym">term</span>Korec’s theorem</dt><dd>Korec (1994): for any $c&gt;\log_4 3$, almost all $n$ reach a value below $n^c$. It is the best exponent a Terras-type argument can reach within $\log_2 n$ steps.</dd></div>
+      <div class="row"><dt><span class="tag sym">notation</span>$n_{\mathrm{res}}$</dt><dd>“Residual size”: where an orbit typically sits after the guarantee from the initial bits runs out.</dd></div>
+    </dl>
+  </aside>
+</section>
+
+<section id="s9-en">
+  <h2><span class="no">§9</span>Audit of v0.1 (main points of the original)</h2>
+  <h3>9.1 Can be kept</h3>
+  <ul>
+    <li>$\Pr(v=j)=2^{-j}$, $\mathbb E[v]=2$, $\operatorname{Var}(v)=2$: rigorous natural-density results.</li>
+    <li>$\mathbb E[\mu]=1$ and geometric mean $3/4$: rigorous model calculations.</li>
+    <li>Lundberg positive root 1 and the $1/y$ bound: valid under the independent model.</li>
+    <li>$\mathbb E[v\mid v\ge2]=3$: exact from the geometric distribution.</li>
+  </ul>
+  <h3>9.2 Should be downgraded or rewritten</h3>
+  <ol>
+    <li>“Moment methods fail”: change to “contraction cannot be derived from the first moment alone”.</li>
+    <li>“No negative feedback obstructs every locally monotone Lyapunov function”: at most shows that the i.i.d. conditional-mean model has no compensation mechanism.</li>
+    <li>“A terminating valuation of exactly 3 is a new feedback measurement”: in the i.i.d. geometric model it is 3 automatically, and simulation is just an implementation check.</li>
+    <li>“A bit-budget gap of 2.41”: units must be multiplied by the mean block length 2; the exponent should be $\log_4 3$, not 0.585.</li>
+    <li>“All positive-integer orbits follow this statistical law”: the probability space and order of limits must be made explicit.</li>
+    <li>“Non-commutativity and the arrow of time come only from the $+1$”: acceptable as a heuristic, but the algebraic object must be defined first.</li>
+  </ol>
+  <h3>9.3 Recomputation</h3>
+  <p>$\texttt{range(3, 400001, 2)}$ actually gives <b>199,999</b> starts and <b>696,730</b> blocks; $\mathbb E[v]\approx2.00123003$, simplified multiplier mean $\approx0.99972836$, drift $\approx-0.41626753$. Because orbits are cut at first descent, these blocks are not independent fixed-depth samples and only describe empirical statistics under that stopping rule. $v=20$ occurs at $349{,}525$, so $N=400{,}000$ should be used: $\log_2(3N)\approx20.19$, not the 19.78 from $N=300{,}000$.</p>
+  <aside class="gloss" aria-label="§9 notation and techniques">
+    <h4>Notation and techniques</h4>
+    <dl>
+      <div class="row"><dt><span class="tag sym">term</span>Selection effect</dt><dd>The stopping rule decides which blocks get counted. Truncated orbits are biased towards “just descended” endings, so the sample is not drawn independently from one distribution.</dd></div>
+      <div class="row"><dt><span class="tag sym">term</span>Downgrading</dt><dd>Renaming a “theorem” or “claim” as an “observation” or “heuristic”, so the strength of the statement matches the evidence.</dd></div>
+      <div class="row"><dt><span class="tag note">review note</span>Remark 7.3 left out</dt><dd>v0.2’s audit does not mention v0.1’s Remark 7.3 (the negative integers have the same drift yet have cycles at $-1,-5,-17$). That remark is correct and useful and should be kept.</dd></div>
+    </dl>
+  </aside>
+</section>
+
+<section id="s10-en">
+  <h2><span class="no">§10</span>Routes for further research</h2>
+  <p><b>Route A: formalise the descent certificate.</b> Theorem 5.1 and its strong-induction corollary are elementary and can be fully formalised in Lean or Isabelle, but that will not prove the certificate always appears.</p>
+  <p><b>Route B: define anomalous valuation strings precisely.</b> For a start $n_0$ define</p>
+  <div class="m-disp">$$\mathcal E(n_0)=\Big\{(v_i)_{i\ge0}:\ \sum_{i=0}^{m-1}v_i\le m\log_2\Big(3+\frac1{n_0}\Big)\ \text{for all }m\ge1\Big\}.$$</div>
+  <p>Every orbit that never goes below its start encodes a string in $\mathcal E(n_0)$. The i.i.d. model says such strings form a null set; what must be proved is that no positive integer’s orbit lands in it. Do not treat “measure zero” as “empty”.</p>
+  <p><b>Route C: test the probabilistic structure with fixed prefixes.</b> For each fixed block index $j$, compute the distribution of the $j$-th valuation and the joint string frequencies over the same batch of odd starts, avoiding the selection effect of truncating at first descent; do not let $m$ grow with $\log n$ in an unproven way.</p>
+  <p><b>Route D: separate H1 and H2.</b> H1 must exclude orbits that never descend and are unbounded; H2 must exclude every cycle not passing through 1. Cycles also involve how well $2^V$ approximates $3^m$, which needs extra number-theoretic control.</p>
+  <aside class="gloss" aria-label="§10 notation and techniques">
+    <h4>Notation and techniques</h4>
+    <dl>
+      <div class="row"><dt><span class="tag sym">notation</span>$\mathcal E(n_0)$</dt><dd>The anomalous set: all infinite strings whose prefix means never exceed the threshold. It depends on $n_0$ because the threshold $\log_2(3+1/n_0)$ does.</dd></div>
+      <div class="row"><dt><span class="tag tech">technique</span>Encoding</dt><dd>Map an integer orbit to a valuation string, then ask which strings can be realised by positive integers. The difficulty is that an integer’s string is fixed by exact arithmetic, not by sampling.</dd></div>
+      <div class="row"><dt><span class="tag sym">term</span>Lean / Isabelle</dt><dd>Interactive theorem provers; every inference is checked by computer.</dd></div>
+    </dl>
+  </aside>
+</section>
+
+<section id="refs-en">
+  <h2><span class="no">§11</span>References</h2>
+  <ol class="refs">
+    <li>R. Terras (1976). A stopping time problem on the positive integers. <i>Acta Arithmetica</i> 30, 241–252. DOI: <a href="https://doi.org/10.4064/aa-30-3-241-252" target="_blank" rel="noopener">10.4064/aa-30-3-241-252</a>.</li>
+    <li>C. J. Everett (1977). Iteration of the number-theoretic function $f(2n)=n$, $f(2n+1)=3n+2$. <i>Advances in Mathematics</i> 25(1), 42–45. <a href="https://www.sciencedirect.com/science/article/pii/0001870877900871" target="_blank" rel="noopener">ScienceDirect</a>.</li>
+    <li>I. Korec (1994). A density estimate for the $3x+1$ problem. <i>Mathematica Slovaca</i> 44(1), 85–89. <a href="https://www.dml.cz/handle/10338.dmlcz/133225" target="_blank" rel="noopener">DML-CZ</a>.</li>
+    <li>T. Tao (2019 preprint; published 2022). Almost all orbits of the Collatz map attain almost bounded values. <i>Forum of Mathematics, Pi</i> 10, e12. DOI: <a href="https://doi.org/10.1017/fmp.2022.8" target="_blank" rel="noopener">10.1017/fmp.2022.8</a>; <a href="https://arxiv.org/abs/1909.03562" target="_blank" rel="noopener">arXiv:1909.03562</a>.</li>
+    <li>D. Barina (2025). Improved verification limit for the convergence of the Collatz conjecture. <i>Journal of Supercomputing</i> 81, article 810. DOI: <a href="https://doi.org/10.1007/s11227-025-07337-0" target="_blank" rel="noopener">10.1007/s11227-025-07337-0</a>.</li>
+    <li>J. Park (2026). A Machine-Verified Conditional Theory of the Collatz Conjecture. <a href="https://www.researchgate.net/publication/405718077_A_Machine-Verified_Conditional_Theory_of_the_Collatz_Conjecture" target="_blank" rel="noopener">ResearchGate preprint</a>. Self-described as a conditional theory; cite with the caution due to a preprint.</li>
+  </ol>
+  <p class="small">Listed as in the v0.2 text; I have not checked each DOI and link. Suggested additions from v0.1: J. C. Lagarias, The 3x+1 problem and its generalizations, <i>Amer. Math. Monthly</i> 92 (1985); S. Eliahou, <i>Discrete Math.</i> 118 (1993); J. L. Simons and B. M. M. de Weger, <i>Acta Arith.</i> 117 (2005). The last two are the classical continuation of the cycle interval in §6.2.</p>
+</section>
+
+<section id="s12-en">
+  <h2><span class="no">§12</span>Conclusion</h2>
+  <p>The rigorous progress offered here is not a complete proof but the following combination:</p>
+  <ol>
+    <li>In the natural-density / 2-adic model, finite valuation prefixes really are exactly independent and geometric; the simplified multiplier model has negative log drift.</li>
+    <li>Real integer orbits have an exact descent certificate: provided the orbit has not yet gone below its start, if the accumulated mean valuation exceeds $\log_2(3+1/n_0)$, the current endpoint is below the start.</li>
+    <li>Every non-descending minimal counterexample must keep its mean valuation below roughly 1.585–1.737 on every prefix, while the typical value is 2.</li>
+    <li>The difficulty: probability says such anomalous strings have Haar measure zero, but cannot prove that they contain no positive-integer orbit. Getting from “a null anomalous set” to “no positive integer lands in it” is the missing deterministic bridge.</li>
+  </ol>
+  <p>This note does not prove “100% no divergence”, but it reduces the goal to one precise universal statement and corrects the units of v0.1’s bit budget. Next steps should study the constraints linking anomalous valuation strings to the encoding of positive integers, rather than continuing to derive universal convergence from the mean of the geometric distribution.</p>
+</section>
+
+<footer>v0.2 — 2026-10-29. The comparison, review notes and extra simulations on this page were added by the reviewer; the author’s text is authoritative. English translation by Claude.</footer>
+</main>
+
 </div>
 
 <script>
@@ -742,5 +1162,178 @@ footer { margin-top: 48px; font-size: 13px; color: var(--muted); font-family: va
     form.querySelectorAll('button[data-n]').forEach(b => b.addEventListener('click', () => { input.value = b.dataset.n; run(b.dataset.n); }));
     run(input.value);
   })();
+})();
+</script>
+<script>
+(function () {
+  const L3 = Math.log2(3);
+  function frame(id, W, H, m, xd, yd) {
+    const host = document.getElementById(id);
+    const sx = x => m.l + (x - xd[0]) / (xd[1] - xd[0]) * (W - m.l - m.r);
+    const sy = y => H - m.b - (y - yd[0]) / (yd[1] - yd[0]) * (H - m.t - m.b);
+    const parts = [];
+    return { sx, sy, W, H, m, add(s) { parts.push(s); },
+      draw(label) { host.innerHTML = `<svg class="c" viewBox="0 0 ${W} ${H}" role="img" aria-label="${label}">${parts.join('')}</svg>`; } };
+  }
+  function yTicks(f, ticks, fn) { ticks.forEach(t => { const y = f.sy(t); f.add(`<line class="grid" x1="${f.m.l}" x2="${f.W - f.m.r}" y1="${y}" y2="${y}"/><text class="mono" x="${f.m.l - 8}" y="${y + 4}" text-anchor="end">${fn ? fn(t) : t}</text>`); }); }
+  function xTicks(f, ticks, fn) { ticks.forEach(t => f.add(`<text class="mono" x="${f.sx(t)}" y="${f.H - f.m.b + 18}" text-anchor="middle">${fn ? fn(t) : t}</text>`)); }
+  function axis(f) { f.add(`<line class="axis" x1="${f.m.l}" x2="${f.W - f.m.r}" y1="${f.H - f.m.b}" y2="${f.H - f.m.b}"/>`); }
+  function path(pts, f) { return pts.map((p, i) => (i ? 'L' : 'M') + f.sx(p[0]).toFixed(1) + ' ' + f.sy(p[1]).toFixed(1)).join(''); }
+
+  // Fig 1: q(theta)
+  (function () {
+    const q = t => Math.pow(3, t) / (Math.pow(2, 1 + t) - 1);
+    const f = frame('ch-q-en', 640, 280, { l: 56, r: 20, t: 16, b: 44 }, [-0.3, 1.5], [0.9, 1.18]);
+    f.add(`<rect class="glossfill" x="${f.sx(0)}" y="${f.m.t}" width="${f.sx(1) - f.sx(0)}" height="${f.H - f.m.b - f.m.t}"/>`);
+    yTicks(f, [0.9, 0.95, 1.0, 1.05, 1.1, 1.15], t => t.toFixed(2)); axis(f);
+    xTicks(f, [-0.25, 0, 0.25, 0.5, 0.75, 1, 1.25, 1.5]);
+    f.add(`<text x="${f.W - f.m.r}" y="${f.H - 4}" text-anchor="end">θ</text>`);
+    const pts = []; for (let t = -0.3; t <= 1.5001; t += 0.01) pts.push([t, q(t)]);
+    f.add(`<path class="muted-l" stroke-dasharray="4 4" d="${path([[-0.3, 1], [1.5, 1]], f)}"/>`);
+    f.add(`<path class="shrink-l" stroke-width="2.5" d="${path(pts, f)}"/>`);
+    f.add(`<text class="ok-t" x="${f.sx(0.5)}" y="${f.m.t + 16}" text-anchor="middle">E[μ^θ] &lt; 1: fractional moments contract</text>`);
+    [[0, 'θ = 0'], [1, 'θ = 1: E[μ] = 1 (all v0.1 looked at)']].forEach(([t, s]) => {
+      f.add(`<circle style="fill:var(--ink)" cx="${f.sx(t)}" cy="${f.sy(1)}" r="5"/>`);
+      f.add(`<text class="ink" x="${f.sx(t) + (t ? 8 : -8)}" y="${f.sy(1) - 12}" text-anchor="${t ? 'start' : 'end'}">${s}</text>`);
+    });
+    f.add(`<text class="mono" x="${f.sx(0.5)}" y="${f.sy(q(0.5)) + 20}" text-anchor="middle">q(0.5) ≈ ${q(0.5).toFixed(3)}</text>`);
+    f.draw('Fractional moment curve');
+  })();
+
+  // Fig 2: band
+  (function () {
+    const f = frame('ch-band-en', 640, 160, { l: 30, r: 30, t: 20, b: 30 }, [1.5, 2.1], [0, 1]);
+    const y = 80;
+    f.add(`<rect class="soft" x="${f.sx(1.5)}" y="${y - 3}" width="${f.sx(2.1) - f.sx(1.5)}" height="6" rx="3"/>`);
+    f.add(`<rect class="flagfill" x="${f.sx(L3)}" y="${y - 14}" width="${f.sx(Math.log2(10 / 3)) - f.sx(L3)}" height="28" rx="3"/>`);
+    f.add(`<text class="flag-t" x="${(f.sx(L3) + f.sx(Math.log2(10 / 3))) / 2}" y="${y - 22}" text-anchor="middle">cycles can only live here</text>`);
+    f.add(`<path class="grow-l" stroke-width="2" d="M${f.sx(1.5)} ${y + 22}L${f.sx(Math.log2(10 / 3))} ${y + 22}"/>`);
+    f.add(`<text x="${f.sx(1.52)}" y="${y + 38}" style="fill:var(--grow)">non-descending orbits (n₀ ≥ 3) stay left of 1.737</text>`);
+    [[L3, 'log₂3 = 1.585'], [Math.log2(10 / 3), 'log₂(10/3) = 1.737'], [2, 'typical value 2']].forEach(([x, s], i) => {
+      f.add(`<line class="ink-l" x1="${f.sx(x)}" x2="${f.sx(x)}" y1="${y - 14}" y2="${y + 14}" stroke-width="1.5"/>`);
+      f.add(`<text class="mono ink" x="${f.sx(x)}" y="${i === 2 ? y - 22 : 18}" text-anchor="middle">${s}</text>`);
+    });
+    f.add(`<circle class="shrink" cx="${f.sx(2)}" cy="${y}" r="7"/>`);
+    f.draw('Mean valuation number line');
+  })();
+
+  // Fig 3: logic chain
+  (function () {
+    const W = 680, H = 230, host = document.getElementById('ch-logic-en');
+    const box = (x, y, w, t1, t2, cls) => `<rect class="box" x="${x}" y="${y}" width="${w}" height="54" rx="4" ${cls || ''}/><text class="ink" x="${x + w / 2}" y="${y + 23}" text-anchor="middle">${t1}</text><text x="${x + w / 2}" y="${y + 41}" text-anchor="middle">${t2}</text>`;
+    const arrow = (x1, y1, x2, y2, cls) => `<path class="${cls || 'muted-l'}" stroke-width="1.5" d="M${x1} ${y1}L${x2} ${y2}"/>`;
+    host.innerHTML = `<svg class="c" viewBox="0 0 ${W} ${H}" role="img" aria-label="Chain of argument">
+      ${box(10, 20, 150, 'Proposition 2.3', 'cylinder measure 2^−J')}
+      ${arrow(160, 47, 190, 47)}
+      ${box(190, 20, 150, 'Strong law (LLN)', 'Haar-a.e. V_m/m → 2')}
+      ${arrow(340, 47, 370, 47)}
+      ${box(370, 20, 150, '𝓔(n₀) is null', 'anomalies are rare')}
+      <path class="flag-l" stroke-width="2" stroke-dasharray="5 4" d="M520 47L560 47"/>
+      <text class="flag-t" x="540" y="38" text-anchor="middle" style="font-size:16px">✕</text>
+      ${box(565, 20, 105, '𝓔(n₀) holds', 'no integers', 'style="fill:var(--flag-bg);stroke:var(--flag)"')}
+      ${box(190, 140, 150, 'Theorem 5.1', 'certificate (rigorous)')}
+      ${arrow(340, 167, 370, 167)}
+      ${box(370, 140, 150, 'every n₀ descends', 'strong induction')}
+      ${arrow(520, 167, 565, 167)}
+      ${box(565, 140, 105, 'Collatz', 'conjecture holds')}
+      <path class="muted-l" stroke-width="1.5" d="M617 74L617 140"/>
+      <text class="flag-t" x="540" y="112" text-anchor="middle">the missing deterministic bridge</text>
+    </svg>`;
+  })();
+
+  // Fig 4: bit budget old vs new
+  (function () {
+    const f = frame('ch-bits-en', 680, 300, { l: 130, r: 20, t: 10, b: 30 }, [0, 5.0], [0, 1]);
+    const x0 = f.sx(0), x1 = f.sx(1);
+    const row = (y, lab, len, sub, gapCls) => {
+      f.add(`<text class="ink" x="${f.m.l - 10}" y="${y + 15}" text-anchor="end">${lab}</text>`);
+      f.add(`<rect class="shrink" x="${x0}" y="${y}" width="${x1 - x0}" height="20" rx="2"/>`);
+      f.add(`<rect class="flagfill" x="${x1}" y="${y}" width="${f.sx(len) - x1}" height="20" rx="2"/>`);
+      f.add(`<rect class="flag-l" stroke-dasharray="4 3" x="${x1}" y="${y}" width="${f.sx(len) - x1}" height="20" rx="2"/>`);
+      f.add(`<text class="mono" x="${f.sx(len) - 6}" y="${y + 15}" text-anchor="end" style="fill:var(--flag)">${sub}</text>`);
+    };
+    f.add(`<text x="${f.m.l}" y="22">unit = log₂ n</text>`);
+    row(36, 'v0.1: blocks', 2.409, '2.41 log₂ n blocks');
+    row(76, 'v0.2: shortcut steps', 4.819, '4.82 log₂ n parity bits');
+    f.add(`<text class="mono" x="${(x0 + x1) / 2}" y="${126}" text-anchor="middle" style="fill:var(--shrink)">log₂ n bits</text>`);
+    // exponent line
+    const ex = frame('ch-bits-en', 680, 300, { l: 130, r: 20, t: 10, b: 30 }, [0.5, 1.0], [0, 1]);
+    const yL = 210;
+    f.add(`<text class="ink" x="${f.m.l - 10}" y="${yL + 4}" text-anchor="end">escort ends at n^c</text>`);
+    f.add(`<rect class="soft" x="${ex.sx(0.5)}" y="${yL - 3}" width="${ex.sx(1) - ex.sx(0.5)}" height="6" rx="3"/>`);
+    [[0.5, '0.5'], [0.75, '0.75'], [1, 'c = 1 (start)']].forEach(([c, s]) => f.add(`<text class="mono" x="${ex.sx(c)}" y="${yL + 44}" text-anchor="${c === 1 ? 'end' : 'middle'}">${s}</text>`));
+    f.add(`<circle class="grow" cx="${ex.sx(0.585)}" cy="${yL}" r="7"/>`);
+    f.add(`<text x="${ex.sx(0.585)}" y="${yL - 16}" text-anchor="middle" style="fill:var(--grow)">v0.1: 0.585 ✕</text>`);
+    f.add(`<circle class="shrink" cx="${ex.sx(Math.log2(3) / 2)}" cy="${yL}" r="7"/>`);
+    f.add(`<text x="${ex.sx(Math.log2(3) / 2)}" y="${yL - 16}" text-anchor="middle" style="fill:var(--shrink)">v0.2: log₄3 ≈ 0.7925 = Korec</text>`);
+    f.add(`<path class="muted-l" stroke-dasharray="3 3" d="M${ex.sx(0.585) + 10} ${yL + 20}L${ex.sx(0.7925) - 10} ${yL + 20}"/>`);
+    f.add(`<text class="mono" x="${(ex.sx(0.585) + ex.sx(0.7925)) / 2}" y="${yL + 32}" text-anchor="middle">units ×2</text>`);
+    f.draw('Bit budget correction');
+  })();
+
+  // Certificate explorer
+  (function () {
+    const form = document.getElementById('cert-form-en'), input = document.getElementById('cert-n-en');
+    const err = document.getElementById('cert-err-en'), stats = document.getElementById('cert-stats-en');
+    function run(raw) {
+      err.textContent = '';
+      const t = String(raw).trim().replace(/[,_\s]/g, '');
+      if (!/^\d{1,15}$/.test(t)) { err.textContent = 'Enter a positive integer of at most 15 digits, for example 27.'; return; }
+      let n0 = BigInt(t);
+      if (n0 % 2n === 0n || n0 < 3n) { err.textContent = 'Enter an odd number greater than 1.'; return; }
+      const thr = Math.log2(3 + 1 / Number(n0)), slope = thr - L3;
+      let n = n0, m = 0, V = 0, cert = null, desc = null;
+      const pts = [[0, 0]];
+      while (m < 3000) {
+        const x = 3n * n + 1n; let v = 0, q = x;
+        while (q % 2n === 0n) { q /= 2n; v++; }
+        n = q; m++; V += v;
+        pts.push([m, V - m * L3]);
+        if (cert === null && V > m * thr) cert = m;
+        if (n < n0) { desc = m; break; }
+      }
+      stats.innerHTML = `<span>n₀ <b>${n0}</b></span><span>threshold log₂(3+1/n₀) <b>${thr.toFixed(6)}</b></span>` +
+        `<span>first descent at block <b>${desc ?? '— (none within 3000)'}</b></span><span>certificate fires at block <b>${cert ?? 'never'}</b></span>` +
+        `<span>then V_m <b>${V}</b> / threshold m·log₂(3+1/n₀) <b>${(m * thr).toFixed(2)}</b></span>`;
+      const ys = pts.map(p => p[1]);
+      const lo = Math.min(...ys, -1), hi = Math.max(...ys, slope * m, 1);
+      const pad = (hi - lo) * 0.08;
+      const f = frame('ch-cert-en', 680, 300, { l: 48, r: 16, t: 14, b: 36 }, [0, Math.max(m, 1)], [lo - pad, hi + pad]);
+      const span = hi - lo, st = span > 20 ? 5 : span > 8 ? 2 : span > 3 ? 1 : 0.5, tk = [];
+      for (let v = Math.ceil((lo - pad) / st) * st; v <= hi + pad; v += st) tk.push(+v.toFixed(2));
+      yTicks(f, tk); axis(f);
+      const xs = m > 200 ? 50 : m > 60 ? 10 : m > 20 ? 5 : 1, xt = []; for (let i = 0; i <= m; i += xs) xt.push(i); xTicks(f, xt);
+      f.add(`<path class="muted-l" stroke-width="1.2" d="${path([[0, 0], [m, 0]], f)}"/>`);
+      f.add(`<path class="shrink-l" stroke-width="2" d="${path([[0, 0], [m, slope * m]], f)}"/>`);
+      const step = []; pts.forEach((p, i) => { if (i) step.push([p[0], pts[i - 1][1]]); step.push(p); });
+      f.add(`<path class="ink-l" stroke-width="2" d="${path(step, f)}"/>`);
+      if (desc !== null) {
+        f.add(`<line class="flag-l" stroke-width="1.5" stroke-dasharray="4 3" x1="${f.sx(desc)}" x2="${f.sx(desc)}" y1="${f.m.t}" y2="${f.H - f.m.b}"/>`);
+        f.add(`<text class="flag-t" x="${f.sx(desc) - 6}" y="${f.m.t + 12}" text-anchor="end">first descent</text>`);
+      }
+      if (cert !== null) f.add(`<circle class="shrink" cx="${f.sx(cert)}" cy="${f.sy(pts[cert][1])}" r="5"/>`);
+      f.add(`<text x="${f.m.l + 4}" y="${f.m.t + 12}">V_m − m·log₂3</text>`);
+      f.draw('Descent certificate plot');
+    }
+    form.addEventListener('submit', e => { e.preventDefault(); run(input.value); });
+    form.querySelectorAll('button[data-n]').forEach(b => b.addEventListener('click', () => { input.value = b.dataset.n; run(b.dataset.n); }));
+    run(input.value);
+  })();
+})();
+</script>
+
+<script>
+(function () {
+  const titles = { zh: 'Syracuse 下降证书', en: 'Syracuse Descent Certificates' };
+  function setLang(l) {
+    document.documentElement.dataset.lang = l; document.documentElement.lang = l === 'en' ? 'en' : 'zh-CN';
+    document.title = titles[l];
+    document.querySelectorAll('[data-set-lang]').forEach(b => b.setAttribute('aria-pressed', b.dataset.setLang === l));
+    try { localStorage.setItem('corpus-lang', l); } catch (e) {}
+  }
+  let l = 'zh';
+  try { l = location.hash === '#en' ? 'en' : (localStorage.getItem('corpus-lang') || 'zh'); } catch (e) { if (location.hash === '#en') l = 'en'; }
+  document.querySelectorAll('[data-set-lang]').forEach(b => b.addEventListener('click', () => setLang(b.dataset.setLang)));
+  setLang(l);
 })();
 </script>
