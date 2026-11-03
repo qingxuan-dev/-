@@ -5,13 +5,19 @@ Usage: python3 build.py
 The original text is never modified. The only typographic change is turning straight
 quotes into Chinese curly quotes (“” and ‘’), pairing them within each line.
 Add new chapters to the source markdown (or point SRC at a new file) and re-run.
+
+English: en/ch1.md, en/ch2.md, ... hold a paragraph-for-paragraph translation (same chapters,
+sections and paragraph count as the original). The build checks the alignment and stops on a mismatch.
+A Chinese chapter without an English file is listed as "translation coming" in English mode.
 """
-import html, json, os, re, subprocess
+import glob, html, json, os, re, subprocess
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 SRC = os.path.join(HERE, 'xuerong-zhixia-ch1-6.original.md')
 OUT = os.path.join(HERE, 'dist')
 TEMPLATE = os.path.join(HERE, 'reader-template.html')
+EN_DIR = os.path.join(HERE, 'en')
+EN_TITLE = 'Snowmelt Summer'
 os.makedirs(OUT, exist_ok=True)
 
 
@@ -52,7 +58,7 @@ def parse(text):
         if line.strip() == '---':
             sec['blocks'].append({'type': 'break'}); continue
         t = curly(line.strip())
-        sec['blocks'].append({'type': 'msg' if t.startswith('【') else 'p', 'text': t})
+        sec['blocks'].append({'type': 'msg' if t.startswith(('【', '[')) else 'p', 'text': t})
     # drop trailing scene breaks (the --- before each new chapter)
     for c in book['chapters']:
         b = c['sections'][-1]['blocks']
@@ -64,6 +70,27 @@ def parse(text):
 def count(c):
     return sum(len(re.findall(r'[一-鿿]', blk.get('text', '') + ''.join(blk.get('lines', []))))
                for s in c['sections'] for blk in s['blocks'])
+
+
+def words(c):
+    return sum(len(re.findall(r"[A-Za-z0-9’'-]+", blk.get('text', '') + ' ' + ' '.join(blk.get('lines', []))))
+               for s in c['sections'] for blk in s['blocks'])
+
+
+def load_english(zh):
+    files = sorted(glob.glob(os.path.join(EN_DIR, 'ch*.md')), key=lambda f: int(re.findall(r'\d+', os.path.basename(f))[0]))
+    if not files:
+        return None
+    en = parse(f'# {EN_TITLE}\n\n' + '\n\n'.join(open(f, encoding='utf-8').read() for f in files))
+    norm = lambda bl: ['p' if b['type'] == 'msg' else b['type'] for b in bl]
+    for i, ce in enumerate(en['chapters']):
+        cz = zh['chapters'][i]
+        if len(ce['sections']) != len(cz['sections']):
+            raise SystemExit(f'English chapter {i + 1}: section count differs from the original')
+        for j, (se, sz) in enumerate(zip(ce['sections'], cz['sections'])):
+            if norm(se['blocks']) != norm(sz['blocks']):
+                raise SystemExit(f'English chapter {i + 1}, section {j + 1}: paragraphs do not line up with the original')
+    return en
 
 
 def cleaned_markdown(book):
@@ -83,8 +110,9 @@ def cleaned_markdown(book):
     return '\n'.join(out)
 
 
-def render_html(book):
+def render_html(book, lang='zh'):
     parts = []
+    pre = '' if lang == 'zh' else 'en-'
     for i, c in enumerate(book['chapters'], 1):
         secs = []
         for s in c['sections']:
@@ -100,12 +128,13 @@ def render_html(book):
                     body.append('<div class="break" aria-hidden="true"><span></span><span></span><span></span></div>')
             secs.append(f'<section class="sec"><h3>{html.escape(s["title"])}</h3>{"".join(body)}</section>')
         parts.append(
-            f'<article class="chapter" id="ch{i}" data-ch="{i}" aria-labelledby="ch{i}-t">'
+            f'<article class="chapter" id="{pre}ch{i}" data-ch="{i}" data-lang="{lang}" lang="{"zh-CN" if lang == "zh" else "en"}" aria-labelledby="{pre}ch{i}-t">'
             f'<header class="ch-head"><div class="ch-num">{html.escape(c["num"])}</div>'
-            f'<h2 id="ch{i}-t">{html.escape(c["name"])}</h2>'
-            f'<div class="ch-meta">{count(c):,} 字 · 约 {max(1, round(count(c) / 450))} 分钟</div></header>'
+            f'<h2 id="{pre}ch{i}-t">{html.escape(c["name"])}</h2>'
+            + (f'<div class="ch-meta">{count(c):,} 字 · 约 {max(1, round(count(c) / 450))} 分钟</div></header>' if lang == 'zh'
+               else f'<div class="ch-meta">{words(c):,} words · about {max(1, round(words(c) / 230))} min</div></header>')
             + ''.join(secs) +
-            f'<nav class="ch-nav" aria-label="章节导航"></nav></article>')
+            f'<nav class="ch-nav" aria-label="{"章节导航" if lang == "zh" else "Chapter navigation"}"></nav></article>')
     return '\n'.join(parts)
 
 
@@ -178,10 +207,20 @@ def main():
     md_path = os.path.join(OUT, 'xuerong-zhixia.md')
     open(md_path, 'w', encoding='utf-8').write(md)
 
+    en = load_english(book)
+    en_ch = en['chapters'] if en else []
+    en_total = sum(words(c) for c in en_ch)
+    toc_en = [({'num': c['num'], 'name': c['name'], 'chars': words(c), 'sections': [s['title'] for s in c['sections']]}
+               if c else {'missing': True}) for c in (en_ch + [None] * (len(book['chapters']) - len(en_ch)))]
+    ordinals = ['One', 'Two', 'Three', 'Four', 'Five', 'Six', 'Seven', 'Eight', 'Nine', 'Ten', 'Eleven', 'Twelve']
+
     # reader page
     page = open(TEMPLATE, encoding='utf-8').read()
-    page = (page.replace('__CHAPTERS__', render_html(book))
-                .replace('__TOC__', json.dumps(toc, ensure_ascii=False))
+    page = (page.replace('__CHAPTERS__', render_html(book) + '\n' + (render_html(en, 'en') if en else ''))
+                .replace('__TOC__', json.dumps({'zh': toc, 'en': toc_en}, ensure_ascii=False))
+                .replace('__EN_TOTAL__', f'{en_total:,}')
+                .replace('__EN_MINUTES__', str(round(en_total / 230)))
+                .replace('__EN_RANGE__', f'Chapters One to {ordinals[len(en_ch) - 1]}' if en_ch else '')
                 .replace('__TOTAL__', f'{total:,}')
                 .replace('__MINUTES__', str(round(total / 450)))
                 .replace('__NCH__', str(len(book['chapters'])))
@@ -200,6 +239,15 @@ def main():
     subprocess.run(['pandoc', md_path, '-o', raw] + meta, check=True)
     format_docx(raw, os.path.join(OUT, 'xuerong-zhixia.docx'))
     os.remove(raw)
+    if en:
+        en_md = os.path.join(OUT, 'snowmelt-summer.en.md')
+        open(en_md, 'w', encoding='utf-8').write(cleaned_markdown(en).replace('＊　＊　＊', '·  ·  ·'))
+        en_args = ['pandoc', en_md, '-o', os.path.join(OUT, 'snowmelt-summer.en.epub'), '--split-level=1', '--toc', '--toc-depth=1',
+                   '--css', os.path.join(HERE, 'epub-en.css'), '--metadata', f'title={EN_TITLE}', '--metadata', 'lang=en', '--metadata', 'toc-title=Contents']
+        if os.path.exists(os.path.join(OUT, 'cover.png')):
+            en_args += ['--epub-cover-image', os.path.join(OUT, 'cover.png')]
+        subprocess.run(en_args, check=True)
+        print(f'English: {len(en_ch)} chapters, {en_total} words')
     print(f'{len(book["chapters"])} chapters, {total} characters')
     for c in toc:
         print(c['num'], c['name'], c['chars'], len(c['sections']))
