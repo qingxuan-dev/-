@@ -1,0 +1,9 @@
+body { font-family: "Noto Serif SC", "Songti SC", "STSong", serif; line-height: 1.9; margin: 0 4%; }
+h1 { font-size: 1.6em; text-align: center; letter-spacing: .12em; margin: 2.4em 0 1.6em; font-weight: normal; }
+h2 { font-size: 1em; text-align: center; letter-spacing: .2em; margin: 2.2em 0 1.2em; color: #2E5B4E; }
+p { text-indent: 2em; margin: 0 0 .7em; text-align: justify; }
+blockquote { margin: 1em 1.5em; padding: .5em .9em; border-left: 3px solid #2E5B4E; background: #EEF1EC; }
+blockquote p { text-indent: 0; margin: 0; }
+div.break { text-align: center; margin: 1.8em 0; color: #888; }
+div.break p { text-indent: 0; text-align: center; }
+nav#toc ol { list-style: none; padding: 0; }

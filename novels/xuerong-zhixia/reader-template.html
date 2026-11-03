@@ -1,0 +1,244 @@
+<title>雪融之夏</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500&family=Noto+Serif+SC:wght@400;600&family=ZCOOL+XiaoWei&display=swap">
+<style>
+/* Layout: a book, not a website. A contents page with a vertical title, then one chapter per view
+   in a single ~34-character column; a slim sticky bar carries the chapter name, progress and reading settings.
+   Palette from the story: late-summer paper, ink, and the 墨绿 of the café's curtains. */
+:root {
+  --paper: #F3F5F1;
+  --ink: #1E2320;
+  --muted: #69736E;
+  --faint: #D6DDD8;
+  --accent: #2E5B4E;
+  --bar: rgba(243, 245, 241, 0.92);
+  --inset: #E8ECE6;
+  --f-title: "ZCOOL XiaoWei", "Noto Serif SC", "Songti SC", serif;
+  --f-body: "Noto Serif SC", "Songti SC", "STSong", "SimSun", serif;
+  --f-ui: "Noto Sans SC", "PingFang SC", "Microsoft YaHei", system-ui, sans-serif;
+  --fs: 18px;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper: #141816; --ink: #D3DAD5; --muted: #8E9A94; --faint: #2B332F; --accent: #8FBFAF;
+    --bar: rgba(20, 24, 22, 0.92); --inset: #1C221F; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --paper: #141816; --ink: #D3DAD5; --muted: #8E9A94; --faint: #2B332F; --accent: #8FBFAF;
+  --bar: rgba(20, 24, 22, 0.92); --inset: #1C221F; color-scheme: dark;
+}
+/* reader's own choice overrides the system theme */
+:root[data-skin="white"] { --paper: #FFFFFF; --ink: #1A1A1A; --muted: #6B6B6B; --faint: #E2E2E2; --accent: #2E5B4E; --bar: rgba(255,255,255,0.94); --inset: #F2F4F2; color-scheme: light; }
+:root[data-skin="green"] { --paper: #E3EAD9; --ink: #26301F; --muted: #5F6B57; --faint: #C9D3BD; --accent: #3D6136; --bar: rgba(227,234,217,0.94); --inset: #D7DFCB; color-scheme: light; }
+:root[data-skin="night"] { --paper: #101312; --ink: #B9C2BD; --muted: #7C8781; --faint: #252B28; --accent: #7FAE9F; --bar: rgba(16,19,18,0.94); --inset: #181D1B; color-scheme: dark; }
+
+* { box-sizing: border-box; }
+[hidden] { display: none !important; }
+html { scroll-padding-top: calc(env(safe-area-inset-top, 0px) + 64px); }
+body { background: var(--paper); color: var(--ink); font-family: var(--f-body); margin: 0; transition: background-color .2s, color .2s; }
+body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 10; background: var(--bar); }
+a { color: var(--accent); }
+button { font: inherit; color: inherit; }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+
+/* top bar */
+.bar { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 9; background: var(--bar); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); border-bottom: 1px solid var(--faint);
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+.bar-in { max-width: 760px; margin: 0 auto; height: 48px; display: flex; align-items: center; gap: 12px; font-family: var(--f-ui); font-size: 14px; }
+.bar .home { font-family: var(--f-title); font-size: 19px; color: var(--ink); text-decoration: none; letter-spacing: .08em; white-space: nowrap; }
+.bar .where { flex: 1; min-width: 0; color: var(--muted); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; font-size: 13px; }
+.bar .btn { border: 1px solid var(--faint); background: transparent; border-radius: 999px; padding: 4px 12px; cursor: pointer; font-size: 13px; white-space: nowrap; }
+.bar .btn:hover { border-color: var(--accent); color: var(--accent); }
+.progress { height: 2px; background: transparent; }
+.progress span { display: block; height: 100%; width: 0; background: var(--accent); transition: width .1s linear; }
+
+/* settings sheet */
+.sheet { position: fixed; z-index: 12; top: calc(env(safe-area-inset-top, 0px) + 56px); right: max(12px, env(safe-area-inset-right, 0px)); width: min(320px, calc(100vw - 24px));
+  background: var(--paper); border: 1px solid var(--faint); border-radius: 10px; box-shadow: 0 10px 30px rgba(0,0,0,.15); padding: 16px; font-family: var(--f-ui); font-size: 13.5px; display: grid; gap: 14px; }
+.sheet .row { display: grid; gap: 8px; }
+.sheet .lab { color: var(--muted); font-size: 12.5px; }
+.seg { display: grid; grid-template-columns: repeat(4, 1fr); gap: 6px; }
+.seg button { border: 1px solid var(--faint); background: transparent; border-radius: 6px; padding: 7px 0; cursor: pointer; }
+.seg button[aria-pressed="true"] { border-color: var(--accent); color: var(--accent); font-weight: 500; }
+.seg .sw { display: inline-block; width: 10px; height: 10px; border-radius: 50%; border: 1px solid var(--faint); margin-right: 5px; vertical-align: -1px; }
+
+/* pages */
+main { padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); padding-block: 0 80px; }
+
+/* contents / cover */
+.cover { max-width: 760px; margin: 0 auto; padding-top: 48px; display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 40px; align-items: start; }
+.vtitle { writing-mode: vertical-rl; font-family: var(--f-title); font-size: clamp(54px, 11vw, 88px); line-height: 1.05; letter-spacing: .18em; color: var(--ink); margin: 0; padding-top: 4px; }
+.vtitle small { display: block; font-family: var(--f-ui); font-size: 13px; letter-spacing: .3em; color: var(--muted); margin-right: 14px; padding-top: 10px; }
+.cover-side { min-width: 0; display: grid; gap: 22px; padding-top: 6px; }
+.facts { font-family: var(--f-ui); font-size: 13px; color: var(--muted); display: flex; flex-wrap: wrap; gap: 4px 16px; }
+.facts b { color: var(--ink); font-weight: 500; }
+.go { display: flex; flex-wrap: wrap; gap: 10px; }
+.go a { font-family: var(--f-ui); font-size: 14.5px; text-decoration: none; border-radius: 999px; padding: 9px 20px; border: 1px solid var(--accent); }
+.go a.primary { background: var(--accent); color: var(--paper); }
+.go a.primary:hover { filter: brightness(1.08); }
+.go .resume small { color: var(--muted); margin-left: 6px; }
+ol.toc { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--faint); }
+ol.toc li { border-bottom: 1px solid var(--faint); }
+ol.toc a { display: grid; grid-template-columns: 4.6em minmax(0, 1fr) auto; gap: 4px 12px; padding: 14px 4px; text-decoration: none; color: var(--ink); align-items: baseline; }
+ol.toc a:hover .t { color: var(--accent); }
+ol.toc .n { font-family: var(--f-ui); font-size: 13px; color: var(--muted); }
+ol.toc .t { font-size: 18px; }
+ol.toc .c { font-family: var(--f-ui); font-size: 12px; color: var(--muted); font-variant-numeric: tabular-nums; white-space: nowrap; }
+ol.toc .s { grid-column: 2 / 4; font-family: var(--f-ui); font-size: 12.5px; color: var(--muted); line-height: 1.6; }
+ol.toc li.read .n::after { content: " ·"; color: var(--accent); }
+@media (max-width: 520px) {
+  .cover { grid-template-columns: 1fr; gap: 24px; padding-top: 32px; }
+  .vtitle { writing-mode: horizontal-tb; letter-spacing: .12em; font-size: 46px; }
+  .vtitle small { margin: 8px 0 0; padding: 0; letter-spacing: .2em; }
+  ol.toc a { grid-template-columns: 4.2em minmax(0, 1fr) auto; }
+}
+
+/* chapter */
+.chapter { max-width: 34em; margin: 0 auto; font-size: var(--fs); line-height: 1.95; }
+.ch-head { text-align: center; padding: 64px 0 28px; }
+.ch-num { font-family: var(--f-ui); font-size: 13px; letter-spacing: .4em; color: var(--muted); }
+.ch-head h2 { font-family: var(--f-title); font-weight: 400; font-size: 2em; letter-spacing: .12em; margin: 10px 0 8px; text-wrap: balance; }
+.ch-meta { font-family: var(--f-ui); font-size: 12.5px; color: var(--muted); }
+.sec h3 { font-family: var(--f-body); font-weight: 600; font-size: 1em; color: var(--accent); text-align: center; letter-spacing: .2em; margin: 2.6em 0 1.4em; }
+.chapter p { margin: 0 0 .85em; text-indent: 2em; text-align: justify; }
+.chapter p.msg { text-indent: 0; margin-left: 2em; margin-right: 2em; padding: .5em .9em; background: var(--inset); border-radius: 4px 14px 14px 14px; font-size: .94em; }
+.chapter blockquote { margin: 1.2em 2em; padding: .7em 1em; background: var(--inset); border-left: 3px solid var(--accent); font-size: .94em; line-height: 1.85; }
+.break { display: flex; justify-content: center; gap: 1.1em; margin: 2.2em 0; }
+.break span { width: 5px; height: 5px; border-radius: 50%; background: var(--muted); opacity: .6; }
+.ch-nav { display: grid; grid-template-columns: 1fr auto 1fr; gap: 10px; align-items: center; margin-top: 3.5em; padding-top: 1.6em; border-top: 1px solid var(--faint); font-family: var(--f-ui); font-size: 14px; }
+.ch-nav a { text-decoration: none; padding: 8px 4px; }
+.ch-nav .prev { justify-self: start; } .ch-nav .next { justify-self: end; text-align: right; }
+.ch-nav .mid { color: var(--muted); }
+.ch-nav small { display: block; color: var(--muted); font-size: 12px; }
+.ch-end { text-align: center; font-family: var(--f-ui); font-size: 13px; letter-spacing: .3em; color: var(--muted); margin-top: 2.4em; }
+@media (max-width: 520px) { .chapter p.msg, .chapter blockquote { margin-left: 0; margin-right: 0; } .ch-head { padding-top: 40px; } }
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+</style>
+
+<div class="bar">
+  <div class="bar-in">
+    <a class="home" href="#contents">雪融之夏</a>
+    <span class="where" id="where">目录</span>
+    <button type="button" class="btn" id="btn-toc">目录</button>
+    <button type="button" class="btn" id="btn-set" aria-expanded="false" aria-controls="sheet">字号 / 背景</button>
+  </div>
+  <div class="progress" aria-hidden="true"><span id="prog"></span></div>
+</div>
+
+<div class="sheet" id="sheet" role="dialog" aria-label="阅读设置" hidden>
+  <div class="row"><span class="lab">字号</span>
+    <div class="seg" id="seg-fs"><button type="button" data-fs="16">小</button><button type="button" data-fs="18">中</button><button type="button" data-fs="20">大</button><button type="button" data-fs="23">特大</button></div></div>
+  <div class="row"><span class="lab">背景</span>
+    <div class="seg" id="seg-skin"><button type="button" data-skin="auto">跟随</button><button type="button" data-skin="white"><i class="sw" style="background:#fff"></i>白</button><button type="button" data-skin="green"><i class="sw" style="background:#E3EAD9"></i>护眼</button><button type="button" data-skin="night"><i class="sw" style="background:#101312"></i>夜间</button></div></div>
+</div>
+
+<main>
+  <section class="cover" id="contents" aria-label="目录">
+    <h1 class="vtitle">雪融之夏<small>__RANGE__</small></h1>
+    <div class="cover-side">
+      <div class="facts"><span><b>__NCH__</b> 章</span><span><b>__TOTAL__</b> 字</span><span>约 <b>__MINUTES__</b> 分钟读完</span></div>
+      <div class="go" id="go"><a class="primary" href="#ch1">从第一章开始读</a></div>
+      <ol class="toc" id="toc"></ol>
+    </div>
+  </section>
+
+__CHAPTERS__
+</main>
+
+<script id="toc-data" type="application/json">__TOC__</script>
+<script>
+(function () {
+  const TOC = JSON.parse(document.getElementById('toc-data').textContent);
+  const N = TOC.length;
+  const store = {
+    get(k, d) { try { const v = localStorage.getItem('xrzx-' + k); return v === null ? d : JSON.parse(v); } catch (e) { return d; } },
+    set(k, v) { try { localStorage.setItem('xrzx-' + k, JSON.stringify(v)); } catch (e) {} }
+  };
+  const root = document.documentElement;
+  const chapters = [...document.querySelectorAll('.chapter')];
+  const cover = document.getElementById('contents');
+  const where = document.getElementById('where');
+  const prog = document.getElementById('prog');
+  const readSet = new Set(store.get('read', []));
+
+  // contents list
+  function drawToc() {
+    document.getElementById('toc').innerHTML = TOC.map((c, i) =>
+      `<li class="${readSet.has(i + 1) ? 'read' : ''}"><a href="#ch${i + 1}"><span class="n">${c.num}</span><span class="t">${c.name}</span><span class="c">${c.chars.toLocaleString()} 字</span><span class="s">${c.sections.join(' · ')}</span></a></li>`).join('');
+    const last = store.get('last', null), go = document.getElementById('go');
+    go.innerHTML = last && last.ch > 0 && last.ch <= N
+      ? `<a class="primary resume" href="#ch${last.ch}" data-resume="1">继续阅读 · ${TOC[last.ch - 1].num}<small style="color:inherit;opacity:.8">${TOC[last.ch - 1].name}</small></a><a href="#ch1">从头开始</a>`
+      : `<a class="primary" href="#ch1">从第一章开始读</a>`;
+    const r = go.querySelector('[data-resume]');
+    if (r) r.addEventListener('click', () => { resumeNext = true; });
+  }
+  // chapter nav
+  chapters.forEach((a, k) => {
+    const i = k + 1, nav = a.querySelector('.ch-nav');
+    const prev = i > 1 ? `<a class="prev" href="#ch${i - 1}"><small>上一章</small>${TOC[i - 2].name}</a>` : '<span></span>';
+    const next = i < N ? `<a class="next" href="#ch${i + 1}"><small>下一章</small>${TOC[i].name}</a>` : '<span></span>';
+    nav.innerHTML = prev + '<a class="mid" href="#contents">目录</a>' + next;
+    if (i === N) nav.insertAdjacentHTML('beforebegin', `<div class="ch-end">${TOC[N - 1].num} 完</div>`);
+  });
+
+  let current = 0, resumeNext = false;
+  function show() {
+    const m = /^#ch(\d+)$/.exec(location.hash);
+    const i = m ? Math.min(Math.max(+m[1], 1), N) : 0;
+    current = i;
+    cover.hidden = i !== 0;
+    chapters.forEach((a, k) => { a.hidden = k + 1 !== i; });
+    if (i === 0) {
+      drawToc(); where.textContent = '目录'; prog.style.width = '0';
+      window.scrollTo(0, 0);
+    } else {
+      where.textContent = `${TOC[i - 1].num}　${TOC[i - 1].name}`;
+      const last = store.get('last', null);
+      if (resumeNext && last && last.ch === i) {
+        requestAnimationFrame(() => window.scrollTo(0, last.r * (document.documentElement.scrollHeight - innerHeight)));
+      } else {
+        window.scrollTo(0, 0);
+      }
+      resumeNext = false;
+      store.set('last', { ch: i, r: 0 });
+    }
+    closeSheet();
+  }
+  let tick = 0;
+  addEventListener('scroll', () => {
+    if (!current) return;
+    const h = document.documentElement.scrollHeight - innerHeight;
+    const r = h > 0 ? Math.min(1, scrollY / h) : 1;
+    prog.style.width = (r * 100).toFixed(1) + '%';
+    const now = Date.now();
+    if (now - tick > 400) {
+      tick = now; store.set('last', { ch: current, r });
+      if (r > 0.95 && !readSet.has(current)) { readSet.add(current); store.set('read', [...readSet]); }
+    }
+  }, { passive: true });
+  addEventListener('hashchange', show);
+  addEventListener('keydown', e => {
+    if (e.target.closest('input, textarea') || e.metaKey || e.ctrlKey || e.altKey) return;
+    if (e.key === 'ArrowRight' && current && current < N) location.hash = 'ch' + (current + 1);
+    if (e.key === 'ArrowLeft' && current > 1) location.hash = 'ch' + (current - 1);
+    if (e.key === 'Escape') closeSheet();
+  });
+
+  // settings
+  const sheet = document.getElementById('sheet'), btnSet = document.getElementById('btn-set');
+  function closeSheet() { sheet.hidden = true; btnSet.setAttribute('aria-expanded', 'false'); }
+  btnSet.addEventListener('click', e => { e.stopPropagation(); sheet.hidden = !sheet.hidden; btnSet.setAttribute('aria-expanded', String(!sheet.hidden)); });
+  document.addEventListener('click', e => { if (!sheet.hidden && !sheet.contains(e.target) && e.target !== btnSet) closeSheet(); });
+  document.getElementById('btn-toc').addEventListener('click', () => { location.hash = 'contents'; });
+  function applyFs(v) { root.style.setProperty('--fs', v + 'px'); document.querySelectorAll('#seg-fs button').forEach(b => b.setAttribute('aria-pressed', String(+b.dataset.fs === v))); store.set('fs', v); }
+  function applySkin(v) { if (v === 'auto') delete root.dataset.skin; else root.dataset.skin = v; document.querySelectorAll('#seg-skin button').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.skin === v))); store.set('skin', v); }
+  document.querySelectorAll('#seg-fs button').forEach(b => b.addEventListener('click', () => applyFs(+b.dataset.fs)));
+  document.querySelectorAll('#seg-skin button').forEach(b => b.addEventListener('click', () => applySkin(b.dataset.skin)));
+  applyFs(store.get('fs', 18)); applySkin(store.get('skin', 'auto'));
+
+  show();
+})();
+</script>
