@@ -19,7 +19,9 @@
 | `quantum-mechanics-notes-original.md` | 原始笔记，逐字保存，未修改 |
 | `qm-reasoning-corpus-v0.1.jsonl` | 训练用语料，每行一条 |
 | `qm-reasoning-corpus-v0.1.md` | 同一内容的可读版，含纠错记录 |
-| `qm-corpus.html` | 可视化页面：科普小计算 + 语料浏览 + 使用说明 |
+| `qm-reasoning-corpus-v0.1.en.jsonl` | 英文版（Claude 翻译），字段相同；type、credibility、status 用英文值 |
+| `qm-reasoning-corpus-v0.1.en.md` | 英文可读版，含纠错记录 |
+| `qm-corpus.html` | 可视化页面：科普小计算 + 语料浏览 + 使用说明；右上角可切换中文 / English |
 
 ## 字段
 

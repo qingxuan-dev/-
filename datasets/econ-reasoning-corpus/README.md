@@ -18,7 +18,8 @@
 |---|---|
 | `econ-dialogue-corpus-v0.1.md` | 原始文本，逐字保存，未做任何修改 |
 | `econ-dialogue-corpus-v0.1.jsonl` | 由原文解析得到的机器可读版本，每行一条 |
-| `econ-corpus.html` | 可视化浏览页面（筛选、搜索、展开推理链），含审读注 |
+| `econ-dialogue-corpus-v0.1.en.jsonl` | 英文版（Claude 翻译），字段相同；立场与核对状态用英文值 fact/mechanism/contested、checked/common/to verify |
+| `econ-corpus.html` | 可视化浏览页面（筛选、搜索、展开推理链），含审读注；右上角可切换中文 / English |
 
 ## JSONL 字段
 
