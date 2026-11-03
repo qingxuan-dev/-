@@ -1,0 +1,36 @@
+{
+  "zh": {
+    "book": "县城八中，开学第一周。一个翻墙逃掉军训的男生，一个挂着吊瓶也不肯坐下的女生。后街有栋老楼，二楼空了两年。",
+    "chapters": [
+      "他本来只想混过这一周。直到有人对他说：祝你以后一切都好。",
+      "一道函数题，换一个游戏链接，听起来很公平。可她住的地方，比他想的要低。",
+      "一个两年没人租的二楼，一只赶不走的橘猫，还有一条得写在墙上的规矩。",
+      "猫有了名字，窗户有了窗帘。桌上多了一把钥匙，她很久都没伸手。",
+      "从第一只猫上楼，到最后一个章盖完，一共五天。中间还有一部让他吐了的动画。",
+      "开张第一天，一上午没人来。后来终于来了一个，她问：怎么问猫愿不愿意？"
+    ],
+    "cast_title": "人物",
+    "cast": [
+      {"img": "ye-zhixing", "name": "叶知行", "line": "开学就记了过。说话冲，跑圈的时候鞋带一直是散的。"},
+      {"img": "gu-xuerong", "name": "顾雪融", "line": "袖口永远扣到手腕。游戏全服第七，函数题却看不懂。"},
+      {"img": "lin-xiaoman", "name": "林小满", "line": "顾雪融的室友。圆脸短发，总给她留一盘饭。"}
+    ]
+  },
+  "en": {
+    "book": "A county-town high school, the first week of term. A boy who climbed the wall to skip military training. A girl who wouldn’t sit down even with a drip in her arm. And on Back Street, a second floor that has stood empty for two years.",
+    "chapters": [
+      "He only meant to coast through the week. Then someone told him: I hope everything goes well for you.",
+      "A maths lesson in exchange for a game link sounds like a fair deal. But where she lives is lower than he imagined.",
+      "A second floor nobody has rented in two years, a ginger cat that won’t leave, and a rule that has to go on the wall.",
+      "The cats get names, the windows get curtains. And there is a key on the table that she takes a long time to reach for.",
+      "Five days from the first cat upstairs to the last official stamp. Somewhere in the middle, an anime that makes him throw up.",
+      "Opening day, and nobody comes all morning. Then someone finally does, and asks: how do you ask a cat?"
+    ],
+    "cast_title": "Characters",
+    "cast": [
+      {"img": "ye-zhixing", "name": "Ye Zhixing", "line": "A demerit before term has even started. Blunt, and his shoelace came undone on every lap."},
+      {"img": "gu-xuerong", "name": "Gu Xuerong", "line": "Cuffs always buttoned to the wrist. Seventh on the whole server, stuck on a quadratic."},
+      {"img": "lin-xiaoman", "name": "Lin Xiaoman", "line": "Gu Xuerong’s roommate. Round face, short hair, always saves her a plate of dinner."}
+    ]
+  }
+}

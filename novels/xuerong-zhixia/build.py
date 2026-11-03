@@ -10,7 +10,7 @@ English: en/ch1.md, en/ch2.md, ... hold a paragraph-for-paragraph translation (s
 sections and paragraph count as the original). The build checks the alignment and stops on a mismatch.
 A Chinese chapter without an English file is listed as "translation coming" in English mode.
 """
-import glob, html, json, os, re, subprocess
+import base64, glob, html, json, os, re, subprocess
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 SRC = os.path.join(HERE, 'xuerong-zhixia-ch1-6.original.md')
@@ -214,8 +214,23 @@ def main():
                if c else {'missing': True}) for c in (en_ch + [None] * (len(book['chapters']) - len(en_ch)))]
     ordinals = ['One', 'Two', 'Three', 'Four', 'Five', 'Six', 'Seven', 'Eight', 'Nine', 'Ten', 'Eleven', 'Twelve']
 
+    # blurbs, chapter hooks and character portraits for the contents page
+    blurbs = json.load(open(os.path.join(HERE, 'blurbs.json'), encoding='utf-8'))
+    for lg, tc in (('zh', toc), ('en', toc_en)):
+        for i, c in enumerate(tc):
+            hooks = blurbs[lg]['chapters']
+            c['teaser'] = hooks[i] if i < len(hooks) else ''
+    imgs = {}
+    for person in blurbs['zh']['cast']:
+        f = os.path.join(HERE, 'art', person['img'] + '.jpg')
+        if os.path.exists(f):
+            imgs[person['img']] = 'data:image/jpeg;base64,' + base64.b64encode(open(f, 'rb').read()).decode()
+    extras = {'zh': {k: blurbs['zh'][k] for k in ('book', 'cast_title', 'cast')},
+              'en': {k: blurbs['en'][k] for k in ('book', 'cast_title', 'cast')}, 'img': imgs}
+
     # reader page
     page = open(TEMPLATE, encoding='utf-8').read()
+    page = page.replace('__EXTRAS__', json.dumps(extras, ensure_ascii=False))
     page = (page.replace('__CHAPTERS__', render_html(book) + '\n' + (render_html(en, 'en') if en else ''))
                 .replace('__TOC__', json.dumps({'zh': toc, 'en': toc_en}, ensure_ascii=False))
                 .replace('__EN_TOTAL__', f'{en_total:,}')

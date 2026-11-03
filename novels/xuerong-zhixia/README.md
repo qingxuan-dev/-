@@ -12,6 +12,8 @@
 | `dist/xuerong-zhixia.docx` | Word 版：宋体小四、首行缩进两字、1.5 倍行距、每章另起一页 |
 | `dist/xuerong-zhixia.md` | 排版用的中间稿（直引号已换成中文引号） |
 | `dist/cover.png` | 电子书封面 |
+| `blurbs.json` | 目录页的简介、每章一句钩子、人物一句话（中英文），改这里即可 |
+| `art/` | 人物头像（从你提供的角色设定图裁出，去掉了图里的文字） |
 | `build.py`、`reader-template.html`、`epub.css` | 生成以上文件的脚本和模板 |
 
 ## 排版上唯一的改动

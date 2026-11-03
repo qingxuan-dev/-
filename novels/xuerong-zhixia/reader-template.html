@@ -87,6 +87,18 @@ main { padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: m
 .go a { font-family: var(--f-ui); font-size: 14.5px; text-decoration: none; border-radius: 999px; padding: 9px 20px; border: 1px solid var(--accent); }
 .go a.primary { background: var(--accent); color: var(--paper); }
 .go a.primary:hover { filter: brightness(1.08); }
+.blurb { font-size: 17px; line-height: 1.9; margin: 0; max-width: 30em; }
+:root[data-lang="en"] .blurb { font-family: var(--f-en); font-size: 17px; line-height: 1.7; }
+.cast { display: grid; gap: 10px; }
+.cast-h { margin: 0; font-family: var(--f-ui); font-size: 12.5px; font-weight: 500; letter-spacing: .3em; color: var(--muted); }
+:root[data-lang="en"] .cast-h { letter-spacing: .15em; text-transform: uppercase; }
+.cast-row { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; }
+.person { margin: 0; display: grid; gap: 8px; align-content: start; min-width: 0; }
+.person img { width: 100%; height: auto; aspect-ratio: 3 / 4; object-fit: cover; border-radius: 6px; display: block; background: var(--inset); }
+.person figcaption { display: grid; gap: 3px; font-family: var(--f-ui); font-size: 12.5px; line-height: 1.55; color: var(--muted); }
+.person figcaption b { font-family: var(--f-body); font-size: 15px; font-weight: 600; color: var(--ink); }
+:root[data-lang="en"] .person figcaption, :root[data-lang="en"] .person figcaption b { font-family: var(--f-en); }
+:root[data-lang="en"] .person figcaption { font-size: 13px; line-height: 1.45; }
 ol.toc { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--faint); }
 ol.toc li { border-bottom: 1px solid var(--faint); }
 ol.toc a, ol.toc .na { display: grid; grid-template-columns: 4.6em minmax(0, 1fr) auto; gap: 4px 12px; padding: 14px 4px; text-decoration: none; color: var(--ink); align-items: baseline; }
@@ -97,7 +109,8 @@ ol.toc .n { font-family: var(--f-ui); font-size: 13px; color: var(--muted); }
 ol.toc .t { font-size: 18px; }
 :root[data-lang="en"] ol.toc .t { font-family: var(--f-en); font-size: 17px; }
 ol.toc .c { font-family: var(--f-ui); font-size: 12px; color: var(--muted); font-variant-numeric: tabular-nums; white-space: nowrap; }
-ol.toc .s { grid-column: 2 / 4; font-family: var(--f-ui); font-size: 12.5px; color: var(--muted); line-height: 1.6; }
+ol.toc .s { grid-column: 2 / 4; font-family: var(--f-body); font-size: 14px; color: var(--muted); line-height: 1.7; }
+:root[data-lang="en"] ol.toc .s { font-family: var(--f-en); font-style: italic; font-size: 14.5px; line-height: 1.55; }
 ol.toc li.read .n::after { content: " ·"; color: var(--accent); }
 @media (max-width: 520px) {
   .cover { grid-template-columns: 1fr; gap: 24px; padding-top: 32px; }
@@ -106,6 +119,8 @@ ol.toc li.read .n::after { content: " ·"; color: var(--accent); }
   .etitle { font-size: 40px; }
   .vtitle small { margin: 8px 0 0; padding: 0; letter-spacing: .2em; }
   .etitle small { margin: 6px 0 0; }
+  .cast-row { gap: 10px; }
+  .person figcaption { font-size: 12px; }
   ol.toc a, ol.toc .na { grid-template-columns: 4.2em minmax(0, 1fr) auto; }
   :root[data-lang="en"] ol.toc a, :root[data-lang="en"] ol.toc .na { grid-template-columns: minmax(0, 1fr) auto; }
   :root[data-lang="en"] ol.toc .n { grid-column: 1 / 3; }
@@ -168,8 +183,10 @@ ol.toc li.read .n::after { content: " ·"; color: var(--accent); }
     <div class="cover-side">
       <div class="facts lz"><span><b>__NCH__</b> 章</span><span><b>__TOTAL__</b> 字</span><span>约 <b>__MINUTES__</b> 分钟读完</span></div>
       <div class="facts le"><span><b>__NCH__</b> chapters</span><span><b>__EN_TOTAL__</b> words</span><span>about <b>__EN_MINUTES__</b> minutes</span></div>
+      <p class="blurb" id="blurb"></p>
       <p class="note-tr le" lang="en">Translated from the Chinese, paragraph by paragraph.</p>
       <div class="go" id="go"></div>
+      <section class="cast" aria-labelledby="cast-h"><h2 class="cast-h" id="cast-h"></h2><div class="cast-row" id="cast"></div></section>
       <ol class="toc" id="toc"></ol>
     </div>
   </section>
@@ -178,6 +195,7 @@ __CHAPTERS__
 </main>
 
 <script id="toc-data" type="application/json">__TOC__</script>
+<script id="extras" type="application/json">__EXTRAS__</script>
 <script>
 (function () {
   const TOCS = JSON.parse(document.getElementById('toc-data').textContent);
@@ -202,11 +220,16 @@ __CHAPTERS__
   const toc = () => TOCS[lang];
   const has = i => !!document.querySelector(`.chapter[data-lang="${lang}"][data-ch="${i}"]`);
 
+  const EX = JSON.parse(document.getElementById('extras').textContent);
   function drawToc() {
-    const L = T[lang], tc = toc();
+    const L = T[lang], tc = toc(), ex = EX[lang];
+    document.getElementById('blurb').textContent = ex.book;
+    document.getElementById('cast-h').textContent = ex.cast_title;
+    document.getElementById('cast').innerHTML = ex.cast.filter(p => EX.img[p.img]).map(p =>
+      `<figure class="person"><img src="${EX.img[p.img]}" alt="${p.name}" width="360" height="480" loading="lazy"><figcaption><b>${p.name}</b><span>${p.line}</span></figcaption></figure>`).join('');
     document.getElementById('toc').innerHTML = tc.map((c, i) => c.missing
       ? `<li><span class="na"><span class="n">${TOCS.zh[i].num}</span><span class="t">${L.missing}</span><span class="c"></span></span></li>`
-      : `<li class="${readSet.has(i + 1) ? 'read' : ''}"><a href="#ch${i + 1}"><span class="n">${c.num}</span><span class="t">${c.name}</span><span class="c">${L.chars(c.chars)}</span><span class="s">${c.sections.join(' · ')}</span></a></li>`).join('');
+      : `<li class="${readSet.has(i + 1) ? 'read' : ''}"><a href="#ch${i + 1}"><span class="n">${c.num}</span><span class="t">${c.name}</span><span class="c">${L.chars(c.chars)}</span><span class="s">${c.teaser || ''}</span></a></li>`).join('');
     const last = store.get('last', null), go = document.getElementById('go');
     go.innerHTML = last && last.ch > 0 && last.ch <= N && has(last.ch)
       ? `<a class="primary" href="#ch${last.ch}" data-resume="1">${L.resume}${tc[last.ch - 1].num}</a><a href="#ch1">${L.restart}</a>`
