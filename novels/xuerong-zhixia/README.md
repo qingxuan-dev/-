@@ -1,10 +1,10 @@
-# 雪融之夏（第一至六章）
+# 雪融之夏（第一至七章）
 
 > 独立内容：小说，与仓库里的数学笔记和训练语料无关。
 
 | 文件 | 用途 |
 |---|---|
-| `xuerong-zhixia-ch1-6.original.md` | 原稿，逐字保存，未修改 |
+| `xuerong-zhixia-ch1-6.original.md`、`xuerong-zhixia-ch7.original.md` | 原稿，逐字保存，未修改（每批新章节一个文件） |
 | `reader.html` | 在线阅读页（发布为 claude.ai 页面）：目录、分章阅读、字号与背景（白 / 护眼 / 夜间）、记住阅读位置、中文 / English 切换 |
 | `en/ch1.md` … `en/ch6.md` | 英文译稿（Claude 翻译），与原稿逐段对应；书名 *Snowmelt Summer* |
 | `dist/snowmelt-summer.en.epub` | 英文电子书 |
@@ -22,7 +22,7 @@
 
 ## 加新章节
 
-把新章节按同样格式（`# 第七章　标题`、`## 一、小节`）接在原稿末尾，或把 `build.py` 里的 `SRC` 指向新文件，然后运行：
+把新章节按同样格式（`# 第八章　标题`、`## 一、小节`）存成新文件 `xuerong-zhixia-ch8.original.md`（文件名里的数字是这批第一章的章号），在 `blurbs.json` 里给新章加一句钩子，然后运行：
 
 ```
 python3 build.py

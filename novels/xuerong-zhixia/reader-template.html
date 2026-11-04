@@ -228,7 +228,7 @@ __CHAPTERS__
     document.getElementById('cast').innerHTML = ex.cast.filter(p => EX.img[p.img]).map(p =>
       `<figure class="person"><img src="${EX.img[p.img]}" alt="${p.name}" width="360" height="480" loading="lazy"><figcaption><b>${p.name}</b><span>${p.line}</span></figcaption></figure>`).join('');
     document.getElementById('toc').innerHTML = tc.map((c, i) => c.missing
-      ? `<li><span class="na"><span class="n">${TOCS.zh[i].num}</span><span class="t">${L.missing}</span><span class="c"></span></span></li>`
+      ? `<li><span class="na"><span class="n">${c.num || TOCS.zh[i].num}</span><span class="t">${L.missing}</span><span class="c"></span></span></li>`
       : `<li class="${readSet.has(i + 1) ? 'read' : ''}"><a href="#ch${i + 1}"><span class="n">${c.num}</span><span class="t">${c.name}</span><span class="c">${L.chars(c.chars)}</span><span class="s">${c.teaser || ''}</span></a></li>`).join('');
     const last = store.get('last', null), go = document.getElementById('go');
     go.innerHTML = last && last.ch > 0 && last.ch <= N && has(last.ch)

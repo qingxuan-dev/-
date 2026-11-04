@@ -4,7 +4,7 @@
 Usage: python3 build.py
 The original text is never modified. The only typographic change is turning straight
 quotes into Chinese curly quotes (“” and ‘’), pairing them within each line.
-Add new chapters to the source markdown (or point SRC at a new file) and re-run.
+Add new chapters as a new file named xuerong-zhixia-chN.original.md (N = first chapter number in it) and re-run.
 
 English: en/ch1.md, en/ch2.md, ... hold a paragraph-for-paragraph translation (same chapters,
 sections and paragraph count as the original). The build checks the alignment and stops on a mismatch.
@@ -13,7 +13,8 @@ A Chinese chapter without an English file is listed as "translation coming" in E
 import base64, glob, html, json, os, re, subprocess
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-SRC = os.path.join(HERE, 'xuerong-zhixia-ch1-6.original.md')
+# originals, one file per batch of chapters, read in chapter order: xuerong-zhixia-ch1-6.original.md, xuerong-zhixia-ch7.original.md, ...
+SRC_GLOB = os.path.join(HERE, 'xuerong-zhixia-ch*.original.md')
 OUT = os.path.join(HERE, 'dist')
 TEMPLATE = os.path.join(HERE, 'reader-template.html')
 EN_DIR = os.path.join(HERE, 'en')
@@ -43,7 +44,7 @@ def parse(text):
     quote = None
     for raw in lines[1:]:
         line = raw.rstrip()
-        if line.startswith('> '):
+        if line.startswith('> ') or line.strip() == '>':
             if quote is None:
                 quote = {'type': 'quote', 'lines': []}; sec['blocks'].append(quote)
             quote['lines'].append(curly(line[2:].strip())); continue
@@ -104,7 +105,7 @@ def cleaned_markdown(book):
                 if b['type'] == 'break':
                     out += ['::: {.break custom-style="Scene Break"}', '＊　＊　＊', ':::', '']
                 elif b['type'] == 'quote':
-                    out += ['> ' + l + '  ' for l in b['lines']] + ['']
+                    out += [('> ' + l + '  ') if l else '>' for l in b['lines']] + ['']
                 else:
                     out += [b['text'], '']
     return '\n'.join(out)
@@ -198,7 +199,8 @@ def format_docx(src, dst):
 
 
 def main():
-    text = open(SRC, encoding='utf-8').read()
+    srcs = sorted(glob.glob(SRC_GLOB), key=lambda f: int(re.search(r'ch(\d+)', os.path.basename(f)).group(1)))
+    text = '\n\n'.join(open(f, encoding='utf-8').read().strip() for f in srcs)
     book = parse(text)
     total = sum(count(c) for c in book['chapters'])
     toc = [{'num': c['num'], 'name': c['name'], 'chars': count(c),
@@ -210,9 +212,11 @@ def main():
     en = load_english(book)
     en_ch = en['chapters'] if en else []
     en_total = sum(words(c) for c in en_ch)
+    ordinals = ['One', 'Two', 'Three', 'Four', 'Five', 'Six', 'Seven', 'Eight', 'Nine', 'Ten', 'Eleven', 'Twelve',
+                'Thirteen', 'Fourteen', 'Fifteen', 'Sixteen', 'Seventeen', 'Eighteen', 'Nineteen', 'Twenty']
     toc_en = [({'num': c['num'], 'name': c['name'], 'chars': words(c), 'sections': [s['title'] for s in c['sections']]}
-               if c else {'missing': True}) for c in (en_ch + [None] * (len(book['chapters']) - len(en_ch)))]
-    ordinals = ['One', 'Two', 'Three', 'Four', 'Five', 'Six', 'Seven', 'Eight', 'Nine', 'Ten', 'Eleven', 'Twelve']
+               if c else {'missing': True, 'num': f'Chapter {ordinals[i]}' if i < len(ordinals) else f'Chapter {i + 1}'})
+              for i, c in enumerate(en_ch + [None] * (len(book['chapters']) - len(en_ch)))]
 
     # blurbs, chapter hooks and character portraits for the contents page
     blurbs = json.load(open(os.path.join(HERE, 'blurbs.json'), encoding='utf-8'))
