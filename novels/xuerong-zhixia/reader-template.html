@@ -87,8 +87,14 @@ main { padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: m
 .go a { font-family: var(--f-ui); font-size: 14.5px; text-decoration: none; border-radius: 999px; padding: 9px 20px; border: 1px solid var(--accent); }
 .go a.primary { background: var(--accent); color: var(--paper); }
 .go a.primary:hover { filter: brightness(1.08); }
-.blurb { font-size: 17px; line-height: 1.9; margin: 0; max-width: 30em; }
-:root[data-lang="en"] .blurb { font-family: var(--f-en); font-size: 17px; line-height: 1.7; }
+.intro { display: grid; gap: 10px; max-width: 32em; }
+.intro-h { margin: 0; font-family: var(--f-ui); font-size: 12.5px; font-weight: 500; letter-spacing: .3em; color: var(--muted); }
+:root[data-lang="en"] .intro-h { letter-spacing: .15em; text-transform: uppercase; }
+.blurb { font-size: 16.5px; line-height: 1.95; }
+.blurb p { margin: 0 0 .8em; text-indent: 2em; text-align: justify; }
+.blurb p:last-child { margin-bottom: 0; }
+:root[data-lang="en"] .blurb { font-family: var(--f-en); font-size: 16.5px; line-height: 1.7; hyphens: auto; -webkit-hyphens: auto; }
+:root[data-lang="en"] .blurb p { text-indent: 0; margin-bottom: .75em; text-align: left; }
 .cast { display: grid; gap: 10px; }
 .cast-h { margin: 0; font-family: var(--f-ui); font-size: 12.5px; font-weight: 500; letter-spacing: .3em; color: var(--muted); }
 :root[data-lang="en"] .cast-h { letter-spacing: .15em; text-transform: uppercase; }
@@ -183,9 +189,9 @@ ol.toc li.read .n::after { content: " ·"; color: var(--accent); }
     <div class="cover-side">
       <div class="facts lz"><span><b>__NCH__</b> 章</span><span><b>__TOTAL__</b> 字</span><span>约 <b>__MINUTES__</b> 分钟读完</span></div>
       <div class="facts le"><span><b>__NCH__</b> chapters</span><span><b>__EN_TOTAL__</b> words</span><span>about <b>__EN_MINUTES__</b> minutes</span></div>
-      <p class="blurb" id="blurb"></p>
       <p class="note-tr le" lang="en">Translated from the Chinese, paragraph by paragraph.</p>
       <div class="go" id="go"></div>
+      <section class="intro" aria-labelledby="intro-h"><h2 class="intro-h" id="intro-h"></h2><div class="blurb" id="blurb"></div></section>
       <section class="cast" aria-labelledby="cast-h"><h2 class="cast-h" id="cast-h"></h2><div class="cast-row" id="cast"></div></section>
       <ol class="toc" id="toc"></ol>
     </div>
@@ -223,7 +229,9 @@ __CHAPTERS__
   const EX = JSON.parse(document.getElementById('extras').textContent);
   function drawToc() {
     const L = T[lang], tc = toc(), ex = EX[lang];
-    document.getElementById('blurb').textContent = ex.book;
+    document.getElementById('intro-h').textContent = lang === 'en' ? 'About this book' : '简介';
+    const blurb = document.getElementById('blurb');
+    blurb.replaceChildren(...ex.book.split(/\n\s*\n/).map(s => { const p = document.createElement('p'); p.textContent = s.trim(); return p; }));
     document.getElementById('cast-h').textContent = ex.cast_title;
     document.getElementById('cast').innerHTML = ex.cast.filter(p => EX.img[p.img]).map(p =>
       `<figure class="person"><img src="${EX.img[p.img]}" alt="${p.name}" width="360" height="480" loading="lazy"><figcaption><b>${p.name}</b><span>${p.line}</span></figcaption></figure>`).join('');
