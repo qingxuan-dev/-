@@ -46,7 +46,7 @@ Every morning he left the house in camouflage and every evening he came home in 
 
 She didn’t ask again. She went back to eating, the corners of her mouth held down, as if she had caught hold of something and was saving it for later.
 
-On the fourth morning, before seven, his phone woke him. He was sleeping on the long sofa in the café; he had played until three, and half his face was printed with the pattern of the upholstery. It was his homeroom teacher, and her voice was much colder than he had expected:
+On the fourth morning, before seven, his phone woke him. He was sleeping on the long sofa in the café; he had played until three, and half his face was printed with the pattern of the upholstery. It was his homeroom teacher, and his voice was much colder than he had expected:
 
 “Ye Zhixing, you’ve missed three days. The school has discussed it, and under the regulations you are being expelled. Have your parents come in today.”
 
