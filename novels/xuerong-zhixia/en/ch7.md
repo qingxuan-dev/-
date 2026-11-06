@@ -22,7 +22,7 @@ Her fingers hooked the strap of her canvas bag, let go, hooked it again. The bad
 
 “Can I ask you something?”
 
-“Go on.”
+“Go on. Don’t ask why Rice Cake’s so fat, I don’t know either.”
 
 “Do you… need anyone?”
 
@@ -301,9 +301,9 @@ Su Tang held the envelope, standing at the counter. She took the money out and c
 
 “We never said baths were extra.”
 
-“Now we have.”
+“Now we have. …The Devon counts double, it scratches.”
 
-Su Tang looked down at the money in her hand for a long time. The old phone on the counter lit up and went dark again.
+Su Tang looked down at the money in her hand and didn’t say anything for a while. The old phone on the counter lit up and went dark again.
 
 She folded the money, slid it back into the envelope, put the envelope in the innermost pocket of her canvas bag, next to the cat sticker, zipped it up, and pressed it with her hand to make sure it was shut.
 
@@ -513,15 +513,11 @@ A family of three eating at a small table against the wall, the child’s legs t
 
 On the grey sofa in the corner, Gu Xuerong sat with the ledger open on her knees, her pen stopped on the paper, dozing. Briquette was curled at her feet.
 
-“Bro.”
+“Bro, you’re kind of famous now.”
 
 “Mm.”
 
-“You’re kind of famous now.”
-
-“Mm.”
-
-“People in my class are passing round that video of yours.”
+“Everyone in my class group chat is passing round that video of yours. Someone even asked me for your WeChat. I said my brother doesn’t add people, his profile picture is a tank of weeds.”
 
 Ye Zhixing didn’t look up. He turned over a delivery slip.
 

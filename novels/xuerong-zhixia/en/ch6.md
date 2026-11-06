@@ -40,7 +40,7 @@ On the wall by the door was a line of writing he had done in marker the week bef
 
 The writing was ugly. The heart radical under the character for “want” he had written twice: the first time too big, rubbed out with his finger, which left a grey smudge; the second time too small, so it looked like a potato. When Uncle He saw it he suggested finding someone with nice handwriting to redo it, and Ye Zhixing said no need.
 
-“Rules don’t need to look nice.”
+“It’s not going to a calligraphy teacher.”
 
 ## 2. Cats Upstairs
 

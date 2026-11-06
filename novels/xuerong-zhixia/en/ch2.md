@@ -177,11 +177,13 @@ Gu Xuerong sat on the edge of the bed with her maths book open on her knees. She
 
 Ye Zhixing nearly laughed and swallowed it. He tore a page from her scrap pad and drew a quick arc with the pen.
 
-“Have you ever thrown a ball? Upwards,” he said. “It goes up, slower and slower, reaches the top, then comes down, faster and faster. Mark its height at every second, join the dots, and you get a curve.”
+“Have you ever thrown a ball? Upwards,” he said. “It goes up, slower and slower, reaches the top, then comes down, faster and faster. Mark its height at every second, join the dots, and you get a curve. That’s what squaring does: the further from the middle, the faster it changes, so it can’t stay straight.”
 
 He tapped the arc with the pen.
 
-“A function is a machine. You put a number in, it spits a number out. Put in time, get out height. The equation asks: when does the ball hit the ground, which is the second when the height is zero. The inequality asks: when is the ball underground—obviously it can’t be, but pretend it can—which is the stretch of time when the height is less than zero. The graph is the ball’s path. Three questions, all about this one line.”
+“But your problem is the other way up, it opens upward.” He turned the paper round. “So the ball’s no good, a ball can’t get under the ground. Try a bird instead. A kingfisher, you’ve seen them, the ones that sit on the wires by the river. At second zero it’s on the wire; put zero in and you get six, so say the wire’s six metres up. Then it dives into the river, slower and slower, gets under the water, and shoots back out. The surface of the water is zero.”
+
+“A function is a machine. You put a number in, it spits a number out. Put in time, get out height. The equation asks: when does it touch the water? Once going in, once coming out, so there are two roots, two and three. The inequality asks: when is it under the water, which is the stretch where the height is less than zero, between two and three. The graph is the line it flies along. Three questions, all about this one line.”
 
 Gu Xuerong stared at the page and didn’t move for a long time.
 

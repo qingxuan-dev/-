@@ -164,7 +164,7 @@ Ye Zhixing paused, then burst out laughing.
 
 “I don’t help for free.”
 
-“I know,” he said. “And I don’t let people help me for free.”
+“Yeah, yeah.” He waved a hand. “I’ll pay, I’ll pay. You sound just like Uncle He.”
 
 ## 4. The Second Floor
 
@@ -224,7 +224,7 @@ Uncle He glanced at him.
 
 “Do you know how to look after cats?” Gu Xuerong asked.
 
-“No,” he said. “I’ll look it up.”
+“No,” he said. “I’ll look it up, it’s all online. That’s how I learned the aquarium too.”
 
 “Young master, cats need vaccinations, deworming,” Uncle He said unhurriedly, “and check-ups. I’ll contact a vet tomorrow.”
 

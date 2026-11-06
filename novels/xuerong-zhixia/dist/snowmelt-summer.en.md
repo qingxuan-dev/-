@@ -419,11 +419,13 @@ Gu Xuerong sat on the edge of the bed with her maths book open on her knees. She
 
 Ye Zhixing nearly laughed and swallowed it. He tore a page from her scrap pad and drew a quick arc with the pen.
 
-“Have you ever thrown a ball? Upwards,” he said. “It goes up, slower and slower, reaches the top, then comes down, faster and faster. Mark its height at every second, join the dots, and you get a curve.”
+“Have you ever thrown a ball? Upwards,” he said. “It goes up, slower and slower, reaches the top, then comes down, faster and faster. Mark its height at every second, join the dots, and you get a curve. That’s what squaring does: the further from the middle, the faster it changes, so it can’t stay straight.”
 
 He tapped the arc with the pen.
 
-“A function is a machine. You put a number in, it spits a number out. Put in time, get out height. The equation asks: when does the ball hit the ground, which is the second when the height is zero. The inequality asks: when is the ball underground—obviously it can’t be, but pretend it can—which is the stretch of time when the height is less than zero. The graph is the ball’s path. Three questions, all about this one line.”
+“But your problem is the other way up, it opens upward.” He turned the paper round. “So the ball’s no good, a ball can’t get under the ground. Try a bird instead. A kingfisher, you’ve seen them, the ones that sit on the wires by the river. At second zero it’s on the wire; put zero in and you get six, so say the wire’s six metres up. Then it dives into the river, slower and slower, gets under the water, and shoots back out. The surface of the water is zero.”
+
+“A function is a machine. You put a number in, it spits a number out. Put in time, get out height. The equation asks: when does it touch the water? Once going in, once coming out, so there are two roots, two and three. The inequality asks: when is it under the water, which is the stretch where the height is less than zero, between two and three. The graph is the line it flies along. Three questions, all about this one line.”
 
 Gu Xuerong stared at the page and didn’t move for a long time.
 
@@ -735,7 +737,7 @@ Ye Zhixing paused, then burst out laughing.
 
 “I don’t help for free.”
 
-“I know,” he said. “And I don’t let people help me for free.”
+“Yeah, yeah.” He waved a hand. “I’ll pay, I’ll pay. You sound just like Uncle He.”
 
 ## 4. The Second Floor
 
@@ -797,7 +799,7 @@ Uncle He glanced at him.
 
 “Do you know how to look after cats?” Gu Xuerong asked.
 
-“No,” he said. “I’ll look it up.”
+“No,” he said. “I’ll look it up, it’s all online. That’s how I learned the aquarium too.”
 
 “Young master, cats need vaccinations, deworming,” Uncle He said unhurriedly, “and check-ups. I’ll contact a vet tomorrow.”
 
@@ -955,7 +957,7 @@ In the ten-minute breaks they shared one pair of earbuds between them, heads tog
 
 “You just went left.”
 
-“That was… a strategic withdrawal.”
+“That was… a strategic withdrawal. Withdrawing into its mouth still counts as withdrawing.”
 
 “You withdrew into its mouth.”
 
@@ -1199,7 +1201,7 @@ By the window, she told the workmen to put nothing at all.
 
 “Leaving that much space empty,” said Ye Zhixing, looking at it, “is a waste.”
 
-“The cats need a path, and so do the customers,” said Gu Xuerong. “If the two don’t compete, nobody gets scratched.”
+“Cats need to walk, and so do people,” said Gu Xuerong. “Squash them together and someone gets scratched. Then they cry, and then their parents come.”
 
 Ye Zhixing thought about it, picked up a pencil and drew a ring round that area on the plan, a size bigger than she had drawn it.
 
@@ -1505,7 +1507,7 @@ On the wall by the door was a line of writing he had done in marker the week bef
 
 The writing was ugly. The heart radical under the character for “want” he had written twice: the first time too big, rubbed out with his finger, which left a grey smudge; the second time too small, so it looked like a potato. When Uncle He saw it he suggested finding someone with nice handwriting to redo it, and Ye Zhixing said no need.
 
-“Rules don’t need to look nice.”
+“It’s not going to a calligraphy teacher.”
 
 ## 2. Cats Upstairs
 
@@ -1919,7 +1921,7 @@ Her fingers hooked the strap of her canvas bag, let go, hooked it again. The bad
 
 “Can I ask you something?”
 
-“Go on.”
+“Go on. Don’t ask why Rice Cake’s so fat, I don’t know either.”
 
 “Do you… need anyone?”
 
@@ -2206,9 +2208,9 @@ Su Tang held the envelope, standing at the counter. She took the money out and c
 
 “We never said baths were extra.”
 
-“Now we have.”
+“Now we have. …The Devon counts double, it scratches.”
 
-Su Tang looked down at the money in her hand for a long time. The old phone on the counter lit up and went dark again.
+Su Tang looked down at the money in her hand and didn’t say anything for a while. The old phone on the counter lit up and went dark again.
 
 She folded the money, slid it back into the envelope, put the envelope in the innermost pocket of her canvas bag, next to the cat sticker, zipped it up, and pressed it with her hand to make sure it was shut.
 
@@ -2430,15 +2432,11 @@ A family of three eating at a small table against the wall, the child’s legs t
 
 On the grey sofa in the corner, Gu Xuerong sat with the ledger open on her knees, her pen stopped on the paper, dozing. Briquette was curled at her feet.
 
-“Bro.”
+“Bro, you’re kind of famous now.”
 
 “Mm.”
 
-“You’re kind of famous now.”
-
-“Mm.”
-
-“People in my class are passing round that video of yours.”
+“Everyone in my class group chat is passing round that video of yours. Someone even asked me for your WeChat. I said my brother doesn’t add people, his profile picture is a tank of weeds.”
 
 Ye Zhixing didn’t look up. He turned over a delivery slip.
 

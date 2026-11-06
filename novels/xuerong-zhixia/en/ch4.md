@@ -106,7 +106,7 @@ In the ten-minute breaks they shared one pair of earbuds between them, heads tog
 
 “You just went left.”
 
-“That was… a strategic withdrawal.”
+“That was… a strategic withdrawal. Withdrawing into its mouth still counts as withdrawing.”
 
 “You withdrew into its mouth.”
 

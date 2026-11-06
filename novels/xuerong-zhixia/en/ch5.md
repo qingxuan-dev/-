@@ -140,7 +140,7 @@ By the window, she told the workmen to put nothing at all.
 
 “Leaving that much space empty,” said Ye Zhixing, looking at it, “is a waste.”
 
-“The cats need a path, and so do the customers,” said Gu Xuerong. “If the two don’t compete, nobody gets scratched.”
+“Cats need to walk, and so do people,” said Gu Xuerong. “Squash them together and someone gets scratched. Then they cry, and then their parents come.”
 
 Ye Zhixing thought about it, picked up a pencil and drew a ring round that area on the plan, a size bigger than she had drawn it.
 
