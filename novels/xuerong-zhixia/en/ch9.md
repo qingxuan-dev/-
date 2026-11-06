@@ -144,7 +144,7 @@ Gu Xuerong didn’t answer right away. The rain was still falling, pattering on 
 
 When she had said it she turned and went back to the sofa, picked up the phone lying face down there, locked it and put it in the pocket of her school jacket. Then she took a stack of tissues and went to wipe up the spilled lemon tea on the little round table.
 
-Su Tang stood by the sink holding the empty paper cup, watching her back for a long time.
+Su Tang stood by the sink watching her back, and didn’t notice she had crushed the empty paper cup in her hand.
 
 ## 2. Patches
 
@@ -163,8 +163,6 @@ Ye Zhixing’s hand paused on the drawer lock.
 “…No,” he said. “Not in China. The ones that exist abroad won’t sell to minors, you have to verify your ID. Some were never put on sale at all, people made them themselves and put them online, you need a password, an invitation, you have to get through several layers.”
 
 “Then how did she get them?”
-
-Ye Zhixing said nothing.
 
 He had seen that folder of hers. Not today; the week before, she had been installing a game on the shop computer and halfway through asked him to look at an error. He had leaned over to look, and what he saw wasn’t an ordinary installer but a window of white text on black, lines of it scrolling past.
 
@@ -202,7 +200,7 @@ Ye Zhixing looked at her.
 
 When she said “break,” her voice shook slightly.
 
-Ye Zhixing said nothing. Outside, an electric scooter went past, its headlight sweeping across the ceiling from one end to the other.
+Outside, an electric scooter went past, its headlight sweeping across the ceiling from one end to the other.
 
 “I’ve got loads of normal stuff,” said Su Tang. “Anime, games, I’ve got a whole hard drive at home. I’ll bring it tomorrow.”
 
@@ -232,7 +230,7 @@ Su Tang opened her mouth.
 
 “…Like,” she said, “stuff that won’t make you throw up.”
 
-Gu Xuerong said nothing.
+Gu Xuerong thought about it. “The one who threw up was Ye Zhixing, not me.”
 
 Su Tang turned her head and stared hard at Ye Zhixing. Ye Zhixing, behind the counter, pretended to be looking at his phone. After three seconds of being stared at, he sighed and put the phone down.
 
@@ -344,7 +342,7 @@ Ye Zhixing looked at the five parsnips for a while and asked nothing more.
 
 That night she dug down to the fortieth level of the mine, fell into a hole and passed out. When she came to, half the money in her wallet was gone and several things were missing from her backpack.
 
-She looked at the line on screen, “You passed out in the mines,” for a long time.
+She looked at the line on the screen: “You passed out in the mines.”
 
 “…Not bad,” she said.
 
@@ -360,7 +358,7 @@ She had made a folder on the hard drive called “For Xuerong,” with seven or 
 > Laid-Back Camp (just some girls going camping, really comfy to watch)
 > K-On! (they play music, then drink tea, then play music)
 
-Gu Xuerong looked at those brackets for a long time.
+Gu Xuerong read the brackets one by one, and at “then drink tea, then play music,” the corner of her mouth moved.
 
 “I don’t watch things at the shop,” she said.
 
@@ -404,7 +402,7 @@ Followed by a line:
 
 > For the other day
 
-Chen Xi stood at the classroom door staring at the number for a long time. He held the phone closer, then further away, and counted the zeros.
+Chen Xi stood at the classroom door staring at the number. He held the phone closer, then further away, and counted the zeros.
 
 Three zeros.
 
@@ -598,7 +596,7 @@ The office went quiet for a moment.
 
 “It’s the one I’ll never forget,” said Chen Xi. “It pulled me out of the river with its teeth once. When I was eight. Later someone poisoned it and hung it from the tree at the edge of the village. That’s what I wrote.”
 
-Ms. Zheng looked down at the essay for a long time.
+Ms. Zheng looked down and read the essay through again from the beginning.
 
 “It’s not bad,” she said, her voice quieter still. “It’s just… too short. The requirement was six hundred characters, and you wrote three hundred and twenty.”
 
@@ -658,7 +656,7 @@ That was all Gu Xuerong ate each day, that one meal. At nine-something, ten, she
 
 One day, just that much.
 
-He stood by her desk looking down at the out-of-date bun for a long time.
+He stood by her desk looking down at the out-of-date bun, and stayed there a good while.
 
 ---
 
@@ -701,8 +699,6 @@ Su Tang’s brows drew together. She looked down at the Devon in her arms, its f
 Su Tang looked at him for a while.
 
 “Why don’t you give it to her yourself?”
-
-Ye Zhixing didn’t answer.
 
 He wanted to say: she wouldn’t take it. She would say “I’ll pay you back,” would say “no need,” would put the food in her desk next to the out-of-date bun and leave it there until it went off. But it was different if Su Tang gave it to her. Su Tang was the one who had pressed a sweet into her hand, the one who had crouched on the stairs and blocked people from seeing her with her own back. When Su Tang gave her something, she couldn’t fend it off with “I’ll pay you back.”
 

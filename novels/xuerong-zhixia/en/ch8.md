@@ -72,7 +72,7 @@ His hand clenched inside his desk.
 
 “I’ll make myself clear today.” Mr. Sun clasped his hands behind him and leaned forward. “From today, Class Seven’s cleaning duty is yours alone. For one week, morning and evening, sweeping, mopping, windows, bins, all of it, by yourself. At midday break you’ll also sweep the corridor and our outdoor area. If you can’t do it—”
 
-He paused, and let the pause settle over the room.
+He let the sentence hang there, waiting for the gap to settle over the room.
 
 “If you can’t, then please have your parents come to the school, so we can discuss whether you’re suited to continue at No. 8 High.”
 
@@ -138,8 +138,6 @@ Not yet eleven in the morning, and Back Street wasn’t properly awake. The brai
 
 Gu Jianguo walked ahead with long strides, his soles slapping the ground, slap, slap.
 
-He hadn’t said a word.
-
 Out of the school gate, across the road, into Back Street, past the copy shop, to the first corner, until the school wall could no longer be seen behind them.
 
 He stopped and turned round.
@@ -155,8 +153,6 @@ Gu Xuerong stood in front of him, two steps away.
 Her schoolbag was on one shoulder, the strap slipped down to her elbow. She didn’t pull it back up.
 
 “Talk! Gone dumb?”
-
-She didn’t talk.
 
 “You’re just like your mother.” Gu Jianguo’s voice was creeping up, bit by bit. “Ungrateful, the pair of you. Can’t be tamed. Your mother was exactly the same, lazy, useless at everything, and in the end she just walked off and left me with a money-losing girl like you—”
 
@@ -314,8 +310,6 @@ The four of them looked at each other, let go one by one, and stepped back two p
 
 Gu Jianguo got up off the ground. He got up very slowly: first one arm braced, then his knees, and only then did he stand. His work jacket was covered in dust, half his face was wet, there was a swelling on his cheekbone, but apart from that he didn’t seem to be hurt anywhere. He stood there panting, looking at these young men half a head shorter than him.
 
-He looked for a long time.
-
 He knew that if he went for them again now, he wouldn’t come out on top. One against five: he could beat one or two, not five. And this was right next to the school; he had been seen here, and if that Mr. Sun got to hear of it—
 
 His eyes turned back to Gu Xuerong.
@@ -442,7 +436,7 @@ Another silence.
 
 “Don’t tell my dad.”
 
-The other end paused, longer than before.
+For a while there was no sound at the other end, only someone warbling away on the opera channel on the TV.
 
 “Young master,” said Uncle He, “if the master knew about something like this, he’d handle it the same way.”
 
@@ -578,8 +572,6 @@ He didn’t finish. He lowered his head and stirred his chopsticks around in the
 
 So quietly it was almost drowned out by the bubbling of the pot.
 
-Gu Xuerong said nothing.
-
 She reached out with her chopsticks, took a piece of luncheon meat from the skewers he had pushed over, and put it in her mouth.
 
 ---
@@ -628,7 +620,7 @@ Under the lunchbox was a sticky note in Lin Xiaoman’s handwriting, round and b
 
 After it she had drawn a crying face, then a smiling face, the two faces side by side as if they were arguing.
 
-Gu Xuerong looked at the sticky note for a long time.
+Gu Xuerong read the “no saying ‘whatever’” twice.
 
 She peeled it off, folded it in half and put it in the pocket of her school jacket.
 
