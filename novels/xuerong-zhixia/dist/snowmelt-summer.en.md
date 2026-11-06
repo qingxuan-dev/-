@@ -5485,6 +5485,8 @@ Ads had to be labelled: that was the very first rule he had set, earlier even th
 
 It wasn’t much, but it kept earning. Bit by bit, added up, it was a very thin stream of water that had never once run dry.
 
+Beyond Town Matters, the company also took on custom work: ordering systems for restaurants in the county and the city, membership points for supermarkets, booking systems for driving schools and gyms. That side brought in more money than Town Matters, each job a real sum, but every one had to be negotiated business by business.
+
 This was his.
 
 Not his father’s, not the Ye family’s, not a script someone had handed him. It was written by him line by line of code, negotiated by him business by business, fixed by him bug by bug.
@@ -8702,7 +8704,7 @@ He answered them one by one. Where refunds were owed, he refunded according to t
 
 Town Matters was fine; if anything Town Matters was busier than before. But the company’s money didn’t only come from Town Matters. The B2B lines made up more than half: restaurants, supermarkets, driving schools and gyms in the county and the city, for which they built ordering, membership and booking systems. Those businesses were all shut now, and a shut business has no use for a membership system.
 
-Last autumn, before he handed in that “stop acquiring land” report, he had set aside three months’ wages in the company account and never touched a cent of it. Back then what he had in mind wasn’t an epidemic; it was his father. Now both had come at once.
+Last winter, before he handed in that “stop acquiring land” report, he had set aside three months’ wages in the company account and never touched a cent of it. Back then what he had in mind wasn’t an epidemic; it was his father. Now both had come at once.
 
 He took a sheet of paper and worked it out. This month was fine. Next month was fine too, if tight. After that, he looked at the figure, and drew a line under it.
 
@@ -9092,7 +9094,7 @@ There was no sound at the other end.
 
 “Two thousand five hundred a month.”
 
-Still no sound. He heard the compressor of the old fridge in her basement start up with a hum.
+Still no sound. He heard the compressor of the little fridge in her basement start up with a hum.
 
 “Testing,” said Gu Xuerong, “how much does it usually pay.”
 
