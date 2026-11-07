@@ -9969,3 +9969,845 @@ Big Liu replied with three words:
 Ye Zhixing replied:
 
 > trying him out  
+
+# Chapter Seventeen　Mediation
+
+## 1. Huang Yingjun
+
+Beanpole came in mid-March, the day after the checkpoint at the estate gates was taken down.
+
+He stood at the foot of the stairs below the cat café, so tall that the stairwell bulb hung right in front of his forehead and he had to crook his neck. He wore a black windbreaker washed nearly grey, his mask hooked over one ear, and held an old laptop to his chest, a Lenovo, its lid covered in stickers, half of them CrossFire guns and half anime girls, the corners curling where they had worn.
+
+“Brother Ye.”
+
+“Come on up.”
+
+He came up, banged his head on the door frame on the way in, thunk. Rice Cake raised its head from the windowsill, looked at him, and lay back down.
+
+Uncle He was there that day, sitting at the bar counter with a folder and a stack of forms in front of him. Ye Zhixing said fill in the registration stuff first, and Uncle He pushed a form and a pen across.
+
+“Name.”
+
+Beanpole held the pen and didn’t write.
+
+“Go on.”
+
+“…Huang Yingjun,” he said. “As in ‘handsome.’ Go on, laugh. Everyone does.”
+
+Ye Zhixing didn’t laugh. Behind the bar, Ye Zhixia, crouched topping up the cat bowls, let out a “pfft” and quickly buried her face in the cat-food bag.
+
+“Age,” said Uncle He.
+
+“Sixteen. Just turned, last month.”
+
+“Brought your ID?”
+
+He took it out of the inside pocket of his windbreaker and handed it over. Uncle He took it, held it under his reading glasses for a while, checked the date of birth, nodded, and wrote it on the form.
+
+“Where do you live?”
+
+“North of town, the textile machinery factory housing. My grandma’s flat.”
+
+“Living with your grandma?”
+
+“Grandma died the year before last,” said Huang Yingjun. “I live on my own.”
+
+Uncle He’s pen paused. “Your parents?”
+
+“Divorced. Both found someone else. My dad’s in Zhengzhou, my mum’s in the city, they both have kids now.” He said it very smoothly, like a passage he had learned by heart. “They left me the flat to live in, and my mum transfers me a thousand a month. When she calls, it’s to yell at me, and when she’s done yelling she transfers the money.”
+
+“School?”
+
+“Stopped in the second year of middle school.”
+
+“Why?”
+
+“I kept not going, and the homeroom teacher said if you don’t come again, don’t bother coming,” said Huang Yingjun. “So I didn’t.”
+
+Uncle He put down the pen, took off his reading glasses, and wiped them on the hem of his jacket.
+
+“That’s not you stopping,” he said. “That’s them breaking the law. Nine years’ compulsory education; a school isn’t allowed to push anyone out.”
+
+Huang Yingjun stopped short, as if hearing this for the first time. “…Well, it’s too late now.”
+
+“Mm.” Uncle He put his glasses back on. “Now it’s too late.” He started a new line at the bottom of the form and wrote a few words. “Medical check when the hospitals open. Juvenile worker, there are jobs you can’t do: lifting heavy things, working at heights, staying up all night, none of those. Young master, the staying up all night part, you heard that.”
+
+“I heard,” said Ye Zhixing.
+
+::: {.break custom-style="Scene Break"}
+·  ·  ·
+:::
+
+Ye Zhixing himself wasn’t much of a coder.
+
+The very first version of Town Matters he had pieced together from online tutorials; it worked, but it was ugly, and later Big Liu rewrote all of it. He could read code, change a bit, spot where the logic was wrong in what Big Liu wrote, but ask him to write a game from scratch and he couldn’t do it.
+
+So it was Big Liu who taught Huang Yingjun.
+
+The two of them were on video, screen-sharing, Big Liu explaining at his end and Huang Yingjun writing at this end. On the first day they did variables; Big Liu said give it any name you like and store a number in it. Huang Yingjun named it “shuzi,” number.
+
+“…Give it an English name.”
+
+“My English is bad.”
+
+“Pinyin’s fine too, but at least—” At Big Liu’s end the baby started crying; he turned to hush it and turned back. “At least don’t call it shuzi. You’ve got a hundred more numbers coming, are you calling them all shuzi?”
+
+“Then shuzi2.”
+
+At his end, Big Liu let out a very long sigh.
+
+But on the third day they hit a bug: on one level, when Rice Cake ate its third treat, the game froze for half a second. Big Liu spent the whole morning on it and couldn’t find it. Huang Yingjun watched his screen for a dozen minutes and said: “Is that check of yours running every frame?”
+
+Big Liu went to look. It was.
+
+“How did you spot that?”
+
+“When I used to write cheats,” said Huang Yingjun, “if you got a loop wrong, the game lagged. Lag once and you got detected, and the account was gone. I’ve had six accounts banned.”
+
+Big Liu looked at him on the video for several seconds.
+
+“Boss Ye,” he said later on WeChat, “this kid’s got it. Just have to straighten out all that pinyin first.”
+
+::: {.break custom-style="Scene Break"}
+·  ·  ·
+:::
+
+On the fourth day, Huang Yingjun got stuck on a problem. Not code: maths. Big Liu wanted him to write the treats falling faster and faster according to a formula, and he couldn’t understand the formula.
+
+“If you don’t get it, ask Chen Xi,” said Ye Zhixing. “He’s good at maths.”
+
+Huang Yingjun turned round.
+
+“Brother Xi?” he said. “He’s good at maths?”
+
+“Mm.”
+
+“He played CrossFire with us at the internet café for two years,” said Huang Yingjun. “His sniping is so-so.”
+
+“He’s second in the year,” said Ye Zhixing. “Second in the whole county in the high-school entrance exam. Maths and physics, nearly full marks.”
+
+Huang Yingjun’s mouth fell open and stayed open for a long time.
+
+That evening, he posted in the internet café gang’s group:
+
+> did you lot know brother xi is a genius  
+
+Abiao was quickest to reply:
+
+> bullshit  
+
+Chubby:
+
+> last time he worked out the internet fees he was crazy fast i thought hed practised mental maths  
+
+The youngest:
+
+> ive seen his homework book all ticks i thought he copied it  
+
+Abiao:
+
+> copied from who  
+
+The youngest:
+
+> …dunno  
+
+A while later, Abiao posted again:
+
+> so why does he hang out with us every day  
+
+Nobody answered.
+
+Chen Xi was in the group too, lurking the whole time. The next day, before his class, he posted one line:
+
+> anyone who calls me xi the great again gets kicked  
+
+## 2. Cat Hair
+
+Once March came, the cats started shedding.
+
+Actually they shed all year round; indoors, with heating and lights, cats can’t really tell the seasons, so they shed in winter and in summer too. But in spring they shed worst of all, by the handful. Ye Zhixia’s black hoodie turned grey within an hour of putting it on.
+
+She bought a lint roller, fifty sheets a roll, and could get through twenty sheets a day.
+
+“Stop wearing black,” said Ye Zhixing.
+
+“This is the only one I brought.”
+
+“Then wear mine.”
+
+“Yours are black too.”
+
+In the end she wore the cat café’s work apron, beige, where the fur didn’t show much, with a comb in the front pocket, combing wherever she went. Briquette wouldn’t let her comb it; the moment she reached out it ran. Calico let her, and after two strokes rolled onto its back. Rice Cake liked it most, and when she finished it wouldn’t leave, butting her hand with its head to make her keep going.
+
+Your Highness had recently learned to open doors.
+
+The sliding door to the back room: they used to shut it in there at night, and it would sing behind the door. Now it didn’t sing. One night Ye Zhixia got up for the toilet and saw it crouched by the door, one front paw reaching out, claws hooked into the gap between door and frame; one swipe sideways and the door slid open a crack, and it squeezed out, walked up to her feet and looked up at her, without the slightest guilt.
+
+“How did you get out?”
+
+Your Highness yowled once.
+
+The next day she put a strip of tape on the door. The day after, the tape had been clawed off, rolled into a ball, and left beside the litter box.
+
+Rice Cake stole food.
+
+The cupboard in the storeroom where the freeze-dried treats were kept had a magnetic door that opened with a push. At first Rice Cake only knew how to sit in front of the cupboard, sitting all afternoon. Then one day Ye Zhixia came back to find the cupboard open, a bag of freeze-dried chicken bitten open and spilled all over the floor, and Rice Cake lying in the middle of the heap, its belly round as a drum. When it saw her come in it didn’t run, just burped.
+
+“You’re on a diet!”
+
+Rice Cake burped again.
+
+Half a tin of cat food left over, put on the bar counter under a plastic lid to feed them in the evening: in the moment it took to turn round, the lid had been pushed onto the floor, the tin was empty, and Calico was crouched on the bar licking its lips.
+
+Ye Zhixia wrote all of this down, item by item, on a sheet of paper stuck to the fridge door, headed “Criminal Record.” Rice Cake’s column was the longest.
+
+There was one more thing she couldn’t work out.
+
+Every time she came back from outside, changed her shoes and sat down on the sofa, the Devon would come over and sniff her socks, sniffing very carefully, from toe to ankle, then lift its head, mouth half open, lip curled up showing two little teeth, and freeze there, as if something had disgusted it, or as if it were contemplating life.
+
+“What does that mean?” she asked her brother. “It thinks my feet stink?”
+
+“It’s smelling,” said Ye Zhixing. “When cats smell certain things, they open their mouths and let the smell into that bit at the roof of the mouth, to smell it again.”
+
+“So it thinks my feet stink.”
+
+“Not necessarily. They only do it for smells they’re interested in.”
+
+“So it thinks my feet stink in a really interesting way.”
+
+Ye Zhixing thought about it, and didn’t argue.
+
+Rice Cake didn’t sniff socks. Rice Cake liked to rub. It pressed its cheek against her calf and rubbed from one end to the other, then switched to the other cheek and rubbed back, and when it was done, with its tail straight up, it went once round her and started rubbing again.
+
+“It’s stamping you,” said Ye Zhixing.
+
+“Stamping what?”
+
+“Its face has a smell; rub a bit, and you smell of it,” he said. “It doesn’t like that you went out and came back not smelling of it.”
+
+Ye Zhixia looked down at Rice Cake. Rice Cake rubbed once more.
+
+“So it does that to you too.”
+
+“Mm.”
+
+“So we both belong to it.”
+
+“More or less.”
+
+## 3. The Neighbourhood Committee
+
+That morning, they had been meant to go to the bank.
+
+Uncle He had booked it: the rural commercial bank in the old town, Wednesday morning, bring her ID, her labour contract, the company’s proof of income, the last few months’ wage records. Uncle He said that over sixteen, with all that, the bank would let her open an account herself, no guardian needed. But on Tuesday evening Ye Zhixing got a call from the hotpot chain in the city, the one whose ordering system had been put on hold last year: the owner said the branches were reopening next week, he wanted to carry on with the project, could they talk in person tomorrow.
+
+Uncle He had to drive him.
+
+“I’ll go with her,” Chen Xi said in the group. “Give me the stuff.”
+
+So Uncle He gave Chen Xi the folder. A blue plastic folder with a snap fastener, every sheet inside stacked in order, and on top a sticky note in Uncle He’s handwriting: She brings the original ID herself, copy on page one, contract page two, proof of income page three, give the teller whatever she asks for, don’t talk too much.
+
+Chen Xi peeled off the sticky note, read it through, and stuck it back on.
+
+At half past nine they met at the end of Back Street. Gu Xuerong was wearing that navy down jacket, zipped up to her chin, no hat, the little tuft at the back of her head tied a bit higher than usual. Chen Xi had the folder tucked under his arm, his cap crooked.
+
+“Let’s go.”
+
+“Mm.”
+
+Back Street had a little more life in it than last month. The braised-meat stall wasn’t out yet, but the copy shop’s roller shutter was half up, and the owner was sweeping inside, sweeping out a pile of dust. The internet café’s curtain was still hanging, with a sheet of paper on the door: Closed until further notice. Underneath, someone had written in marker: “please open soon begging you,” and someone else had added below: “+1”.
+
+“Beanpole wrote that,” said Chen Xi.
+
+“How do you know?”
+
+“He never dots the i in ‘begging.’”
+
+They had just come out of Back Street and turned onto the main road when Gu Xuerong’s phone rang.
+
+An unknown number, local. She looked at it and didn’t answer. When it stopped, it rang again, a second time. She answered.
+
+“Hello.”
+
+“Hello, is that Gu Xuerong?” A man’s voice, in his forties, very even. “This is Chengguan police station, my name’s Wang. Your father has reported that you ran away from home over two months ago and can’t be contacted. Where are you right now?”
+
+The other end waited a few seconds.
+
+“Hello? Gu Xuerong?”
+
+“On the street.”
+
+“Are you on your own?”
+
+“No.”
+
+“Here’s the thing,” said Officer Wang. “The community has you registered as living over on Back Street, such-and-such road, such-and-such number, I’ve got it here. Your parents are at the neighbourhood committee now, the one just out of Back Street, Minzhu Road community. Come over and we’ll sort it out face to face. Your parents don’t know where you live; I haven’t told them. Come over yourself.”
+
+The call ended.
+
+Gu Xuerong stood at the roadside holding her phone. An electric three-wheeler drove past her with a few sacks of cement in its bed, raising a little dust.
+
+“Who?” Chen Xi asked.
+
+“The police,” said Gu Xuerong. “They called the police.”
+
+Chen Xi looked at her.
+
+“Going?”
+
+“…If I don’t,” said Gu Xuerong, “they’ll come again.”
+
+“Mm.”
+
+“Then let’s go.”
+
+::: {.break custom-style="Scene Break"}
+·  ·  ·
+:::
+
+The Minzhu Road neighbourhood committee was on the ground floor of a small three-storey building, with a red banner over the door, “United as one, fight the epidemic,” and under the banner a table with a thermometer gun, a bottle of hand sanitizer and a register. A woman in a red armband stood at the door, took their temperatures, 36.2, 36.4, and had them write their names in the book.
+
+There were six people inside.
+
+Officer Wang sat by the window, about fifty, a black padded vest over his uniform, a thermos cup in front of him. Beside him stood an auxiliary officer in his early twenties, looking at his phone. The sub-district office had sent a woman in her thirties, glasses, short hair, a notebook in her hand. The community grid worker, a plump middle-aged man, sat by the door.
+
+Gu Jianguo and the woman sat on a long sofa.
+
+The moment the woman saw Gu Xuerong come in, she stood up, and her eyes went red at once.
+
+“Xuerong—” She took two steps forward. “You’ve finally turned up, do you know how frantic your dad and I have been looking for you? Over two months, you don’t answer calls, you don’t answer messages, over New Year, with the epidemic this bad, we haven’t slept a wink—”
+
+She reached out to take Gu Xuerong’s arm.
+
+Gu Xuerong stepped to one side. Chen Xi moved half a step in front of her.
+
+The woman’s hand stopped in mid-air, drew back, and wiped her eyes.
+
+“Who’s this?” Gu Jianguo spoke. He didn’t get up; he leaned back on the sofa, both hands on his knees, black under his fingernails. “You again.”
+
+“Classmate,” said Chen Xi. “The one who held you down on the street last time.”
+
+Gu Jianguo’s face twitched.
+
+“What’s a classmate tagging along for?”
+
+“Keeping her company while she does something.”
+
+“Does what?”
+
+“Opens a bank account.”
+
+Gu Jianguo’s eyes moved.
+
+“Sit, sit,” said Officer Wang. “Everyone sit down and talk.”
+
+::: {.break custom-style="Scene Break"}
+·  ·  ·
+:::
+
+For the next half hour, it was mostly the woman talking.
+
+She said the child had been rebellious since she was small, wouldn’t be told, couldn’t stand being at home, looked down on the family for being poor, for not being well off. She said the minute the holidays came she was off out, and she and the girl’s dad had tried every way of talking to her, and she just wouldn’t listen. She said over New Year her dad stood at the door every day waiting, till midnight. She said with the epidemic this bad, a sixteen-year-old girl out there on her own, what was she eating and drinking, where was she living, if anything happened what would they say to her dead—“to her real mum,” she corrected herself.
+
+By the end, she was crying again.
+
+“It’s not like we want anything,” she said. “We just want the child to come home. We’re family, what can’t be said at home? We heard she’s working out there too, minding a shop for someone, a sixteen-year-old, what does she know, whatever they give her she takes, she wouldn’t even know if she was being cheated. That money, us as her parents, keeping it safe for her, what’s wrong with that?”
+
+The woman from the sub-district office was taking notes, writing a few words, glancing up.
+
+Officer Wang picked up his thermos cup and took a sip. “Gu Xuerong,” he said, “you tell us.”
+
+Gu Xuerong stood there. She hadn’t sat down; there was an empty chair, and Chen Xi told her to sit, and she didn’t.
+
+“Why don’t you go home?”
+
+“…”
+
+“What your parents have said, is that how it is?”
+
+Gu Xuerong looked at Gu Jianguo.
+
+“Where would I sleep if I went back?” she said.
+
+No one in the room answered.
+
+“The bed in the kitchen,” she said, “is it still there.”
+
+Gu Jianguo’s face darkened at once.
+
+“You’ve got a nerve!” He stood up off the sofa. “I feed you, I clothe you, and you turn your nose up at the kitchen? Your sister’s room is your sister’s, who do you think you are—”
+
+“Gu Jianguo.” Officer Wang put down his cup. “Sit down.”
+
+“Officer, you hear this, you hear what she’s saying—”
+
+“Sit down.”
+
+Gu Jianguo sat down. The woman beside him tugged at his sleeve, twice.
+
+Chen Xi took out his phone, dialled a number, and put it on speaker.
+
+It rang four times, then connected. It was very noisy at the other end, bowls and pans clattering, someone shouting “table three.”
+
+“Hello.”
+
+“At the police—at the neighbourhood committee,” said Chen Xi. “Her dad called the police, said she ran away from home. The police are here, the sub-district office is here.”
+
+The other end was quiet for two seconds.
+
+“I’m the person responsible at her employer.” Ye Zhixing’s voice came out of the speaker. “Hello, Officer. She’s currently working at my company doing remote software testing. She has a signed labour contract and proof of income, and her wages are paid monthly. Chen Xi has the contract.”
+
+Chen Xi took the folder from under his arm, popped the snap, opened it, took out pages two and three, and put them on the table in front of Officer Wang.
+
+Officer Wang took his reading glasses out of his vest pocket, put them on, and picked them up to read.
+
+A labour contract: Party A a company, Party B Gu Xuerong, position software tester, remote, monthly salary two thousand five hundred. Signature, fingerprint, company seal, date.
+
+Proof of income, the same company seal.
+
+Further back, a few printed transfer records, one payment a month, the earliest last autumn.
+
+The woman from the sub-district office leaned over to look.
+
+“Article Eighteen of the General Provisions of the Civil Law,” said Ye Zhixing on the phone. “A minor aged sixteen or over whose main source of living is income from their own labour is deemed to have full capacity for civil conduct. What she eats, where she lives, rent, water and electricity, she earns all of it herself.”
+
+“Hear that?” said Chen Xi. “She earns her own money and spends her own money. No need for you to keep it safe for her.”
+
+“She’s fooling them!” said the woman. “She’s a child, what can she do, they give her money because they feel sorry for her—”
+
+“She hands in seven or eight test reports a month,” said Ye Zhixing on the phone. “If you hired someone outside, one report alone would cost more than that.”
+
+Chen Xi glanced at the phone screen. Ye Zhixing said nothing further.
+
+Officer Wang put the contract down and took off his glasses.
+
+“Right,” he said. “We understand the situation now. The child has a job, has an income, has somewhere to live, none of that’s a problem. But you’re a family, after all; it’s no good falling out like this.”
+
+The woman from the sub-district office took over: “Yes, the law is the law, and family is family. When a child and her family have a disagreement, you can sit down and talk it through. We have a mediation room at the sub-district office, with a proper mediator, why don’t we all go to the mediation room and clear the air?”
+
+“Sounds good to me,” said Officer Wang. “And, er… the person on the phone, Mr. Ye, is it? As the person responsible at her employer, it would be best if you came over too.”
+
+“I can’t make it,” said Ye Zhixing.
+
+“Hm?”
+
+“I’m in the city in meetings, my whole day is booked,” he said. “We’re a micro business, seven or eight people in all, I’m one person doing three people’s jobs, I really can’t get away. I authorize Chen Xi to represent me fully. I’ll send the electronic copy of the contract to your phone now.”
+
+“I don’t work for your company,” said Chen Xi.
+
+“Then represent yourself.”
+
+The call ended.
+
+## 4. The Mediation Room
+
+The mediation room was on the first floor of the sub-district office.
+
+A room of twenty-odd square metres, a long table with four chairs on each side, the table covered in dark green baize under a sheet of glass. On the wall hung a scroll, “Harmony is most precious,” in a glass frame with a water stain in one corner. On the windowsill was a pothos, half its leaves yellow.
+
+The mediator was called Ma, in his sixties; before retiring he had worked at the sub-district office for thirty years, and everyone called him Director Ma. He wore a grey sweater with a navy jacket over it, and pinned to the front of the jacket a badge reading “People’s Mediator.” He poured everyone a cup of tea, the very cheap kind of green tea that brews up yellowish.
+
+“Sit, everyone, sit,” said Director Ma. “Today we’re not here to argue, we’re here to solve a problem. Family matters are family matters at the end of the day; there’s no knot that can’t be untied.”
+
+Gu Jianguo and the woman sat on one side. Gu Xuerong and Chen Xi sat on the other. Officer Wang hadn’t come up; he was waiting downstairs. The woman from the sub-district office sat beside Director Ma and opened her notebook.
+
+The woman said it all again. A little longer than at the neighbourhood committee, and crying a little harder.
+
+Director Ma heard her out, nodded, and turned to look at Gu Xuerong.
+
+“Child,” he said, “you heard what your parents said. Your parents mean well for you; there are no parents under heaven who don’t care for their children. You’re a girl, living out there, they worry, that’s only human. Don’t you think perhaps—”
+
+“She sleeps in the kitchen,” said Chen Xi.
+
+Director Ma’s words stopped.
+
+“At home she sleeps in the kitchen, on a folding bed, next to the coal stove, and the coal stove leaks smoke,” said Chen Xi. “The little one sleeps in her own room, with an electric heater in it. On New Year’s Day five of us went, we all saw it. That’s caring for your child? Caring all the way to the kitchen?”
+
+“You little—” said the woman.
+
+“Last November, outside No. 8 High, her dad cursed her in the street,” Chen Xi went on. “Cursed her something filthy, I was there, and the four from the internet café were there. Want me to repeat it word for word? I’ve got a loud voice, the police downstairs will hear it too.”
+
+“That was me disciplining my daughter!” said Gu Jianguo.
+
+“Disciplining?” Chen Xi leaned back in his chair. “That was you swearing in the street.”
+
+Director Ma put down the cup in his hand.
+
+“Young man,” he said, “let me tell you, life isn’t just about being in the right. If you talk like that, when you’re out in the world you’ll come off worst.”
+
+“Which bit did I get wrong?”
+
+Director Ma opened his mouth.
+
+“…You didn’t get it wrong,” he said. “You just shouldn’t say it like that.”
+
+“Then how should I say it?”
+
+Director Ma didn’t answer. He picked up his own tea and took a sip; it had gone a bit cold, and he frowned slightly and put it down.
+
+The woman from the sub-district office wrote a few words in her notebook, then crossed them out.
+
+::: {.break custom-style="Scene Break"}
+·  ·  ·
+:::
+
+“It’s not that we’re being unreasonable.” The woman tried another angle, lowering her voice, with a hint of bargaining in it. “If the child wants to live out, fine. But the money she earns, she ought to give some to the family, oughtn’t she? Her dad carries cement on his own, from dawn to dusk, there’s the little one at home too, it costs a lot. If she earns money and brings some back, to look after her dad, that’s not too much to ask, is it? Director Ma, you tell me, is that too much?”
+
+Director Ma hesitated, as if this sounded easier to deal with than what came before.
+
+“Well,” he said, “a child earning money and giving some to the family, that’s filial piety too…”
+
+“Her dad’s up to his neck in debt,” said Chen Xi.
+
+The woman’s face went white for a moment.
+
+“Enzyme drink, the stuff he was selling a few years ago, drink it and it cures everything,” said Chen Xi. “Borrowed money to buy the stock, couldn’t sell it, still owes it now. If you want money to pay off debts, say you want money to pay off debts. Don’t drag filial piety into it.”
+
+“Who, who told you that nonsense—”
+
+“Those out-of-date cases in the kitchen,” said Chen Xi. “She was the one who unscrewed them bottle by bottle and poured them away. Took her a week.”
+
+The room went quiet. Gu Jianguo stared at the sheet of glass on the table; the woman clutched the strap of her bag. On the windowsill, a yellow leaf fell from the pothos by itself and landed on the sill with a very faint pat.
+
+Director Ma looked at one side, then the other.
+
+“Child,” he finally turned to Gu Xuerong again, “what do you think? You tell us.”
+
+From the moment she came in, Gu Xuerong had sat in that chair, both hands on her knees, cuffs buttoned. The tea in front of her was untouched and no longer steaming.
+
+“I want to live on my own,” she said.
+
+“And the money?” said the woman. “Not a cent of the money for the family?”
+
+“What else do you want to take from me?” said Gu Xuerong.
+
+The woman opened her mouth.
+
+“I have nothing,” said Gu Xuerong. “In your eyes, I’m just a cold stone, it seems.”
+
+Her hands were still on her knees, cuffs buttoned, not moving.
+
+“I don’t want to see you. And I haven’t got money for you,” she said. “I don’t want to have the slightest thing to do with you any more.”
+
+Gu Jianguo shot up from his chair.
+
+“Is that how a human being talks?!” His voice was so loud the window glass hummed. “Children supporting their parents, that’s the law of heaven! You don’t, and it’s an outrage against heaven and earth! Never mind that I raised you all these years, fed you and clothed you; even if I hadn’t raised you for a single day, you’d still have to support me! So what if I want some money? There’s another one on the way, and you, a worthless girl, you’re nothing compared to the son in this belly!”
+
+The room went silent.
+
+The woman’s hand rested on her own belly, her down jacket buttoned up tight, nothing to see. With her other hand she yanked at Gu Jianguo’s sleeve, yanked hard, her nails digging into the fabric.
+
+Director Ma slowly put down his cup.
+
+“…How do you know it’s a son?”
+
+“We had it tested!” said Gu Jianguo. “Took a tube of blood, sent it to Hong Kong, they say it’s really accurate, a hundred per—”
+
+“Shut up!” The woman pinched his arm hard.
+
+Gu Jianguo shut up.
+
+The woman from the sub-district office wrote a line in her notebook, and when she had written it, drew a line under it.
+
+“What are you going on about,” said Chen Xi.
+
+He didn’t get up; he stayed leaning back in his chair, his eyes on Gu Jianguo.
+
+“Holding your hand out for money from a kid this age, have you no shame?” he said. “A tube of blood sent to Hong Kong, a few thousand yuan, there’s money for that. Your daughter sleeping in the kitchen, an electric heater, no money for that.”
+
+Gu Jianguo glared at him, the veins in his neck standing out one by one, and in the end said nothing, and dropped back into his seat.
+
+At his end of the table, Director Ma cleared his throat.
+
+“Well…” he said, “I think we’ll leave it there for today.” He glanced at the woman from the sub-district office. “Mediation depends on both sides being willing. Today it looks like the two sides are still quite far apart. We won’t sign any agreement yet; everyone go home, calm down, think it over. If anything comes up, you can come back.”
+
+“And the child?” said the woman. “The child just stays out there?”
+
+“The child is sixteen,” said Director Ma. “She has a job, an income, somewhere to live. If she doesn’t want to go back, we can’t tie her up and take her back.” He paused, as if this was something he didn’t really want to say. “That’s what the law says.”
+
+Gu Jianguo stood up, his chair scraping loudly across the floor.
+
+“Fine.” He pointed at Gu Xuerong. “You’re fine. Too big for your boots now. Let’s see how long you last out there.”
+
+The woman stood up after him, picked up her bag from the sofa, walked to the door, and turned back.
+
+“Xuerong,” she said, her voice gone soft again, softening very fast, “if you change your mind, call home. Your sister asks every day when big sister’s coming back.”
+
+The door closed.
+
+::: {.break custom-style="Scene Break"}
+·  ·  ·
+:::
+
+Downstairs, Officer Wang was still there. He stood on the steps outside the sub-district office holding his thermos cup, and when Gu Jianguo and the woman came out he nodded and said nothing. When they had gone some way, and Gu Xuerong and Chen Xi came down, he called them over.
+
+“About the address,” he said, “I didn’t tell them. I’ve had a word with the community too: whoever comes asking, they don’t give it out.”
+
+“Thanks,” said Chen Xi.
+
+Officer Wang took a card from his vest pocket, a police contact card printed with the station’s address and duty number, a mobile number written on the back in biro.
+
+“If he blocks your way on the street again,” he handed the card to Gu Xuerong, “curses you, follows you, call this. Don’t wait.”
+
+Gu Xuerong took it, glanced at it, and put it in the pocket of her down jacket.
+
+“This classmate of yours,” said Officer Wang, looking at Chen Xi, “has a sharp tongue.”
+
+“Mm.”
+
+“Sharp,” said Officer Wang, “but he cursed with good reason.”
+
+He unscrewed his thermos cup, took a sip, and went back inside.
+
+## 5. The Card
+
+The rural commercial bank closed at half past three.
+
+They got there at five past three. There was hardly anyone in the hall, just an old woman jabbing at the ticket machine and getting nothing out of it. The security guard came over and pressed it for her, handed her a little slip, and she held the slip and read the number on it aloud, one character at a time.
+
+Gu Xuerong took a ticket too. Number seventeen. Only two people waiting ahead of her.
+
+Behind the counter was a teller in her twenties, in a mask and a face shield with a film of fog on it. She took Gu Xuerong’s ID, swiped it on the machine, and glanced at the screen.
+
+“A minor,” she said. “Minors need a guardian present to open an account, with the household register.”
+
+Chen Xi pushed the folder through the slot under the counter.
+
+“Everything you need is in there,” he said. “Labour contract, proof of income, wage records. Have a look, and if it’s still no, we’ll talk.”
+
+The teller glanced at him, opened the folder and went through it page by page. At the proof of income she stopped, picked up the phone beside her, dialled a number, and said a few words quietly.
+
+A few minutes later a man in his forties came out from the back, a “Lobby Manager” badge pinned to his chest, took the folder, went through it again, and asked Gu Xuerong a few questions: which employer she worked for, what she did, how long she had done it, what she was paid, how it was paid. Gu Xuerong answered them one by one, very briefly.
+
+The lobby manager closed the folder, handed it back to the teller, and nodded.
+
+“We can do it.”
+
+The teller began typing on her computer. After a while she asked: “Phone number?”
+
+Gu Xuerong gave a number.
+
+“This number’s your own, is it?”
+
+“Yes.”
+
+“All the text alerts for this card will go to this number from now on.”
+
+“Mm.”
+
+“Set a PIN, six digits.” The teller pushed the little keypad toward her. “Not your birthday, not consecutive numbers.”
+
+Gu Xuerong looked at the little keypad.
+
+Chen Xi turned round, his back to her, and looked at the wealth-management advert on the wall at the other end of the hall. In the advert a man in a suit was smiling, and underneath it said “Steady returns, the peace-of-mind choice.”
+
+The little keypad beeped six times.
+
+“Enter it again.”
+
+Six more beeps.
+
+The printer started humming and spat out a few sheets; the teller had her sign, in four places. Then she took a card from a drawer, blue, printed with the bank’s name and a string of numbers, put it in a white paper sleeve, and pushed it out through the slot.
+
+“Done,” said the teller. “Next.”
+
+Gu Xuerong picked up the card, looked at it, and put it in the pocket of her down jacket, together with Officer Wang’s card.
+
+When they came out of the bank, the sun was already sinking west. The March sun had no strength in it; it shone on the street, on the concrete where the snow had just melted, glaring.
+
+The two of them walked back. Chen Xi had the half-empty folder under his arm, and as he walked the snap came loose and popped open, and he snapped it shut again.
+
+At the end of Back Street, Gu Xuerong stopped and looked at the paper on the internet café door. “please open soon begging you,” “+1,” and below that, added at some point, another line:
+
+“+2 —Huang Yingjun”
+
+“He put his name on it,” said Gu Xuerong.
+
+“…Idiot,” said Chen Xi.
+
+## 6. The Insulated Pot
+
+Su Tang came in the evening.
+
+She was carrying an insulated food pot, stainless steel, three tiers, a ring of tape wound round the handle, the one her family had used for years. She stood at the cat café door, took off her mask, out of breath, her face red with cold, a smudge of dust from somewhere in her hair.
+
+“I came on my bike!” she said. “The checkpoint on the bridge over the river came down today, so I came. My mum says you’re eating instant noodles every day, she told me to bring some food.”
+
+Ye Zhixia sprang up off the sofa.
+
+The pot opened tier by tier. The top tier was rice, the second braised spare ribs, glossy with sauce, cooked down very dry, and the third a plate of stir-fried choy sum, with two fried eggs, the yolks runny.
+
+“Sister Su Tang,” said Ye Zhixia, holding her bowl, her words a bit mushy, “you’re a goddess.”
+
+“Not a goddess, my mum made the ribs, I just did the greens.”
+
+Ye Zhixing didn’t start eating straight away. He took his bowl to the window and leaned against the sill. Outside it was nearly dark, and the snow on the roof opposite had all melted, showing the grey-black tiles underneath.
+
+Su Tang went over and stood beside him.
+
+“Chen Xi told the group,” she said. “About the mediation room.”
+
+“Mm.”
+
+“Is Xuerong… OK?”
+
+“Don’t know,” said Ye Zhixing. “The card got done.”
+
+Su Tang looked down at the windowsill. There was a ring of white cat fur on it, where Rice Cake usually lay.
+
+“Ye Zhixing.”
+
+“Hm?”
+
+“Are you… really not tired?”
+
+Ye Zhixing picked up a rib, bit into it, and chewed for a while.
+
+“I am,” he said.
+
+Su Tang didn’t seem to have expected him to be that direct, and stopped short.
+
+“Then today you—”
+
+“Today in the city,” said Ye Zhixing, “the hotpot owner talked to me for four hours. What he wants changed three times, he pushed the price down twice, and in the end he said thirty per cent up front, the rest depending on results. I said fine. When Chen Xi called, I was in the hotpot place’s kitchen; they were trying out new dishes, someone was chopping ribs.” He took another bite of rib. “About this size.”
+
+Su Tang didn’t laugh.
+
+“Then why didn’t you go?” she said. “To the mediation room.”
+
+“What would I have done there?”
+
+“…Kept her company.”
+
+“Chen Xi was there,” said Ye Zhixing. “Chen Xi’s better at talking than me. If I’d gone, her dad would have seen me and said ‘that’s the rich family’s young master who’s been seducing my daughter.’ And everyone in that room would have thought so.”
+
+Su Tang swallowed what she was going to say. She put her hands in the pockets of her down jacket, kept them there a while, then took them out again.
+
+“Ye Zhixing,” she said, “do you… like Xuerong?”
+
+“You’re the second person to ask me that.”
+
+“Who was the first?”
+
+Ye Zhixing pointed his chopsticks toward the sofa. Ye Zhixia was bent over the coffee table gnawing a rib, grease all over her face, and Rice Cake was crouched beside her, eyes glued to her bowl.
+
+Su Tang let out a “pfft” of laughter, and quickly stopped.
+
+“Then if you do,” she said, “why not just tell her?”
+
+“It’s not that,” said Ye Zhixing. “What I feel about her isn’t only that kind of thing.”
+
+He put his bowl down on the windowsill.
+
+“Honestly,” he said, “I don’t know if I still have the right to fall for anyone.”
+
+“Why?”
+
+“Before…” he paused, “before, I let a lot of people down. A lot. I don’t want them to look at me like that. You know? That kind of… the way they look at you.”
+
+Su Tang looked at him.
+
+She didn’t understand. She didn’t know when “before” was, who “a lot of people” were, what “the way they look at you” looked like. But she looked at his profile, and when he said “a lot,” the muscle along his jaw moved.
+
+“…Mm,” she said.
+
+“Don’t ask.”
+
+“I wasn’t going to.”
+
+“It’s written all over your face.”
+
+“What’s written on my face is my face’s business,” said Su Tang. “My mouth didn’t ask.”
+
+Ye Zhixing turned his head and looked at her face, screwed up in its effort to be serious, and laughed.
+
+“Who did you learn that from.”
+
+“Xuerong,” said Su Tang.
+
+::: {.break custom-style="Scene Break"}
+·  ·  ·
+:::
+
+“I just think,” said Su Tang, “you’re the kind of person who buries himself really deep. You carry everything yourself. Your family, Xuerong, the company, the cats, Zhixia. Why do you have to carry it all on your own?”
+
+“Who else would carry it?”
+
+“Other…” Su Tang thought for a moment. “Other people. Hand some out.” She drew a finger through the ring of cat fur on the sill. “Is there anything I can help with?”
+
+Ye Zhixing switched his bowl to his other hand.
+
+“I know my family isn’t well off,” said Su Tang, “and I don’t understand all your stuff, companies, economics, finance, haha…” She gave a couple of dry laughs, a little awkward. “I only found out what Yu’e Bao was last year. But I haven’t got the pressure you’ve got. My mum and dad are fine, my brothers are annoying but they’re fine. There’s lots of empty space in my head, room for things. The things you talk about, I can learn. I don’t understand them now, I’ll understand them later.”
+
+Ye Zhixing looked out of the window. A pigeon landed on the roof opposite, walked a few steps on the tiles, and flew off again.
+
+“The county town’s economy,” he said, “might be in trouble soon.”
+
+“What trouble?”
+
+“Houses,” said Ye Zhixing. “The kind my family does. Too many built, fewer and fewer people buying, all the money buried in land, buried in buildings. And now the epidemic’s here, nobody dares spend money. Those buildings of my dad’s, in a year or two, they might—” He didn’t finish. “The county town’s only this big. If my family goes down, it won’t be only my family that goes down.”
+
+Su Tang didn’t really follow, but she understood the words “goes down.”
+
+“So what do you do?”
+
+“Leave,” said Ye Zhixing. “Can’t stay here for ever. Have to get somewhere bigger. Somewhere more open.”
+
+“Where?”
+
+“A big city,” he said. “Maybe… do something in finance.”
+
+Su Tang looked at him.
+
+“Finance?”
+
+“Mm.”
+
+“Didn’t you say your family was exactly—”
+
+“That’s why I know how it dies,” said Ye Zhixing.
+
+He picked up the bowl from the windowsill again; the rice had gone a bit cold. He shovelled in a mouthful.
+
+“You said you wanted to learn,” he said through the rice, indistinctly. “Then first work out Yu’e Bao.”
+
+“I have worked it out!”
+
+“Then tell me, where does the money in Yu’e Bao come from?”
+
+“…From my phone.”
+
+Ye Zhixing laughed out loud, nearly spraying rice, and clamped a hand over his mouth.
+
+“What are you laughing at!” Su Tang’s face went red. “Then you tell me where it comes from!”
+
+“I’ll explain tomorrow.”
+
+“Explain now!”
+
+“Now we eat.”
+
+::: {.break custom-style="Scene Break"}
+·  ·  ·
+:::
+
+By the time they got back to the coffee table, the second tier of the insulated pot was empty.
+
+Rice Cake was crouched beside the pot, a ring of grease round its mouth, licking its paws. Ye Zhixia was at the other end of the sofa clutching her bowl, two ribs still left in it, guarding it with one hand and shouting at Rice Cake:
+
+“You stole again! You stole again! You just ate a whole bag of freeze-dried!”
+
+Rice Cake finished its left paw and moved on to its right.
+
+“When did it steal it?” Su Tang asked.
+
+“Just now! I went to get a glass of water, and when I came back—” Ye Zhixia pointed at the pot. “It pushed the lid off! Sister Su Tang, it can open lids!”
+
+Su Tang looked at the empty second tier, at Rice Cake’s greasy face.
+
+“…Rice Cake,” she crouched down, “that was for people.”
+
+Rice Cake burped.
+
+Ye Zhixia pulled the “Criminal Record” off the coffee table and added another line at the bottom of Rice Cake’s column, writing very hard: 18 March, stole Sister Su Tang’s family’s braised spare ribs, about five pieces.
