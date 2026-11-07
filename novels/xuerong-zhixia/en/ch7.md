@@ -12,7 +12,7 @@ She couldn’t bring herself to throw away the fur she combed out. She rolled it
 
 Ye Zhixing sat behind the counter and watched her all afternoon.
 
-He noticed that Su Tang working was not the same as Su Tang talking. Talking, she was a gust of wind, sentences tumbling out in strings without a breath between them. Working, she was very quiet, lips pressed together, shoulders low, her hands as gentle as if she were unwrapping something that mustn’t rustle. When a little boy reached out to tug the calico’s tail, she didn’t get up and didn’t shout. She just held the comb out to one side and said, “Could you hold this for me? My hand’s tired.” The boy took the comb and forgot all about the calico’s tail.
+Talking, Su Tang was a gust of wind, sentences tumbling out in strings without a breath between them. Working, she was very quiet, lips pressed together, shoulders low, her hands as gentle as if she were unwrapping something that mustn’t rustle. When a little boy reached out to tug the calico’s tail, she didn’t get up and didn’t shout. She just held the comb out to one side and said, “Could you hold this for me? My hand’s tired.” The boy took the comb and forgot all about the calico’s tail.
 
 Towards five, the customers had all gone. Su Tang gathered the row of fur balls into a tissue, wrapped them up, dropped them in the bin, stood up and rubbed her palms on her jeans.
 
@@ -56,11 +56,7 @@ She reeled off a number, fluently.
 
 Uncle He wrote it on the back of his hand with his pen, gave her back the card and turned to Ye Zhixing.
 
-Ye Zhixing was thinking.
-
-Not about whether to take her on; he had decided that before she even asked. He was thinking about how much to pay.
-
-He suddenly realised he didn’t know. A sixteen-year-old, working three hours in the evening: what was an hour worth? His sense of money had always had a gap in it. At one end was pocket money, at the other the string of figures in the company account that he rarely opened to look at properly, and the stretch in between, the part ordinary people dealt with every day, he had never really touched. He knew what a graphics card cost, what a planted aquascape cost, but not what a bowl of noodles cost in the county town, or what an hour’s work was worth there.
+Ye Zhixing twirled the pen in his hand. Taking her on was a given, no need to think about that. He was stuck on something else: how much an hour? He knew what a graphics card cost, what a planted-tank layout cost, but what an hour’s work was worth in the county town, he had honestly never asked.
 
 “How much do you want?”
 
@@ -649,19 +645,9 @@ Gu Xuerong didn’t deny it again. She took the phone from Lin Xiaoman’s hand 
 
 Lin Xiaoman was somewhere in the bottom dozen of the class. In the last physics quiz she had got thirty-one, and when the paper came back she laughed first, saying it was four marks better than last time. Her parents both worked in factories in Guangdong and came back once a year, for those few days at New Year. On the phone they always asked the same two questions: “Have you got enough money?” “Don’t get too close to boys.”
 
-She didn’t expect anything very big of Gu Xuerong. She didn’t need her to do well in exams, didn’t need her to get close to anyone, didn’t need her to pour her heart out about anything.
+Once in the washroom, Lin Xiaoman saw Gu Xuerong washing her face. The tap was on very low; she bent over and splashed water on her face a handful at a time, her cuffs buttoned tight, the water running from her chin into her collar, not a drop on her sleeves. The girl washing clothes next to her, sleeves pushed up to the elbow, asked aren’t you hot, and Gu Xuerong said no.
 
-As long as she came back every night, ate a bit, played a round with her, and smiled once in a while—even if she wouldn’t admit it—that was enough.
-
-She didn’t know what was under those two long sleeves. She had seen that Gu Xuerong didn’t push her sleeves up even to wash her face, had seen that on the very hottest days of summer she would let the back of her shirt soak through with sweat rather than unbutton her cuffs. She had never asked, and didn’t intend to.
-
-She just felt that Gu Xuerong was like a glass set near the edge of a table. The glass itself was fine, no chips, no cracks; it was only that it had been put in the wrong place, too close to the edge, so that anyone walking past and stirring up a breeze might knock it off.
-
-She didn’t want to be that breeze.
-
-And she didn’t know how to push the glass further in. Push too hard, and she was afraid it might tip over instead.
-
-So every day she got two portions, every day she waited, every day she played a round of the game. It was the way she could think of that was least likely to touch the glass.
+Lin Xiaoman moved her own basin aside and gave her half the tap, and didn’t ask anything.
 
 ---
 

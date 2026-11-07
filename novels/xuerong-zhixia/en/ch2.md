@@ -33,7 +33,7 @@ A stub of chalk cracked down on the lectern.
 
 “Do you know what a function is? Come up here, or stand up, and tell us how to do this problem.”
 
-Every head in the class turned. Some people were holding in laughter; some had eyes shining as if waiting for a show. Make-up trainee, demerit, talked back to an instructor in front of a hundred people: his name had gone round before term even started.
+Every head in the class turned. Some people were holding in laughter; in the back row someone muttered “the make-up training one,” and the person next to him shushed him.
 
 Ye Zhixing pulled his earbud down a little, stood up slowly and looked at the board.
 
@@ -157,9 +157,9 @@ Gu Xuerong put her bag on the table. Her tone was flat, as if she were talking a
 
 She didn’t answer. She turned away to plug in the kettle.
 
-Ye Zhixing stood in the doorway looking at a room full of things kept far too tidy, opened his mouth, and didn’t know what to say. He had thought of “not well off” as a range, like exam scores: higher and lower, but with a floor somewhere. He had never imagined it could go this low. Low enough to be underground.
+Ye Zhixing stood in the doorway and didn’t go in. He looked at the ring of damp along the bottom of the wall, then at the bed—the sheet so flat it looked unslept in—then at the window, just as a pair of flip-flops went past outside, flap, flap.
 
-“And you were still going to con me into playing your game,” was what he finally came out with, his voice lower than usual.
+“…Fine,” he said at last. “And you were still going to con me into playing your game.”
 
 Gu Xuerong took her phone out of her bag and tapped at it, head down. His pocket buzzed.
 
@@ -193,9 +193,9 @@ Then she said “Oh,” very softly.
 
 “…Yes.” She lowered her head, and the tips of her ears slowly went red. “Nobody ever explained it like that.”
 
-“You’re not stupid. Nobody ever explained it properly.”
+“You’re not stupid. They just explain it badly.”
 
-As soon as it was out, Ye Zhixing was a little taken aback himself. It sounded a bit soppy, so he quickly pushed the paper towards her.
+Hearing it out loud, he thought it came out a bit strong, shrugged, and pushed the paper towards her.
 
 “Right. Fees. Where’s the game?”
 
@@ -213,9 +213,9 @@ His eyebrows slowly went up. “…You got to this rank?”
 
 “On your own?”
 
-“On my own.” Gu Xuerong was looking at the screen. “In there, at least I’m not the worst one.”
+“On my own.” Gu Xuerong was looking at the screen. “The monsters in there are all better-looking than people.”
 
-Ye Zhixing didn’t answer. He held the phone a little further away, as if taking a fresh look at the person behind the screen.
+Ye Zhixing looked at the rain-soaked corridor on the screen, then at her. “…That taste of yours is really something.”
 
 ## 6. A Bowl of Noodles
 

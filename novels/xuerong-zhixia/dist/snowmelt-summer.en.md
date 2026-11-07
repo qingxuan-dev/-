@@ -301,7 +301,7 @@ A stub of chalk cracked down on the lectern.
 
 “Do you know what a function is? Come up here, or stand up, and tell us how to do this problem.”
 
-Every head in the class turned. Some people were holding in laughter; some had eyes shining as if waiting for a show. Make-up trainee, demerit, talked back to an instructor in front of a hundred people: his name had gone round before term even started.
+Every head in the class turned. Some people were holding in laughter; in the back row someone muttered “the make-up training one,” and the person next to him shushed him.
 
 Ye Zhixing pulled his earbud down a little, stood up slowly and looked at the board.
 
@@ -425,9 +425,9 @@ Gu Xuerong put her bag on the table. Her tone was flat, as if she were talking a
 
 She didn’t answer. She turned away to plug in the kettle.
 
-Ye Zhixing stood in the doorway looking at a room full of things kept far too tidy, opened his mouth, and didn’t know what to say. He had thought of “not well off” as a range, like exam scores: higher and lower, but with a floor somewhere. He had never imagined it could go this low. Low enough to be underground.
+Ye Zhixing stood in the doorway and didn’t go in. He looked at the ring of damp along the bottom of the wall, then at the bed—the sheet so flat it looked unslept in—then at the window, just as a pair of flip-flops went past outside, flap, flap.
 
-“And you were still going to con me into playing your game,” was what he finally came out with, his voice lower than usual.
+“…Fine,” he said at last. “And you were still going to con me into playing your game.”
 
 Gu Xuerong took her phone out of her bag and tapped at it, head down. His pocket buzzed.
 
@@ -461,9 +461,9 @@ Then she said “Oh,” very softly.
 
 “…Yes.” She lowered her head, and the tips of her ears slowly went red. “Nobody ever explained it like that.”
 
-“You’re not stupid. Nobody ever explained it properly.”
+“You’re not stupid. They just explain it badly.”
 
-As soon as it was out, Ye Zhixing was a little taken aback himself. It sounded a bit soppy, so he quickly pushed the paper towards her.
+Hearing it out loud, he thought it came out a bit strong, shrugged, and pushed the paper towards her.
 
 “Right. Fees. Where’s the game?”
 
@@ -481,9 +481,9 @@ His eyebrows slowly went up. “…You got to this rank?”
 
 “On your own?”
 
-“On my own.” Gu Xuerong was looking at the screen. “In there, at least I’m not the worst one.”
+“On my own.” Gu Xuerong was looking at the screen. “The monsters in there are all better-looking than people.”
 
-Ye Zhixing didn’t answer. He held the phone a little further away, as if taking a fresh look at the person behind the screen.
+Ye Zhixing looked at the rain-soaked corridor on the screen, then at her. “…That taste of yours is really something.”
 
 ## 6. A Bowl of Noodles
 
@@ -707,7 +707,7 @@ Chen Xi was leaning against the front door frame, a straw in his mouth, his voic
 
 Nobody laughed, and nobody picked it up.
 
-Everyone knew this was the person who had skipped the first week, got a demerit, and told off an instructor in front of a hundred people. That someone like that would suddenly go round with a bag of crisps asking “what do you reckon I should do” was more unnerving than if he had just ignored everyone with a cold face. Nobody knew what he wanted, and when you don’t know, you don’t go near. That was the easiest thing to do.
+In the aisle there was only the hum of the ceiling fan overhead. Someone pushed a pack of spicy sticks further into his desk; someone put his head down to pretend to sleep, uniform jacket over his head, a foot still jiggling under the desk.
 
 Ye Zhixing stood in the middle of the aisle holding the bag of crisps. He scratched the tuft of hair sticking up at the back of his head, and as he turned, his eyes swept along the window row.
 
@@ -741,7 +741,7 @@ She nodded and wrote a few words in the corner of the scrap paper, very small, s
 
 That last one was said very quietly, tucked in the middle, as if in passing.
 
-Ye Zhixing heard it. She didn’t explain, and he didn’t ask.
+Ye Zhixing squeezed the crisp packet with a crackle, and said nothing.
 
 “What else?”
 
@@ -905,7 +905,7 @@ The day it arrived it hid at the very back of its carrier, only a pair of yellow
 
 “It is a briquette.”
 
-When she said it there was no expression on her face, exactly as usual. But Ye Zhixing thought she was in a good mood that day. He couldn’t say what told him so. Probably that she crouched there a little longer than she usually did.
+When she had said it she didn’t get up, but stayed crouched in front of the carrier a good while longer. Briquette edged half a step forward, its yellow eyes peering out of the carrier at her.
 
 ## 2. Boxes
 
@@ -1937,7 +1937,7 @@ She couldn’t bring herself to throw away the fur she combed out. She rolled it
 
 Ye Zhixing sat behind the counter and watched her all afternoon.
 
-He noticed that Su Tang working was not the same as Su Tang talking. Talking, she was a gust of wind, sentences tumbling out in strings without a breath between them. Working, she was very quiet, lips pressed together, shoulders low, her hands as gentle as if she were unwrapping something that mustn’t rustle. When a little boy reached out to tug the calico’s tail, she didn’t get up and didn’t shout. She just held the comb out to one side and said, “Could you hold this for me? My hand’s tired.” The boy took the comb and forgot all about the calico’s tail.
+Talking, Su Tang was a gust of wind, sentences tumbling out in strings without a breath between them. Working, she was very quiet, lips pressed together, shoulders low, her hands as gentle as if she were unwrapping something that mustn’t rustle. When a little boy reached out to tug the calico’s tail, she didn’t get up and didn’t shout. She just held the comb out to one side and said, “Could you hold this for me? My hand’s tired.” The boy took the comb and forgot all about the calico’s tail.
 
 Towards five, the customers had all gone. Su Tang gathered the row of fur balls into a tissue, wrapped them up, dropped them in the bin, stood up and rubbed her palms on her jeans.
 
@@ -1981,11 +1981,7 @@ She reeled off a number, fluently.
 
 Uncle He wrote it on the back of his hand with his pen, gave her back the card and turned to Ye Zhixing.
 
-Ye Zhixing was thinking.
-
-Not about whether to take her on; he had decided that before she even asked. He was thinking about how much to pay.
-
-He suddenly realised he didn’t know. A sixteen-year-old, working three hours in the evening: what was an hour worth? His sense of money had always had a gap in it. At one end was pocket money, at the other the string of figures in the company account that he rarely opened to look at properly, and the stretch in between, the part ordinary people dealt with every day, he had never really touched. He knew what a graphics card cost, what a planted aquascape cost, but not what a bowl of noodles cost in the county town, or what an hour’s work was worth there.
+Ye Zhixing twirled the pen in his hand. Taking her on was a given, no need to think about that. He was stuck on something else: how much an hour? He knew what a graphics card cost, what a planted-tank layout cost, but what an hour’s work was worth in the county town, he had honestly never asked.
 
 “How much do you want?”
 
@@ -2600,19 +2596,9 @@ Gu Xuerong didn’t deny it again. She took the phone from Lin Xiaoman’s hand 
 
 Lin Xiaoman was somewhere in the bottom dozen of the class. In the last physics quiz she had got thirty-one, and when the paper came back she laughed first, saying it was four marks better than last time. Her parents both worked in factories in Guangdong and came back once a year, for those few days at New Year. On the phone they always asked the same two questions: “Have you got enough money?” “Don’t get too close to boys.”
 
-She didn’t expect anything very big of Gu Xuerong. She didn’t need her to do well in exams, didn’t need her to get close to anyone, didn’t need her to pour her heart out about anything.
+Once in the washroom, Lin Xiaoman saw Gu Xuerong washing her face. The tap was on very low; she bent over and splashed water on her face a handful at a time, her cuffs buttoned tight, the water running from her chin into her collar, not a drop on her sleeves. The girl washing clothes next to her, sleeves pushed up to the elbow, asked aren’t you hot, and Gu Xuerong said no.
 
-As long as she came back every night, ate a bit, played a round with her, and smiled once in a while—even if she wouldn’t admit it—that was enough.
-
-She didn’t know what was under those two long sleeves. She had seen that Gu Xuerong didn’t push her sleeves up even to wash her face, had seen that on the very hottest days of summer she would let the back of her shirt soak through with sweat rather than unbutton her cuffs. She had never asked, and didn’t intend to.
-
-She just felt that Gu Xuerong was like a glass set near the edge of a table. The glass itself was fine, no chips, no cracks; it was only that it had been put in the wrong place, too close to the edge, so that anyone walking past and stirring up a breeze might knock it off.
-
-She didn’t want to be that breeze.
-
-And she didn’t know how to push the glass further in. Push too hard, and she was afraid it might tip over instead.
-
-So every day she got two portions, every day she waited, every day she played a round of the game. It was the way she could think of that was least likely to touch the glass.
+Lin Xiaoman moved her own basin aside and gave her half the tap, and didn’t ask anything.
 
 ::: {.break custom-style="Scene Break"}
 ·  ·  ·
@@ -4641,7 +4627,7 @@ The third, the fourth, the fifth.
 
 Partway through, she suddenly stopped, looked up at the blackboard, at the old formulas layered over each other that would never wipe clean, and looked at them for a while, as if noticing for the first time that they had been there all along.
 
-She seemed to understand something, a little. Not one particular question, but something else. The problems weren’t a wall any more; they had doors, and windows, and stairs. Chen Xi had drawn her so many pictures: levers, bottles, fish, frogs. She had never known what those things had to do with the problems on the paper, and now she seemed to see. They were the same thing, just in a different shape.
+She pulled out the lever drawing Chen Xi had done for her from her workbook and laid it next to the paper. A look at the drawing, a look at the problem, another look at the drawing. Her pen tip tapped the scrap paper twice, then came down.
 
 She looked down and carried on.
 
@@ -5209,9 +5195,7 @@ Ye Zhixing said nothing more.
 
 He looked at the building with the little red flag.
 
-All at once he understood all of it.
-
-This land wasn’t a development. It was a project. A project that had to be built. The city government moving over there was the biggest thing of the mayor’s term, something to be written into reports and shown to the people above. It couldn’t not be built, couldn’t be built slowly, couldn’t be built halfway and stopped.
+This land wasn’t a development. It was a project that had to be built. The city government moving there was the biggest thing of the mayor’s term, something to be written into reports and shown to the people above. It couldn’t not be built, couldn’t be built slowly, couldn’t be built halfway and stopped.
 
 So where would the money to build it come from?
 
@@ -5228,8 +5212,6 @@ He took his eyes off the building and looked at the men on the sofas.
 Mr. Liu was smiling. Mr. Ma was smiling. The other two, whose names he didn’t know, were smiling too, and one of them was saying something in a low voice to the man beside him, and when he got to the good part, slapped his thigh.
 
 They were all far smaller developers than the Ye family. The Ye family had two developments, east and south; they had one each, and some of them hadn’t even sold out that one. In taking the land in the North City, they had staked their whole fortunes, their whole lives.
-
-They were smiling because they thought they had bet right.
 
 When the civic centre moved over, land prices would rise, house prices would rise, this land was gold.
 
@@ -5535,17 +5517,13 @@ The two developments in the east and south still had several hundred flats unsol
 
 All of it was legal. All of it was normal business cooperation. The Ye family’s companies would pay to buy ad space and posting services from his company, the services were real, the prices were fair, the ads were all labelled “Ad”, the accounts were clean.
 
-But he knew what he was doing.
-
-He was carrying things out of the house. Bit by bit, by legal means, drawing nourishment from the big tree that was the Ye family into his own little tree. While the big tree was still standing, still flourishing, before anyone knew its roots had begun to rot.
+He scrolled the spreadsheet down to the very bottom, to the empty row, the cursor blinking in it.
 
 He thought of what Chen Xi had said: “I’m leaving, as far as I can get.”
 
 He couldn’t leave.
 
-He looked like the freest person in this county town. He skipped class and nobody did anything; he didn’t wear the uniform and nobody stopped him; he ran a cat café, he wrote programs, he did whatever he wanted. But he couldn’t leave. He was Ye Shilong’s son, and his name was tied to those two developments, to that land in the North City, to that building with the red flag on the sand table. That rope was thicker than any he could see.
-
-All he could do was put a little more by for himself before the rope pulled tight.
+He skipped class and nobody did anything; he didn’t wear the uniform and nobody stopped him; he ran a cat café, wrote programs, did whatever he wanted. But his name was written on the same sheet of paper as those two developments, as the land in the North City, as the building with the red flag on the sand table.
 
 ::: {.break custom-style="Scene Break"}
 ·  ·  ·
@@ -6447,6 +6425,8 @@ He chewed very slowly.
 
 Su Tang’s eyes lit up all at once.
 
+Old Zhou was already on the third row of eggs, and added, with his back to her: “Don’t come in slippers. The griddle burns feet.”
+
 ## 7. Small Hours
 
 That night, Gu Xuerong got back to the dorm at nine-forty.
@@ -6811,7 +6791,7 @@ He said the word over once in his head.
 
 He thought of the one in a billion Chen Xi had told her about. A billion antimatter particles, a billion and one matter particles; once they’ve annihilated each other, the one that’s left over is everything.
 
-He didn’t say it out loud. He felt that saying it now would sound too much like consolation.
+He didn’t say it out loud.
 
 “Let’s go there,” he said.
 
@@ -7242,8 +7222,6 @@ He looked out of the window at the fields, trees, telegraph poles and villages f
 He thought of that folding bed. Thought of that small quilt folded square, all four corners neatly tucked in.
 
 He thought of the bed in the basement. Folded exactly the same way.
-
-She had folded her quilt like that since she was little. In a home without a room of her own, in a kitchen next to a coal stove leaking smoke, she folded her quilt that neatly, as if to say: this small patch, at least, is clean. At least it’s mine.
 
 ## 7. January
 
@@ -8454,6 +8432,8 @@ It had always been very quiet in the basement. Before, there had only been her o
 
 She sat on the floor beside the fridge, her back against the wall, and listened for a long time.
 
+Later she noticed the protective film on the fridge door was still on. When she peeled it off it made a loud ripping sound, and she jerked back in fright and knocked the back of her head on the wall.
+
 ## 6. Freezing Point
 
 It was at the end of February that Ye Zhixing was thrown out of his home.
@@ -8685,6 +8665,8 @@ Outside the window it had started snowing again. Very fine, very light, falling 
 Rice Cake rolled over on his legs, showing its belly.
 
 He reached out and rested his hand lightly on that patch of ginger-and-white belly.
+
+Rice Cake lifted a hind leg and kicked him.
 
 # Chapter Fifteen　Demand
 

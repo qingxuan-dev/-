@@ -28,7 +28,7 @@ The day it arrived it hid at the very back of its carrier, only a pair of yellow
 
 “It is a briquette.”
 
-When she said it there was no expression on her face, exactly as usual. But Ye Zhixing thought she was in a good mood that day. He couldn’t say what told him so. Probably that she crouched there a little longer than she usually did.
+When she had said it she didn’t get up, but stayed crouched in front of the carrier a good while longer. Briquette edged half a step forward, its yellow eyes peering out of the carrier at her.
 
 ## 2. Boxes
 

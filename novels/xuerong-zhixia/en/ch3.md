@@ -108,7 +108,7 @@ Chen Xi was leaning against the front door frame, a straw in his mouth, his voic
 
 Nobody laughed, and nobody picked it up.
 
-Everyone knew this was the person who had skipped the first week, got a demerit, and told off an instructor in front of a hundred people. That someone like that would suddenly go round with a bag of crisps asking “what do you reckon I should do” was more unnerving than if he had just ignored everyone with a cold face. Nobody knew what he wanted, and when you don’t know, you don’t go near. That was the easiest thing to do.
+In the aisle there was only the hum of the ceiling fan overhead. Someone pushed a pack of spicy sticks further into his desk; someone put his head down to pretend to sleep, uniform jacket over his head, a foot still jiggling under the desk.
 
 Ye Zhixing stood in the middle of the aisle holding the bag of crisps. He scratched the tuft of hair sticking up at the back of his head, and as he turned, his eyes swept along the window row.
 
@@ -142,7 +142,7 @@ She nodded and wrote a few words in the corner of the scrap paper, very small, s
 
 That last one was said very quietly, tucked in the middle, as if in passing.
 
-Ye Zhixing heard it. She didn’t explain, and he didn’t ask.
+Ye Zhixing squeezed the crisp packet with a crackle, and said nothing.
 
 “What else?”
 
