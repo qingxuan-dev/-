@@ -59,6 +59,9 @@ def parse(text):
         if line.strip() == '---':
             sec['blocks'].append({'type': 'break'}); continue
         t = curly(line.strip())
+        m = re.fullmatch(r'\*\*(.+)\*\*', t)
+        if m:  # in-game chat line, e.g. **<冬眠> 谁知道呢**
+            sec['blocks'].append({'type': 'msg', 'text': m.group(1).strip()}); continue
         sec['blocks'].append({'type': 'msg' if t.startswith(('【', '[')) else 'p', 'text': t})
     # drop trailing scene breaks (the --- before each new chapter)
     for c in book['chapters']:
@@ -107,7 +110,7 @@ def cleaned_markdown(book):
                 elif b['type'] == 'quote':
                     out += [('> ' + l + '  ') if l else '>' for l in b['lines']] + ['']
                 else:
-                    out += [b['text'], '']
+                    out += [b['text'].replace('<', '\\<').replace('>', '\\>'), '']
     return '\n'.join(out)
 
 
