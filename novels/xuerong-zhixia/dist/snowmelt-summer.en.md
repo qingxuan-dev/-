@@ -631,7 +631,7 @@ He could smell his own sleeve. Damp, dusty, like a stairwell on a rainy day. He 
 
 He picked up his phone and scrolled to “Uncle He.”
 
-Uncle He had been with the Ye family more than ten years. When Ye Zhixing was little it was Uncle He who took him to school and back; when he was a bit older it was Uncle He who signed his notes to parents. In name he was the household manager; in practice he dealt with everything: the family accounts, part of his father’s company business, and most of the trouble Ye Zhixing got into. He always spoke unhurriedly, as if, should the sky fall, it would have to wait until he had finished his tea.
+Uncle He had been with the Ye family more than ten years. When Ye Zhixing was in primary school, Uncle He was the one who went to parents’ evenings; the time he got into a fight in middle school, it was Uncle He who signed the parent’s line on the written apology. He always spoke unhurriedly, as if, should the sky fall, it would have to wait until he had finished his tea.
 
 At five past eleven, the call went through.
 
@@ -1165,7 +1165,9 @@ The base of the wall was a strip of concrete kerb grown over with foxtail grass,
 
 “I walk past.”
 
-Ye Zhixing wanted to ask why she walked past here at half past five every day—this road didn’t lead to where she lived, or to any of the school gates—but it stopped at his lips and he didn’t ask.
+“Where does this lead to?”
+
+“Nowhere.” Gu Xuerong kept her eyes on the foot of the wall. “Stop talking, its ears are good.”
 
 Sure enough, a tabby slipped out from the foot of the wall.
 
@@ -1207,7 +1209,7 @@ Gu Xuerong shook out the dusty jacket, folded it and laid it on her knees.
 
 The renovation took three days.
 
-Uncle He brought in three experienced workmen who barely spoke while they worked: one painting, one laying floor, one doing carpentry. The walls were done in low-odour eco paint, a pale beige, and after a night drying with the windows open there was still a faint smell the next day, so the cats were sent to board at the vet’s for the time being. The floor was replaced with hard-wearing vinyl that cats couldn’t scratch up and that dried with one wipe if water spilled. Every window got a protective mesh, and a screen door went in at the entrance.
+Uncle He brought in three workmen, one painting, one laying floor, one doing carpentry, and the three of them didn’t say ten sentences a day between them. After a night drying, the walls still smelled, so the cats went to board at the vet’s for the time being. Vinyl went down on the floor, every window got a protective mesh, and a screen door went in at the entrance.
 
 “If a cat gets out even once,” Uncle He said, “you might as well not open the shop.”
 
@@ -1611,7 +1613,7 @@ It was a girl who looked a year or two younger than them, with a round face, a l
 
 “Yes.” Ye Zhixing straightened up behind the counter. “Welcome.”
 
-He said it a bit stiffly, and only once it was out did he realise he had never said it before.
+Having said it, he cleared his throat.
 
 “There really are cats? Not one of those places that just says so?”
 
@@ -2946,7 +2948,7 @@ The four of them looked at each other, let go one by one, and stepped back two p
 
 Gu Jianguo got up off the ground. He got up very slowly: first one arm braced, then his knees, and only then did he stand. His work jacket was covered in dust, half his face was wet, there was a swelling on his cheekbone, but apart from that he didn’t seem to be hurt anywhere. He stood there panting, looking at these young men half a head shorter than him.
 
-He knew that if he went for them again now, he wouldn’t come out on top. One against five: he could beat one or two, not five. And this was right next to the school; he had been seen here, and if that Mr. Sun got to hear of it—
+He looked at Chen Xi, then at the other four, clenched his fists, and unclenched them. Across the road, the woman from the breakfast stall had poked her head out again, still holding a spatula.
 
 His eyes turned back to Gu Xuerong.
 
@@ -3858,7 +3860,7 @@ Ye Zhixing was still at his desk packing up, his bag half zipped. Chen Xi went o
 
 “It’s too much.”
 
-“It’s not much.”
+“It’s not much. That punch you took was worth it.”
 
 “I just…” Chen Xi scratched the back of his head, his face slowly reddening. “That day I just didn’t like the look of him, I wasn’t doing it for—”
 
@@ -3904,7 +3906,7 @@ Abiao stood up too. Beanpole and Chubby poked their heads out of the café, saw 
 
 Ye Zhixing stood there and looked at them for two seconds.
 
-“…Don’t call me that.”
+“…Don’t call me that. Sounds like you’re collecting protection money.”
 
 “Then what do we call you?”
 
@@ -4156,11 +4158,9 @@ Su Tang looked at him for a while.
 
 “Why don’t you give it to her yourself?”
 
-He wanted to say: she wouldn’t take it. She would say “I’ll pay you back,” would say “no need,” would put the food in her desk next to the out-of-date bun and leave it there until it went off. But it was different if Su Tang gave it to her. Su Tang was the one who had pressed a sweet into her hand, the one who had crouched on the stairs and blocked people from seeing her with her own back. When Su Tang gave her something, she couldn’t fend it off with “I’ll pay you back.”
+“If I give it to her, she’ll say ‘I’ll pay you back,’” he said. “Then she’ll put it in her desk to keep the bun company till it grows fur.”
 
-He didn’t say any of that.
-
-“…If you give it to her, she’ll eat it,” he said.
+“If you give it to her, she’s got nothing to say.”
 
 Su Tang looked at him a while longer, then lowered her head and switched the hairdryer back on.
 
@@ -6741,13 +6741,13 @@ She couldn’t go on.
 
 Gu Xuerong looked at her for a while, then turned her head to the others in the room. To Ye Zhixing, Chen Xi, Su Tang.
 
-“Do you really think,” she said, “that I’m beyond forgiving?”
+“Am I,” she said, “like, that kind of, pretty bad person?”
 
 The room went quiet.
 
 Su Tang opened her mouth, wanting to say “no”, but Gu Xuerong’s eyes had already moved off her face, to the window. The curtain wasn’t fully drawn; it left a gap, and outside the gap were the streetlamps of Back Street, and the snow falling flake after flake beneath them.
 
-“Maybe in this world,” said Gu Xuerong, “there’s no love without a reason, and no hate without a reason.”
+“The book says,” said Gu Xuerong, “there’s no love without a reason in the world, and no hate without a reason. I learned it by heart.”
 
 Her voice was very flat, very soft, like reading out the stem of a problem.
 
@@ -6759,7 +6759,7 @@ She paused.
 
 Su Tang’s hands clenched.
 
-“Everyone has a why for everything they do,” said Gu Xuerong. “Love has a why, hate has a why. They all add up.”
+“So everything has a why,” said Gu Xuerong. “Like solving an equation. Plug it in, and the left side and the right side match.”
 
 She brought her gaze back from the window, lowered her head and looked at the red scarf on her knees.
 
@@ -7855,13 +7855,9 @@ She put the lid on.
 
 The glass lid of the electric pot quickly fogged over, and she couldn’t see inside any more; she could only hear the bubbling, and the hiss of the sauce rising at the rim of the lid and falling back into the pot.
 
-“Ye Zhixing.”
+“Ye Zhixing, what time is it there?”
 
-“Mm.”
-
-“What time is it there?”
-
-“Same as where you are. Three-fifty.”
+“Same as where you are. Three-fifty,” he said. “We’re not exactly in different time zones.”
 
 “Where are you?”
 

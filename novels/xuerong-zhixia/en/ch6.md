@@ -118,7 +118,7 @@ It was a girl who looked a year or two younger than them, with a round face, a l
 
 “Yes.” Ye Zhixing straightened up behind the counter. “Welcome.”
 
-He said it a bit stiffly, and only once it was out did he realise he had never said it before.
+Having said it, he cleared his throat.
 
 “There really are cats? Not one of those places that just says so?”
 

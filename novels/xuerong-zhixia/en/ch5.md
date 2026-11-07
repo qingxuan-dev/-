@@ -78,7 +78,9 @@ The base of the wall was a strip of concrete kerb grown over with foxtail grass,
 
 “I walk past.”
 
-Ye Zhixing wanted to ask why she walked past here at half past five every day—this road didn’t lead to where she lived, or to any of the school gates—but it stopped at his lips and he didn’t ask.
+“Where does this lead to?”
+
+“Nowhere.” Gu Xuerong kept her eyes on the foot of the wall. “Stop talking, its ears are good.”
 
 Sure enough, a tabby slipped out from the foot of the wall.
 
@@ -120,7 +122,7 @@ Gu Xuerong shook out the dusty jacket, folded it and laid it on her knees.
 
 The renovation took three days.
 
-Uncle He brought in three experienced workmen who barely spoke while they worked: one painting, one laying floor, one doing carpentry. The walls were done in low-odour eco paint, a pale beige, and after a night drying with the windows open there was still a faint smell the next day, so the cats were sent to board at the vet’s for the time being. The floor was replaced with hard-wearing vinyl that cats couldn’t scratch up and that dried with one wipe if water spilled. Every window got a protective mesh, and a screen door went in at the entrance.
+Uncle He brought in three workmen, one painting, one laying floor, one doing carpentry, and the three of them didn’t say ten sentences a day between them. After a night drying, the walls still smelled, so the cats went to board at the vet’s for the time being. Vinyl went down on the floor, every window got a protective mesh, and a screen door went in at the entrance.
 
 “If a cat gets out even once,” Uncle He said, “you might as well not open the shop.”
 

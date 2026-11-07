@@ -418,7 +418,7 @@ Ye Zhixing was still at his desk packing up, his bag half zipped. Chen Xi went o
 
 “It’s too much.”
 
-“It’s not much.”
+“It’s not much. That punch you took was worth it.”
 
 “I just…” Chen Xi scratched the back of his head, his face slowly reddening. “That day I just didn’t like the look of him, I wasn’t doing it for—”
 
@@ -460,7 +460,7 @@ Abiao stood up too. Beanpole and Chubby poked their heads out of the café, saw 
 
 Ye Zhixing stood there and looked at them for two seconds.
 
-“…Don’t call me that.”
+“…Don’t call me that. Sounds like you’re collecting protection money.”
 
 “Then what do we call you?”
 
@@ -700,11 +700,9 @@ Su Tang looked at him for a while.
 
 “Why don’t you give it to her yourself?”
 
-He wanted to say: she wouldn’t take it. She would say “I’ll pay you back,” would say “no need,” would put the food in her desk next to the out-of-date bun and leave it there until it went off. But it was different if Su Tang gave it to her. Su Tang was the one who had pressed a sweet into her hand, the one who had crouched on the stairs and blocked people from seeing her with her own back. When Su Tang gave her something, she couldn’t fend it off with “I’ll pay you back.”
+“If I give it to her, she’ll say ‘I’ll pay you back,’” he said. “Then she’ll put it in her desk to keep the bun company till it grows fur.”
 
-He didn’t say any of that.
-
-“…If you give it to her, she’ll eat it,” he said.
+“If you give it to her, she’s got nothing to say.”
 
 Su Tang looked at him a while longer, then lowered her head and switched the hairdryer back on.
 

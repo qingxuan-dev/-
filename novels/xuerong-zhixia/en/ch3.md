@@ -32,7 +32,7 @@ He could smell his own sleeve. Damp, dusty, like a stairwell on a rainy day. He 
 
 He picked up his phone and scrolled to “Uncle He.”
 
-Uncle He had been with the Ye family more than ten years. When Ye Zhixing was little it was Uncle He who took him to school and back; when he was a bit older it was Uncle He who signed his notes to parents. In name he was the household manager; in practice he dealt with everything: the family accounts, part of his father’s company business, and most of the trouble Ye Zhixing got into. He always spoke unhurriedly, as if, should the sky fall, it would have to wait until he had finished his tea.
+Uncle He had been with the Ye family more than ten years. When Ye Zhixing was in primary school, Uncle He was the one who went to parents’ evenings; the time he got into a fight in middle school, it was Uncle He who signed the parent’s line on the written apology. He always spoke unhurriedly, as if, should the sky fall, it would have to wait until he had finished his tea.
 
 At five past eleven, the call went through.
 

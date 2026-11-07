@@ -310,7 +310,7 @@ The four of them looked at each other, let go one by one, and stepped back two p
 
 Gu Jianguo got up off the ground. He got up very slowly: first one arm braced, then his knees, and only then did he stand. His work jacket was covered in dust, half his face was wet, there was a swelling on his cheekbone, but apart from that he didn’t seem to be hurt anywhere. He stood there panting, looking at these young men half a head shorter than him.
 
-He knew that if he went for them again now, he wouldn’t come out on top. One against five: he could beat one or two, not five. And this was right next to the school; he had been seen here, and if that Mr. Sun got to hear of it—
+He looked at Chen Xi, then at the other four, clenched his fists, and unclenched them. Across the road, the woman from the breakfast stall had poked her head out again, still holding a spatula.
 
 His eyes turned back to Gu Xuerong.
 
