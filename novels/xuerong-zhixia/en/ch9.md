@@ -134,13 +134,13 @@ Gu Xuerong thought about it.
 
 She seemed to really be thinking. Her eyes moved to one side and came to rest on what was still in the sink, waiting to be rinsed away, stayed there a while, and came back.
 
-“I am,” she said.
+“What does scared mean?” she said.
 
-“Then why do you play it?”
+Su Tang was thrown. “…Scared, you know. Your heart going thump thump, your legs going weak, not daring to go forward, that kind of thing.”
 
-Gu Xuerong didn’t answer right away. The rain was still falling, pattering on the window. In the kitchen Old Zhou was stacking the griddle plates one on another, iron knocking on iron, ting, ting.
+Gu Xuerong thought a while longer. The rain was still falling, pattering on the window. In the kitchen Old Zhou was stacking the griddle plates one on another, iron knocking on iron, ting, ting.
 
-“…When I’m scared,” she said, “I know I’m still here.”
+“I don’t know what frightening is.”
 
 When she had said it she turned and went back to the sofa, picked up the phone lying face down there, locked it and put it in the pocket of her school jacket. Then she took a stack of tissues and went to wipe up the spilled lemon tea on the little round table.
 

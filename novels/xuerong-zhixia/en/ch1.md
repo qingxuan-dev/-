@@ -4,53 +4,61 @@
 
 The last week of August, and the county town was still steeping in the heat.
 
-The asphalt had gone soft; it gave a small tug at your soles with every step. Under the two old camphor trees at the gate of No. 8 High School, the crowd was packed tight: parents holding umbrellas, students dragging suitcases whose wheels caught, bump, bump, in the cracks of the concrete. A popsicle tricycle was parked diagonally across from the gate, its foam cooler covered with a quilt washed thin, and every time the lid came up a puff of white mist rolled out and the kids crowded round would shout. The school PA was looping an athletes’ march. The speaker was broken; every high note came out with a rasp, like someone inside tearing packing tape.
+The asphalt had gone soft in the sun, and it gave a little tug at your soles as you walked. Under the two old camphor trees at the gate of No. 8 High there was a crush of people: parents holding umbrellas, students dragging suitcases whose wheels caught, bump, bump, in the cracks of the concrete. The popsicle tricycle was parked diagonally across from the gate, its polystyrene box covered with a worn old quilt, and whenever the quilt was lifted a puff of white mist rose out and the kids crowding round gave a shout. The school PA was playing the athletes’ march on a loop; the speaker was broken, and on every high note it rasped, like someone inside it was ripping off a strip of tape.
 
-Ye Zhixing stood in the registration line with a dozen or so people ahead of him.
+The registration queue stretched from the gatehouse door all the way to the camphor trees.
 
-He was tall and stuck out half a head above the queue. His short-sleeved school shirt was a size too big, the collar hanging loose over his collarbones, and a tuft of hair at the back of his head had refused to lie flat that morning and was still sticking up. His white sneakers were new. Before leaving he had scuffed them on the front steps on purpose until the toes had a grey streak—they were too white, they looked like they had just come out of the box, and he thought that looked stupid. One earbud was in; the other hung against his chest and tapped the school badge each time he shifted his weight.
+The parent ahead of Ye Zhixing, carrying two rolled-up quilts, glanced back at him and shifted to one side, as if he were blocking the sun. Ye Zhixing didn’t notice; he was scuffing his shoes on the edge of the step. The white trainers were new, dazzlingly white, and he scuffed the left, then the right, until there were two grey streaks across the toes. His short-sleeved uniform shirt was a size too big; when he lifted a hand to wipe his sweat, a whole gust of wind could get up his sleeve. One earbud was in his ear, the other hung on his chest, and every time he shifted his weight it smacked against the school badge.
 
 The phone in his pocket buzzed. It was Ajie, his friend since they were small:
 
-[New batch of machines at the internet café, all 2080s. Coming tonight?]
+【New machines at the internet café, all with 2080s, coming tonight?】
 
-He didn’t reply. He looked up towards the sports field.
+He didn’t reply, and looked up toward the sports field.
 
-Beyond an iron railing, the new students who had arrived earlier were already lined up on the track. The camouflage uniforms were standard issue and the fit was down to luck: some trouser legs dragged on the ground, some sleeves were a hand short. The instructors’ commands came louder and louder; even at a distance of tens of metres they rang in your ears. The red rubber track glared in the sun and heat rose off it, so the whole formation looked crooked, as if seen through water. A girl in the front row swayed and the person beside her caught her arm.
+Beyond an iron fence, the new students who had arrived earlier were already lined up on the track. The camouflage uniforms had been handed out to everyone, and the size you got was pure luck: some trouser legs trailed on the ground, some sleeves were a length too short. The instructors’ commands rose higher and higher, deafening even from dozens of metres away. The red rubber track shone in the sun, heat steamed up off it, and the whole formation looked crooked, as if seen through water. A girl in the front row swayed, and the person next to her caught her.
 
-The registration teacher was flipping through the list. Halfway through, she turned to ask someone behind her which page it was.
+The teacher at the registration table was leafing through the list, and halfway through turned round to ask someone behind her which page it was on. The queue didn’t move. The parent in front switched the quilts to his other arm and sighed.
 
-Ye Zhixing put the other earbud in, stepped out of the line and walked off down the alley beside the registration desk.
+Ye Zhixing glanced at the time on his phone, put the other earbud in, and stepped out of the queue.
 
-The stretch of wall behind the canteen had broken glass set into the cement along the top, green and white, to stop people climbing it. The part near the rubbish shed had lost its glass years ago; only a row of jagged stubs remained. Probably every boy in the county knew about it. He had climbed it in middle school, back when he still had to stand on a bin. Now one foot in a crack in the wall and a push with his hands was enough.
+“Not registering, son?” the parent asked.
 
-On the other side was Back Street.
+“I am,” he said. “Later.”
 
-Half an hour later he was curled up in the internet café on Back Street, the one with no sign. A curtain of thick plastic strips hung over the door; when you pushed through, cold air, cigarette smoke and the smell of braised-beef instant noodles hit you all at once. The owner was dozing behind the counter. His eyelids lifted, he saw who it was, and they closed again.
+On the stretch of wall behind the canteen, broken glass was set into the cement along the top, green and white, to stop people climbing over. The glass on the section near the bin shed had been knocked out years ago, leaving only a row of jagged stumps, and probably every boy in the county knew it. He had climbed it back in middle school, when he still needed to stand on a bin; now he put one foot in a crack in the wall, pushed up with his hands, and he was on top.
 
-He took the machine at the very back and turned his headphones all the way up.
+Astride the wall, he looked back once. The girl on the field who had swayed was standing straight again.
+
+On the other side of the wall was Back Street.
+
+Half an hour later he was holed up in the internet café on Back Street that had no sign. A thick plastic strip curtain hung over the doorway; when you pushed through, the cold air, the cigarette smoke and the smell of braised-beef instant noodles all hit you at once. The owner was dozing behind the counter; his eyelids lifted, he saw who it was, and they closed again.
+
+He took the machine at the very back and turned the headphone volume all the way up.
 
 ## 2. Three Days
 
-He stayed away for three days.
+He skipped for three days straight.
 
-Every morning he left the house in camouflage and every evening he came home in camouflage, the uniform having spent the day in the café’s air-conditioning, dry and crisp, without a trace of sweat. At dinner on the third day, Ye Zhixia looked at him across the table for a long time, then tapped her chopsticks on the rim of her bowl:
+Every morning he left the house in camouflage, every evening he came home in camouflage, and after a whole day in the internet café’s air conditioning his clothes were bone dry, without a trace of sweat. At dinner on the third day, Ye Zhixia looked at him across the table for a long time, then tapped her chopsticks on the rim of her bowl:
 
-“It’s day three of training. How come you haven’t tanned at all?”
+“Third day of military training, and you’re not even a bit tanned?”
 
 “Sunscreen.”
 
-“Since when do you wear sunscreen.”
+“Since when have you ever put on sunscreen? Last year at the beach the back of your neck peeled right off, and I was the one who slathered aloe on it.”
 
-“Mind your own business.”
+“People improve.”
 
-She didn’t ask again. She went back to eating, the corners of her mouth held down, as if she had caught hold of something and was saving it for later.
+“Oh,” said Ye Zhixia. “You’ve improved fast.”
 
-On the fourth morning, before seven, his phone woke him. He was sleeping on the long sofa in the café; he had played until three, and half his face was printed with the pattern of the upholstery. It was his homeroom teacher, and his voice was much colder than he had expected:
+She didn’t ask anything more, and went back to shovelling in rice, the corners of her mouth pressed down.
 
-“Ye Zhixing, you’ve missed three days. The school has discussed it, and under the regulations you are being expelled. Have your parents come in today.”
+On the fourth morning, before seven, he was woken by his phone. He had slept on the long sofa at the internet café after gaming till three, and half his face bore the pattern of the upholstery. The call was from his homeroom teacher, and his tone was much colder than Ye Zhixing had expected:
 
-He sat up, gripping the phone, and said nothing for a long while. The café’s air-conditioning roared. Someone was asleep at the next machine, snoring, one long, one short.
+“Ye Zhixing, you have been absent for three days. The school has discussed it, and under school rules you are being expelled. Have a parent come in today.”
+
+He sat up, gripping the phone, and for a long while said nothing. The air conditioning in the café whooshed; at the next machine someone was asleep, snoring, one long, one short.
 
 “…Hello?”
 
@@ -58,184 +66,200 @@ He sat up, gripping the phone, and said nothing for a long while. The café’s 
 
 “Before ten this morning.”
 
-The line went dead.
+The call ended.
+
+He watched the phone screen go dark, and after a while sent Ajie a message: got expelled, I’ll pass on your 2080s for now.
+
+Ajie replied in a second: ??? for real
+
+He didn’t reply again.
+
+---
 
 In the end it was his father who sorted it out.
 
-His father drove back from the city that day, straight onto the school grounds. In the corridor outside the principal’s office he pinched out his cigarette and held the butt in his hand instead of dropping it, then turned and looked at his son. The look wasn’t long, and there was no anger in it. It was the look of a man going over a report whose numbers didn’t add up, trying to find the line where it went wrong. Then he knocked and went in, while the driver, Uncle Chen, carried several boxes of mooncakes up from the boot, one at a time.
+His father drove back from the city that day, straight into the school grounds. In the corridor outside the principal’s office he stubbed out his cigarette, kept the butt pinched in his fingers instead of throwing it away, turned and gave his son one look, the way he would look at a report where the numbers didn’t add up. Then he knocked and went in. Uncle Chen, the driver, took several boxes of mooncakes out of the boot and carried them upstairs one by one, and by the third trip his forehead was covered in sweat.
 
-Ye Zhixing stood in the corridor for over an hour. The water dispenser at the end gave a gulp every so often; he was counting, and on the eleventh gulp the door opened.
+Ye Zhixing stood in the corridor for over an hour. The water cooler at the end of the corridor gave a glug every so often, and when he had counted the eleventh one, the door opened.
 
-Expulsion became a formal demerit. Military training became make-up training.
+Expulsion became a demerit on his record, and military training became make-up training.
 
-The strange part came later. A couple of days on, the education bureau received a complaint saying that No. 8 High School’s military training involved corporal punishment, overlong drills, and no rest breaks in hot weather as the rules required. A notice to correct was issued; training was halted for two days and had to be re-filed. The rumours across the year were wild: some said a parent had reported it, some said the school clinic couldn’t stand it any more.
+Two days later the education bureau received a complaint: during military training No. 8 High had used corporal punishment, trained for too long, ignored the rules on rest in hot weather. A rectification notice was issued, training stopped for two days and had to be re-filed. Rumours ran wild in the year: some said a parent had reported it, some said the school clinic had had enough.
 
-He asked about it once, at dinner.
+He asked once, at dinner.
 
 “That complaint, was it you who—”
 
-“Eat,” his father said.
+“Eat,” said his father.
 
-His mother put a piece of fish in his bowl, having picked out every bone first. He didn’t ask again.
+His mother put a piece of fish in his bowl, after picking out every bone. Under the table Ye Zhixia kicked him, then bent over her soup and slurped it very loudly.
 
-By the time he was back on the sports field, training was on its seventh day.
+By the time he was back on the field, military training was on its seventh day.
 
 ## 3. The IV Drip
 
 That morning they were practising standing at attention.
 
-The sun was even crueller than on registration day. The camouflage fabric was thick and trapped the heat; sweat ran down from the back of his neck until the belt stopped it and it pooled there in a ring. The air under the cap brim was hot enough to dry your throat. The row of poplars along the edge of the field was full of cicadas, loud enough to make your skull ache.
+The sun was even fiercer than on registration day. The camouflage fabric was thick and stifling; sweat ran from the back of his neck all the way down to the belt, where it was stopped and pooled in a ring. The air under the cap brim was scorching, and dried his throat as he breathed it. The row of white poplars beside the field was full of cicadas, loud enough to make your brain ache.
 
-The make-up trainees had been stuffed into the back row of the company. Classes Seven and Eight had been merged into one company of a hundred or so, and Ye Zhixing didn’t know any of them and didn’t want to. His stance was sloppy: his weight shifted to the left foot, then the right, his eyes wandering everywhere.
+The make-up trainees had been stuffed into the back row of the company. Classes Seven and Eight had been combined into one company, a hundred-odd people. Ye Zhixing wasn’t standing quite to standard, shifting his weight to his left foot, then his right, his eyes wandering everywhere.
 
-He could feel people up front turning round.
+Up ahead, people were turning round.
 
 “…That’s him, the Ye family, the building-materials lot.”
 
-“They can cancel an expulsion?”
+“And they could even cancel an expulsion?”
 
 “What do you think, his dad—”
 
 “Shut up, the instructor’s looking.”
 
-He pretended not to hear and looked past row after row of heads towards the front.
+He pretended not to hear, and looked past row after row of the backs of heads, to the front.
 
 Someone in the front row wasn’t standing right.
 
-It was a girl, with an IV stand beside her, the kind from the school clinic: an iron pole with four wheels at the bottom. The wheels wouldn’t roll on the rubber track, so she had to hold the pole with one hand. Her other hand hung by the seam of her trousers; there was white tape on the back of it, and a clear tube ran out from under the tape all the way up to the bag of fluid overhead. The fluid didn’t sway. It fell a drop at a time. Ye Zhixing watched it for a while: about one drop every three seconds.
+It was a girl, and beside her stood a drip stand, the kind from the school clinic, an iron pole on four wheels. The wheels wouldn’t roll on the rubber track, so she had to hold the pole with one hand; the other hung by the seam of her trousers, a white plaster on the back of it, and a clear tube came out from under the plaster all the way up to the bag of fluid overhead. The fluid didn’t sway at all, just dripped, drop by drop, about one drop every three seconds.
 
-She was very thin. The uniform hung empty on her, her belt wound round several times with the spare length tucked into her waistband. Everyone else had their sleeves rolled up; hers were buttoned all the way to the wrist, tight. The bit of neck showing under her cap was so pale it was almost blue, a few loose strands stuck to her skin with sweat, and at the back she had tied a tiny bun with a black hair tie.
+She was very thin; the camouflage hung empty on her, the belt wound round several times, the spare end tucked into her waistband. Everyone else had rolled up their sleeves; her cuffs were buttoned all the way to the wrist, buttoned tight. The bit of the back of her neck showing under her cap was white to the point of looking blue, strands of hair stuck to the skin with sweat, and at the back of her head was a very small tuft of hair held with a black hair tie.
 
 “Gu Xuerong.”
 
-The instructor’s voice came crashing down from the front of the formation.
+Instructor Wang came over from the front of the formation, his boots landing on the rubber track with a dull thud at every step. He was in his early twenties, burnt black as charcoal, sleeves rolled above the elbow, the veins on his forearms standing out one by one. On the first day he had sent three people to the clinic with heatstroke, and the whole company knew it.
 
-Instructor Wang was in his early twenties, burnt dark, sleeves rolled above the elbow, the veins on his forearms standing out one by one. People said he had only left the army last year, and he took training new students very seriously. On the first day he had put three people in the clinic with heatstroke.
+“You think hanging a drip on yourself means I’ll treat you as special? Everyone else can stand, why can’t you? You’re the only one making a fuss. Drama queen!”
 
-“You think hanging a drip on you means I’ll make an exception? If everyone else can stand, why can’t you? Always you making a fuss. Stop being so precious!”
+The girl made no sound. She stood ramrod straight, her lips pressed together, pressed until there was no colour in them. Sweat dropped from the point of her chin, bead after bead, onto the track, where it quickly dried and left a row of little round dots.
 
-The girl said nothing. She stood perfectly straight, lips pressed together until they had no colour left. Sweat fell from the point of her chin, drop after drop, onto the track, where it quickly dried into little round marks.
+Ye Zhixing looked down at his shoes. The two grey streaks on the toes were still there, scuffed nearly black by now.
 
-Ye Zhixing frowned.
+Then he walked out of the back row, all the way to the front.
 
-He thought back on it many times afterwards. At that moment he hadn’t actually decided whether to get involved. What his head was working out was this: he had just been given a demerit, and if he stuck his neck out again he would probably get another; last time his father had driven back from the city, and next time he might not. But his feet had already moved. From the back row, all the way to the front.
+A company of a hundred-odd people went so quiet there was only the cicadas.
 
-The company of a hundred went so quiet that there was nothing but cicadas.
+“Instructor,” he said, stopping beside the girl, “she’s on a drip.”
 
-“Instructor,” he said, stopping beside the girl. He didn’t raise his voice, but the rows in front and behind heard every word. “She’s on a drip.”
+Instructor Wang turned his face and looked him up and down. “Which class are you? Who said you could fall out?”
 
-Instructor Wang turned his head and looked him up and down. “Which class are you? Who told you to leave the ranks?”
+“Class Seven, make-up training, Ye Zhixing,” he said. “If you want to take my name, I can write it down for you. Standing at attention till someone needs a drip, that’s not military training any more, is it? That’s corporal punishment.”
 
-“This isn’t training,” Ye Zhixing said. “It’s corporal punishment. You’re not her commanding officer. What gives you the right to decide whether she stands or not?”
+Instructor Wang’s face darkened, a muscle in his jaw moved, and he was about to speak—
 
-Instructor Wang’s face darkened. A muscle in his jaw moved, and he was about to speak—
+“Having connections must be nice.”
 
-“Having status, having connections. Must be nice.”
+It was the girl beside him. Very quiet, but every word bitten off clearly.
 
-It was the girl beside him. Her voice was soft, but every word was bitten off clearly.
+Ye Zhixing turned his head. She was looking at him too, straight at him, her eyes bigger than he’d expected, a heavy black, and she hardly blinked when she looked at someone. There was no gratitude on her face, and no anger.
 
-Ye Zhixing turned. She was looking at him too, straight on. Her eyes were bigger than he had expected, very dark, and she didn’t blink much when she looked at someone. There was no gratitude on her face and no anger. Nothing at all, as if she were stating a fact she had just confirmed.
+“People like you,” she said, “never have to stand at attention in your whole lives, do you?”
 
-“People like you,” she said, “can you just go on being carefree like this forever?”
+Ye Zhixing opened his mouth. He actually thought about it seriously for a second. It seemed she was right.
 
-Ye Zhixing froze.
+“Yeah, it’s pretty nice,” he said. “Which is why getting yelled at doesn’t hurt me.” He glanced at the plaster on the back of her hand, where a small patch had already swollen up, bruised purple. “Go back and lie down first, your drip’s swelling up.”
 
-He had prepared for several possible reactions—being thanked, being yelled at by the instructor, being dragged to the discipline office—but not this one. He opened his mouth, and the first thing out was a bit sharp:
+She looked at him for a few seconds, and the corner of her mouth curved very slightly. It wasn’t really a smile; it was more like something in her face had come loose.
 
-“Are you stupid? You’re in this state and you’re still talking back.” He glanced at the tape on her hand. A small patch beneath it had already swollen up, bluish purple. “What’s your name? …Never mind. Go back and lie down. Whatever else, we can talk when you’re better.”
+“Thank you,” she said. “You’re a good person. I hope everything goes well for you from now on.”
 
-She looked at him for a few seconds, and then one corner of her mouth curved, very slightly. It wasn’t quite a smile. It was more as if something in her face had come loose.
+She turned and pushed the drip stand toward the clinic. A wheel caught on a seam in the track; she stopped, lifted the stand up, set it down again, and kept pushing. A girl in the front row reached out to help, and she shook her head. The hand holding the iron pole shook the whole way; you could see it even from behind.
 
-“Thank you,” she said. “You’re a good person. I hope everything goes well for you.”
-
-She turned and pushed the IV stand towards the clinic. A wheel caught on a seam in the track; she stopped, lifted the stand, set it down again and kept pushing. A girl in the front row reached out to help and she shook her head. The hand holding the iron pole was trembling the whole time. You could see it even from behind.
-
-Ye Zhixing stood where he was.
+Ye Zhixing stayed where he was.
 
 “…You’re welcome.”
 
-He said it too late; she was already several metres away. But he saw her step falter, very briefly, before she walked on.
+He said it too late; she was already several metres away. But her step faltered, very briefly, and then she carried on.
 
-“You.” Instructor Wang’s voice sounded above his head. “The one who left the ranks. Five laps. Now.”
+“You.” Instructor Wang’s voice came from above his head. “The one who fell out. Field. Five laps. Now.”
 
-He ran five laps.
+“Is five enough?”
 
-Four hundred metres a lap. On the third lap his shoelace came undone. He couldn’t be bothered to stop, so he kept running with the lace whipping about on the ground. As he passed the clinic window he looked in. The curtain was drawn and he couldn’t see anything.
+Instructor Wang’s face went a shade darker. “Ten.”
 
-That line, “I hope everything goes well for you,” kept going round in his head. Something about it felt wrong. He thought it over and couldn’t work out what. It sounded like something written in a graduation book, to someone you would never see again.
+A few rows back, someone couldn’t hold it in and snorted with laughter.
+
+He ran ten laps.
+
+Each lap was four hundred metres, and on the third lap his shoelace came undone. He couldn’t be bothered to stop, so he just kept running, the lace whipping about on the ground. As he passed the clinic window he glanced in; the curtain was drawn, and he couldn’t see a thing.
+
+On the seventh lap, he started muttering to himself.
+
+“I hope everything goes well for you from now on.”
+
+Say it once, run a dozen steps, say it again. As he passed the reviewing stand, a teacher holding a mug gave him a look, probably thinking he had heatstroke.
 
 ## 4. Gossip
 
-When he got back he was drenched, a dark patch of sweat across the back of his uniform. The formation was taking a break in place. He had only just sat down when Chen Xi shuffled over.
+When he got back he was dripping with sweat, a dark patch soaked across the back of his camouflage. The company was on a break where they stood, and he had only just sat down when Chen Xi came sidling over.
 
-Chen Xi was in Class Seven: skinny, long neck, cap always a little crooked, and on the first day he had already made best friends with half the class. He lowered his voice on purpose, and on purpose not quite low enough, so everyone around could hear:
+Chen Xi was skinny and long-necked, his cap always crooked; yesterday he had been borrowing ham sausages off the Class Eight boys, and today he was already calling them “bro.” He deliberately lowered his voice, and deliberately didn’t lower it enough, so that everyone around could hear:
 
-“Well, well, Young Master Ye, the hero saving the beauty?” He nudged Ye Zhixing with his elbow. “Son of the building-materials king, going after a girl who has to apply for a fee waiver? Interesting taste.”
+“Ooh, young master Ye, hero saves the beauty?” He nudged Ye Zhixing with an elbow. “The building-materials king’s son, chatting up a girl who has to apply for a fee waiver? Interesting taste.”
 
 Someone nearby laughed.
 
-“And the best part is she wasn’t having it,” someone else chimed in. “‘I hope everything goes well for you’—ha, Zhixing, you just got the good-guy card, didn’t you?”
+“And the best part is she wasn’t even grateful,” someone else chimed in. “‘I hope everything goes well for you from now on’—ha, Zhixing, you just got the nice-guy card.”
 
-The laughter got louder.
+The laughter got a bit louder.
 
-Ye Zhixing wiped the sweat off his forehead with his sleeve and looked at Chen Xi.
+Ye Zhixing wiped the sweat off his forehead with his sleeve, got his breath back, and looked at Chen Xi.
 
 “Chen Xi, your cap’s on backwards.”
 
-Chen Xi’s hand went straight up to check. It wasn’t on backwards. The people around laughed again, and this time it was at him.
+Chen Xi’s hand went up to his head before he could stop it. The cap wasn’t on backwards. The people nearby laughed again, and this time it was at him.
 
-“What’s wrong with you.”
+“You’re sick.”
 
-Ye Zhixing ignored him and looked over towards the clinic. The curtain was still drawn.
+“A nice-guy card is still a card,” said Ye Zhixing. “Got one?”
+
+Chen Xi’s mouth hung open, and for a long time he couldn’t come back with anything. Ye Zhixing unscrewed his bottle of water, tipped his head back, drank half of it in one go, and glanced over toward the clinic. The curtain was still drawn.
 
 ## 5. The Rented Room
 
-It was fully dark before Gu Xuerong got back to where she lived.
+It was fully dark by the time Gu Xuerong got back to where she lived.
 
-Two turns in from the school’s Back Street stood an old residential block, half the white tiles fallen off its outer walls to show grey cement beneath, so that from a distance it looked like a biscuit with teeth missing. One flat on the third floor had been divided up by the landlord into student lodgings: under twenty square metres, two bunk beds, four girls—all of them, for one reason or another, without a place in the school dormitory, or not wanting one.
+Two turns in from the school’s Back Street stood an old residential block, half the white tiles fallen off its outer walls, showing the grey cement underneath, so that from a distance it looked like a biscuit with teeth missing. A flat on the third floor had been divided up by the landlady into student lodgings: under twenty square metres, two sets of bunk beds, four people—all for one reason or another without a place in the school dorms, or not wanting one.
 
-The sound-activated light in the stairwell had been broken for ages. She climbed in the dark, counting each step; at forty-two she was on the third floor.
+The sound-activated light in the stairwell had been broken for ages. She climbed in the dark, counting the steps one by one; at forty-two she was on the third floor.
 
-The door wasn’t locked. Inside, a single fluorescent tube was on, both ends already blackened. The ceiling fan creaked as it turned, one creak per turn, very regular. On the wall was a poster of a celebrity left by a previous tenant, half torn off, leaving one eye and half a chin. A wire ran across the balcony with four people’s washing on it, and the room smelled of mosquito-repellent water and instant noodles mixed together.
+The door wasn’t locked. Inside, a single fluorescent tube was on, both ends already blackened. The ceiling fan creaked as it turned, one creak per turn, very regular. On the wall was a poster of a star left by a previous tenant, half torn away, leaving one eye and half a chin. A wire ran across the balcony with the four girls’ clothes hanging on it, and the room smelled of mosquito-repellent toilet water mixed with instant noodles.
 
 “Xuerong! You’re finally back.”
 
-A head poked out from a top bunk. Lin Xiaoman had a round face and short hair, and pyjamas printed with a faded little bear. One look at Gu Xuerong’s face and she came straight down from the bunk, missing half the rungs and jumping the last one.
+A head poked out from a top bunk. Lin Xiaoman had a round face and short hair, and her pyjamas were printed with a faded little bear. One look at Gu Xuerong’s face and she was scrambling down from the top bunk, missing rungs on the ladder, jumping the last one.
 
-“Why are you so white? Sit down, sit down.” She pressed Gu Xuerong down onto the edge of a lower bunk. “I saved you dinner, it’s on the table, I put a plate over it. I heard all about what happened on the field today, the whole year’s talking about it. They said that Wang guy made you—and some boy ran up and argued with him—”
+“Why is your face so white? Sit down, sit down.” She pressed Gu Xuerong down onto the edge of the lower bunk. “I saved you food, it’s on the table, I put a plate over it. I heard about what happened on the field today, the whole year’s talking about it, they say that Wang guy—and some boy ran up and argued with him—”
 
-Gu Xuerong didn’t answer. She put her bag down, took a small white pill bottle out of the side pocket, unscrewed it, tipped out two tablets and swallowed them with the half bottle of cold mineral water on the table. The tablets were big; it took her two tries, tipping her head back, to get them down.
+Gu Xuerong didn’t take it up. She put down her schoolbag, felt in its side pocket for a small white pill bottle, unscrewed it, tipped out two pills and swallowed them with the half-bottle of cold mineral water on the table. The pills were a bit big; she had to tip her head back twice to get them down.
 
-The dinner on the table was rice topped with tomato and egg, covered with a plastic plate fogged with condensation. She lifted the plate, looked, and put it back.
+The food on the table was tomato and egg over rice, covered with a plastic plate that had fogged up with condensation. She lifted it to look, then put it back.
 
 “Eat a bit.”
 
 “Tomorrow.”
 
-“It’ll have gone off by tomorrow.”
+“It’ll be off by tomorrow.”
 
 “Mm.”
 
-Lin Xiaoman sighed and sat down beside her; the bed board creaked. “That Instructor Wang is sick in the head, I’m telling you, everyone in our company says—”
+Lin Xiaoman sighed and sat down beside her, and the bed boards creaked. “That Instructor Wang is just sick, I’m telling you, everyone in our company says—”
 
-“His shoelace came undone,” Gu Xuerong said.
+“His shoelace was undone,” said Gu Xuerong.
 
 “…Huh?”
 
-“That boy. When he was running laps, his shoelace was undone the whole time.” She was looking at a particular floor tile. “Five laps, and he didn’t fall.”
+“That boy. While he was running laps, his shoelace was undone the whole time.” She was looking at one particular tile on the floor. “He ran ten laps and didn’t fall.”
 
-Lin Xiaoman stared at her for a good while, her eyes lighting up bit by bit. “Which boy? The one who ran out? You know him? What’s his name?”
+Lin Xiaoman stared at her for a good while, her eyes lighting up bit by bit. “What boy? The one who came running out? You know him? What’s his name?”
 
-Gu Xuerong didn’t answer.
+“Ye something,” said Gu Xuerong. “Can’t remember.”
 
-She leaned against the wall, pulled her legs up onto the bed, chin on her knees, and looked out of the window. The window faced the side of another building; between the two there was only a narrow gap, and squeezed into the gap was a sliver of sky, turned a grubby orange by a distant street light. A family somewhere was arguing; the voices came through several walls. You couldn’t make out the words, only that one voice kept getting higher.
+She leaned against the wall, drew her legs up onto the bed, her knees against her chin, and looked out of the window. The window faced the side of another building; between the two buildings was only a narrow gap, and squeezed into the gap was a strip of sky, turned a grubby orange by the distant streetlamps. Some family was having a row, the voices coming through several walls; you couldn’t make out what they were rowing about, only that one voice kept getting higher.
 
-The fingers of one hand rested on the wrist of the other. Through the long sleeve, she rubbed it, back and forth. After a while she stopped and put her hand down.
-
-She hadn’t meant to remember anyone’s name. Remember a name, and later you have to forget it again, one at a time, which is a nuisance. She couldn’t say herself how long days like these would go on, so there was no point adding anything to them.
+She felt in the side pocket of her bag for a pen and wrote two characters on the plaster on the back of her left hand. When she had written them, she looked at them for a while, then scratched them off with her fingernail, little by little, until they were a blur.
 
 The ceiling fan creaked, creaked.
 
 Before Lin Xiaoman climbed back up to her bunk, she pushed the plate of food a little closer to her.
 
-That night she lay awake for a long time. Not because of anything he had said. Because when he said “You’re welcome,” she was already several metres away, and he said it anyway. Said it so late it couldn’t have been meant for her to hear at all.
+After midnight, the top bunk rolled over and mumbled something indistinct: “Instructor Wang is sick…”
+
+And went back to sleep.
