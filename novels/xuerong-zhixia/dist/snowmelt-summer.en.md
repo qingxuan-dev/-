@@ -10997,7 +10997,7 @@ Chen Xi’s end went silent.
 > what about essays  
 > what do we do about essays  
 
-“Essays are even more hopeless,” said Chen Xi. “I wrote about my grandma’s dog, how it saved me, how it got poisoned. The Chinese teacher gave me thirty-six, said the central idea was unclear, there was no elevation.”
+“Essays are even more hopeless,” said Chen Xi. “I wrote about my grandma’s dog, how it saved me, how it got poisoned. The Chinese teacher gave me forty-two, said the central idea was unclear, there was no elevation.”
 
 > the dog died and it still needs elevating?  
 > elevated into what  
@@ -11547,3 +11547,639 @@ Su Tang put her phone back in her pocket and felt the two yuan in there. From th
 Ye Zhixia had already gone to the kitchen to boil water, to make Su Tang a cup of hot milk, from the case her dad’s work had given out.
 
 The electric heater hummed. On Ye Zhixing’s stomach, Rice Cake purred, rising and falling.
+
+# Chapter Nineteen　Back to School
+
+## 1. Masks
+
+No. 8 High started term on the twentieth of April.
+
+Year Nine and Year Twelve had gone back half a month earlier; Ye Zhixia left on the seventh of April, packed her schoolbag three times the night before, and woke at six the next morning, before her alarm. Years Ten and Eleven had to wait until the twentieth. The notice was posted in the class group on the sixteenth, and Zheng Xin added a long string of instructions after it: for fourteen days before returning, report your temperature daily on the mini-program; on the day you return, show your health code; queue at the school gate to have your temperature taken; wear masks in the classroom at all times; change masks every four hours; bring at least three days’ supply each.
+
+The last item: once term starts, the normal schedule resumes, eight classes a day, morning and evening study, the old evening classes cancelled.
+
+The group filled with a row of “!!!”.
+
+“Fourteen periods down to eight,” Chen Xi said in the small group. “Considerate virus.”
+
+::: {.break custom-style="Scene Break"}
+·  ·  ·
+:::
+
+There was a very long queue at the school gate.
+
+The queue stretched all the way to the breakfast stall across the road. Each student had to stand a metre from the next; circles had been painted on the ground in red, one after another, and you stood in a circle, and when you moved up one, you stepped into the next circle. At the gate there was a table with two teachers behind it, one with a thermometer gun, one with a register; the gun beeped, a number was read out, 36.3, 36.5, 36.1, and the register got a tick.
+
+At Ye Zhixia’s school, they said, you also had to wash your hands: a row of taps just inside the gate, and you had to scrub for a full twenty seconds before they let you in. No. 8 High didn’t have that; at No. 8 High’s gate there was just a bottle of hand sanitizer, one pump, rub, in you go.
+
+Everyone wore a mask. Mostly blue surgical ones, some white, some black, a few girls in pink ones printed with little flowers, and one boy in an N95, the metal strip over his nose pressed down tight, his voice coming out muffled.
+
+The desks in the classroom had been pulled apart: before it had been two to a desk, now it was one each, with a bit of space in front, behind and to the sides. Forty-odd desks packed the classroom full; the back row was pushed right up against the blackboard newspaper.
+
+In the first lesson of term, a director from the academic affairs office came and stood at the front and spoke about discipline for twenty minutes.
+
+Boys’ hair not past the eyebrows at the front, not past the ears at the sides, not past the collar at the back. Girls with hair past the shoulders must tie it up, not wear it loose, no perms, no dye. No long nails, no nail varnish. No sleeping in class, no putting your head on the desk. No phones in the classroom: caught once, confiscated; caught twice, parents called in; caught three times—
+
+“Advised to leave,” said the director. “Special circumstances during the epidemic, school management has to be stricter. You’ve had three months off, you’ve all gone wild, now it’s time to rein it in. Anyone who doesn’t want to be here doesn’t have to be; there are plenty of people behind you who’d like to get in.”
+
+A boy in the back row whose hair was clearly past his eyebrows pulled his mask up a bit, as if that would cover his fringe too.
+
+## 2. Chinese Class
+
+In the first week of term, almost every class had someone getting dealt with.
+
+Three months of online classes at home: you attended, then you stopped attending; you attended, then you fell asleep. Body clocks were long since wrecked, two or three in the morning to bed, up at noon, and now you had to be at school by six-thirty, with morning reading at seven, and halfway through the reading heads started drooping. People held out through the first lesson; in the second lesson someone put their head down; by the third a whole patch of heads were down.
+
+The physics teacher threw chalk. He threw very accurately, hitting the back of the head with a smack; whoever was hit jerked upright, and the people beside him held in their laughter. Ms. Li in maths didn’t throw things; Ms. Li made people stand to listen, stand out in the corridor, and after a whole lesson there was a line of them out there, like a row of telegraph poles being punished. The chemistry teacher made people copy out equations, a hundred times. Zheng Xin in English said nothing at all; she walked to the sleeper’s desk, tapped twice lightly on it, and when they raised their head said “go and wash your face,” and walked away.
+
+Chen Xi was back in class too. The lab had stayed locked since term started; Mr. Wu said no crowding into one room during the epidemic, the competition classes would stop for now, and he sent the two of them back to their class. Chen Xi came back. Ye Zhixing didn’t.
+
+None of these teachers could deal with Chen Xi.
+
+Not because Chen Xi didn’t sleep. Chen Xi slept too, more soundly than anyone. But the physics teacher had only just thrown a piece of chalk at him when Chen Xi raised his head and rubbed his eyes; the teacher told him to come up and do a problem, he went up, did it, all correct, and wrote alongside it a method the teacher hadn’t taught; when he’d written it he tossed the chalk, went back to his seat, and went back to sleep.
+
+Ms. Li made him stand in the corridor. He stood; halfway through, Ms. Li came out to spot-check and asked him where the lesson had got to, and he said the third step of the second example, you wrote the sign the wrong way round in that step. Ms. Li went back and looked at the board, and she really had written it the wrong way round.
+
+After that nobody bothered with him.
+
+Except the Chinese teacher.
+
+The Chinese teacher was called Yang, in her fifties, a woman who had taught for nearly thirty years, wore gold-rimmed glasses, and spoke with a bit of a southern Henan accent, landing hard on every “de.” She was the only teacher in the year who dared point a finger in Chen Xi’s face and tell him off.
+
+That day it was “Moonlight over the Lotus Pond,” a revision lesson. Ms. Yang got to “These past few days my heart has been far from calm,” and asked why this line was placed at the beginning and what job it did; she called on three people, and all three stumbled through answers. Then her eyes swept the classroom, swept to the row by the window, and stopped.
+
+Chen Xi wasn’t asleep. He was reading.
+
+The book was under the desk, open on his lap; he had his head down, mask pulled down under his chin, eyes fixed on the page. It was a very thick book with a dark blue cover, a few words printed on the spine that couldn’t be made out from the front.
+
+“Chen Xi.”
+
+Chen Xi looked up.
+
+“Stand up.”
+
+He stood up, the book still in his hand, forgetting to put it down.
+
+Ms. Yang came down from the platform, walked to his desk, pulled the book out of his hand, and turned it over to look at the cover.
+
+The Feynman Lectures on Physics, Volume III.
+
+“Quantum mechanics,” Ms. Yang read the small print on the spine, and looked up at him. “You’re in Year Ten, and you’re reading quantum mechanics?”
+
+“Yeah.”
+
+“Do you understand it?”
+
+“About half.”
+
+Someone in the class laughed out loud, and quickly covered their mask.
+
+Ms. Yang slapped the book down on his desk, smack, much louder than the physics teacher’s chalk.
+
+“You can understand quantum mechanics, but you can’t understand Zhu Ziqing?” She stuck out a finger and pointed it at Chen Xi’s nose, her voice under the mask shooting up. “Last term’s finals: maths out of a hundred and fifty, you got a hundred and forty-eight, physics full marks, chemistry full marks, Chinese out of a hundred and fifty, you got ninety-two! Ninety-two! My first day taking over this class I went through the results and when I got to you I thought it had been entered wrong. You tell me, is that acceptable?”
+
+“No.”
+
+“You know it’s not acceptable, and you’re reading this in my class?!”
+
+“I was listening,” said Chen Xi. “‘Far from calm’ at the beginning states the theme and sets the emotional tone of the whole piece; the lotus pond in the middle is to work off that unrest; the ending comes back to it, so the beginning and end echo each other.”
+
+Ms. Yang’s finger froze in mid-air.
+
+“…Then why didn’t you write that in the exam?”
+
+“In the exam I thought,” said Chen Xi, “he was just in a bad mood those few days.”
+
+This time the class couldn’t hold it in, and burst out laughing.
+
+Ms. Yang’s face flushed red, right up to the bit of forehead above her mask. She drew her finger back, took a deep breath and let it out, and her mask puffed out.
+
+“Sit down,” she said. “I’m confiscating the book. Come to my office after class to get it.”
+
+Chen Xi sat down.
+
+Ms. Yang carried the Feynman back to the platform, put it down there, and carried on with the lesson. A few sentences in, she glanced down at the book; it was open at a page covered in pencil marks, with a line of very small writing in the margin.
+
+She looked at the line once, didn’t understand it, and closed the book.
+
+::: {.break custom-style="Scene Break"}
+·  ·  ·
+:::
+
+After class, Chen Xi went to the office for the book. Ms. Yang handed it back to him, but didn’t let go straight away.
+
+“That essay of yours about the dog,” she said, “I read it.”
+
+Chen Xi was taken aback.
+
+That had been last term’s midterm essay; a different teacher had marked it, and Ms. Yang hadn’t taken over the class then.
+
+“At a teaching group meeting, someone brought it out and said this student’s central idea isn’t clear, there’s no elevation,” said Ms. Yang. “I read it.”
+
+“…”
+
+“It’s good,” said Ms. Yang. “You just can’t write like that in an exam.”
+
+She let go.
+
+“Exams need elevation,” she said. “Remember that: exams need elevation. After the exam, write however you like.”
+
+Chen Xi stood there holding the book.
+
+“Ms. Yang,” he said, “the dog died. Elevated into what?”
+
+Ms. Yang thought for a moment.
+
+“Into ‘from then on I understood,’” she said. “Understood anything you like. Understood life, understood how to treasure things, understood how wicked people can be. A marker reads several hundred essays a day; they don’t read what you wrote in the middle, they look at whether there’s an ‘I understood’ at the end.”
+
+Chen Xi looked at her for a while.
+
+“Isn’t that cheating.”
+
+“Yes,” said Ms. Yang. “Go to your lesson.”
+
+## 3. Evening Study
+
+Chen Xi’s classes moved to evening study.
+
+Not because he wanted to move them; there was no other way. Eight classes during the day, and after school, supper and then evening study, which ended at half past nine; by the time anyone got home it was past ten, and who was going to do an online class then? But that group of over a hundred people was still there, the problems still couldn’t be done, and the money was still wanted.
+
+So he taught during evening study.
+
+The method was simple. Evening study was for doing your own homework, and if there was something you couldn’t do, you could ask. The teacher on duty sat at the front marking, and didn’t usually bother with anything. Chen Xi sat in the row by the window; when someone brought over a paper to ask, he explained. When he’d explained, the person went back and carried on writing. Money wasn’t handed over in the classroom: there was a teacher on duty, and phones weren’t allowed—though everyone had one.
+
+He could get through a dozen or more people a night. People from Class Three and Class Eight slipped over too, standing at Class Seven’s back door, poking their heads in, waiting for him to finish one so the next could come in.
+
+The teacher on duty looked up a few times, and saw a group of students crowded round one student, holding papers, going through problems, maths and physics, very seriously, someone sometimes drawing a diagram with a pen on scrap paper. That’s a good thing, the teacher thought. And went back to marking.
+
+The money was transferred in the toilets.
+
+“You crafty little sod,” Ye Zhixing said when he heard.
+
+“I don’t take money in class,” said Chen Xi. “I take it in the toilets. The duty teacher isn’t in charge of the toilets.”
+
+## 4. Hiring
+
+The cat café reopened, and nobody came.
+
+That upstairs room, which before the epidemic was packed every afternoon, now got two or three customers in an afternoon, all middle-schoolers from nearby who dropped in after school to sit for a while, stroke the cats, order a drink, and left within the hour. Old Zhou was back, but the griddle barely got fired up a few times a day; most of the time he sat at the kitchen door in his mask looking at his phone, short videos, laughing to himself.
+
+Now and then there was a delivery order. Mostly omurice; on Meituan, Ye Zhixia had given it a picture of Rice Cake lying next to a plate of omurice, Rice Cake’s video was still being shared, and some people ordered delivery just for that picture. When the delivery rider came to pick up, he stood at the door, poked his head in, and asked: “Where’s the fat cat?”
+
+Rice Cake was on the windowsill, not moving. It had managed to lose a little weight now, it wasn’t quite as round, but people still called it the fat cat.
+
+Most of the time, the shop’s only customer was Gu Xuerong.
+
+She came after school and sat in her usual spot by the windowsill, laptop in her arms, testing games. Briquette lay at her feet. In front of her was a bottle of Coke, sometimes Sprite, sometimes iced tea. The bottle of mineral water Su Tang had bought with those two yuan, she had drunk, and kept the empty bottle on the windowsill, next to Rice Cake.
+
+Ye Zhixing had stopped going to school.
+
+Once the competition classes stopped, he asked Mr. Wu for long leave. Mr. Wu was silent on the phone for ages, then said the first round is in September, you be back before September, and if you come back and can’t do the problems any more, you’re no student of mine. So he worked full time at the shop, facing his computer from morning to night.
+
+The cats all liked to get close to him.
+
+When he sat, Rice Cake lay on his lap; when he stood, Calico rubbed his shins; when he lay on the sofa for a nap, the Devon burrowed into the hollow of his neck. Ye Zhixia said it was because he was warm: sitting still all day with a hot computer, he was like a heater himself.
+
+“I’m a cat tree and an electric heater,” said Ye Zhixing.
+
+“Very multi-functional.”
+
+::: {.break custom-style="Scene Break"}
+·  ·  ·
+:::
+
+The people were found at the end of April.
+
+He thought later it was probably because of the epidemic. In March he had interviewed nine people, and they were either too expensive or no good. In April he posted the jobs again on Town Matters and a few programmers’ forums, and suddenly lots of people came, of every kind.
+
+The first was called Ali, twenty-one, from Chengdu, freelancing from home, doing Cocos and Unity, with a dozen-odd mini-games in his portfolio, two of them doing well on WeChat. In the video interview Ye Zhixing saw someone with long hair on camera, wearing white cat-ear headphones and a pink-and-white sweater; when the voice came out, it was a man’s.
+
+“Hello, Mr. Ye,” said Ali. “Let me say up front, I usually dress in women’s clothes, and I might dress like this for meetings too. If you mind, let’s not waste each other’s time.”
+
+“What do you wear when you code?”
+
+“…This, too.”
+
+“Then that’s fine,” said Ye Zhixing. “I looked at your portfolio. The third one, the runner: did you write the collision detection yourself, or use the engine’s built-in one?”
+
+Ali stopped short, then laughed. “Wrote it myself. The built-in one drops frames on low-end Android phones.”
+
+“How much a month?”
+
+Ali named a figure. Half the Hangzhou man’s, a bit more than the Zhengzhou one’s.
+
+“Fine.”
+
+The second was a third-year computer science student at a university in Zhengzhou, called Meng Fan; his university was still doing online classes, so he had classes in the day and took on work at night, and said he wanted to build up some project experience before he graduated. He didn’t talk much, answered each question as it was asked, and answered precisely. Ye Zhixing set him a problem; he finished it in half an hour, and attached a note, which said “I used a rather clumsy method here, because you said it should be easy to maintain.”
+
+The third was a seventeen-year-old boy from Zhumadian who had dropped out in Year Eleven and taught himself to code at home for over a year; he had written a Flappy Bird clone where the bird was replaced by a duck his family kept. Ye Zhixing asked him why he had dropped out, and he said: “School’s useless, I want to make games.” Ye Zhixing asked whether his parents agreed, and he said: “No. I dropped out anyway.”
+
+“How old were you when you dropped out?”
+
+“Sixteen.”
+
+“And now seventeen?”
+
+“Yeah.”
+
+Ye Zhixing looked at the face on the screen. Very young, dark circles under the eyes, and on the wall behind him a yellowed certificate, “Merit Student,” dated 2012.
+
+He had Uncle He phone the boy’s family. When Uncle He came back he said the mother had cried on the phone, said as long as the child had something proper to do, the money didn’t matter, just don’t let him shut himself in his room playing games all day.
+
+“Juvenile worker,” said Uncle He. “Same rules. Medical, registration, no staying up all night.”
+
+“I know.”
+
+::: {.break custom-style="Scene Break"}
+·  ·  ·
+:::
+
+With more people, the work spread out.
+
+Rice Cake’s Diet went live at the start of April. In the first week it passed a thousand visitors and the ad programme switched on; in the second week, Rice Cake’s video was shared again by a big account, and visitors suddenly went up dozens of times over. Daily ad revenue went from a few dozen yuan to a few hundred, then from a few hundred to over a thousand.
+
+Big Liu and Huang Yingjun did the second game, Ali did the third on his own, Meng Fan the fourth, the boy from Zhumadian the fifth. Ye Zhixing wrote too. He had been learning from Big Liu for over a month; he wasn’t fast, and it wasn’t pretty, but he could do it. What he wrote was a very simple thing, a cat jumping along a row of squares, falling off if it jumped wrong, and the cat he drew was Briquette.
+
+Of the five games, two nobody played, and they were taken down. Three stayed, and with Rice Cake’s Diet that made four games, and the daily ad revenue from all of them together passed several thousand.
+
+That evening, Ye Zhixing took a screenshot of the numbers in the back end and looked at it for a good while.
+
+Then he leaned back in his chair and let out a long breath.
+
+Rice Cake rolled over on his lap and spread its belly out.
+
+He reached down and stroked Rice Cake’s belly, stroked it twice, then stopped, his hand resting there, not taking it away.
+
+Enough. For the next six months at least, enough.
+
+## 5. The Dorm
+
+Lin Xiaoman came back the day before term started.
+
+Her parents had gone back to Guangdong on the factory coach at the beginning of March, and she had stayed on in the village for over a month, living with her grandparents. The day before term, her grandpa drove her to the county town on his electric three-wheeler, the cargo bed holding her suitcase, a bag of rice, a bag of dried sweet potato her grandma had made, and an old hen in a woven sack, its head sticking out of the top of the sack, clucking the whole way.
+
+“For your dorm to make soup,” said her grandpa. “Build you up.”
+
+The dorm was the same dorm. The old residential block, third floor, twenty square metres, two sets of bunk beds. Of the other two roommates, one had changed schools, and one’s family wouldn’t let her come, saying the epidemic wasn’t over and she should stay home another term. That left Lin Xiaoman and Gu Xuerong.
+
+When Lin Xiaoman pushed the door open, Gu Xuerong was sitting on the lower bunk with her laptop in her arms and a bottle of Coke in front of her.
+
+The two of them looked at each other for a few seconds.
+
+“…Xuerong!”
+
+Lin Xiaoman flung her suitcase down and threw herself at her. She threw herself so fast she banged her knee on the edge of the bed, said “ow,” didn’t care, and hugged Gu Xuerong tight, so tight the laptop in Gu Xuerong’s arms nearly fell.
+
+“Long time no see long time no see long time no see!”
+
+“…Mm.”
+
+“Let me look at you.” Lin Xiaoman let go, stepped back, took Gu Xuerong’s face in her hands and looked left and right, then squeezed her arm, squeezed her shoulder. “You’ve put on weight! You really have! Your face is rounder! There’s meat on your arms!”
+
+Gu Xuerong looked down at her own arm.
+
+“…Is there.”
+
+“Yes! Before, when I squeezed you it was all bone, it hurt my hand!” said Lin Xiaoman. “Now it’s soft!”
+
+She squeezed once more, to check, and then her whole body relaxed, and she plonked down beside Gu Xuerong, the bed boards creaking.
+
+“I thought…” she said, “when I was in the village, I sent you messages every day, sometimes you answered, sometimes you didn’t. I was so scared you…” She didn’t finish. “Seeing you’re all right, I feel much better.”
+
+“I’m all right.”
+
+“Mm!” said Lin Xiaoman. “Whatever happens, don’t give up, OK?”
+
+Gu Xuerong looked at her.
+
+“Give up what?”
+
+“…Like,” Lin Xiaoman thought, “don’t give up anything.”
+
+“Oh.”
+
+::: {.break custom-style="Scene Break"}
+·  ·  ·
+:::
+
+That evening, Lin Xiaoman carried the old hen downstairs and begged the woman who ran the little shop on the ground floor to kill it for her, and stewed a pot of soup. The soup was very rich, with a layer of golden fat floating on top; Lin Xiaoman ladled a big bowl for Gu Xuerong and a big bowl for herself, and the two of them sat on the edge of the bed drinking it.
+
+“Xuerong, what are you playing lately?”
+
+“Testing games.”
+
+“Not testing, playing. For yourself. Anything fun?”
+
+Gu Xuerong thought. “There’s one where the main character is a little girl, in a big house, and the people in the house have no faces—”
+
+“Stop stop stop!” Lin Xiaoman covered her ears. “Is it scary? I don’t want to hear scary stuff!”
+
+“…MC, then.”
+
+“MC’s good! I like MC!” said Lin Xiaoman. “My little cousin plays it every day. I played in the village too, I built a chicken coop! But I can’t get the chickens to lay, they just stand there.”
+
+“Standing there is laying,” said Gu Xuerong. “Chickens in the game don’t need feeding, every few minutes they lay one by themselves, it drops on the ground, and you have to go and pick it up.”
+
+“What? Then I’ve never picked up a single one!”
+
+“Then under that coop of yours, by now, the ground should be covered in eggs.”
+
+Lin Xiaoman drank a mouthful of soup, so hot she had to suck in air.
+
+“School is so annoying,” she said. “That director from academic affairs today, did you hear him, no long hair, no long nails. I’d only just grown my nails, look—” She held out her hand; the nails had grown a little, painted a very pale clear coat. “I did them at home, and tomorrow I have to cut them. Gross.”
+
+“Mm.”
+
+“And no sleeping in class,” said Lin Xiaoman. “It’s not that I want to sleep, I can’t get up in the morning, I’m sleepy. In the village I got up at eight every day.”
+
+“Mm.”
+
+“And going on about expelling people all the time.” Lin Xiaoman put down her bowl, her voice dropping. “‘Anyone who doesn’t want to be here doesn’t have to be, there are plenty of people behind you who’d like to get in.’ When he said that, loads of people in our class looked down. And I thought, what if I get expelled. My mum and dad are still at the factory, they only come home once a year. If they found out…”
+
+Gu Xuerong looked at her.
+
+“You won’t get expelled.”
+
+“How do you know?”
+
+“You follow the rules,” said Gu Xuerong. “He said no long nails, and tomorrow you’ll cut them.”
+
+Lin Xiaoman spread her fingers and closed them again, and sighed.
+
+“…True.”
+
+She picked up her bowl again and drank some soup.
+
+“Xuerong, how are things with your family?” she asked. “Last time Chen Xi said you went to the mediation room…”
+
+“It’s fine now.”
+
+“Really fine?”
+
+“Mm. They don’t know where I live.”
+
+“And later?”
+
+Gu Xuerong didn’t answer.
+
+“I don’t know what we’re going to have to face later either,” said Lin Xiaoman. “Sometimes at night I think about it, and the more I think the less I can sleep. My grades are so bad, I won’t get into a good university, and later I’ll go to Guangdong and work in a factory, same as my mum and dad. It’s not that I think factory work is bad, it’s just… it’s like I can see right to the end.”
+
+“…”
+
+“What about you? Have you thought about later?”
+
+“No.”
+
+“Then you should,” said Lin Xiaoman. “You’re cleverer than me. Even Chen Xi says your physics has improved.”
+
+Gu Xuerong looked down at the layer of golden fat in her bowl.
+
+“I’ll think about it,” she said.
+
+::: {.break custom-style="Scene Break"}
+·  ·  ·
+:::
+
+Lin Xiaoman went to sleep at half past ten.
+
+Her routine was very regular now. A month and more in the village, in bed by half past nine every night along with her grandparents; back in the county town, she had brought the habit with her: wash at ten, in bed at ten-twenty, lights out at half past ten—the light being the little lamp at the head of her own bed—and she pulled the quilt over her head, said “night, Xuerong,” and within five minutes her breathing had slowed.
+
+Gu Xuerong was still awake.
+
+She sat on the lower bunk with her back against the wall, the laptop screen turned down to its lowest brightness, which was still a bit bright, so she pushed the laptop further under the quilt and used the quilt to block the glow. Earphones in.
+
+That afternoon Big Liu had posted a new build in the group, Meng Fan’s, a game about stacking blocks upward, where if the blocks went crooked they fell. She had played it for two hours and stacked up to level one hundred and forty-seven.
+
+On level one hundred and forty-seven, she discovered that if she switched to the background at the moment a block dropped and then switched back, the block hung in mid-air and didn’t fall. It just hung there. She stacked another on top, and that one hung too. She stacked another.
+
+She stacked thirty levels of floating blocks, and on the screen there was a thin, crooked column not touching the ground.
+
+She took a screenshot and wrote in the test report:
+
+> 7. From level 147, switching to the background at the moment a block drops and switching back leaves the block floating, unaffected by gravity. You can keep stacking up and it won’t fall. I stacked 30 levels. No crash. Suggest fixing it. (Not fixing it is fine too, it looks nice)  
+
+When she’d written it, she glanced at the time. One twenty-two.
+
+Eight minutes left.
+
+On the top bunk, Lin Xiaoman rolled over and mumbled something too faint to make out; it sounded like “the chicken laid an egg.”
+
+## 6. Sunday Afternoon
+
+There were no classes on Sunday afternoon.
+
+It was the only half day off in the week. Chen Xi slipped away straight after lunch, didn’t go home, went straight to the cat café. Su Tang didn’t have to do customer service in the afternoon—customer service had moved to the evenings, seven to eleven; evening study was voluntary, and she had simply stopped going—so she came too, carrying a bag of fried dough twists her mum had made. Ye Zhixia was at school; Year Nine had make-up classes on Sunday afternoons too. Gu Xuerong was there already, in her usual spot by the windowsill.
+
+Four people, eleven cats.
+
+Chen Xi lay down on the sofa the moment he came in, put his feet up on the armrest, took the Feynman out of his schoolbag, opened it, and laid it over his face.
+
+“Ms. Yang gave it back?” Su Tang asked.
+
+“Yep.” Chen Xi’s voice came out from under the book, muffled. “And told me exams need elevation.”
+
+“Elevation?”
+
+“Writing ‘from then on I understood’ at the end.”
+
+Su Tang let out a “pfft” of laughter. “So did you understand?”
+
+“I understood that Chinese teachers have a hard time too.”
+
+::: {.break custom-style="Scene Break"}
+·  ·  ·
+:::
+
+Ye Zhixing was writing code behind the bar counter. He wrote very slowly: a few lines, stop, look something up, a few more lines. Briquette jumped up on the counter and lay down beside his keyboard, and its tail swept across the touchpad, and the code on the screen shot down to the very bottom.
+
+“…Briquette.”
+
+Briquette yawned.
+
+“It’s helping you,” said Gu Xuerong without looking up.
+
+“Helping me with what?”
+
+“That bit you wrote is wrong. Scroll down and you can’t see it.”
+
+Ye Zhixing scrolled the code back up and looked. It really was wrong.
+
+“…How do you know?”
+
+“You stopped three times just now,” said Gu Xuerong. “Every time on the same line.”
+
+Chen Xi lifted the book off his face, looked at Gu Xuerong, then at Ye Zhixing, and put the book back.
+
+::: {.break custom-style="Scene Break"}
+·  ·  ·
+:::
+
+Later Ye Zhixing stopped coding, shut the laptop, came over, and sat down at the other end of the sofa. Chen Xi pulled his feet back to make room for him.
+
+“Heard you found people?” Chen Xi lifted the book halfway off his face. “Weren’t you crossing out names last month till your pen ran dry?”
+
+“Found them, three,” said Ye Zhixing. “Last month everyone still thought this would be over in a couple of weeks, they were all playing it cool, twenty-five thousand the moment they opened their mouths. This month they’ve all worked it out: it’s not ending, they can’t go back to the big cities, they don’t dare go out on their own, so if they can get some work at home they’ll take it, whatever it pays, nobody’s picky any more.” He paused. “So now it’s my turn to be picky.”
+
+Chen Xi took the book right off and turned his head to look at him.
+
+“You sound like a capitalist.”
+
+“I am one. High-school capitalist, a county-town speciality, can’t get them anywhere else.”
+
+Chen Xi looked at him for a few seconds, and didn’t laugh.
+
+“Hey, seriously,” he said. “I think you’ve been pretty down lately. Back at military training you were joking around, even standing at attention you had to talk back to the instructor, got five laps and asked him if that was enough. Now every day you just sit there facing your computer, not one word of nonsense, like a time clock. Look at those dark circles, people will think you got beaten up.”
+
+Ye Zhixing didn’t answer straight away. Rice Cake jumped down from the windowsill, came over to his feet, rubbed once, and jumped onto his lap, and he gathered it up.
+
+“I’m scared,” he said.
+
+“Of what?”
+
+“Of Rice Cake’s diet failing,” said Ye Zhixing. “If it doesn’t slim down, my game is false advertising, someone’ll report it.”
+
+Chen Xi clicked his tongue, threw the book onto the coffee table, and sat up.
+
+“Big boss Ye, don’t give me that,” he said. “Whatever mistake you made before, I don’t know, you haven’t said, and I can’t be bothered to ask. All I know is you’re sixteen this year, same as me. A high-school kid, not some immortal, piling everything onto yourself, can you even carry it all? If you can’t, just give a shout, shouting isn’t shameful, I won’t charge you for it.”
+
+He grinned.
+
+“Stop showing off, bro.”
+
+Ye Zhixing looked down, stroking Rice Cake’s back, stroked it for a good while before he laughed.
+
+“You,” he said, “all these lines, so how come you only got ninety-two in Chinese?”
+
+“Ms. Yang would like to know too.”
+
+::: {.break custom-style="Scene Break"}
+·  ·  ·
+:::
+
+Su Tang had been sitting at the bar counter all along, not joining in, holding a dough twist, holding it for ages without eating it.
+
+“The things you were saying…” she began, “the future and stuff, big cities and stuff, capitalists and stuff. I don’t really get them.”
+
+All three of them looked at her.
+
+Her face was a bit red, but she didn’t stop.
+
+“I just think,” she said, “making everyone happy, that’s the most important thing, isn’t it? My dream is actually really simple, it’s to make my mum and dad happy, and make my friends happy.” She paused, and laughed again. “And I’ve got loads of friends, you know. Half of Class Three are my friends.”
+
+“Half?” said Chen Xi.
+
+“Half! Go and ask if you don’t believe me!”
+
+“I didn’t say I don’t believe you.”
+
+“It’s written on your face that you don’t.”
+
+“Who did you learn that one from?”
+
+“Ye Zhixing,” said Su Tang. “He learned it from Xuerong.”
+
+Over by the windowsill, Gu Xuerong’s hand on the mouse paused, then carried on clicking.
+
+Su Tang turned to look at Ye Zhixing.
+
+“I don’t really understand what you talk about,” she said. “But if you want to tell me, I’ll listen. If you don’t want to, never mind. I’m not going to force you.” She held out the dough twist in her hand. “Cheer up. Look, I’m always working hard too.”
+
+Ye Zhixing took the dough twist.
+
+“Working hard at what?”
+
+“Working hard at customer service! Working hard at not dropping out of the top fifty! Working hard at learning Yu’e Bao!” Su Tang counted on her fingers. “I know now, the money in Yu’e Bao goes into a fund, and the fund uses it to buy… to buy that…”
+
+“Money-market instruments.”
+
+“Yes! That!”
+
+Ye Zhixing bit into the dough twist. It was fried very crisp, and cracked when he bit it, crumbs falling all over Rice Cake. Rice Cake shook its fur and didn’t leave.
+
+::: {.break custom-style="Scene Break"}
+·  ·  ·
+:::
+
+Later Chen Xi went over to the windowsill to see what Gu Xuerong was testing.
+
+Gu Xuerong had two windows open on her screen. One was Meng Fan’s block-stacking game, blocks hanging in mid-air, a thin column. The other was a picture, very large, black background, packed with tiny figures, some in pots of oil, some tied to posts, some being sawn from the top of the head downward by two green-faced, fanged things, the sawn places drawn with red lines, one after another.
+
+“…What the hell is that?”
+
+“The transformations of hell,” said Gu Xuerong. “Found it online. Same version as the one she stuck up in the kitchen.”
+
+Chen Xi looked at the picture once, looked again, then turned his face away.
+
+“Don’t show me that!” he said. “I’ll have nightmares!”
+
+“You can understand quantum mechanics.”
+
+“Quantum mechanics doesn’t saw people in half!”
+
+Su Tang came over, glanced at the screen, cried “ah,” and covered her eyes.
+
+“That’s… that’s the one you said? On the wall across from your bed?”
+
+“Mm.”
+
+Chen Xi turned round and looked at Su Tang, then at Gu Xuerong.
+
+“What, across from the bed?”
+
+Su Tang glanced at Gu Xuerong. Gu Xuerong said nothing, which counted as yes. So Su Tang, quietly, picked out a few things from what she had heard that day in the basement: the kitchen, this picture, three years, karmic creditors, the debt-collecting kind, not allowed medicine for a fever, kneeling to listen to chanting.
+
+As Chen Xi listened, the expression on his face changed bit by bit.
+
+“…For real?” he said. “What kind of animals are your parents?”
+
+Gu Xuerong closed the window with the picture.
+
+Ye Zhixing sat on the sofa holding Rice Cake, and hadn’t made a sound all this time. When Chen Xi had said that, he spoke.
+
+“The stuff she plays,” he said, “really is insane.”
+
+Chen Xi looked back at him.
+
+“The first time I watched that anime she recommended, I got to episode nine and threw up,” said Ye Zhixing. “At the time I thought, what kind of person can watch this without blinking.” He stroked Rice Cake. “Now I know.”
+
+“…”
+
+“Those parents of hers,” said Ye Zhixing, “are animals.”
+
+The room went quiet for a moment. At the kitchen door, Old Zhou in his mask had a short video playing halfway through, someone in it shouting “family!”, and Old Zhou quickly turned the sound off.
+
+“Right, right.” Su Tang clapped her hands. “Enough of that! Eat the dough twists! My mum fried a whole bag, nobody leaves till they’re gone!”
+
+::: {.break custom-style="Scene Break"}
+·  ·  ·
+:::
+
+Towards evening, Su Tang had to go back; customer service started at seven. As she was packing her things, her phone pinged: an alert from the customer-service back end, a new message.
+
+She opened it.
+
+It was the woman from the noodle shop across from the county hospital.
+
+> young lady!!! we can do dine-in today!!!  
+> my bone broth is on again!!!  
+> come for noodles when youre free!! my treat!!!  
+
+After it came a photo: a big iron pot, milky white broth in it, giving off great clouds of steam that had fogged up half the lens.
+
+Su Tang held up her phone and showed everyone.
+
+“Look look!”
+
+Chen Xi glanced at it: “Oh.”
+
+Ye Zhixing glanced at it: “Good news.”
+
+Gu Xuerong glanced at it and asked: “How much is a bowl of noodles?”
+
+“She says it’s her treat!”
+
+“Then take me.”
+
+Su Tang was taken aback for a moment, then laughed.
+
+“OK!”
