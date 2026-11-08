@@ -25,7 +25,9 @@ os.makedirs(OUT, exist_ok=True)
 def curly(line):
     """Pair straight quotes within a line: " -> “ ” and ' -> ‘ ’."""
     for q, (o, c) in (('"', '“”'), ("'", '‘’')):
-        if line.count(q) % 2:
+        if line.count(q) % 2 and not (q == '"' and line.lstrip().startswith('"')):
+            # an odd count is only allowed for a speech that runs on into the next
+            # paragraph (Chinese convention: the paragraph opens a quote it doesn't close)
             raise ValueError('unbalanced quotes: ' + line[:40])
         out, opening = [], True
         for ch in line:
