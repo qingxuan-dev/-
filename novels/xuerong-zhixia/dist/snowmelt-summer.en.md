@@ -7453,7 +7453,7 @@ He set the things down on the step by the door one by one, and when he was done,
 
 Two big plastic bags, one cardboard box.
 
-“The shop’s closed, and what’s in Old Zhou’s fridge will only go off,” said Uncle He. “Meat, vegetables, eggs, rice, it’s all in there. In the box there’s a little electric pot, plug it in and you can cook, and an extension lead.” He paused. “The young master says all you’ve got is a kettle, you can’t cook anything.”
+“The shop’s closed, and what’s in Old Zhou’s fridge will only go off,” said Uncle He. “Meat, vegetables, eggs, rice, it’s all in there. In the box there’s a little electric pot, plug it in and you can cook, and an extension lead. The shop’s old laptop is in there too; the young master says you’ll need it for online classes.” He paused. “The young master says all you’ve got is a kettle, you can’t cook anything.”
 
 Gu Xuerong stood in the crack of the door, looking at the pile of things on the step.
 
@@ -7475,7 +7475,7 @@ The bags were very heavy.
 
 One bag was meat. A big piece of pork belly wrapped in a food bag, frozen rock hard; two boxes of fatty beef rolls, the ones Old Zhou used for his griddle rice; a bag of frozen dumplings. The other bag was vegetables: a big Chinese cabbage, five or six potatoes, a bag of tomatoes, a bunch of spring onions, a knob of ginger, a head of garlic; a tray of eggs, thirty of them, in a cardboard tray, not one broken. At the very bottom was a five-kilo bag of rice and a small bag of dried noodles.
 
-In the cardboard box was a little electric pot, white, round, with a glass lid, the box printed with “Multi-function electric cooking pot 1.5L”.
+In the cardboard box was a little electric pot, white, round, with a glass lid, the box printed with “Multi-function electric cooking pot 1.5L”. Squeezed in beside the pot was the shop’s old laptop, its case scored all over with cat scratches, the charger bundled up with a rubber band.
 
 Under the pot was a sheet of paper. It had been torn off one of the sticky-note pads from the counter at the shop, yellow, and on it was Ye Zhixing’s handwriting, as ugly as ever:
 
@@ -10848,7 +10848,7 @@ When her mum came home from work every day—the textile mill had reopened at ha
 
 And then they started stuffing things into her bag.
 
-First a pot of steamed flower rolls her mum made; her mum said she’d made too many, they couldn’t finish them, take them to your boss. Then two cases of milk her dad’s work had handed out; her dad said he didn’t like milk, take them. Then a jar of spicy pickled cabbage her grandma had made when she was alive, the bottom of the crock, the very last of it; her mum hesitated for ages, then packed one container of it after all.
+First a pot of steamed flower rolls her mum made; her mum said she’d made too many, they couldn’t finish them, take them to your boss. Then two cases of milk her dad’s work had handed out; her dad said he didn’t like milk, take them. Then a jar of spicy pickled cabbage, the kind her grandma, when she was alive, had taught her mum to make by hand, this year’s crock nearly at the bottom, the very last of it; her mum hesitated for ages, then packed one container of it after all.
 
 “Tell him not to wear himself out.” Her mum pressed the lid of the container down, then pressed it again. “Young people staying up all night, they don’t feel it now, but it all has to be paid back later.”
 
@@ -11044,9 +11044,9 @@ Then she stood in the doorway, stunned.
 ·  ·  ·
 :::
 
-It was very dark inside, only a little grey light from the small window. Gu Xuerong pressed the switch on the wall; the fluorescent tube on the ceiling flickered twice, came on, and hummed.
+It was very dark inside, only a little grey light from the small window. Gu Xuerong reached out and pulled the thin cord by the door, and the bulb overhead came on, bare, a yellow glow.
 
-The room wasn’t big, ten-odd square metres. A single bed against the wall, the quilt on it bundled into a heap. A table, with a computer on it, and beside the computer an electric pot with half a pot of noodle soup of unknown age in it, a layer of white fat set on top. In the corner was something covered with a cloth, square, the cloth dark, so you couldn’t tell what was underneath. Against the wall stood the little fridge, and stuck on the fridge door was a sticky note in handwriting Su Tang recognized, Ye Zhixing’s: Don’t unplug.
+The room wasn’t big, ten-odd square metres. A single bed against the wall, the quilt on it bundled into a heap. A table, with a computer on it, and beside the computer an electric pot with half a pot of noodle soup of unknown age in it, a layer of white fat set on top. In the corner the blue-and-white checked cloth was still covering something, a square bulge, so you couldn’t tell what it was. Against the wall stood the little fridge, and stuck on the fridge door was a sticky note in handwriting Su Tang recognized, Ye Zhixing’s: Don’t unplug.
 
 And then there were the bottles.
 
