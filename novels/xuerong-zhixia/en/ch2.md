@@ -2,327 +2,437 @@
 
 ## 1. Quadratics
 
-Classes began properly the day after military training ended.
+The day after military training ended, lessons began for real.
 
-Class 7 of Year One was at the far east end of the fourth floor of the old teaching block. The building went up in the nineties; the stair rail had been rubbed glossy by dozens of years of students, and on the wall at the turn of the stairs someone from some year had written in correction fluid that they liked someone else. It had been painted over in white and still showed through. The classroom had four ceiling fans, one of which didn’t turn; flip the switch and it just hummed. The blackboard was old and wouldn’t wipe clean. Last term’s formulas lingered underneath as a greyish-white ghost, and new writing went on top, the two layers overlapping.
+Senior One, Class Seven was at the far east end of the fourth floor of the old teaching block. The block went up in the nineties; decades of students had rubbed the stair rails to a greasy shine, and on a wall at one landing someone had once written in correction fluid who fancied whom, and though it had since been given a coat of white paint, the words still showed through. The classroom had four ceiling fans, one of which didn’t turn; flip its switch and it only hummed. The blackboard was old and wouldn’t wipe clean; last term’s formulas had left a grey-white ghost underneath, and new writing went on over the top, two layers deep.
 
-No. 8 High’s timetable was packed airtight: morning reading at six-forty, five lessons in the morning, five in the afternoon, evening study until nine. By the end of the first day half the class had glazed eyes.
+The timetable had been stuck on the back wall the evening before: morning reading at six-forty, first period at seven-twenty, five periods in the morning, five in the afternoon, tenth period out at five-forty, dinner at six, and then four short periods of evening study from seven to nine. While it was going up, someone counted from the first row to the last, got fourteen, and turned round to ask whether it was a misprint.
 
-First lesson was maths.
+Ye Zhixing sat in the back row by the window. He had picked the seat the moment he walked in: by the window, at the back, two steps from the rear door. Outside the window was the sports field, and beyond the field a stretch of other people’s rooftops, with quilts and chillies out drying on them.
 
-Ms. Li was in her fifties, with permed short curls and a thin chain hanging from her glasses. She wrote “Quadratic functions, equations and inequalities” on the board, pressing hard, chalk dust pattering down onto her dark blue cuffs. She taught the old way: one worked example, explained once, then another, explained again. Do enough problems and you will understand. What a “function” actually was, she never explained in detail, and hardly any students asked.
+During morning reading Mr. Sun came in with his hands behind his back and did a circuit, white shirt tucked into suit trousers, gold belt buckle. He stopped at the back row, leaned forward, and looked at the unopened English book on Ye Zhixing’s desk.
+
+“Ye Zhixing.”
+
+“Morning, Mr. Sun.”
+
+“So we meet.” Mr. Sun said, “I’ve had classes of my own for more than ten years, and you’re the first student I’ve ever had tell me, before term’s even started, that he’d do his own expulsion paperwork. Your father got here fast enough, I’ll say that.”
+
+“He’s not normally that fast.”
+
+Someone up front laughed. Mr. Sun looked over, and nobody was laughing.
+
+“The demerit slip is in my drawer. Whether it comes off in second year needs my signature.” He put out two fingers and tapped the cover of the English book twice. “Open it. Read. The whole group’s reading. Don’t you go making yourself special.”
+
+Ye Zhixing opened the book and read a couple of lines along with the rest. Mr. Sun walked on up the room with his hands behind his back, and stopped again at the second row by the window, looking at someone else.
+
+Ye Zhixing followed his eyes, saw a very small black bun, and took a long moment to place it.
+
+That was when he found out the girl with the drip was in Class Seven. She was five rows of desks away from him; no drip today, though there was still a square plaster on the back of her left hand. In an early-September classroom where half the class had their uniform jackets tied round their waists, she had hers on properly, zipped to the chin, the sleeves a length too long and covering half her palms. Mr. Sun was standing at her desk; she had her head down, reading, and her lips were moving, but you couldn’t hear a sound.
+
+His deskmate was a boy with braces who didn’t dare turn his head until Mr. Sun was out of the door. The first thing he said was “So you’re that Ye Zhixing,” and the second was “Did your dad seriously send the school a carload of mooncakes?” Ye Zhixing said yep, five-nut ones, and the principal doesn’t like them so they all went to the Discipline Office, and the day you get a demerit you might get to try one while you’re in there. Braces laughed so hard he sprayed water on the desk, and after that he didn’t ask again.
+
+First period was maths.
+
+Ms. Li was in her fifties, with short permed curls and a thin chain hanging from her glasses. She said the senior textbook could wait: the first two weeks were for patching the holes left from middle school, and if the holes didn’t get patched, the next three years would be like listening to scripture from heaven. Having said that, she wrote “Quadratic functions and quadratic equations and inequalities” on the board, pressing hard, the chalk dust settling on her navy cuffs. She taught the old way: go through one worked example, bring out another, go through that; do enough problems and it would come by itself. What a function actually was, she didn’t say, and nobody asked.
 
 On the board was the first problem of the day:
 
 > Given the function y = x² − 5x + 6:
-> ① Solve the equation x² − 5x + 6 = 0;
-> ② Find the solution set of the inequality x² − 5x + 6 < 0;
-> ③ Using the graph, describe how the three are related.
+> ① solve the equation x² − 5x + 6 = 0;
+> ② find the solution set of the inequality x² − 5x + 6 < 0;
+> ③ using the graph, describe how these three are related.
 
-Ye Zhixing sat in the back row by the window.
-
-He had picked the seat the moment he walked in on the first day: by the window, at the back, close to the back door. He kept his phone locked and face down in his desk, the earphone wire running out of his sleeve, round the back of his neck and into his right ear. Outside the window was the sports field, and beyond the field a stretch of other people’s roofs, with quilts and chillies drying on them.
-
-It was only that morning that he had found out the girl with the drip was in Class Seven.
-
-She sat in the second row by the window, a full five rows of desks ahead of him. During morning reading he had seen the tiny black bun from behind and taken a moment to recognise it. Today there was no drip, but a square of tape was still stuck on the back of her left hand. Her school jacket was on properly, zipped up to the chin, the sleeves long enough to cover half of each hand.
+In the back row by the window, Ye Zhixing’s phone lay face down in the desk cubby, the earphone cable threaded out of his uniform sleeve, round the back of his neck and into his right ear.
 
 “Ye Zhixing!”
 
 A stub of chalk cracked down on the lectern.
 
-“Do you know what a function is? Come up here, or stand up, and tell us how to do this problem.”
+“What’s that you’ve got in your ear? Take it out. Do you know what a function is? Come up here, or else stand up and tell us how to do this one.”
 
-Every head in the class turned. Some people were holding in laughter; in the back row someone muttered “the make-up training one,” and the person next to him shushed him.
+Every head in the class turned. Someone at the back whispered “the make-up training one,” and someone next to him went shh.
 
-Ye Zhixing pulled his earbud down a little, stood up slowly and looked at the board.
+Ye Zhixing yanked the earbud out, stood up, and glanced at the board.
 
-“The roots are two and three,” he said. “It opens upwards, and the bit between the two roots is below the x-axis, so the part that’s less than zero is between two and three.”
+“The roots are two and three. It opens upward, the bit between the two roots is under the x-axis, so less than zero is between two and three.”
 
-“I asked what a function is.”
+“What I asked was what a function is.”
 
-He thought for a moment.
+“One number changes, and it’s how another number changes along with it,” he said. “Miss, all three parts are asking about the same line. Part one is where it touches the ground, part two is which bit of it is underground, and part three is asking me to say parts one and two again.”
 
-“One number changes, and another number changes along with it,” he said. “The equation, the inequality and the graph are all asking about the same line, just at different places.”
+And having said it, he sat down.
 
-Then he sat down.
+The room was silent for two seconds, and then somebody laughed out loud. Ms. Li’s chalk hung in mid-air while she weighed up whether this counted as answering the question or as making trouble.
 
-The classroom was silent for two seconds. Ms. Li’s chalk stopped in mid-air. She looked at him for a while, as if deciding whether that counted as an answer or as messing about.
+“…Sit down,” she said, though he already had. “Next time, raise your hand. And those earphones come to my office after class.”
 
-“…Sit down,” she said, although he already had. “Raise your hand next time.”
+She turned back to the board, the chalk striking harder than before.
 
-She turned back to the board, and the chalk hit it harder than before.
-
-A buzz started up underneath.
+Down below there was a hum.
 
 “What did he say?”
 
-“No idea, but it sounded right.”
+“Dunno. I think it was right, though.”
 
 “Didn’t he skip a whole week…”
 
-Ye Zhixing put his earbud back in and turned his head to look at the chillies outside.
+“He’s probably got a private tutor. The several-hundred-an-hour kind.”
 
-Only one person never turned round the whole time. In the second row by the window, the girl kept her head down, her pen tip stopped on her notebook. It stayed stopped for a long time, and then she wrote a line of something on the page, very slowly.
+Ye Zhixing put his other earbud in and turned his head to look at the chillies outside the window.
+
+The girl in the second row by the window had not turned round once from beginning to end. Her pen had stopped on her notebook, and later she wrote one line on the paper.
 
 ## 2. Terms
 
-When the bell rang, Ye Zhixing was the first one up and heading for the back door.
+When the bell went, Ye Zhixing was the first on his feet and heading for the back door. Someone was standing in the aisle, in his way.
 
-“Um… excuse me.”
+Gu Xuerong was holding her maths book against her chest, both hands drawn up inside her sleeves, only a few fingertips showing where they pinched the spine. Her pencil case was wedged in the book, and from its zip hung a little grey rabbit keyring with a plaster stitched over one ear, a real plaster, gone fuzzy round the edges.
 
-He looked back.
+“In class you said all three parts were asking about the same line,” she said. “But I couldn’t see where the line was. There were only words on the board.”
 
-Gu Xuerong was standing in the aisle with her maths book in her arms, both hands pulled up into her sleeves, just a few fingertips showing to hold the spine. Her pencil case was clamped inside the book, and hanging from its zip was a little grey rabbit keyring. One of the rabbit’s ears had a plaster on it, a real plaster, its edges already fraying.
+Ye Zhixing was thrown for a second. From morning reading till now, she hadn’t turned her head even once.
 
-“These problems,” she said, very quietly. “I don’t understand them at all. Could you… teach me?”
+“The line’s right there in part three. It says ‘using the graph,’ doesn’t it? The graph is the line.”
 
-Ye Zhixing paused for half a second. After that day at training she hadn’t shown up on the field again, and he had assumed she had transferred, or was in a different year altogether.
+“I didn’t see a graph either.”
 
-“Go and ask the maths teacher.” He put his hands in his trouser pockets and leaned against the door frame. “She only teaches two lessons a day, she’s got time. I need to get back, I just got hold of a new cheat last night, haven’t tried it yet.”
+“…That’s because she didn’t draw one.”
 
-“She’s already gone,” Gu Xuerong said. She hesitated, but finished anyway. “And I’m a bit scared to ask her. I’m afraid she’ll think I’m stupid.”
+“Exactly, she didn’t draw one,” said Gu Xuerong. “Which is why I’ve come to ask you. I can’t make sense of a single one of these problems. So teach me, will you.”
 
-“And you’re not afraid I’ll think you’re stupid?”
+“Go and ask Ms. Li, then.” He stuck his hands in his trouser pockets and leaned on the doorframe. “She’s only got two lessons a day, she’s got nothing but time. I’ve still got to go and hand in my earphones, and after that I’ve got to figure out how to steal them back. I’m a very busy man.”
 
-She didn’t answer. She just looked at him.
+“She’s already gone. And anyway there’s no point asking. All she’ll do is say what she just said one more time, without changing one single word. My middle-school teachers were all like that too.”
 
-Being looked at like that made Ye Zhixing uncomfortable. He looked away, looked back, and suddenly smiled. It wasn’t an entirely serious smile.
+“And you’re not worried I’ll explain it and you still won’t get it? Because at that point I’m going to call you thick, you know.”
 
-“I can teach you. But not for free,” he said. “You have to bring something fun to trade. Something good-looking works too. I don’t do deals where I lose out.”
+“Call me whatever you like,” she said. “It’s not as if you’re the one giving me marks.”
 
-She thought about it, and nodded.
+Ye Zhixing laughed, not an entirely respectable sort of laugh.
 
-“There’s a game I play called Nightmare Raid,” she said. “You could try it. I’ll send you the link.”
+“All right, I’ll teach you. Only I’m not the type to do business at a loss, so I can’t teach for nothing. You’ve got to bring something to trade. Something fun, something nice to look at, anything.”
 
-“What’s that, a horror game?”
+She looked down and thought. Someone ran past in the corridor and the draught pulled a corner of scrap paper out from between the pages of her book.
 
-“Sort of.”
+“I haven’t got any money, and I haven’t got anything to eat either,” she said. “I’ve got a game. Would that do?”
 
-“Is it any good?”
+“A game, huh. I’ve got three hundred-odd games of my own already.”
 
-“I think it’s good.”
+“You definitely haven’t got this one. You can’t find it in the store.”
 
-“…Fine.” He took his phone out. “When?”
+“So where’d you get hold of it?”
 
-“Could we do it now?”
+“Found it online,” she said. “It’s called Nightmare Raid. I’ll send you the link in a bit.”
 
-“Not now, next lesson’s Chinese. Tonight, after evening study.” He reeled off a string of digits. “Add this.”
+“One of those horror games?”
 
-She typed them in with her head down, one digit at a time, then looked up and checked them again.
+“I suppose so.”
+
+“And is it any fun?”
+
+“I don’t know what you’d count as fun. All I know is I think it’s clearer in there than out here. Who wants to kill you, which side they’re coming from, it’s all written right on their faces.”
+
+Ye Zhixing looked at her a moment or two, then fished his phone out of his pocket.
+
+“OK, deal. After evening study, then, nine o’clock.” He reeled off a number. “Add me on this.”
+
+She keyed it in one digit at a time with her head down, and when she’d finished she looked up and checked it against him again. At the seventh digit she said he’d said eight just now, and he said it was three, and she said you did say eight, and he turned his phone round to show her: three. She corrected that digit.
 
 ## 3. Chinese Class
 
-Second lesson was Chinese.
+Second period was Chinese.
 
-Gu Xuerong put her head down on her desk not long after it started. She slept in an odd position: forehead against her left forearm, while her right hand kept hold of her left cuff, gripping so hard her knuckles went white, and even asleep she didn’t let go. Her breathing was very light; now and then her shoulders would suddenly tense, like someone missing a step in a dream.
+Gu Xuerong was face down on her desk not long into the lesson. She slept in a strange position: forehead on her left forearm, her right hand gripping her left cuff so tightly the knuckles went white, and not letting go even asleep. Every so often her shoulders would suddenly go tight.
 
-Ye Zhixing wasn’t listening either. He had a notebook with a black cover open and was writing in it, head down, line after line, very densely. Nobody could see what. His deskmate leaned over for a look, saw only a pile of abbreviations and numbers, and lost interest.
+Ye Zhixing wasn’t listening either. He had a black-covered notebook open and was writing with his head down, line after line, very dense. Braces leaned over for a peek and saw only a heap of abbreviations and numbers, with “field sales ×2” and “before end of Sept” somewhere in the middle, and asked which subject these notes were for, and he said social practice.
 
-Ms. Zhou, the Chinese teacher, was at the lectern teaching Changsha, and when she reached “and count as dirt the lords of ten thousand households,” she swept her eyes over the back row. She had just heard from Ms. Li in the office about the previous lesson. Her face gave nothing away; she turned her chalk and called on a boy in the front row to read aloud.
+Ms. Zhou was teaching “Changsha,” had the whole class read it aloud together, and when they got to the line that counts the lords of those days as so much dung, some boy at the back hit the word “dung” good and hard on purpose, and a wave of laughter went round. She ran her eyes over the back row. In the staff room just now, Ms. Li had slapped a pair of earphones down on the desk and told the whole story of the previous lesson, and at the end had asked her, tell me, have kids nowadays all turned into little demons or what. Ms. Zhou’s face showed nothing at all; the chalk turned in her fingers, and she called on a boy at the front to stand and recite the first stanza.
 
-The two in the back, one asleep and one writing: she pretended not to see them.
+Those two at the back, one sleeping, one writing: she acted as if she hadn’t seen.
 
 ## 4. The Basement
 
-Evening study ended at eight-fifty.
+Evening study let out at nine.
 
-Back Street was livelier at night than in the daytime. The barbecue stalls were set up, charcoal smoke drifting under the street lights, smelling of cumin and chilli powder. A mahjong parlour had its door open, tiles clattering inside, someone shouting “Pung!” Electric scooters brushed past one after another; when one stopped it knocked someone else’s scooter and an alarm went whooping for half the street.
+Back Street was livelier at night than in the daytime. The barbecue stalls were set up, charcoal smoke drifting under the street lights with a smell of cumin and chilli powder. The mahjong parlour had its door open, tiles clattering, someone bellowing “Pung!” Electric scooters brushed past one after another, and one of them, parking, bumped somebody else’s and set an alarm wailing down half the street, and nobody came out to deal with it.
 
-Gu Xuerong walked ahead, half a step faster than him, and said nothing the whole way.
+Gu Xuerong walked in front, half a step faster than him.
 
-Ye Zhixing had assumed her “not far” meant round one corner. They turned one, then another, the street lights grew sparser, one of them broken and flickering. The buildings on either side grew older, their walls covered in little adverts for locksmiths, drain-unblocking and fake certificates, layer over layer like fish scales.
+“Seriously, how much further is it?”
 
-Finally she stopped at the side of an old building. A flight of steps led down along its side, seven of them, ending at an iron door painted green, the paint peeling in big curls to show the rust beneath.
+“Not far now.”
+
+“That’s what you said five minutes ago.”
+
+“Five minutes ago it really was further than it is now.”
+
+Round one corner, then another; the street lights thinned out, and one was broken and kept flickering. The buildings on either side got older and older, their walls papered with little ads for locksmiths, drain unblocking, fake certificates, one layer pasted over the next. Ye Zhixing read the phone numbers out loud as they walked, and when he got to one ending in four eights he said what a waste, a number like that on a man who unblocks drains.
+
+In the end she stopped at the side of an old building. Down the side ran a flight of steps going below ground, seven of them, and at the bottom was an iron door that had once been painted green, the paint lifting in big flakes to show the rust underneath.
 
 “This is it?” Ye Zhixing stood at the top of the steps looking down. “You live in a basement?”
 
-She didn’t answer. She took out her key and went down to open the door. It was heavy, and the hinge gave a squeal as she pushed it. Inside it was dark. She felt beside the door and found a thin cord hanging down; she pulled it, and the bulb overhead came on.
+She took out a key and went down to open the door. It was heavy, and the hinges gave a squeal as she pushed. Inside was dark; she felt along by the door until she found a thin cord hanging down, pulled, and the bulb overhead came on.
 
-It was a bare bulb, no shade, and its yellow light stretched the shadow of everything in the room very long.
+The bulb was bare, no shade. The room was very small: four cement walls, never skimmed, with ring after ring of rising-damp tidemarks along the bottom, dark patches and light. High up there was one small window, and outside it was the pavement, the sill level with the road, so you could see a pair of shoes go past under the street light, or the wheel of an electric scooter.
 
-The room was small. Four concrete walls, never plastered, with rings of damp along the bottom, dark patches and light, like a map nobody had finished. High up was a small window that opened straight onto the pavement; the sill was level with the street, and through it you could sometimes see a pair of shoes go by under the street light, or the wheel of a scooter.
+A single bed stood against the wall, the sheet spread very flat, all four corners tucked under the mattress. A small folding table, a plastic chair; on the table an electric kettle and a stack of study guides, spines outward, arranged by height. In one corner stood a little desk fan plugged into a power bank. In another corner a blue-and-white checked cloth covered something, a bulge whose shape you couldn’t make out.
 
-A single bed stood against the wall, its sheet spread perfectly flat, all four corners tucked under the mattress, so flat it looked as if no one had ever slept in it. A small folding table, one plastic chair, and on the table an electric kettle and a stack of study guides, spines facing out, arranged by height. In one corner stood a small desk fan plugged into a power bank. In the other, a blue-and-white checked cloth covered something that made a bump you couldn’t make out.
+The room smelled of damp, mixed with dust, and it made your nose itch going in.
 
-The air smelled damp and dusty; it made your nose itch.
+“…How come there’s only one bed?” Ye Zhixing stayed in the doorway. “You live here all by yourself?”
 
-“…Only one bed?” Ye Zhixing stayed in the doorway, unable to keep the surprise out of his voice. “You live here on your own?”
+“How many beds does one person living alone need?”
 
-Gu Xuerong put her bag on the table. Her tone was flat, as if she were talking about someone else:
+She put her schoolbag on the table.
 
-“The school has me registered at Lin Xiaoman’s place. With the homeroom teacher, on the form, it’s all that address.” She unzipped her bag and zipped it up again. “I rent this separately. It’s cheap, and close to school. They don’t know about it.”
+“What the school’s got on record is the room with Lin Xiaoman and the others. With the homeroom teacher, on the forms, that’s the address that’s down everywhere. This place I rent separately, on my own. It’s cheap, and it’s close to school. None of them know about it.”
 
-“Why don’t you want them to know?”
+“So why not let them know?”
 
-She didn’t answer. She turned away to plug in the kettle.
+“If they knew, they’d come over.”
 
-Ye Zhixing stood in the doorway and didn’t go in. He looked at the ring of damp along the bottom of the wall, then at the bed—the sheet so flat it looked unslept in—then at the window, just as a pair of flip-flops went past outside, flap, flap.
+She turned away to plug in the kettle.
 
-“…Fine,” he said at last. “And you were still going to con me into playing your game.”
+Ye Zhixing was still standing in the doorway. He looked at the ring of tidemarks along the bottom of the wall, looked at the bed, then at the window, where just then a pair of flip-flops went by, slap, slap.
 
-Gu Xuerong took her phone out of her bag and tapped at it, head down. His pocket buzzed.
+“OK then,” he said. “And there I was thinking you’d lured me over here to play games. Turns out it’s an actual lesson. I’ve been had.”
 
-“I’ve sent you the link,” she said. “You said you’d teach me maths.”
+Gu Xuerong dug her phone out of her bag and tapped a few times, and his pocket buzzed.
+
+“I’ve sent you the link,” she said. “So that’s the trade done. Go on, teach.”
 
 ## 5. Tutoring
 
-Ye Zhixing threw his bag onto the only plastic chair, then took it off again and sat down himself. One leg of the chair was short; as soon as he sat, it tilted left.
+Ye Zhixing chucked his schoolbag onto the plastic chair, then picked it off again and sat there himself. One leg of the chair was short, and the moment he sat it tipped to the left; after it had tipped twice he tore half a sheet out of her scrap pad, folded it up, and wedged it under.
 
-Gu Xuerong sat on the edge of the bed with her maths book open on her knees. She sat very straight, hands on either side of the pages, as if waiting for an exam to begin.
+Gu Xuerong sat on the edge of the bed with the maths book open on her knees, both hands holding the pages down at the sides.
 
 “Which bit don’t you get?”
 
-“This.” She pointed at the parabola in the book. “Why it comes out curved when you square a number.”
+“This, here.” She tapped the parabola in the book. “You square a number, and then when you draw it, why does it have to come out bent? Why can’t it be straight?”
 
-Ye Zhixing nearly laughed and swallowed it. He tore a page from her scrap pad and drew a quick arc with the pen.
+Ye Zhixing nearly laughed and forced it back down. He took a pen and drew an arc on the half sheet that was left.
 
-“Have you ever thrown a ball? Upwards,” he said. “It goes up, slower and slower, reaches the top, then comes down, faster and faster. Mark its height at every second, join the dots, and you get a curve. That’s what squaring does: the further from the middle, the faster it changes, so it can’t stay straight.”
+“Ever thrown a ball? Straight up. First it goes up, slower and slower, gets to the top, then comes back down, faster and faster. Mark how high it is at every second, join the dots, and it’s bent. That’s the job squaring does: the further from the middle, the faster it changes. So it can’t ever be straight.”
 
-He tapped the arc with the pen.
+He turned the paper round.
 
-“But your problem is the other way up, it opens upward.” He turned the paper round. “So the ball’s no good, a ball can’t get under the ground. Try a bird instead. A kingfisher, you’ve seen them, the ones that sit on the wires by the river. At second zero it’s on the wire; put zero in and you get six, so say the wire’s six metres up. Then it dives into the river, slower and slower, gets under the water, and shoots back out. The surface of the water is zero.”
+“Only your problem’s the other way up, it opens upward, so the ball’s no good, a ball can’t get under the ground. Swap it for a bird. You’ve seen a kingfisher, right, the kind that sits on the wires by the river, the blue one. At zero seconds it’s on the wire. Put zero in and you get six, so call the wire six metres up. Then it dives at the river, goes under the water, and shoots back out. The surface of the water is zero.”
 
-“A function is a machine. You put a number in, it spits a number out. Put in time, get out height. The equation asks: when does it touch the water? Once going in, once coming out, so there are two roots, two and three. The inequality asks: when is it under the water, which is the stretch where the height is less than zero, between two and three. The graph is the line it flies along. Three questions, all about this one line.”
+“A function’s just a machine. You feed a number in and it spits a number out. This one, you feed in time and it spits out height. The equation’s asking when it touches the surface. It goes in once and comes out once, so two roots, two and three. The inequality’s asking when it’s under the water, which is the stretch where the height’s less than zero, between two and three. The graph’s the line it flies along. Three parts, and every one’s asking about this one line. Ms. Li didn’t draw it, so you draw it yourself.”
 
-Gu Xuerong stared at the page and didn’t move for a long time.
+Gu Xuerong stared at the paper.
 
-Then she said “Oh,” very softly.
+“So it was only under the water for one second altogether.”
 
-“Got it?”
+“Right.”
 
-“…Yes.” She lowered her head, and the tips of her ears slowly went red. “Nobody ever explained it like that.”
+“And how deep did it get, at the deepest?”
 
-“You’re not stupid. They just explain it badly.”
+“…Nought point two five, I think. Twenty-five centimetres, that’s all.”
 
-Hearing it out loud, he thought it came out a bit strong, shrugged, and pushed the paper towards her.
+“Then there’s no way it catches a fish.”
 
-“Right. Fees. Where’s the game?”
+“Which is why I’m telling you it’s a stupid bird,” said Ye Zhixing. “Odds are whoever set the question has never seen a kingfisher.”
 
-She handed him her phone.
+She pulled the paper over to her side, wrote x² − 4x + 3 underneath, and drew a line herself, a wobbly one, put two dots at one and three, and shaded in the stretch between them.
 
-Nightmare Raid’s login screen was a corridor in the rain, wallpaper peeling, a half-open door at the end with a little red light leaking through the gap. It was very dark, and very finely made: every trail of rain running down the window glass was different. Her account was called “Hibernation,” and her avatar was a white rabbit with its eyes closed.
+“It’s one to three, isn’t it?”
 
-Ye Zhixing opened the leaderboard, scrolled down twice and stopped.
+“Right.”
+
+“And what if it asks for greater than zero?”
+
+“Then that’s when the bird’s up in the air, obviously.”
+
+“So it’s the two ends.”
+
+“Yep, the two ends.”
+
+She said “ah,” and wrote out another one.
+
+“Nobody’s ever explained it to me like this before,” she said, with her head down. “All they ever do is steps: step one do this, step two do that. I did manage to learn the steps by heart, but even with them learnt I still didn’t know what I was actually doing.”
+
+“That’s them being rubbish at explaining. It’s not you being thick.”
+
+Having said it, he felt it had come out a bit strong, and shrugged.
+
+“Right, time to collect my tuition fee. Where’s this game of yours?”
+
+She handed over her own phone.
+
+The login screen of Nightmare Raid was a corridor in the rain: wallpaper peeling, a half-open door at the far end, a little red light leaking through the crack. It was a gloomy picture and very finely made; the rain ran down the window glass, and no two streaks took the same path. The account name was “Hibernation,” and the avatar was a white rabbit with its eyes shut.
+
+Ye Zhixing opened the leaderboard, swiped down twice, and his finger stopped.
 
 “Hibernation” was seventh on the whole server.
 
-His eyebrows slowly went up. “…You got to this rank?”
+“…This is you?”
 
-“Yes.”
+“Mm.”
 
-“On your own?”
+“You got up there playing in a team with people?”
 
-“On my own.” Gu Xuerong was looking at the screen. “The monsters in there are all better-looking than people.”
+“I did it on my own. If you’re in a team you’ve got to talk to people.” Gu Xuerong was looking at the screen. “The monsters in here are all better-looking than people.”
 
-Ye Zhixing looked at the rain-soaked corridor on the screen, then at her. “…That taste of yours is really something.”
+Ye Zhixing looked at the corridor on the screen, then at her.
+
+“I’ve got to say, there’s something to that taste of yours,” he said. “But how does someone who’s seventh on the whole server get stumped by one parabola?”
+
+“The things in maths haven’t got faces, have they.”
 
 ## 6. A Bowl of Noodles
 
-At half past nine, Ye Zhixing’s stomach growled, loudly, clearly audible in that little room.
+At nine-forty Ye Zhixing’s stomach growled, perfectly audible in that little room.
 
-His eyes went to the table without his meaning them to. Apart from the books and the kettle there was nothing to eat on it. Beside the kettle was half a bottle of mineral water, and in the corner a bag of dried noodles, its mouth closed with a clip, the plastic kind for hanging up washing.
+He looked at the table. Apart from books and the kettle there was nothing on it to eat. Half a bottle of mineral water beside the kettle; in the corner a packet of dried noodles, its mouth clipped shut with a plastic clothes peg, and next to it a bottle of soy sauce and a small bag of salt. No pot.
 
-“Have you had dinner?”
+“What did you have for dinner?”
 
-“Yes.”
+“I’ve eaten.”
 
-“What did you have?”
+“What I’m asking is what you ate.”
 
-Gu Xuerong said nothing.
+“I had noodles.”
 
-Ye Zhixing took out his phone, opened the delivery app, found a beef noodle shop that was still open and ordered two portions without looking up. “I’ll put the tutoring fee on account. You eat with me, that counts as interest.”
+“There isn’t even a pot in here. What did you cook them in?”
 
-By the time the noodles arrived they had gone a bit claggy, a film of red chilli oil floating on the soup. Gu Xuerong ate a few mouthfuls and put her chopsticks down, then wiped her mouth with a tissue, dab by dab, very carefully.
+Gu Xuerong glanced at the kettle.
 
-Ye Zhixing looked at the more than half a bowl left in front of her and said nothing. He picked the braised egg out of his own bowl and put it in hers.
+“…You can cook noodles in that thing?”
 
-“I don’t eat yolk,” he said.
+“Sure you can. Once the water’s boiled you put the noodles in, put the lid on, and wait for it to click off twice, and they’re done,” she said. “It’s just that the spout’s not very easy to wash.”
 
-She looked at the egg for a long time.
+Ye Zhixing took out his phone, opened a delivery app, scrolled to a beef noodle place that was still open, and ordered two bowls, a braised egg in each, without looking up. “You’ve paid your tuition. This one’s on me, call it a consulting fee. There’s something I need to ask you about tomorrow.”
 
-In the end she ate it, a small bite at a time, very slowly, like someone getting through a task.
+“What sort of something?”
 
-When he had finished, Ye Zhixing reached for the power strip by the wall to charge his phone. His fingers had just touched the blue-and-white checked cloth in the corner when—
+“I’ll tell you tomorrow.”
+
+The noodles had clumped a bit by the time they arrived, a layer of red oil floating on the soup. The rider couldn’t find the door, so Ye Zhixing went up to fetch them, and when he came back down he said your building hasn’t even got a number on it, the guy thought I was a scammer.
+
+Gu Xuerong put her chopsticks down after a few mouthfuls and wiped her mouth with a tissue, one dab at a time.
+
+Ye Zhixing glanced at the more than half a bowl she had left, picked the braised egg out of his own bowl, and put it in hers.
+
+“I don’t eat the yolk.”
+
+“You don’t eat it and you still ordered it?”
+
+“Slipped my mind when I was ordering.”
+
+She stared at the two eggs in her bowl. In the end she ate them both, a small bite at a time, and even sucked the crumbs of yolk clean off the tips of her chopsticks.
+
+When he had finished, Ye Zhixing reached for the power strip by the wall to charge his phone. His fingers had just touched the blue-and-white checked cloth in the corner—
 
 “Don’t touch that.”
 
-She said it fast. Not loud, but very hard.
+She said it fast. Not loud, very hard.
 
-His hand stopped in mid-air, pulled back, and he held it up and waggled it. “Okay. Not touching.”
+He pulled his hand back and held it up and waggled it. “OK, OK, OK, not touching.”
 
-He didn’t ask what was under the cloth. She didn’t explain. The room was quiet for a while, only the little desk fan humming round.
+What was under that cloth, he didn’t ask. The little desk fan hummed round.
+
+“I saw the receipt. It was twenty-six yuan,” said Gu Xuerong. “I’ll pay you at the end of the month.”
+
+“Didn’t I just say this one’s on me?”
+
+“What you said was it’s a consulting fee. But you haven’t consulted me about anything yet.”
+
+Outside the window someone walked up and stopped. Through that little window level with the road you could see a pair of feet in flip-flops, heels toward the room. Then came the sound of water, hosing against the outside wall.
+
+Gu Xuerong didn’t even look up. She stacked the two noodle bowls together.
+
+“That’s somebody from the mahjong parlour. It’s around this time pretty much every day.”
+
+The feet gave a couple of shakes and went away. Ye Zhixing looked at the window, and it was a good while before he said:
+
+“…I’m guessing you don’t usually open this window.”
+
+“I never open it.”
 
 ## 7. Little Sister
 
 His phone rang. The name on the screen was “Little Tyrant.”
 
-“Bro.” The voice on the other end was clear and bright, with a hint of interrogation. “Mum’s asking when you’re coming home. Dinner’s been reheated twice.”
+“Bro.” The voice on the other end was clear and bright, in full prosecuting tone. “Mum wants to know what time you’re coming home. Dinner’s been reheated twice.”
 
-“At a classmate’s. Tutoring.”
+“I’m over at a classmate’s. Tutoring.”
 
-“…You? Tutoring?” There was a two-second pause. “Are you tutoring them, or are they tutoring you?”
+“…You? Tutoring? Are you tutoring them, or are they tutoring you?”
 
-“Is there a difference?”
+“And that makes a difference how?”
 
-“A big one. I need to check which side the sun came up on today,” said Ye Zhixia. “Send me your location and I’ll get Uncle Chen to pick you up.”
+“A massive difference. I’ll have to go out on the balcony and check which side the moon came up on tonight,” said Ye Zhixia. “Send me your location, I’ll get Uncle Chen to come and pick you up.”
 
-Ye Zhixing glanced at Gu Xuerong without meaning to. She had her head down, packing up her textbooks, stacking them one by one, the corner of the top one pressed flat several times.
+Ye Zhixing glanced at Gu Xuerong. She had her head down, putting her textbooks away, stacking them one by one; the corner of the top one had curled, and she pressed it flat with her palm a few times.
 
-“Don’t send a location,” he said into the phone. “Tell Uncle Chen to wait at the mouth of the alley on Back Street. I’ll walk out.”
+“No location. Tell Uncle Chen to wait at the mouth of the alley on Back Street, I’ll walk out myself.”
 
-“…Why?”
+“But why?”
 
-“No reason.”
+“The alley’s too narrow, the car won’t fit.”
 
-Another pause. “Fine.”
+“It’s not like I’ve never been to Back Street. It fits fine.”
 
-He hung up, stood and shouldered his bag. At the door he turned back:
+“Then just say it’s me wanting to stretch my legs, all right?”
 
-“Tomorrow after class, I’ll go through the next part.”
+The other end was quiet a moment. “Fine.”
 
-“Okay.”
+He hung up, shouldered his schoolbag, and turned at the door:
 
-“You don’t need to pay me back for the food.”
+“The next part from class tomorrow, I’ll carry on explaining it to you, yeah?”
 
-“I will pay you back.”
+“Mm.”
 
-“Suit yourself.”
+“Don’t pour the noodle soup down the drain, it’ll block.”
 
-He pushed the iron door open and the hinge squealed again. Seven steps; on the fifth he looked back. The door was already shut, and a thin line of yellow light showed under it.
+“There isn’t a drain in here.”
+
+“…Then where’s the water gone every time you wash your face?”
+
+“I carry it up and tip it out outside.”
+
+He pushed the iron door open and the hinges squealed again. Seven steps; on the fifth he looked back once, and the door had already shut.
 
 ---
 
-A black car was waiting at the mouth of the alley. The back window slid down and a girl’s face looked out.
+A black car was parked at the mouth of the alley. The rear window slid down and a girl’s face looked out.
 
-Ye Zhixia was fourteen and in her last year of middle school, at the private school on the east side of town. She was a day pupil, and her evening study finished twenty minutes earlier than his. Her ponytail was tied very high, her forehead smooth, her features about sixty per cent like her brother’s but sharper, her chin always slightly raised when she looked at people. She was still in her school uniform, a dark blue blazer with the school crest embroidered on the chest.
+Ye Zhixia was fourteen, in her third year at the private middle school on the east side of town, a day student whose evening study finished twenty minutes before his. She was still in uniform, a navy blazer with the school crest embroidered on the chest. Her ponytail was tied very high, and around the eyes and brows she was six parts her brother, only fiercer.
 
 “Get in.”
 
-Ye Zhixing opened the door and got in. Uncle Chen said “Young master” from the front and started the car.
+Ye Zhixing opened the door and got in. In the front, Uncle Chen said “young master” and started the car.
 
-Ye Zhixia didn’t speak right away. She sniffed, and frowned.
+Ye Zhixia sniffed.
 
-“You smell of damp,” she said. “A basement?”
+“Why do you smell all damp? Were you in a basement?”
 
-“…A classmate’s place.”
+“It’s just a classmate’s place.”
 
-“Which classmate’s place smells like that.” She turned her head, her eyes dropping to his phone screen—it had lit up for a second as it locked, and there was a new dark-red icon on the home screen. “And you’ve downloaded a new game.”
+“And which classmate’s place smells like this, exactly.” She tilted her head and her eyes dropped to his phone; the screen happened to light up just then, and there was a new dark-red icon on it. “And you’ve downloaded a new game.”
 
-“Leave it.”
+“Keep your nose out.”
 
-“It’s a girl.”
+“It’s a girl, isn’t it.”
 
-He didn’t answer.
+“Uncle Chen, has she finished her homework?”
 
-The car left Back Street and turned onto the main road. Street lights slid past the window one after another, light and dark crossing his face. Ye Zhixia didn’t laugh, and didn’t press him. She looked at him for a while, then turned to look out of her own window, and only after a long time said:
+“The young miss finished it in the car,” said Uncle Chen.
+
+“Traitor,” said Ye Zhixing.
+
+The car pulled out of Back Street and turned onto the main road. Ye Zhixia didn’t laugh, and she didn’t keep asking either. She looked out of the window on her own side, and it wasn’t until the car had gone through two sets of traffic lights that she said:
 
 “Bro, the last time you were like this, I was still in primary school.”
 
-Ye Zhixing’s hand rested on his knee. His fingers moved.
+Ye Zhixing’s fingers, resting on his knee, moved.
 
 “Like what?”
 
-Ye Zhixia didn’t answer. She took her earphones out of her bag and put them in.
+Ye Zhixia didn’t answer. She dug her earphones out of her bag and put them in. After the bridge she took one out again:
 
-The car was very quiet; only the hiss of the air vents. Ye Zhixing rested his forehead against the window. The glass was cool. The alley had long since been left behind, but he still looked back. There was nothing to see.
+“Mum stewed spare ribs. They’ve been reheated twice and they’re so soft you can’t pick them up any more. You’ll have to get yourself a spoon.”

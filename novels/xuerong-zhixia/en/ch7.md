@@ -22,17 +22,17 @@ Her fingers hooked the strap of her canvas bag, let go, hooked it again. The bad
 
 “Can I ask you something?”
 
-“Go on. Don’t ask why Rice Cake’s so fat, I don’t know either.”
+“Go on, ask. As long as it’s not why Rice Cake’s that fat. I don’t know that one either.”
 
-“Do you… need anyone?”
+“Have you… got room for anyone else here?”
 
 Ye Zhixing was taken aback.
 
-“I can work,” said Su Tang. She was speaking far more slowly than usual, each word set down in her head first and checked before it came out. “Sweeping, feeding the cats, combing, washing up, anything. I’m free after school, till nine even. Weekends too.” She paused, and her voice dropped. “…It doesn’t have to be much money.”
+“I can work, I really can,” said Su Tang. She was speaking far more slowly than usual, setting the words down one at a time. “Sweeping, feeding the cats, combing, washing up, I can do all of it. I’m a day student, and my family’s signed for me to skip evening study, so I can stay till nine, no problem. Weekends too.” She paused, and her voice dropped. “…You wouldn’t have to pay me very much.”
 
 Once that last part was out she seemed to feel it hadn’t come out right herself. Her face slowly reddened, right to the roots of her ears. She looked down at the list of cats’ names pressed under the glass of the counter.
 
-“How old are you?”
+“How old are you this year?”
 
 It was Uncle He who asked.
 
@@ -42,13 +42,13 @@ Su Tang turned round and her back went straight, like a pupil called on by the t
 
 “Sixteen. Just turned, last month.”
 
-“Do you have your ID card?”
+“Have you got your ID card on you?”
 
 She took it out of the innermost pocket of her canvas bag. As she unzipped the pocket, Ye Zhixing saw the cat sticker lying inside, his sticky note still on the back—“Su Tang, sticker, twelve yuan”—its corners already curling a little.
 
 She handed the card over with both hands. Uncle He took it, looked closely at the date of birth, then raised his eyes to her. He looked at her a little longer than he had looked at the card, eyes slightly narrowed, with that smile of his that gave nothing away.
 
-“Does your family know?”
+“Does your family know about this?”
 
 “They do,” said Su Tang. “I told my mum. She said as long as it doesn’t get in the way of school, and it’s not somewhere like an internet café, and I’m not out too late, anything’s fine.” She paused and added, “She said if you’re worried, you can ring her.”
 
@@ -58,7 +58,7 @@ Uncle He wrote it on the back of his hand with his pen, gave her back the card a
 
 Ye Zhixing twirled the pen in his hand. Taking her on was a given, no need to think about that. He was stuck on something else: how much an hour? He knew what a graphics card cost, what a planted-tank layout cost, but what an hour’s work was worth in the county town, he had honestly never asked.
 
-“How much do you want?”
+“So how much do you want, yourself?”
 
 Su Tang opened her mouth and named a figure.
 
@@ -66,27 +66,27 @@ Ye Zhixing didn’t answer straight away. He looked over towards the sofa.
 
 Gu Xuerong was sitting at the end of the sofa with the ledger open on her knees, pressed together, copying in the day’s takings. Her head was down, her pen never stopping, half her face hidden by her hair. She looked as if she weren’t listening at all.
 
-After a few seconds she spoke, eyes still on the ledger:
+She spoke, eyes still on the ledger:
 
-“The evening shift at the bubble-tea shops in town is twelve an hour.”
+“The bubble-tea shops in town, on the evening shift, pay twelve yuan an hour.”
 
 The figure Su Tang had named was eight.
 
 The room went quiet for a moment. Su Tang’s face went redder still, hot, and she lowered her head, her fingers twisting the bag strap into a knot.
 
-“Fifteen, then,” said Ye Zhixing.
+“Let’s say fifteen, then,” said Ye Zhixing.
 
 Su Tang’s head snapped up. “…Fifteen?”
 
-“Lots of cats, hard work,” he said. “And you’ll get scratched.”
+“There’s a lot of cats and it’s tiring work,” he said. “And you’ll get scratched.”
 
 Su Tang stood at the counter and looked at Ye Zhixing, then at Gu Xuerong on the sofa. Gu Xuerong had already turned to the next page, as if she hadn’t said a word. Su Tang’s mouth opened, closed, opened again, and in the end nothing came out; she just bowed to each of them. The first bow was too deep, and her bun nearly hit the edge of the counter. The second was for Gu Xuerong, who didn’t look up, so she bowed to the top of Gu Xuerong’s head.
 
-“That’s settled, then,” said Uncle He. “I’ll write up a simple agreement and you can take it home for your mum to sign. You leave before nine, no exceptions. I’ll have Uncle Chen drop you on his way.”
+“That’s settled, then,” said Uncle He. “I’ll go back and write up a simple agreement, and you take it home and have your mother sign it. You must be gone before nine at night. I’ll have Uncle Chen drop you home on his way.”
 
-“There’s no need, I live just across the river, it’s ten minutes’ walk—”
+“No need, really, no need, I live just across the river, it’s only about ten minutes’ walk—”
 
-“After nine there are no lights along that stretch by the river,” said Uncle He. “He’ll drop you.”
+“After nine there are no street lights along that stretch by the river,” said Uncle He. “He’ll drop you.”
 
 He put down the cat food, brushed the leaf off his shoulder and went downstairs.
 
@@ -100,7 +100,7 @@ Su Tang looked after the customers. She greeted them, poured water, explained to
 
 Gu Xuerong looked after the accounts.
 
-She never offered any opinion on the arrangement. When Ye Zhixing asked her if it was all right, she said yes. When he asked how her pay should be worked out, she said you told me before, I set my own hourly rate. When he asked what rate she had set, she said she hadn’t decided yet.
+She never raised any objection to the arrangement. When Ye Zhixing asked her whether it was all right, she said it was. When he asked how exactly her pay should be worked out, she said you said it yourself, I name the hourly rate. When he asked so what rate have you named, she said she hadn’t decided yet.
 
 She never did decide. And Ye Zhixing never asked again.
 
@@ -108,7 +108,7 @@ She never did decide. And Ye Zhixing never asked again.
 
 No. 8 High had ten lessons a day.
 
-Forty-five minutes each. First period started at seven-twenty in the morning, tenth period ended at five-forty in the afternoon, and lunch and the midday rest added up to an hour and a half. Then evening study, seven to nine. The timetable was stuck on the back wall of the classroom, a sheet of A3 packed so tightly with boxes that one look made you want to lie down.
+Forty-five minutes each. First period started at seven-twenty in the morning, tenth period ended at five-forty in the afternoon, and lunch and the midday rest added up to an hour and a half. Then evening study, seven to nine, four short periods. Day students whose families had signed for it could skip evening study; boarders had to be back in their classrooms before seven. The timetable was stuck on the back wall of the classroom, a sheet of A3 packed so tightly with boxes that one look made you want to lie down.
 
 Ninth and tenth period were marked on the timetable as “Self-study.”
 
@@ -134,15 +134,15 @@ At the start of October, two days before National Day, the food licence came thr
 
 Uncle He went to collect it. When he got back he put the certificate in a plain wooden frame and hung it on the wall behind the counter. Once it was up he stepped back two paces to look, then stepped forward and nudged the frame half a centimetre to the left, then stepped back again.
 
-“We can sell food now,” he said. “What would the young master like to sell?”
+“We can sell food now,” he said. “What is the young master thinking of selling?”
 
 What Ye Zhixing had originally had in mind was drinks. Milk tea, juice, a few little cakes, much like the cat cafés in the city.
 
 But after a month sitting behind the counter, he had seen clearly. Most of the people who ran over after ninth period hadn’t had dinner. They stayed an hour, two hours, and evening study started at seven, so there was no time to get to the canteen in between. One would pull a squashed bun out of their schoolbag, one would tear open a packet of spicy gluten strips, and some brought nothing at all, held a cat, and while holding it their stomach would growl, and they would be the first to laugh, embarrassed.
 
-“Meals,” he said. “Drinks too.”
+“Let’s do meals,” he said. “And we’ll want drinks as well.”
 
-Uncle He looked at him for a while. “Who’s going to cook?”
+Uncle He looked at him. “Then who’s going to do the cooking?”
 
 ---
 
@@ -156,21 +156,25 @@ The first time he came up to the second floor, he came up in slippers.
 
 He stood in the doorway without coming in. He looked at the roomful of cats, then at the students on the sofa, and finally let his eyes come to rest on Ye Zhixing, looking him over from head to foot, pausing at the white sneakers he had scuffed on purpose.
 
-“What do you want me to make?”
+Rice Cake knew him. It came down off the windowsill and walked a circle round his slippers.
 
-“What students like,” said Ye Zhixing. “Quick to serve, not too expensive, filling.”
+“Didn’t bring any freeze-dried today,” Old Zhou told it, looking down. “What you’re eating these days is a good sight better than the stuff I used to buy you.”
+
+“What is it you want me to make?”
+
+“Stuff students like eating,” said Ye Zhixing. “It’s got to come out fast, it can’t cost too much, and it has to fill people up.”
 
 Old Zhou said nothing. With his hands behind his back he took a turn through the inner room, stopped at the door of the small room at the back, put his head in, then looked up at the ceiling.
 
-“This one. Turn it into a kitchen for me. Needs ventilation, needs an extractor. Cats can’t come in.”
+“This room here. Turn it into a kitchen for me. It needs ventilation and it needs an extractor. And not one cat sets foot in it.”
 
 “Okay.”
 
-“The stove has to be good. Big flame.”
+“I want a good stove. Big flame.”
 
 “Okay.”
 
-“I’ve got my own griddle plates,” he said. “Used them more than ten years. Better than anything you’d buy.”
+“The griddle plates I’ve got myself,” he said. “Used them more than ten years. Better than anything you lot would buy.”
 
 A week later the small back room was done. A thick quilted curtain hung over the doorway, and on it was a handwritten sign: “NO CATS ALLOWED!!” Su Tang had written it, two exclamation marks, with a cat drawn beside it, very fat, one ear bigger than the other, so it looked like a pig.
 
@@ -195,9 +199,9 @@ Old Zhou wrote the menu on a little blackboard by the door. His chalk handwritin
 
 Ye Zhixing stood in front of the blackboard for a long time.
 
-“Why so much beef?”
+“How come there’s so much beef?”
 
-“Sliced beef’s easy to do, quick, and students love it.” Old Zhou wiped his hands on his apron. “Eat first, then talk.”
+“Sliced beef’s easy to do, it comes out quick, and students like eating it.” Old Zhou wiped his hands on his apron. “Eat first, then tell me.”
 
 He ate. The sizzling pickled cabbage and beef came first.
 
@@ -209,7 +213,7 @@ Old Zhou stood by the curtain watching him scrape. He said nothing. The corners 
 
 Ye Zhixing put down his spoon.
 
-“Buy a meal, get a cat treat free,” he said.
+“From now on, buy a meal and you get a cat treat with it,” he said.
 
 Old Zhou glanced at him and snorted, but didn’t object. He turned and went back into the kitchen. The curtain swayed behind him for quite a while.
 
@@ -225,13 +229,13 @@ From a little after four every afternoon, three or five people at a time, a grou
 
 Some people ordered delivery on their phones too. Not many, three or five orders a day, mostly middle-schoolers from the nearby estates who had a Yangzhou fried rice sent to the school gate before evening study. Su Tang did the deliveries on a borrowed electric scooter with a foam box strapped to the back, and before setting off she would press each lid down twice, carefully.
 
-“Do you know the way?” Ye Zhixing asked her.
+“Do you know the way to all those places?” Ye Zhixing asked her.
 
-“I grew up round here.” Su Tang put on the helmet. It was a size too big and tilted to one side once fastened. “I could do it with my eyes closed.”
+“I’ve lived round here since I was little.” Su Tang put on the helmet. It was a size too big and tilted to one side once fastened. “I could find them with my eyes closed.”
 
-“Don’t close your eyes.”
+“Well, don’t go closing your eyes.”
 
-“…It’s a figure of speech!”
+“…That was a figure of speech!”
 
 ## 4. The Whiteboard
 
@@ -245,7 +249,7 @@ In one afternoon it could con a dozen or more treats.
 
 A week later Uncle He took it for a check-up. The vet put it on the scales, looked at the number, looked again, and looked up at Uncle He:
 
-“What have you been feeding it?”
+“What on earth have you people been feeding it?”
 
 When they got back, there was a whiteboard beside the counter.
 
@@ -279,11 +283,11 @@ When it was done she came out of the back room with a towel-wrapped Devon over h
 
 Ye Zhixing saw, dug some iodine swabs out from under the counter and held them out.
 
-“Here.”
+“Here, take this.”
 
-“It’s fine, they’re not deep.”
+“It’s fine, honestly. They’re not deep.”
 
-“Put it on.”
+“Put it on first, then tell me it’s fine.”
 
 She took them and sat on the arm of the sofa, the Devon still shivering in the towel on her shoulder. With one hand she held the Devon, with the other she dabbed at her arm with a swab, dab, hiss, and after each hiss she smiled at the Devon: “Look how you’ve scratched me.”
 
@@ -291,11 +295,11 @@ At the end of the month, when he paid her, Ye Zhixing gave her a fair bit more t
 
 Su Tang held the envelope, standing at the counter. She took the money out and counted it, then counted it again. The second time, her fingers slowed.
 
-“There’s too much.”
+“You’ve given me too much.”
 
-“Baths are extra,” said Ye Zhixing.
+“Baths get counted separately,” said Ye Zhixing.
 
-“We never said baths were extra.”
+“We never said anything about baths being counted separately.”
 
 “Now we have. …The Devon counts double, it scratches.”
 
@@ -321,17 +325,17 @@ In one afternoon, thirty or forty people came and went. People buying meals, buy
 
 She was also getting more and more tired in the daytime.
 
-She was the kind of person who couldn’t sleep at night. Ye Zhixing had worked this out gradually from the times she replied to messages: if he sent her something about the game at past one in the morning, she replied in three seconds; if he sent one at seven in the morning, she didn’t see it until the end of second period. In lessons she spent longer and longer with her head on her desk, and didn’t move when the lesson ended either, forehead against her arm, her right hand gripping her left cuff very tightly, as if she were asleep but her hand wasn’t.
+She was the kind of person who couldn’t sleep at night. Ye Zhixing had worked this out from the times she replied to messages: if he sent her something about the game at past one in the morning, she replied in three seconds; if he sent one at seven in the morning, she didn’t see it until the end of second period. In lessons she spent longer and longer with her head on her desk, and didn’t move when the lesson ended either, forehead against her arm, her right hand gripping her left cuff very tightly, as if she were asleep but her hand wasn’t.
 
-Ye Zhixing poked the back of her chair with his pen cap. One poke, she didn’t move; two, she didn’t move; on the third she slowly sat up, turned round and looked at him. There was a mist over her eyes, as if she had just swum up from somewhere very far and very deep and hadn’t quite broken the surface yet.
+Ye Zhixing poked the back of her chair with his pen cap. One poke, she didn’t move; two, she didn’t move; on the third she slowly sat up, turned round and looked at him. Her eyes were fixed, and it took two or three seconds before they found his face.
 
-“Want to play?”
+“Want to play or not?”
 
 She looked at him for a while.
 
-“…You play,” she said. “I’ll watch.”
+“…You play,” she said. “I’ll just watch.”
 
-She had never said “I’ll watch” before.
+She had never said “I’ll just watch” before.
 
 ---
 
@@ -341,7 +345,7 @@ One evening Sister Mei came to go over the accounts. After half an hour she look
 
 Gu Xuerong leaned over to look. She looked for a long time, so long that Sister Mei thought she hadn’t heard.
 
-“…Thirty-eight yuan.”
+“…It’s thirty-eight yuan.”
 
 “So the money’s gone into the quantity column.” Sister Mei turned back a page. “Here too. And here, this lemon tea’s been entered twice.”
 
@@ -365,7 +369,7 @@ So he didn’t say it.
 
 He put his phone down, got up, went behind the counter and poured a cup of hot cocoa, and set it on the arm of the sofa by her hand. The cup was hot; he put a tissue under it as he set it down.
 
-“Old Zhou made too much,” he said. “If you don’t drink it, it gets poured away.”
+“Old Zhou made one too many,” he said. “If you don’t drink it, it only gets poured away.”
 
 Gu Xuerong glanced at the cocoa and didn’t move. Only after he had walked away, and Sister Mei had bent her head to sort the till receipts, did she reach out and pick up the cup in both hands and hold it against her chest. She didn’t drink it. She just held it, letting the steam creep up over her face little by little.
 
@@ -377,7 +381,7 @@ Gu Xuerong was bringing a parcel up from downstairs. A small cardboard box with 
 
 One hand gripped the rail, the other arm held the box against her side, and she stood there, going neither up nor down. The stairs were wooden, worn into hollows by decades of feet, and she was standing in one of the hollows. Two girls squeezed past her, chatting and laughing on their way up; one of their schoolbags knocked her shoulder, and she swayed. The hand on the rail tightened, and her knuckles went white at once.
 
-Her face was white too. Not her usual white: a sinking kind of white, as if something were draining out of her face bit by bit. Her lips had lost their colour, and a film of very fine sweat had come out on her forehead.
+Her face was whiter than usual. Her lips had lost their colour, and a film of very fine sweat had come out on her forehead.
 
 Su Tang happened to be coming down to fetch delivery bags. At the foot of the stairs she looked up and saw.
 
@@ -387,7 +391,7 @@ She tore the wrapper open with her teeth, put the sweet in Gu Xuerong’s palm a
 
 “Keep it in your mouth,” said Su Tang. “Don’t chew. Let it melt slowly.”
 
-Gu Xuerong looked down at the sweet in her hand. Orange, translucent, lit by the stairwell light like a small piece of solidified light. She looked at it for a few seconds as if she didn’t quite understand what it was, and then, slowly, she put it in her mouth.
+Gu Xuerong looked down at the sweet in her hand. Orange, translucent, lit by the stairwell light like a small piece of solidified light. She looked at it for a few seconds as if she didn’t quite understand what it was, and then she put it in her mouth.
 
 Su Tang helped her sit down on the step.
 
@@ -399,7 +403,7 @@ After five or six minutes, some of the colour had come back into Gu Xuerong’s 
 
 Su Tang got there first and picked it up.
 
-“I’ll carry it. You go ahead.”
+“I’ll take the box. You go on ahead.”
 
 Gu Xuerong looked at her. Su Tang smiled at her, eyes curving into two slits, and asked nothing.
 
@@ -407,13 +411,13 @@ Gu Xuerong looked at her. Su Tang smiled at her, eyes curving into two slits, an
 
 That night, after closing, Ye Zhixing asked Su Tang at the door:
 
-“You always carry sweets in your bag?”
+“So you always carry sweets around in your bag?”
 
 “Yes.”
 
-“Why?”
+“What do you carry them for?”
 
-“My name’s Tang, isn’t it? Sweets.” Su Tang laughed first at her own joke, twice, then suddenly stopped. She looked down at the stairs and scuffed the toe of her shoe on the worn shiny patch of the step.
+“Because my name’s Tang, isn’t it? Sweets.” Su Tang laughed first at her own joke, twice, then suddenly stopped. She looked down at the stairs and scuffed the toe of her shoe on the worn shiny patch of the step.
 
 “…My grandma used to be like that,” she said. “She’d be standing there and then she just wouldn’t move, face white as paper, and wouldn’t answer when you spoke to her. When I was little it made me cry, lots of times. After that I carried sweets every day, and when she looked wrong I’d pop one in her mouth.”
 
@@ -461,7 +465,7 @@ Once, a boy who looked like a university student walked straight up to the count
 
 Ye Zhixing stood there and didn’t move.
 
-For those two seconds there was nothing on his face. Not displeasure, not nerves, just blank, like a screen whose plug has suddenly been pulled.
+For those two seconds his face was blank, like a screen with its plug pulled.
 
 Then he reached out and gently pushed the boy’s phone aside, towards the windowsill.
 
@@ -521,7 +525,7 @@ Ye Zhixia tilted her head and looked at him for a while. Under the counter light
 
 She didn’t say any more. She went to the kitchen curtain and asked Old Zhou for a sizzling pickled cabbage and beef rice with extra egg, and an iced yuanyang.
 
-When the food came she poked open the yolk with her chopsticks and watched the golden yolk run slowly down into the cabbage. She watched it a while without eating, and then suddenly said something. Not loudly; it might have been to herself, or to the iron plate:
+When the food came she poked open the yolk with her chopsticks and watched the golden yolk run slowly down into the cabbage. She didn’t eat. She said something to the iron plate, not loudly:
 
 “This time it’s yours.”
 
@@ -543,11 +547,11 @@ Back Street at night was a different place from Back Street by day. The braised-
 
 They reached the mouth of the alley. Uncle Chen’s car wasn’t back yet.
 
-“Where are you going back to?” Ye Zhixing asked.
+“Where are you heading back to?” Ye Zhixing asked.
 
 She looked at him.
 
-“The dormitory.”
+“Back to the dormitory.”
 
 “…Okay.”
 
@@ -599,15 +603,15 @@ The other two girls in the room were already asleep. One was grinding her teeth,
 
 Lin Xiaoman turned her phone screen down to its dimmest.
 
-“One round.”
+“Let’s play one more round.”
 
-“Of what?”
+“One more round of what?”
 
-“That thing of yours, nightmare whatever.”
+“You know, that thing of yours, nightmare whatever.”
 
 “Didn’t you say it scares you?”
 
-“It does scare me.” Lin Xiaoman kept her voice down, perfectly reasonable. “So you have to protect me.”
+“It does scare me.” Lin Xiaoman kept her voice down, perfectly reasonable. “So you’ve got to protect me, haven’t you.”
 
 Lin Xiaoman was genuinely terrible, terrible through and through. As soon as her character stepped into the rainy corridor she began to shake, shaking so hard the whole bed trembled. At the first corner a hand reached out of the wallpaper and she cried “Ah!” out loud, clapped a hand over her own mouth, eyes wide, and looked at the other two beds. Nobody woke. She let out a breath, turned back, and cried out again at the next corner.
 
@@ -615,7 +619,7 @@ Her character never survived past the third corner.
 
 So Gu Xuerong took her through it again and again.
 
-“There’s something there.”
+“There’s something over there.”
 
 “Where, where?”
 
@@ -631,11 +635,11 @@ So Gu Xuerong took her through it again and again.
 
 “You laughed!” Lin Xiaoman leaned in, the tip of her nose almost touching Gu Xuerong’s face, voice low. “Did you just laugh?”
 
-“No.”
+“I did not.”
 
 “You did! I saw! The corner of your mouth, here,” she reached out a finger and traced the corner of her own mouth, “here, it went up!”
 
-“The light’s too dim, you saw wrong.”
+“The light’s too dim. You saw wrong.”
 
 “I didn’t see wrong!”
 

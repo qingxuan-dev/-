@@ -35,3 +35,7 @@ python3 build.py
 英文版：每章一个文件 `en/chN.md`，必须和原稿逐段对应（章、小节、段落数都相同），构建时会自动核对，对不上就停止并指出哪一节。还没翻译的新章节在英文目录里显示为 “Translation coming”。
 
 译名：叶知行 Ye Zhixing，顾雪融 Gu Xuerong，叶知夏 Ye Zhixia，何叔 Uncle He，陈叔 Uncle Chen，梅姐 Sister Mei，苏棠 Su Tang，林小满 Lin Xiaoman，陈曦 Chen Xi，王教官 Instructor Wang，老周 Old Zhou，孙老师 Mr. Sun，顾建国 Gu Jianguo，阿彪 Abiao，竹竿 Beanpole，胖子 Chubby，吴老师 Mr. Wu，郑欣 Zheng Xin（Ms. Zheng），阿姨 Auntie，融融 Rongrong；猫：年糕 Rice Cake，煤球 Briquette，三花 Calico，拖把 Mop，殿下 Your Highness，蓝白 Blue-and-White；游戏《噩梦侵袭》Nightmare Raid，账号“冬眠” Hibernation；叶仕龙 Ye Shilong，市长 the mayor，刘总 Mr. Liu，马总 Mr. Ma，小程序“城里事” Town Matters，北城片区 the North City Area；周叔 Uncle Zhou；锯缘青蟹 mud crab，黑魔神 Black Devil（snakehead），红龙 red arowana；甜甜 Tiantian，钟南山 Zhong Nanshan，顾同学 Miss Gu；李老师 Ms. Li，群“后街有猫” Back Street Cats，蟹公寓 crab apartment，钉钉 DingTalk；苏宇 Su Yu，苏磊 Su Lei，大刘 Big Liu，晓雯 Xiaowen，《年糕减肥》Rice Cake’s Diet，酵素 enzyme drink；冬眠的游戏内聊天写成 `**<冬眠> ……**`（单独一行），阅读页按消息样式显示；黄英俊 Huang Yingjun（竹竿本名），王警官 Officer Wang，马主任 Director Ma，曦神 Xi the Great，犯罪记录 Criminal Record；三赎基督 Three Redemptions Christ（门徒会 the Disciples’ Association），地狱变相图 the transformations of hell；杨老师 Ms. Yang，阿栗 Ali，孟凡 Meng Fan。一段话跨几个自然段时，按中文习惯只在每段开头加引号、最后一段才收引号，构建会自动识别。
+
+## 2026-11-11 从在线阅读页同步
+
+在线阅读页（claude.ai 页面）上整本书第一至十九章的中英文都做过一轮修订。这次把线上版本还原成了仓库里的源文件：各章原稿 `xuerong-zhixia-ch*.original.md`、英文 `en/ch*.md`，并重新生成了阅读页、EPUB 和 Word。重新生成的阅读页与线上版本逐章比对过，中英文正文完全一致；只有英文的“词数”统计因计数方式不同，每章差几个词。简介、每章钩子和人物卡与线上一致，未改动。同步前的版本可在 git 历史里找到（提交 b2ec7dc）。

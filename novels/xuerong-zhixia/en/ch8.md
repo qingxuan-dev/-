@@ -12,7 +12,7 @@ Cleaning duty came in two shifts. The morning one meant arriving at six-twenty a
 
 Gu Xuerong had never once turned up.
 
-She couldn’t get up for the morning shift. She didn’t sleep until two or three at night, sometimes later, and at six-twenty in the morning her body was still sunk somewhere very deep. The alarm by her pillow rang and rang; she reached out and turned it off, her hand dropped, and that was that. She wasn’t there for the evening shift. The moment evening study ended she headed for Back Street, where the second floor’s accounts were waiting for her.
+She couldn’t get up for the morning shift. She didn’t sleep until two or three at night, sometimes later, and at six-twenty in the morning she simply could not come round. The alarm by her pillow rang and rang; she reached out and turned it off, her hand dropped, and that was that. She wasn’t there for the evening shift. The moment evening study ended she headed for Back Street, where the second floor’s accounts were waiting for her.
 
 The first two times, Lin Xiaoman swept for her.
 
@@ -54,7 +54,7 @@ She stood up. Her chair legs scraped a long screech across the concrete floor.
 
 “The rota. Wednesday. Your name.” Mr. Sun picked up the notice with two fingers and held it well away from him, as if the paper were dirty. “Since the start of term, four cleaning duties. How many have you turned up to?”
 
-Gu Xuerong said nothing.
+Gu Xuerong looked at the slip pinched between his two fingers. One character of her name was wrong on it: the “rong” that means melt had been written as the “rong” that means glory.
 
 “I asked you: how many have you turned up to?”
 
@@ -112,7 +112,7 @@ When he said “her mother passed early,” Gu Xuerong, standing in the corner o
 
 Her mother hadn’t passed. Her mother was in the city, living with another man in a flat with a lift. They had a son, who was in Year Two of primary school this year.
 
-She said nothing.
+She didn’t correct him. He had said that line to teachers, to neighbours, to the men on the building site, and had said it so many times that by now he probably believed it himself.
 
 “This cleaning duty, she has to do it.” Mr. Sun sat behind his desk and tapped the desktop with a finger. “This is no small matter. If a person won’t even take on their share for the collective, what will become of them in society? Our school has its limits too. If someone won’t mend their ways, then we advise them to leave.”
 
@@ -144,7 +144,7 @@ He stopped and turned round.
 
 “You fucking—”
 
-He didn’t shout it. He forced it out through his teeth, kept very low, low as a stone sinking to the bottom of the water.
+He didn’t shout it. He forced it out through his teeth, kept very low.
 
 “I carry three hundred bags of cement a day, carry them till I can’t straighten my back, to earn those few coins to pay for your schooling. And you go and shame me like this at school? Won’t even sweep a floor? Who do you think you are, a princess?”
 
@@ -162,7 +162,7 @@ The owner of a breakfast stall across the street poked her head out, looked, and
 
 Gu Xuerong looked at him.
 
-There was no expression on her face. Not the kind of nothing that comes from holding something in, but real nothing, like a wall that everything slides off and nothing sticks to. She watched his mouth open and shut, watched the white froth at the corners of it, watched a vein swell on his forehead, watched the Hongtashan tucked behind his ear, which trembled as he talked and was about to fall.
+There was no expression on her face. She watched his mouth open and shut, watched the white froth at the corners of it, watched a vein swell on his forehead, watched the Hongtashan tucked behind his ear, which trembled as he talked and was about to fall.
 
 She was wondering when the cigarette would fall.
 
@@ -186,7 +186,7 @@ Outside the internet café with no sign on Back Street stood someone. Skinny, lo
 
 It was Chen Xi.
 
-He had slipped out in first period. Maths, which he didn’t understand and didn’t want to listen to. He had told his deskmate he was going to the toilet, gone downstairs the moment he was out of the classroom, and climbed the stretch of wall behind the canteen that had no glass on it. He had played games in the internet café for two hours and come out to buy a drink, and as he pushed the door open he heard the yelling outside.
+He had slipped out in first period. Maths, which he couldn’t be bothered to sit through. He had told his deskmate he was going to the toilet, gone downstairs the moment he was out of the classroom, and climbed the stretch of wall behind the canteen that had no glass on it. He had played games in the internet café for two hours and come out to buy a drink, and as he pushed the door open he heard the yelling outside.
 
 He recognised Gu Xuerong.
 
@@ -198,7 +198,7 @@ He also recognised the words that had just come out of this man’s mouth.
 
 Gu Jianguo’s face flushed red in an instant.
 
-He looked at Chen Xi, then at Gu Xuerong, then at Chen Xi again, his eyes slowly narrowing. Something surfaced in those drooping eyes, murky and thick.
+He looked at Chen Xi, then at Gu Xuerong, then at Chen Xi again, his eyes slowly narrowing.
 
 “Oh—” he drew the word out. “So that’s it. So that’s why she doesn’t do anything proper at school. She’s been carrying on with someone outside.”
 
@@ -290,11 +290,9 @@ On top of Gu Jianguo’s back, Abiao snorted out a laugh.
 
 Gu Xuerong hadn’t moved from where she stood.
 
-From the moment her father started cursing her, to Chen Xi’s iced tea smashing on the ground, to her father being pinned down, she had stood at that corner, at that distance of two steps, and not moved once.
-
 Her schoolbag still hung from her elbow, the strap cutting into her sleeve.
 
-She looked at her father’s face pressed against the ground. She had been looking at that face for sixteen years: had seen it flushed red with drink at the dinner table, seen it creased all over with smiles for relatives at New Year, seen its eyebrows lift on the phone as it said the words “bride price.” She had never seen it from this angle. From above, looking down at it pressed into a pool of red iced tea, watching its mouth curse, spit and tea mixing together, watching its drooping eye roll up and find her.
+She looked at her father’s face pressed against the ground. She had been looking at that face for years: had seen it flushed red with drink at the dinner table, seen it creased all over with smiles for relatives at New Year, seen its eyebrows lift on the phone as it said the words “bride price.” She had never seen it from this angle. From above, looking down at it pressed into a pool of red iced tea, watching its mouth curse, spit and tea mixing together, watching its drooping eye roll up and find her.
 
 The Hongtashan finally fell from behind his ear, landed on the ground, rolled half a turn, and soaked in the tea, the paper slowly turning brown.
 
@@ -322,7 +320,7 @@ His voice was very low, low enough that only she could make it out.
 
 He bent down, picked up the soaked cigarette, looked at it, and threw it away. He turned and walked off towards the end of Back Street, still with long strides, his soles slapping the ground, slap, slap, only dragging a little more than when he came, a slight limp in his left foot.
 
-At the end of the street he stopped for a moment without looking back. Then he turned the corner and was gone.
+At the end of the street he spat on the ground, turned the corner and was gone.
 
 Abiao spat after him, “Ptui,” then looked at Chen Xi. “Who was that?”
 
@@ -332,7 +330,7 @@ Abiao spat after him, “Ptui,” then looked at Chen Xi. “Who was that?”
 
 “Didn’t like the look of him.”
 
-Abiao looked at him for a while, then at the girl standing at the corner, said “Ah,” and asked nothing more.
+Abiao looked at the swollen corner of his mouth, then at the girl standing at the corner, said “Ah,” and asked nothing more.
 
 ---
 
@@ -344,9 +342,7 @@ Chen Xi walked over and stopped a metre in front of her. The corner of his mouth
 
 She looked at him.
 
-The way she looked at him gave Chen Xi the creeps a little. It wasn’t fear, it wasn’t gratitude, nor what you’d expect from someone who had had a fright. Her eyes were very level, very still, like a pool where nothing you threw in would make a ripple.
-
-After a few seconds, she spoke.
+The way she looked at him gave Chen Xi the creeps a little: she didn’t blink, and he could find neither fear nor gratitude in her face.
 
 “You’re bleeding.”
 
@@ -356,7 +352,7 @@ She looked down and took a packet of tissues from the side pocket of her schoolb
 
 The hand holding out the tissue was trembling.
 
-A very fine tremble, like a leaf in the wind, that you wouldn’t notice unless you looked closely. Chen Xi noticed. When he took the tissue his fingertips touched hers, cold as if just out of the fridge.
+A very fine tremble, one you wouldn’t notice unless you looked closely. Chen Xi noticed. When he took the tissue his fingertips touched hers, cold as if just out of the fridge.
 
 He said nothing and pressed the tissue to the corner of his mouth.
 
@@ -380,7 +376,7 @@ Chen Xi had posted:
 
 It was followed by a friend request. The verification message was just two words: Chen Xi.
 
-Ye Zhixing looked at the group message for two seconds. People quickly replied in the group: “What happened?” “???” “Chen Xi, what have you done now?” Chen Xi ignored them, and the message was soon pushed up out of sight by the stickers that followed.
+Ye Zhixing opened the group message. People quickly replied in the group: “What happened?” “???” “Chen Xi, what have you done now?” Chen Xi ignored them, and the message was soon pushed up out of sight by the stickers that followed.
 
 He accepted the friend request.
 
@@ -548,9 +544,7 @@ Chen Xi sat opposite her.
 
 The corner of his mouth had stopped bleeding, leaving just a dark red scab. The punch to his stomach still hurt; every time he leaned forward to pick something out of the pot, his brows knitted. He ate very little, a few mouthfuls and then a stop, leaning back in his chair, watching the bone broth bubble.
 
-He didn’t ask her what had just happened.
-
-Nor why her father had cursed her, what those words meant, what was really going on in her family, or what she was going to do now.
+About what had just happened, he didn’t ask a single thing.
 
 He only, when the things in her bowl were nearly gone, got up and went to the chiller and brought back a few more skewers, and put them on her plate. One of luncheon meat, one of crab sticks, one of kelp knots.
 
@@ -592,7 +586,7 @@ It was her left wrist he pressed, through the sleeve of her school jacket. He di
 
 “…I said I’m paying,” he said. “Don’t you move.”
 
-Behind the counter, the owner watched this crowd for a while, then gathered the pile of money towards her and counted it.
+Behind the counter, the owner looked this crowd over one by one: one with a swollen mouth, one holding his ear, and in the middle of them a girl who wasn’t saying a word. She gathered the pile of money towards her and counted it.
 
 “A hundred and thirty-two seventy,” she said. “Call it done.”
 
@@ -688,8 +682,6 @@ He handed her the other controller. She took it; it was warm, from being held fo
 
 Neither of them mentioned what had happened that day.
 
-He didn’t ask what her father had said after he came, didn’t ask what had happened at the corner of Back Street, didn’t ask whether she was all right, didn’t ask whether she was going back to the dormitory tonight. She didn’t ask him what had happened with Mr. Sun, didn’t ask what Chen Xi had told him, didn’t ask where he had gone after he walked out of chemistry that morning.
-
 On the screen, the rainy corridor began to stretch ahead.
 
 “Left or right?” he asked.
@@ -736,9 +728,9 @@ The two characters walked on together. At the first corner a hand reached out of
 
 Her character stood beside the spot where his had fallen, and didn’t go on. She waited for him to respawn.
 
-Ye Zhixing turned to look at her. She was watching the screen, the corner of her mouth turned up a little, a very little, as if something had floated up from under the water, touched the surface lightly, and sunk again.
+Ye Zhixing turned to look at her. She was watching the screen, the corner of her mouth turned up a little, a very little; if he had turned his head half a second later he would have missed it.
 
-He looked for a while, then turned back and went on playing.
+He turned back and went on playing.
 
 ---
 
@@ -746,7 +738,7 @@ A little after six, Chen Xi sent a message.
 
 > she ate two fish balls a beef ball a piece of luncheon meat a skewer of kelp and half a skewer of beef
 
-Ye Zhixing looked at the message for a while.
+Ye Zhixing counted through the list of food from beginning to end.
 
 He replied:
 

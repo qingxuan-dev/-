@@ -2,206 +2,272 @@
 
 ## 1. Rice Cake
 
-For the next two weeks, Ye Zhixing didn’t go to the internet café after school once.
+For the next two weeks, Ye Zhixing didn’t go to the internet café after school.
 
-Ajie sent three messages. The first was “where are you,” the second “???,” the third a screenshot: the server they used to play on had started a new season. Ye Zhixing replied “busy.” Ajie replied with a string of dots and didn’t message again.
+Ajie sent three messages. The first was “where are you,” the second was “???”, and the third was a screenshot: the server they used to play on had started a new season. Ye Zhixing sent back “busy.” Ajie replied with a string of dots, then added “thought you got expelled, busy my arse,” and after that he stopped sending.
 
-The ginger cat was the first to go upstairs.
+The ginger cat was the first one upstairs.
 
-Catching it took two days. On the first day Ye Zhixing crouched at the foot of the stairs with a carrier for forty minutes, while the ginger cat sat three steps away watching him; when it had watched enough, it got up and left. On the second day Uncle He bought a bag of freeze-dried treats, scattered a handful at the very back of the carrier, and withdrew to the copy shop doorway to drink tea. Twenty minutes later the shop owner shouted from inside, “It’s in, it’s in!”
+Catching it took two days. The first day Ye Zhixing crouched at the foot of the stairs holding a pet carrier for forty minutes, and the ginger cat sat three steps away and watched him. The copy shop owner came out for a look every little while, and every time she had something to say.
 
-The vet was on the other side of town: one vet, one assistant, and a sign over the door reading “Love Your Pet,” the tube in the “Love” broken. Check-up, blood test, vaccinations, deworming, the matted clumps shaved off, and finally a bath. Before, it was greyish-yellow. Washed, dried and carried out, it had a bright ginger-and-white coat and four white paws, as if it were wearing socks. After three days of proper cat food at the clinic its belly had filled out a whole size.
+“Crouching there like that’s no good. You’ve got to tempt it with food.”
 
-“What’s its name?” the assistant asked, holding the register.
+“I did bring food. Ham sausage.”
 
-Ye Zhixing looked at the ginger-and-white bundle in the cage. It had flattened itself into a round disc, belly down, chin resting on its front paws.
+“It couldn’t care less about ham sausage. It got sick of Back Street ham sausage ages ago.”
 
-“Rice Cake.”
+“So what does it care about?”
 
-Two more came after that. One was a black cat Uncle He took in from an old neighbour who was moving: seven years old, very strange-tempered, wouldn’t let anyone touch it, would only sit somewhere high and watch people. The other was a calico from the copy-shop owner’s niece’s litter, only three months old when it arrived, climbing onto anyone it saw.
+“Chicken freeze-dried, that’s what. That’s all my Old Zhou ever feeds it. He’s gone and spoilt its mouth.”
 
-The black cat’s name was chosen by Gu Xuerong.
+“Where do you even buy that?”
 
-The day it arrived it hid at the very back of its carrier, only a pair of yellow eyes showing. Gu Xuerong crouched in front of the carrier watching it for a while, and said: “Briquette.”
+“There’s a pet shop on the east side of town, that’s where Old Zhou always goes. They’ll be long shut by now.”
 
-“That’s such a lazy name.”
+The ginger cat listened to them talk for a good while, yawned, got up and left.
 
-“It is a briquette.”
+The next day Uncle He bought a bag of chicken freeze-dried, scattered a handful at the very back of the carrier, left the door wide open, and retreated to the copy shop doorway to drink tea, holding Ye Zhixing down so he couldn’t turn and look. Twenty minutes later the owner started yelling inside the shop: “It’s in, it’s in! Shut the door, quick, shut the door!”
 
-When she had said it she didn’t get up, but stayed crouched in front of the carrier a good while longer. Briquette edged half a step forward, its yellow eyes peering out of the carrier at her.
+The pet clinic was at the other end of town: one vet, one assistant, and a sign over the door that said “Love Your Pet,” with the tube in the “Love” burnt out. The vet was a plump middle-aged man who, gloves on, scooped the ginger cat out of the carrier and turned it this way and that for a good look.
+
+“It’s a tom. Going by the teeth, two years old or so, and not neutered yet. He’s got ear mites, and fleas on him too, and these patches of fur are matted solid. No combing that out, they’ll just have to be shaved off.” He put the cat on the scales. “Three point one kilos, a little on the thin side. We’ll take some blood first and give him his first jab today, and you bring him back in three weeks for the second. No rush on the neutering. Let’s wait till he’s in a bit better shape.”
+
+“What’s his temper like?” Ye Zhixing asked.
+
+The vet was prising the cat’s mouth open to look at its teeth, and the ginger cat let him, not moving a muscle.
+
+“He’s a good, steady little cat, this one. Not bad at all. Bit lazy, that’s the only thing,” said the vet. “Just keep an eye on it from here on. Don’t let him get too fat. Too much weight’s no good for his health.”
+
+Before the bath it had been a greyish yellow. Washed, blow-dried and carried out, it was a very bright ginger and white, with four white paws. After three days of proper cat food at the clinic, its belly had rounded out by a whole size.
+
+“What’s his name going to be?” the assistant asked, holding the register.
+
+Ye Zhixing looked at the ginger-and-white lump in the cage. It had spread itself into a flat round, belly down, chin on its front paws.
+
+“Let’s just call him Rice Cake.”
+
+Later two more came. One was a black cat that Uncle He took over from an old neighbour who was moving away to another province: seven years old, an odd temper, wouldn’t let anyone touch it, and would only crouch somewhere high and look down at people. The other was a calico, from a litter at the copy shop owner’s niece’s place, only three months old when it was brought over, and it climbed onto anybody it saw.
+
+It was Gu Xuerong who named the black cat.
+
+The day it arrived it hid at the very back of its carrier, only a pair of yellow eyes showing. Gu Xuerong crouched in front of the carrier for a good ten minutes.
+
+“Let’s call it Briquette.”
+
+“Come on, that’s such a lazy name.”
+
+“And Rice Cake isn’t lazy?” she said. “It looks exactly like a briquette. See for yourself if you don’t believe me.”
+
+Ye Zhixing bent down and looked into the carrier, and had nothing to say.
+
+She didn’t get up; she stayed crouched in front of the carrier. Briquette edged half a step forward, its yellow eyes peering out of the carrier at her.
 
 ## 2. Boxes
 
-The stock arrived on Saturday.
+On Saturday morning the three of them made a trip to the second-hand market on the north side of town.
 
-A small van pulled up downstairs, and Ye Zhixing and the driver carried load after load upstairs. Soon the second floor was full of cardboard boxes, tall ones and short ones, stacked half a wall high. Ye Zhixing slit the tape on each with a box cutter: acrylic standees, cushions, blind boxes, keyrings, badges, stickers, character notebooks, and a box of life-size wall scrolls that nearly rolled him up when he unfurled one.
+They called it a market, but really it was the yard of a farm-machinery factory that had shut down, with old fridges, old washing machines and old office desks set out in rows in the open air, and the sofas all piled under a shed at the very back. Uncle He was in charge of haggling, Ye Zhixing was in charge of saying “this one’s good,” and Gu Xuerong was in charge of sitting.
 
-He unpacked with great enthusiasm, reading out the characters’ names as he went and getting several of them wrong.
+She sat on them one after another. Sit down, press the cushion, lower her head and smell the armrest, stand up, on to the next.
 
-Gu Xuerong sat cross-legged on the floor and went through them box by box. She was slow. From each box she picked up one or two items, turned them over to look at the back, put them back, and pushed the box to her left or her right. In the end the pile on the right was three boxes.
+“How about this one?” Ye Zhixing pointed at a maroon leather sofa. “Looks pretty classy, actually.”
 
-“Not these.”
+“It smells of smoke. And anyway leather’s no good. One scratch from a cat and that’s a hole.”
 
-Ye Zhixing stopped, box cutter in hand. “Why not?”
+“And this one?”
 
-“Nobody will buy them.” She held up one of the standees. “This was popular last year. Nobody at school talks about it now.”
+“This one’s got a broken spring. Right at the end where you’re standing now.”
 
-“No way, I only just saw this online—”
+“You can tell that just from sitting on it?”
 
-“Where online?”
+“Sit on it yourself and you’ll know, won’t you.”
+
+Ye Zhixing sat, and something went clunk under his backside. He stood up and stopped pointing.
+
+In the end she picked two fabric ones, one greyish and one greyer. The dealer wanted three hundred each. Uncle He, hands behind his back, walked twice round the sofas and said this cover’s sun-faded, and this leg’s a replacement, and then said the place in the next shed had only quoted a hundred and eighty just now. The place in the next shed sold fish tanks. It came to three hundred and twenty for the pair, and the dealer threw in a coil of rope to tie them down with.
+
+The stock arrived in the afternoon.
+
+A small van pulled up downstairs, the driver and Ye Zhixing carried things up trip after trip, and soon the second floor was full of cardboard boxes, tall ones and short ones, stacked across half a wall. Ye Zhixing slit the tape on them one by one with a box cutter: acrylic standees, cushions, blind boxes, keyrings, badges, stickers, character notebooks, and one box of life-size wall scrolls that nearly rolled him up inside when he unfurled one.
+
+He unpacked with great enthusiasm, reading out the character names as he went, and getting a fair few of them wrong.
+
+Gu Xuerong sat cross-legged on the floor and went through them box by box. From each she picked up one or two things, turned them over to look at the back, put them back, and pushed the box to the left or to the right. In the end the pile on the right was three boxes.
+
+“Don’t keep these three. Send them back.”
+
+The box cutter in Ye Zhixing’s hand stopped. “What? Why?”
+
+“Nobody’s going to buy them.” She picked up one of the standees. “This was big last year. Nobody at school’s mentioned it in ages.”
+
+“No way. I saw people online saying how good it is just a couple of days ago—”
+
+“And where was it you saw that?”
 
 “…A forum.”
 
-“How old are the people on the forum?”
+“And how old are the people on that forum?”
 
-Ye Zhixing opened his mouth, not convinced, and turned to Uncle He. Uncle He sat by the window on a folding chair brought up for the time being, reading glasses on, going through a ledger. At this he looked over his glasses at the three boxes and then back down.
+“Like… twenty-something? Thirty?”
 
-“Young master, she’s right.”
+“So is this place of yours being opened for them?”
 
-The three boxes went back that afternoon.
+Ye Zhixing opened his mouth, not quite convinced, and turned round to look for Uncle He. Uncle He was sitting on a folding chair by the window with his reading glasses on, going through an account book; he had heard, and looked over the top of his glasses at the three boxes, and lowered his head again.
 
-The second floor was still half finished. Uncle He said proper renovation would have to wait until the licence was sorted out at the same time: painting, new flooring, fire inspection. For now they’d have to make do. So everything in the rooms was temporary: two cloth sofas hauled from the second-hand market, one greyish, one even greyer; a few small round tables in a vaguely Scandinavian style that were clearly copies from the county furniture mall; a big screen against one wall with two computers underneath, their cables bundled with zip ties and run along the skirting. The curtains Ye Zhixing had bought online himself, blackout ones, dark grey. He spent an afternoon hanging them and hung them crooked; the left side was longer than the right.
+“Young master, Miss Gu is right.”
+
+The three boxes went back that same afternoon, and Ye Zhixing paid the shipping out of his own pocket.
+
+For the moment the second floor was still a half-finished thing. Uncle He said the proper fit-out had to wait and be done together with the licence business, painting the walls, replacing the floor, passing the fire inspection, and until then they’d just have to make do. So everything in the room was temporary: the two grey sofas hauled back that morning; a few small round tables, obviously the county furniture mall’s copy of a famous design; a big screen against the wall with two computers hooked up beneath it, the cables zip-tied into a bundle and run along the skirting. The curtains Ye Zhixing had bought online himself, blackout ones, dark grey. He had spent an afternoon hanging them on his own and hung them crooked, the left side a length longer than the right.
+
+“You’ve hung this crooked,” said Gu Xuerong.
+
+“It’s not crooked. It’s this building’s window that’s crooked.”
+
+She gave him a look, went over, and tugged the short side downward. It wouldn’t budge.
 
 ## 3. Sister Mei
 
-It was Ye Zhixing who brought up the question of the till, but before he had finished, Gu Xuerong spoke first.
+It was Ye Zhixing who raised the question of the till, and before he’d finished the sentence Gu Xuerong picked it up.
 
-“I could do it.”
+“For the till, I could do it, you know.”
 
-“No.”
+“No, you couldn’t.”
 
-She looked up.
+She raised her eyes.
 
-“The till means standing all day,” Ye Zhixing said, very bluntly. “You can’t even stand at attention without a drip.”
+“Working the till means standing the entire day.” Ye Zhixing said it very bluntly. “You can’t even stand at attention without ending up on a drip.”
 
-She looked at him for a second and didn’t argue.
+She thought about it.
 
-“…True.”
+“…That’s true, I suppose.”
 
-In the end the cashier was someone Uncle He introduced. Sister Mei was in her early thirties and had run the checkouts at a supermarket in a shopping centre in the city, then moved back to the county town when her child started primary school. She was short, with tight permed curls, and talked fast and crisp; when she laughed it was loud enough for the whole floor to hear. On her first day she looked over the wall of boxes, took a hardback notebook out of her bag and began logging every item, how many of each and at what cost, all written out clearly.
+In the end the person for the till was someone Uncle He brought in. Sister Mei, just over thirty, had run the checkouts at a supermarket in a city shopping centre, and when her child started primary school she’d moved back to the county town. She wasn’t tall, had a tight perm, and talked fast and crisp, and when she laughed the whole floor could hear it. Her first day, she took one tour of that half-wall of boxes, pulled a hardback notebook out of her bag, and started logging item by item, how many of each, the cost price, what they meant to sell it for.
 
-“I’ll come in afternoons before opening to help sort the stock,” she told Uncle He. “We can do a proper rota once we’re open.”
+“Oh my, and who was it went and negotiated these cost prices for you?” She tapped one line with her pen cap. “Keyrings bought in at three-fifty apiece? Let me tell you, over in Yiwu the exact same thing, in quantity, is one-eighty. Next time you’re buying stock, bring me along. I’ve got a cousin who runs a stall right there.”
 
-She checked the accounts every day, and Gu Xuerong came every few days to leaf through them.
+“It was me who negotiated,” said Ye Zhixing.
 
-Gu Xuerong read the accounts much the way she read her maths book, a finger pressed to the page moving down line by line, very slowly. Once she stopped at a line and drew a light mark under one number with her fingernail.
+“Well, that explains it, then.” Sister Mei laughed very loudly. “Little boss, they took you for a big boss and fleeced you.”
 
-“This one. Is there an extra zero?”
+She settled it with Uncle He: until the opening she’d come in every afternoon to help sort the stock, and once they were properly open they’d work out shifts.
 
-Sister Mei leaned over to look, said “Oh, dear,” corrected it, and drew a circle beside it. “Sharp eyes.”
+She balanced the accounts once a day, and Gu Xuerong came and leafed through them every few days.
 
-Gu Xuerong didn’t reply and went on reading. Sister Mei didn’t think anything of it either; she hummed a tune and went on sticking on price tags.
+Gu Xuerong read the accounts much the way she read her maths book, a finger pressed to the page, moving down line by line. Once she stopped at a certain line and drew a fingernail under one of the numbers.
+
+“Sister Mei, here, this bit. Has an extra zero gone in, do you think?”
+
+Sister Mei leaned over for a look, said “aiya,” corrected it with her pen and drew a circle beside it. “So it has. What sharp eyes you’ve got, child.”
+
+Gu Xuerong didn’t respond to the praise and went on reading down. Sister Mei didn’t mind; she hummed a tune and went on sticking her price labels.
 
 ## 4. Between Classes
 
-At school, how Ye Zhixing and Gu Xuerong spent time together had become very simple: they played games between classes.
+At school, things between Ye Zhixing and Gu Xuerong became very simple: games between classes.
 
-He had moved from the back row to the row right behind her, swapping with the boy who used to sit there, who was only too glad to be further from the window; he said the afternoon sun gave him a headache. Now Ye Zhixing could reach out and touch the back of her chair.
+He had moved from the back row to the row behind hers, swapping with the boy who used to sit there. That boy was only too glad to be further from the window; he said the afternoon sun in summer made him dizzy. Braces grieved over it for half a lesson, saying who’s going to tell me whether the principal eats five-nut mooncakes once you’re gone. Now Ye Zhixing could touch the back of her chair just by reaching out.
 
-In the ten-minute breaks they shared one pair of earbuds between them, heads together, the phone propped on his textbook. They didn’t play during lessons, but whenever a teacher turned to write on the board, his fingers would move inside his desk: he was idling to farm materials, which Gu Xuerong said didn’t take any brainpower.
+In the ten-minute break it was one earbud each, heads close together, the phone propped up on his textbook. The earphones were new; the old pair was still locked in Ms. Li’s drawer. They didn’t play during lessons, though whenever a teacher turned to write on the board his fingers would move a bit inside the desk cubby: that was idle-farming materials, which Gu Xuerong said took no brainpower.
 
 “Don’t go left.”
 
-“I didn’t go left.”
+“I’m not going left.”
 
-“You just went left.”
+“You went left just then.”
 
-“That was… a strategic withdrawal. Withdrawing into its mouth still counts as withdrawing.”
+“That’s what’s called a strategic relocation. Relocating into its mouth still counts as relocating.”
 
-“You withdrew into its mouth.”
+“Then you’ve now relocated into its mouth.”
 
-On the screen, Ye Zhixing’s character was snatched up by something hanging upside down from the ceiling. The screen went black and the death counter in the top right jumped to 3.
+On the screen, Ye Zhixing’s character was snatched in one bite by a thing hanging upside down from the ceiling; the screen went black, and in the top right corner the death count popped up: 3.
 
-Gu Xuerong didn’t sigh and didn’t laugh. She waited for him to respawn, then reached out one finger and tapped the shadow of the monster on his screen.
+Gu Xuerong didn’t sigh and didn’t laugh. When he had respawned she put out one finger and tapped the monster’s shadow on his screen.
 
-“When it turns round, there’s a bright patch on its back. Wait till it’s turned, then hit it.”
+“When it turns round, there’s a patch on its back that lights up. You’ve got to wait till it’s turned away before you hit it.”
 
-“You could have said.”
+“Why didn’t you say that sooner?”
 
-“I did. The first time.”
+“I did say it. I said it the first time you died.”
 
-Ye Zhixing thought about it. She probably had, and he hadn’t listened.
+Ye Zhixing thought about it, and she did seem to have said it; he hadn’t been listening.
 
-“Why don’t you yell at me?”
+“And how come you never have a go at me, even a little?”
 
-“Would yelling help?” Gu Xuerong’s eyes were still on the screen. “You’ll go left again next time.”
+“What good would having a go at you do?” Gu Xuerong’s eyes were still fixed on the screen. “I’d say it, and next time you’d go left all the same.”
 
-He wanted to argue, thought about it, and couldn’t find anything to argue with.
+He wanted to argue, went all the way round it in his head, and couldn’t find anywhere to argue from.
 
-The bell rang. She gave him back the earbud, turned round, opened her maths book, took out the scrap of paper with the parabola and laid it at the top right corner of the book. Ye Zhixing looked at the back of her head, at that tiny black bun; one strand of the elastic had come loose and stuck up in a little loop.
+The bell rang for class. She gave him back the earbud, turned round, opened her maths book, drew out from it the sheet of scrap paper with the lines on it, and pinned it under the top right corner of the book.
 
 ## 5. The Key
 
-After school, the two of them walked to Back Street together.
+That night after evening study, the two of them walked toward Back Street together.
 
-It was mid-September now and getting dark earlier; by a little after six the street lights on Back Street were on. Along one stretch was a braised-meat shop, duck necks, chicken feet and knotted kelp laid out in a glass cabinet, the owner waving a big rush fan to keep off the flies. Gu Xuerong never looked as they passed. Ye Zhixing always did.
+It was mid-September, and the nights had a touch of cool in them now. The braised-snack stall by the road hadn’t packed up yet: duck necks, chicken feet and knots of kelp laid out in its glass case, the owner waving off flying insects with a big palm-leaf fan. Gu Xuerong never looked as she passed, and Ye Zhixing looked every single time, and once looked so long that the owner asked him are you buying or what.
 
-The light on the second floor was on. Sister Mei was behind the counter sticking on price tags, and the three cats had each claimed a spot: Rice Cake sprawled on the windowsill, belly pressed to wood that had had the sun on it all afternoon; the calico asleep on the grey sofa, purring, the purr like a very small motorbike; Briquette crouched on the arm of the single chair in the inner room, back arched, staring at whoever walked past, with an air of: this chair is mine, every chair in the world is mine.
+They switched on the second-floor lights themselves. Sister Mei had gone off at seven, and under something on the counter she had left a note in very round handwriting: “Cats have all been fed. If Rice Cake tells you he hasn’t eaten, don’t believe him.”
 
-Under the big screen against the wall, two people sat side by side.
+The three cats had each staked out a place. Rice Cake was spread on the windowsill; the calico was asleep on a grey sofa, snoring; Briquette was crouched on the arm of the single armchair in the inner room, back arched, staring at anyone who walked past, with the air of this chair being its chair, and every chair in the world being its chair.
 
-Gu Xuerong was in very good form that day. When she played, her back came away from the sofa and she leaned forward a little, her fingers quick and light on the keyboard; you could barely hear the keys. She won five rounds in a row, and when she won she made no sound, only nudged the mouse gently aside at the end of each round, as if pushing that round away.
+Under the big screen against the wall, the two of them sat side by side.
 
-Ye Zhixing lost the sixth round as well. He flopped back against the sofa and was about to say something when Briquette, at some point, came down from its chair.
+Gu Xuerong’s hands were hot tonight. When she played, her back came away from the sofa and she leaned forward a little, her fingers quick and light on the keyboard, so you could hardly hear the keys. She won five in a row, and made no sound when she won, only nudged the mouse aside at the end of each match.
 
-It walked up to the sofa, looked at Ye Zhixing, looked at Gu Xuerong, then jumped onto her lap, turned round twice and curled into a black ball with its tail over its nose.
+Ye Zhixing lost the sixth again. He flopped against the back of the sofa, and before he could get a word out, Briquette had come down off the chair.
+
+It walked up to the sofa, looked at Ye Zhixing, looked at Gu Xuerong, jumped onto her knees, turned round twice, and curled into a black ball with its tail over its nose.
 
 Ye Zhixing glared at it.
 
-“Why does it only go to you?”
+“How come it only ever goes to you?”
 
-“It’s choosy.”
+“It’s picky about people.”
 
-“Does it think I’m rubbish?”
+“Is it because it thinks I’m rubbish at games?”
 
-“Maybe.”
+“That’s a possibility, I suppose.”
 
-“I’m the one who brought this cat home.”
+“I’m the one who brought this cat home, you know.”
 
-“Uncle He brought it.”
+“Uncle He’s the one who brought it home.”
 
-Ye Zhixing leaned back against the sofa and stopped talking.
+Ye Zhixing leaned back against the sofa and shut up.
 
-At seven Sister Mei finished for the day. Before leaving she locked the counter and said from the door, “Don’t you two play too late, you’ve got school tomorrow,” loud enough that Briquette lifted its head.
+At half past ten he glanced at his phone. Uncle Chen had already been waiting at the mouth of the alley for a while.
 
-Nine o’clock. Ye Zhixing looked at his phone: Uncle Chen was already waiting at the mouth of the alley.
+“I’ve got to head back.”
 
-“I have to go back.”
+He stood up, felt in his pocket, and came out with a key. Brass, newly cut, nothing on the ring. He put it down on the little round table between them, just dropped it there.
 
-He stood up and felt in his pocket and took out a key, brass, newly cut, nothing on the ring. He put it on the little round table between them, as casually as putting down a used tissue.
+“Somebody’s got to keep an eye on the cats at night,” he said. “If you’re not in a rush to leave, watch them for me for a bit. Stay as late as you like. When you go, just turn the lights off and pull the door to, that’s all.”
 
-“The cats need someone to keep an eye on them at night,” he said. “If you’re not in a hurry to leave, watch them for me. Stay as late as you like, turn the light off yourself.”
+Gu Xuerong looked down at the key and didn’t reach for it.
 
-Gu Xuerong looked down at the key.
+“You’re not staying here yourself?”
 
-She didn’t reach for it.
+“I’ve got to get back, haven’t I. Any later and my sister’ll be ringing up to do a spot check again.”
 
-“You’re not staying?”
+“…Oh.”
 
-“I have to go back, or my sister will ring to check up on me.”
+She still didn’t pick it up. Ye Zhixing didn’t press her either; he shouldered his bag and headed for the door, and after two steps turned back.
 
-“…Okay.”
+“Cat food’s on the bottom shelf of the cupboard. Don’t give them too much. Sister Mei said it herself: Rice Cake puts on an act.”
 
-She still didn’t pick it up. Ye Zhixing didn’t push. He shouldered his bag and went to the door, took two steps, and looked back.
+“I know. It’s a really bad act.”
 
-“Cat food’s in the bottom of the cupboard. Don’t give them too much. Rice Cake puts on an act.”
+The door closed. His footsteps went down the wooden stairs one at a time, until you couldn’t hear them.
 
-“I know.”
+Only one light was on in the room, the floor lamp beside the sofa. On the other sofa the calico turned over; its snore broke off for a beat and picked up again. Rice Cake jumped down from the windowsill, walked over to the food bowl and looked in. The bowl was empty. It turned to look at Gu Xuerong and gave a cry, a truly pitiful one.
 
-The door closed. His footsteps went down the wooden stairs one at a time, stopped for a moment at the bottom, probably to say something to the copy-shop owner, and then she couldn’t hear them any more.
+“I don’t believe you,” said Gu Xuerong.
 
-All at once the room was very quiet.
+Rice Cake cried once more, waited a bit, and took itself back to the windowsill.
 
-The curtains were drawn, the left side longer than the right. Only one lamp was on, the floor lamp beside the sofa, with a pale yellow shade that held the light in, so it only lit a small circle around the sofa. On the other sofa the calico rolled over; its purring stopped for a moment, then started again. Rice Cake jumped down from the windowsill, went to its bowl and looked in. The bowl was empty. It looked back at Gu Xuerong.
+On her knees Briquette stretched, and one front paw reached out and came to rest on her left wrist, through the sleeve of her uniform. The paw was warm.
 
-Gu Xuerong didn’t move.
+She didn’t dare move that arm at all.
 
-On her lap Briquette stretched, one front paw reaching out and coming to rest on her left wrist. Through her school sleeve, very light, almost weightless. The paw was warm.
-
-She looked down at the paw for a long time.
-
-The key was still where it had been on the table. The lamplight fell on it, the brass very warm in colour.
-
-After a while she reached out her right hand, took the key and closed it in her palm. The teeth dug into her skin a little, a slight pain; she didn’t let go, and gripped it a little tighter.
+After some time she put out her right hand, took the key from the table, and closed it in her palm. The teeth of the key dug into her hand, and she closed it a little tighter.
 
 Then she reached over and turned the lamp down a notch.

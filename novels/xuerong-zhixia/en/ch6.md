@@ -8,17 +8,17 @@ The three strays still needed another week of observation; the smallest one’s 
 
 The business licence had come through and the fire inspection was stamped; only the food licence was still missing. The people at the counter said it would take a while yet, so for now drinks couldn’t be sold. Uncle He explained this to Ye Zhixing three times, and each time he added at the end:
 
-“This is called a soft opening. Don’t treat it as the opening.”
+“All this can be called is a soft opening. Please don’t go treating it as the real opening.”
 
-“I know. No entry fee, no drinks, people just come and see the cats.”
+“I know, I know. No entry fee, no drinks, people just come up and look at the cats.”
 
-“And the merchandise.”
+“And there’s the merchandise to sell.”
 
-“Who’s going to buy that stuff?”
+“Is anyone seriously going to buy that stuff?”
 
-“Miss Gu chose the stock,” said Uncle He. “You’ll run the till yourself for these few days. Sister Mei will start shifts once we properly open.”
+“It’s all stock Miss Gu picked,” said Uncle He. “You’ll run the till yourself for these few days. Sister Mei will start on shifts once we’re properly open.”
 
-“…Someone will buy it.”
+“…Then somebody’ll probably buy it, I guess.”
 
 The soft opening was set for Sunday.
 
@@ -40,7 +40,7 @@ On the wall by the door was a line of writing he had done in marker the week bef
 
 The writing was ugly. The heart radical under the character for “want” he had written twice: the first time too big, rubbed out with his finger, which left a grey smudge; the second time too small, so it looked like a potato. When Uncle He saw it he suggested finding someone with nice handwriting to redo it, and Ye Zhixing said no need.
 
-“It’s not going to a calligraphy teacher.”
+“It’s not like I wrote it for a calligraphy teacher to look at.”
 
 ## 2. Cats Upstairs
 
@@ -50,33 +50,33 @@ Nobody came.
 
 At half past ten, Ye Zhixing moved the same acrylic standee on the shelf from left to right. Five minutes later he moved it from right back to left.
 
-Gu Xuerong sat on the floor under the windowsill, her back against the wall, the calico lying on her legs, doing a maths workbook. When she worked through problems her lips moved silently, as if reciting.
+Gu Xuerong sat on the floor under the windowsill, her back against the wall, the calico lying on her legs, doing a maths workbook. When she worked through problems her lips moved, without a sound.
 
-“Nobody’s coming,” said Ye Zhixing.
+“How come there’s not a single person?” said Ye Zhixing.
 
 “We’ve only been open an hour and a half.”
 
-“Did we put a sign up at the door?”
+“Did we put a sign up at the door or not?”
 
-“We did.”
+“We did, yes.”
 
-“What does it say?”
+“What’s it say on it?”
 
 “‘Cat café, soft opening.’”
 
-“Where is it?”
+“And where’s it hung?”
 
-“At the door on the second floor.”
+“Right at the second-floor door.”
 
 Ye Zhixing thought about it.
 
-“…People downstairs can’t see it.”
+“…Then people downstairs can’t see it at all.”
 
-“No.”
+“Mm. They can’t.”
 
-“Why didn’t you say so earlier?”
+“So why didn’t you tell me that a bit sooner?”
 
-“I thought you knew.”
+“I thought you knew. I actually thought you just didn’t want people coming up.”
 
 He went down to the copy shop and asked for a piece of stiff card: a copier-paper box flattened out, one side printed “A4 80g 500 sheets.” He borrowed the owner’s marker and crouched at the foot of the stairs to write. First “CATS UPSTAIRS,” very big; then, after a moment’s thought, “FREE” underneath; and finally a big arrow.
 
@@ -84,23 +84,23 @@ The owner poked her head out through the glass door and watched him lean the car
 
 “So you’re touting for customers now?”
 
-“Just putting it out.”
+“Just putting it out for a bit, that’s all.”
 
-“Don’t block my door.”
+“Mind you don’t block my door, now.”
 
-“I won’t.”
+“I won’t, I won’t.”
 
-“If people come, send some business my way. Photocopying, or ID photos.”
+“And if people do come, send a bit of business my way while you’re at it. Photocopying’s fine, ID photos’ll do too.”
 
-“I’ll try.”
+“I’ll do my best, I’ll do my best.”
 
 As he went upstairs, Gu Xuerong was standing at the turn of the stairs, leaning out to look down at the card.
 
-“The arrow’s the wrong way round.”
+“That arrow of yours is the wrong way round.”
 
 He stopped halfway up.
 
-“It’s pointing at the copy shop.”
+“Right now it’s pointing at the copy shop.”
 
 He went back down and turned the card round. Inside the shop, the owner laughed out loud.
 
@@ -108,21 +108,21 @@ He went back down and turned the card round. Inside the shop, the owner laughed 
 
 At twenty to twelve, footsteps sounded on the stairs.
 
-Quick, one after another, not walking: hopping, bounding up a step at a time.
+Quick, one after another: someone bounding up, a hop for every step.
 
 A head poked in at the door.
 
 It was a girl who looked a year or two younger than them, with a round face, a little plump in the cheeks, flushed pink from the sun. Her hair was tied in a very high bun, so tight her forehead shone. Around her wrist were three black hair ties, one over another. A worn canvas bag hung from her shoulder, covered in pin badges, the enamel rubbed off a few of them. She was wearing a white T-shirt with a cartoon print; the collar had stretched with washing, and the print had faded so much you couldn’t tell what animal it had been.
 
-“Excuse me,” she said, out of breath, “is that card downstairs yours?”
+“Excuse me, can I ask,” she said, out of breath, “that bit of card downstairs, is that yours?”
 
-“Yes.” Ye Zhixing straightened up behind the counter. “Welcome.”
+“It’s ours, yeah.” Ye Zhixing straightened up behind the counter. “Welcome.”
 
 Having said it, he cleared his throat.
 
-“There really are cats? Not one of those places that just says so?”
+“Are there really cats? It’s not one of those where it just says so to trick people into coming up?”
 
-“Really.”
+“There really are. A whole roomful.”
 
 “I saw it from the street just now, there’s a ginger one lying on the windowsill, I stood down there for ages till my neck ached, it didn’t move at all, I thought it was an ornament—”
 
@@ -132,7 +132,7 @@ She was already walking in as she talked, her eyes going past Ye Zhixing’s sho
 
 So loud that even Briquette on top of the cat tree raised its head.
 
-Ye Zhixing looked at Gu Xuerong without thinking. Gu Xuerong was looking at him too. Neither moved, like two sentries on their first watch, unsure whether this was the sort of thing you sounded the alarm for.
+Ye Zhixing looked at Gu Xuerong without thinking. Gu Xuerong was looking at him too. Neither of them moved; neither knew whether this was the sort of thing you were supposed to step in and stop.
 
 The girl didn’t rush forward. She pulled up two metres from the windowsill, toes already leaning forward, and hauled her body back. She turned her head to the line of writing on the wall by the door and read it out word by word:
 
@@ -140,61 +140,61 @@ The girl didn’t rush forward. She pulled up two metres from the windowsill, to
 
 When she had finished, she turned to Ye Zhixing, very serious:
 
-“…How do you ask?”
+“…So how do you ask, then?”
 
-“If it moves away, don’t touch it.” It was Gu Xuerong who answered. “If it wants to, it will come to you.”
+“You hold your hand out. If it moves away, you don’t touch it.” It was Gu Xuerong who answered. “If it wants to, it’ll come over by itself.”
 
-“Oh.”
+“Oh, right.”
 
 The girl nodded, turned back to face Rice Cake on the windowsill, put her feet together, bent at the waist, and gave a very small bow.
 
-“May I stroke you?”
+“Excuse me, may I stroke you?”
 
 Rice Cake didn’t answer. It tilted its head a little to one side, narrowed its eyes and went on sunbathing.
 
-The girl looked back. “Does that count as no?”
+The girl looked back. “Does that count as it not wanting to?”
 
-“It counts as no objection,” said Ye Zhixing. “Hold your hand out first and let it sniff.”
+“I’d say that counts as no objection,” said Ye Zhixing. “Put your hand out first and let it have a sniff.”
 
-She held out her hand, fingers curled, and slowly brought it up to Rice Cake’s nose. Rice Cake gave it a lazy sniff and then, very grudgingly, rubbed its head once against her fingertips.
+She held out her hand, fingers curled, and brought it up to Rice Cake’s nose. Rice Cake gave it a lazy sniff and, very grudgingly, rubbed its head once against her fingertips.
 
 “It noticed me!”
 
-“It does that with everyone.”
+“It’s like that with everybody.”
 
-The girl drew in a sharp breath and turned round, looking deeply offended. “How can you say that about a cat? That it isn’t choosy?”
+The girl drew in a sharp breath and turned round, looking deeply offended. “How can you say that about a cat? Saying he’s not choosy about people?”
 
-“…Not being choosy is a good thing.”
+“…Not being choosy is a good quality.”
 
-She thought about it and seemed to accept that. “Fine, then it’s a compliment.” She turned back and lowered her voice. “Rice Cake, he paid you a compliment.”
+She thought about it and seemed to accept that. “All right, then we’ll count that as you praising him.” She turned back and lowered her voice. “Rice Cake, he’s saying nice things about you.”
 
 Ye Zhixing was thrown for a moment; he couldn’t work out how she knew Rice Cake was called Rice Cake. Then he noticed the little sign standing on the counter with every cat’s name on it, written by Gu Xuerong, the characters small and very neat.
 
-Under the windowsill, Gu Xuerong lowered her head and pretended to tidy the scratching boards. She straightened a scratching board that had already been perfectly straight.
+Under the windowsill, Gu Xuerong lowered her head to tidy the scratching boards, and straightened one that had already been perfectly straight.
 
 ## 4. Belly
 
-The girl’s name was Su Tang. “Tang as in crabapple blossom,” she said. “Not tang as in sweets, but you can remember it as sweets, everyone does.”
+The girl’s name was Su Tang. “Tang as in crabapple blossom,” she said. “Not the tang that means sweets. But if you want to remember it as sweets that’s fine too, everybody does anyway.”
 
 She talked fast, one sentence after another, barely pausing for breath. As she talked she went round the room identifying each cat against the little sign on the counter, reading out each name as she found it: Rice Cake, Briquette, Calico, the one with really big ears is the Devon, the one with the really round face is the British Blue, the blue-and-white one is called Blue-and-White—“that is such a lazy name”—
 
-“There’s an American Shorthair too,” said Gu Xuerong. “Asleep up on that frame.”
+“There’s an American Shorthair as well,” said Gu Xuerong. “Asleep up on that frame.”
 
 Su Tang tipped her head back. On the second-highest platform of the cat tree, a silver tabby bundle was curled in the corner, fast asleep, one paw hanging over the edge of the board.
 
-“It sleeps so high up.”
+“How come it sleeps so high up?”
 
 “It sleeps there every day.”
 
-“Won’t it fall?”
+“Won’t it fall off?”
 
-“It never has.”
+“It hasn’t fallen off yet.”
 
-“And the one in the inner room that keeps shouting?”
+“And who’s that in the inner room that won’t stop shouting?”
 
-“The Ragdoll,” said Ye Zhixing. “It’s called Mop.”
+“That’s the Ragdoll,” said Ye Zhixing. “It’s called Mop.”
 
-“…Your Highness,” said Gu Xuerong.
+“…It’s called Your Highness,” said Gu Xuerong.
 
 Ye Zhixing turned to look at her. She didn’t look at him. She was topping up a food bowl.
 
@@ -204,47 +204,47 @@ It jumped down from the sofa, strolled unhurriedly to Su Tang’s feet, circled 
 
 Su Tang crouched, her hand hovering in mid-air, not daring to bring it down. She looked up at Gu Xuerong:
 
-“Is it inviting me?”
+“Is it inviting me to stroke it?”
 
-“Not necessarily,” Gu Xuerong said. “A belly isn’t an invitation.”
+“Not necessarily, no,” Gu Xuerong said. “Showing its belly doesn’t count as an invitation.”
 
-“Then what is it?”
+“Then what does it count as?”
 
 “It’s sunning its belly.”
 
-“So can I touch it?”
+“So can I touch it or can’t I?”
 
-Gu Xuerong thought for a moment. “Lay your hand on it gently and don’t move. If it grabs you, don’t pull away. The more you pull, the harder it holds.”
+Gu Xuerong thought for a moment. “Lay your hand on it gently, and once it’s there don’t move. If it grabs you, whatever you do don’t pull back. The more you pull, the more worked up it gets.”
 
 Su Tang took a deep breath and laid her hand on it, just her palm, completely still.
 
-Blue-and-White narrowed its eyes. Then all four paws closed together around her wrist, its head came up, it opened its mouth, and it bit, gently.
+Blue-and-White narrowed its eyes. Then all four paws closed together at once around her wrist, its head came up, it opened its mouth, and it bit, gently.
 
 “Ah—”
 
-“Don’t pull.”
+“Don’t pull your hand back.”
 
-“I’m not!” Su Tang kept her voice very low, frozen in place, crouched in a very awkward position, her face screwed up with laughing. “It’s holding me. It bit me. Why is it biting so gently.”
+“I’m not!” Su Tang kept her voice very low, frozen where she was, crouched in a very awkward position, her face screwed up with laughing. “It’s holding me. And it bit me. How is it biting this gently?”
 
-“It’s saying it’s caught you,” said Ye Zhixing.
+“What it means is, it’s caught you,” said Ye Zhixing.
 
-“I’ve been taken prisoner.”
+“So I’ve been taken prisoner.”
 
-“Yes.”
+“Pretty much.”
 
-“I surrender.”
+“I’m a willing one.”
 
 She stayed crouched just like that, until her legs went numb and still she didn’t move, until Blue-and-White let go of its own accord, rolled over, got up, shook its ears and walked off. Su Tang looked down at her wrist: a row of faint pink tooth marks, skin unbroken.
 
-“It’s going to remember me.”
+“It’s definitely going to remember me now.”
 
-“It won’t remember,” said Ye Zhixing.
+“It won’t. It catches several a day,” said Ye Zhixing.
 
-“Can’t you let me be happy for one minute?”
+“Can’t you let me be happy for one more minute?”
 
 Gu Xuerong took a small bag of lickable treats from under the counter and handed it to her.
 
-“You can feed them these. One each. If it doesn’t eat, take it back. Don’t force it.”
+“You can feed them these. One per cat. If it doesn’t want it, take it back. Don’t go shoving it in its mouth.”
 
 “Got it!” Su Tang took the bag and turned round. “Rice Cake!”
 
@@ -252,13 +252,13 @@ When Rice Cake dropped down from the windowsill, every cat in the room raised it
 
 Su Tang tore one open, crouched and held it out. Rice Cake finished it in three seconds, licked its lips, then sat in front of her perfectly upright, two white paws together, face tipped up, staring at her without moving.
 
-“It’s finished. It’s still looking at me.”
+“It’s finished. Why’s it still looking at me?”
 
-“It’s acting,” said Ye Zhixing.
+“That’s it acting,” said Ye Zhixing.
 
-“It looks so pitiful.”
+“But it looks so pitiful.”
 
-“Before you came,” said Ye Zhixing, “on the windowsill, it had just had one.”
+“Before you came up,” said Ye Zhixing, “it was on that very windowsill, and it had just finished one.”
 
 Su Tang looked down at Rice Cake. Rice Cake looked up at her, eyes round, very innocent.
 
@@ -272,39 +272,39 @@ Su Tang stood there, a refused treat in each hand.
 
 She didn’t chase them.
 
-“They’re not hungry,” she said. “That’s okay. I can wait.”
+“They’re not hungry right now,” she said. “That’s OK. I can wait.”
 
-She carefully sealed the two treats and handed them back to Gu Xuerong. As Gu Xuerong reached out to take them, she looked at her, a look that stayed a little longer than usual.
+She sealed the two treats up carefully and handed them back to Gu Xuerong. As Gu Xuerong reached out to take them, she gave her a second look.
 
 ---
 
-A little after one in the afternoon, Su Tang stood in front of the shelves for a long time.
+A little after one in the afternoon, Su Tang stood in front of the shelves for a good long time.
 
 She looked at each thing, picked it up, turned it over to read the price tag, put it back, and picked up the next. In the end she was holding a sticker: a grey cat curled into a ball, with a line of small print beside it: Don’t want to get up today either.
 
-“How much is this?”
+“How much is this one?”
 
-“Twelve,” said Ye Zhixing. Then he paused. “…You want to buy it?”
+“Twelve,” said Ye Zhixing. Then he blinked. “…You mean you want to buy it?”
 
-“Can I?”
+“Am I not allowed to?”
 
-“You can.” He turned to Gu Xuerong. “How do I take the money?”
+“You are, you are.” He turned to Gu Xuerong. “How do I take the money for this?”
 
-“The QR code’s in the drawer.”
+“The payment code’s right there in the drawer. You put it there yourself.”
 
 He pulled the drawer open, rummaged, found a laminated payment code and held it out upside down. Su Tang tilted her head and scanned it from the other side. Her phone buzzed, and the old phone on the counter chimed along with it.
 
-“First sale,” said Ye Zhixing.
+“That’s the first sale,” said Ye Zhixing.
 
-“I’m the first?”
+“I’m the first person to buy something?”
 
-“You’re the first.”
+“You’re the first person to come up.”
 
-“Then I want a receipt.”
+“Then I’m going to need a receipt.”
 
-“…We don’t have receipts.”
+“…We haven’t got receipts here.”
 
-“Then just write something.”
+“Then just write me a line, anything.”
 
 Ye Zhixing tore a sticky note off the pad on the counter and wrote: “Su Tang, sticker, twelve yuan.” His writing was still ugly; the last character of her name leaned off to one side.
 
@@ -314,37 +314,39 @@ Su Tang took it, looked at it, and stuck the note carefully to the back of the s
 
 A little after three she looked at her phone and said she had to go home.
 
-“Are you open tomorrow?”
+“So are you open tomorrow?”
 
-“Yes. During the soft opening, all day at weekends, and after school on weekdays.”
+“We are. While it’s the soft opening it’s all day at weekends, and after school on weekdays.”
 
-“Next time I come, can I bring some food? For the cats?”
+“Then next time I come, can I bring some food over? For the cats, I mean.”
 
-“Ask first,” said Gu Xuerong. “There are some things they can’t eat.”
+“You’d have to ask first,” said Gu Xuerong. “There are some things they can’t eat.”
 
-“Ask who?”
+“So who should I ask?”
 
 Ye Zhixing took the old phone out of the drawer. It was one Uncle He had set up, just for the shop, with a sticky note on the back with the number written on it.
 
-“Ask this. The number’s on WeChat too.”
+“Just ask this number. It’s on WeChat too.”
 
-Su Tang typed the number into her own phone digit by digit. “What’s the shop called?”
+Su Tang typed the number into her own phone digit by digit. “What’s this place of yours called?”
 
-“We haven’t decided.”
+“Hasn’t been decided yet.”
 
-“It doesn’t have a name?”
+“It hasn’t even got a name?”
 
-“We’re thinking.”
+“I’m working on it.”
 
-“Then what do I save it as?”
+“The ones he’s come up with are all awful,” said Gu Xuerong.
 
-“…What do you want to save it as?”
+“So what do I save it as for now?”
+
+“…Save it as whatever you want to save it as.”
 
 Su Tang thought for a moment, then tapped at her screen.
 
 “Back Street Has Cats.”
 
-“Okay.”
+“Sure. That’s pretty good.”
 
 She pushed her phone back into her canvas bag, went to the top of the stairs, then turned and called into the room: “Rice Cake, see you next week! Briquette, you too! American Shorthair, I forgive you!”
 
@@ -356,13 +358,13 @@ A second later: “But it’s the reason I came up!”
 
 Ye Zhixing turned to look at Gu Xuerong.
 
-Gu Xuerong was looking out of the window.
+“It is pretty ugly,” said Gu Xuerong.
 
 ## 5. Bowls
 
 At seven in the evening, Gu Xuerong was washing cat bowls at the sink.
 
-First day of the soft opening: one customer in total, and a dozen or more bowls to wash. Uncle He said they had to be washed every day; if the bowls weren’t clean, the cats would get picky.
+First day of the soft opening: one customer in total, and a dozen or more bowls to wash. Uncle He had said the bowls had to be washed every day; if the bowls weren’t clean, the cats would turn their noses up.
 
 The sink was by the back-room door, put in new during the renovation, stainless steel, the tap so fierce the water drummed on the bottom of the bowls. She pushed her sleeves up several turns, all the way to the elbow.
 
@@ -370,23 +372,23 @@ Ye Zhixing came in from the front room carrying the last few bowls and stopped t
 
 Her forearms were bare over the sink, very white under the fluorescent light. On them were a few marks, faint, old, the colour already very pale.
 
-He didn’t count them. And he didn’t step forward.
+He didn’t count them, and he didn’t step any closer.
 
 Gu Xuerong didn’t turn round. Probably she heard the footsteps behind her stop. Her hands paused in the water, and then she yanked her sleeves down. The wet fabric clung to her arms, making a dark patch.
 
-“Water splashed,” she said.
+“Water splashed on it,” she said.
 
 “Yeah.”
 
 Ye Zhixing put the bowls down on the edge of the sink. The bottoms touched the stainless steel with a clink.
 
-“I’ll wash,” he said. “You go and feed Briquette. It was going round your feet just now.”
+“Let me wash,” he said. “You go and feed Briquette. It’s been circling round your feet this whole time.”
 
-“It wasn’t.”
+“It hasn’t been circling.”
 
-“It was.”
+“It has.”
 
-She looked at him for a while. His expression was much as usual, a bit lazy, a bit impatient, as if he simply didn’t want to hear her say “it wasn’t” again.
+She looked at him. His face was much as usual, a bit lazy, a bit impatient, as if he simply didn’t want to hear her say “it hasn’t” one more time.
 
 She wiped her hands on the towel and walked away.
 
@@ -408,18 +410,18 @@ A message came back from the other end almost at once:
 
 > I’m home!! Did Rice Cake have another one today?
 
-“How does she know Rice Cake had another one?”
+“How does she know Rice Cake had an extra one?”
 
 Gu Xuerong came over from the cat tree and leaned beside him to look at the screen. Her sleeves were half dry now, the edges still damp.
 
-“She guessed.”
+“She’s guessing, probably.”
 
-“Good guess.”
+“Well, she guesses pretty well.”
 
-“Rice Cake’s like that every day.”
+“Rice Cake’s like this every single day.”
 
 Ye Zhixing looked down and typed: “No.”
 
-He looked at it for a moment, deleted it, and changed it to: “Yes. Two.”
+He looked at it, deleted it, and changed it to: “Yes. Two.”
 
 When it had sent he put the phone face down on the counter. Outside, Back Street was already dark. The copy shop’s shutter was half down, a line of light showing underneath, the owner still inside doing her accounts, the calculator keys clattering.
