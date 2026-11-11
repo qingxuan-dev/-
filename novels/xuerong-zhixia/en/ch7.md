@@ -90,7 +90,7 @@ Su Tang stood at the counter and looked at Ye Zhixing, then at Gu Xuerong on the
 
 He put down the cat food, brushed the leaf off his shoulder and went downstairs.
 
-Su Tang stayed where she was. After a good while she turned, went back under the windowsill, crouched down and picked up the comb again. Rice Cake had fallen asleep. She said something very quietly to the sleeping cat. Ye Zhixing didn’t catch it; it sounded like, “I’m going to be here every day now.”
+Su Tang stayed where she was, said “fifteen” over to herself once more, and only then turned, went back under the windowsill, crouched down and picked up the comb again. Rice Cake had fallen asleep. She said something very quietly to the sleeping cat. Ye Zhixing didn’t catch it; it sounded like, “I’m going to be here every day now.”
 
 ---
 
@@ -209,7 +209,9 @@ When the iron plate was set down it was still crackling, a ring of tiny oil spar
 
 He finished the whole portion, asked for another bowl of plain rice, stirred the sauce left on the plate into it and ate it clean, and finally went at the charred layer of cabbage on the plate with a spoon, scraping until the iron squeaked.
 
-Old Zhou stood by the curtain watching him scrape. He said nothing. The corners of his mouth turned down, but his eyes had a bit of a light in them.
+Old Zhou stood by the curtain watching him scrape, the corners of his mouth turned down, but with a bit of a light in his eyes.
+
+“You scrape a hole in that griddle, you’re paying for it,” he said.
 
 Ye Zhixing put down his spoon.
 
@@ -303,7 +305,7 @@ Su Tang held the envelope, standing at the counter. She took the money out and c
 
 “Now we have. …The Devon counts double, it scratches.”
 
-Su Tang looked down at the money in her hand and didn’t say anything for a while. The old phone on the counter lit up and went dark again.
+Su Tang looked down at the money in her hand and smoothed flat the folded corner of the top note. The old phone on the counter lit up and went dark again.
 
 She folded the money, slid it back into the envelope, put the envelope in the innermost pocket of her canvas bag, next to the cat sticker, zipped it up, and pressed it with her hand to make sure it was shut.
 
@@ -331,7 +333,7 @@ Ye Zhixing poked the back of her chair with his pen cap. One poke, she didn’t 
 
 “Want to play or not?”
 
-She looked at him for a while.
+She looked down at the game on his phone screen.
 
 “…You play,” she said. “I’ll just watch.”
 
@@ -343,7 +345,7 @@ One evening Sister Mei came to go over the accounts. After half an hour she look
 
 “Xuerong, love, this—” She turned the ledger round and pointed at a line with a finger painted in pale pink polish. “This cat treat column says thirty-eight. Thirty-eight packets?”
 
-Gu Xuerong leaned over to look. She looked for a long time, so long that Sister Mei thought she hadn’t heard.
+Gu Xuerong leaned over to look. She ran a finger under that line from left to right, twice.
 
 “…It’s thirty-eight yuan.”
 
@@ -521,7 +523,7 @@ On the grey sofa in the corner, Gu Xuerong sat with the ledger open on her knees
 
 Ye Zhixing didn’t look up. He turned over a delivery slip.
 
-Ye Zhixia tilted her head and looked at him for a while. Under the counter light his profile looked a little hard, his jaw set, though the fingers turning the slips were very steady.
+Ye Zhixia tilted her head and looked at him. Under the counter light his profile looked a little hard, his jaw set, though the fingers turning the slips were very steady.
 
 She didn’t say any more. She went to the kitchen curtain and asked Old Zhou for a sizzling pickled cabbage and beef rice with extra egg, and an iced yuanyang.
 
@@ -669,6 +671,6 @@ Outside the window, the sliver of sky squeezed between the two buildings was tur
 
 On her shoulder, Lin Xiaoman stirred and mumbled something. It sounded like “braised pork.”
 
-Gu Xuerong looked down at her for a while.
+Gu Xuerong looked down. Lin Xiaoman’s mouth was still half open.
 
 Then she reached out and tucked a strand of hair that had stuck to Lin Xiaoman’s forehead with sweat back behind her ear.

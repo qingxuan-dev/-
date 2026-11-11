@@ -2451,7 +2451,7 @@ Su Tang stood at the counter and looked at Ye Zhixing, then at Gu Xuerong on the
 
 He put down the cat food, brushed the leaf off his shoulder and went downstairs.
 
-Su Tang stayed where she was. After a good while she turned, went back under the windowsill, crouched down and picked up the comb again. Rice Cake had fallen asleep. She said something very quietly to the sleeping cat. Ye Zhixing didn’t catch it; it sounded like, “I’m going to be here every day now.”
+Su Tang stayed where she was, said “fifteen” over to herself once more, and only then turned, went back under the windowsill, crouched down and picked up the comb again. Rice Cake had fallen asleep. She said something very quietly to the sleeping cat. Ye Zhixing didn’t catch it; it sounded like, “I’m going to be here every day now.”
 
 ::: {.break custom-style="Scene Break"}
 ·  ·  ·
@@ -2574,7 +2574,9 @@ When the iron plate was set down it was still crackling, a ring of tiny oil spar
 
 He finished the whole portion, asked for another bowl of plain rice, stirred the sauce left on the plate into it and ate it clean, and finally went at the charred layer of cabbage on the plate with a spoon, scraping until the iron squeaked.
 
-Old Zhou stood by the curtain watching him scrape. He said nothing. The corners of his mouth turned down, but his eyes had a bit of a light in them.
+Old Zhou stood by the curtain watching him scrape, the corners of his mouth turned down, but with a bit of a light in his eyes.
+
+“You scrape a hole in that griddle, you’re paying for it,” he said.
 
 Ye Zhixing put down his spoon.
 
@@ -2672,7 +2674,7 @@ Su Tang held the envelope, standing at the counter. She took the money out and c
 
 “Now we have. …The Devon counts double, it scratches.”
 
-Su Tang looked down at the money in her hand and didn’t say anything for a while. The old phone on the counter lit up and went dark again.
+Su Tang looked down at the money in her hand and smoothed flat the folded corner of the top note. The old phone on the counter lit up and went dark again.
 
 She folded the money, slid it back into the envelope, put the envelope in the innermost pocket of her canvas bag, next to the cat sticker, zipped it up, and pressed it with her hand to make sure it was shut.
 
@@ -2700,7 +2702,7 @@ Ye Zhixing poked the back of her chair with his pen cap. One poke, she didn’t 
 
 “Want to play or not?”
 
-She looked at him for a while.
+She looked down at the game on his phone screen.
 
 “…You play,” she said. “I’ll just watch.”
 
@@ -2714,7 +2716,7 @@ One evening Sister Mei came to go over the accounts. After half an hour she look
 
 “Xuerong, love, this—” She turned the ledger round and pointed at a line with a finger painted in pale pink polish. “This cat treat column says thirty-eight. Thirty-eight packets?”
 
-Gu Xuerong leaned over to look. She looked for a long time, so long that Sister Mei thought she hadn’t heard.
+Gu Xuerong leaned over to look. She ran a finger under that line from left to right, twice.
 
 “…It’s thirty-eight yuan.”
 
@@ -2902,7 +2904,7 @@ On the grey sofa in the corner, Gu Xuerong sat with the ledger open on her knees
 
 Ye Zhixing didn’t look up. He turned over a delivery slip.
 
-Ye Zhixia tilted her head and looked at him for a while. Under the counter light his profile looked a little hard, his jaw set, though the fingers turning the slips were very steady.
+Ye Zhixia tilted her head and looked at him. Under the counter light his profile looked a little hard, his jaw set, though the fingers turning the slips were very steady.
 
 She didn’t say any more. She went to the kitchen curtain and asked Old Zhou for a sizzling pickled cabbage and beef rice with extra egg, and an iced yuanyang.
 
@@ -3058,7 +3060,7 @@ Outside the window, the sliver of sky squeezed between the two buildings was tur
 
 On her shoulder, Lin Xiaoman stirred and mumbled something. It sounded like “braised pork.”
 
-Gu Xuerong looked down at her for a while.
+Gu Xuerong looked down. Lin Xiaoman’s mouth was still half open.
 
 Then she reached out and tucked a strand of hair that had stuck to Lin Xiaoman’s forehead with sweat back behind her ear.
 
@@ -9070,13 +9072,23 @@ There were four new emails, all from the night before. One was from a hotpot cha
 
 He answered them one by one. Where refunds were owed, he refunded according to the contract. Where they weren’t, he listed the parts already delivered in a table and attached it, and kept the wording very polite.
 
-Town Matters was fine; if anything Town Matters was busier than before. But the company’s money didn’t only come from Town Matters. The B2B lines made up more than half: restaurants, supermarkets, driving schools and gyms in the county and the city, for which they built ordering, membership and booking systems. Those businesses were all shut now, and a shut business has no use for a membership system.
+City Matters was fine; if anything City Matters was busier than before. But more than half the company’s money came from its other lines: ordering, membership and booking systems for restaurants, supermarkets, driving schools and gyms in the county and the city. All of those places were shut now.
 
-Last winter, before he handed in that “stop acquiring land” report, he had set aside three months’ wages in the company account and never touched a cent of it. Back then what he had in mind wasn’t an epidemic; it was his father. Now both had come at once.
+He pulled over a sheet of paper and did the sums. Ye Zhixia leaned across from the other end of the bar to look.
 
-He took a sheet of paper and worked it out. This month was fine. Next month was fine too, if tight. After that, he looked at the figure, and drew a line under it.
+“Bro, what are you working out?”
 
-“The noodles have gone soggy,” said Ye Zhixia.
+“How many more months of instant noodles the two of us can afford.”
+
+“And how many is it?”
+
+“This month’s covered. Next month’s tight, but that’s covered too.” He drew a line under the figure. “Last year, before I handed in that report, I left three months of wages in the company account and never touched a penny of it. Back then it was Dad I was guarding against. I didn’t expect to get both at once.”
+
+“And after the three months?”
+
+“After the three months, your brother’s going to have to come up with something else.”
+
+“Stop thinking for a minute. Your noodles have gone to mush,” said Ye Zhixia.
 
 He turned the paper over, face down on the table.
 
@@ -9353,9 +9365,11 @@ There was a two-second silence at Big Liu’s end, then he laughed. “That fat 
 
 By then, Ye Zhixing had already thought it through.
 
-Number seven on the whole Nightmare Raid server, ID Hibernation. Changed a game’s code herself to get round the age check, and kept a log afterwards, every line spelling out what she had changed, why, and what might break because of it, more detailed than the cat café’s accounts. In any game, she never took the proper path. The places at the edge of the map with no road, the corners, the bottom of the water, the foot of the cliffs, the places nobody else would go, she had to go and look.
+“I know someone,” he said. “Seventh on the whole Nightmare Raid server. She took out that game’s age check herself, and kept a log afterwards: which line she changed, what she changed, why, and what might break because of it, all in more detail than the cat café’s ledger. She never takes the proper route in any game. The places at the edge of the map where there’s no path, corners, underwater, the bottom of cliffs, wherever nobody else goes, she has to go and have a look.”
 
-“I’ll find someone,” he said.
+“…Is that a tester you’re getting, or a little empress?” said Big Liu.
+
+“Both.”
 
 ::: {.break custom-style="Scene Break"}
 ·  ·  ·
@@ -9885,13 +9899,15 @@ His QQ group classes went from one a day to three a day: maths in the morning, p
 
 “Once school starts, who’s going to pay to hear me explain things.”
 
-That was true. But what he didn’t say was something else. Last Wednesday, the physics teacher had posted in the class group, “A number of students have said the homework is quite hard; I can use my spare time to give one-to-one tutoring to students who need it, message me privately for details.” Less than an hour after it went up, the message was withdrawn. The next day, Zheng Xin forwarded a document from the county education bureau to the group, with a very long title, the gist of which was that serving teachers were strictly forbidden from giving paid tutoring in any form, online or offline, and that anyone found doing so would be dealt with severely.
+That was the truth. There was one other thing, though, and it was Lin Xiaoman who first brought it up in the group.
 
-The physics teacher never posted in the group again.
+“That message the physics teacher sent last Wednesday, did you lot see it? The one saying he could do one-to-one tutoring, message him for details,” said Lin Xiaoman. “He took it back before I’d even had a chance to ask how much.”
 
-Chen Xi saw the “message withdrawn” notice, saw the document, said nothing, and that evening added another class.
+“I saw it,” said Chen Xi. “And the very next day Ms. Zheng forwarded that document from the education bureau. Serving teachers aren’t allowed to charge for tutoring, online or offline, and they get dealt with if they’re caught.”
 
-He wasn’t a teacher. The document didn’t apply to him.
+“What about you, then? Aren’t you scared?”
+
+“I’m not a serving teacher. That document’s got nothing to do with me,” said Chen Xi. “If he’s not teaching, it only means more people coming to me. I’m adding another class tonight.”
 
 ::: {.break custom-style="Scene Break"}
 ·  ·  ·
@@ -10175,7 +10191,7 @@ Another line.
 
 \<Hibernation\> but i cant get out yet
 
-Su Tang looked at the lines and made no sound.
+“Typing’s fine, you know. I can see it,” said Su Tang. “Take your time. I’m not going to rush you.”
 
 The chat bar stayed still for a long time. The moon moved one block west. Across the river, the bees flew back to their nest and crawled in one by one.
 
@@ -10185,7 +10201,13 @@ The chat bar stayed still for a long time. The moon moved one block west. Across
 
 \<Hibernation\> ending all of it
 
-On voice, Su Tang made a small sound, very short, and clamped it back down herself.
+Su Tang made a small sound over the voice chat, very short, and smothered it herself.
+
+“…And now?” she asked. “Do you still think that now?”
+
+\<Hibernation\> don’t know right now
+
+\<Hibernation\> right now there are sheep to pen
 
 \<Hibernation\> plans i never thought about
 
@@ -10400,11 +10422,13 @@ Huang Yingjun stopped short, as if hearing this for the first time. “…Well, 
 ·  ·  ·
 :::
 
-It wasn’t that Ye Zhixing couldn’t code; it was that what he could do was the wrong kind.
+It was Big Liu who taught Huang Yingjun, not Ye Zhixing.
 
-He wrote Python: scraping data, crunching numbers, a few batch scripts for the Town Matters back end, all his own work. C++ he had learned for the informatics olympiad in middle school, good enough for algorithm problems. But games needed a different set of things: JS, engines, animation, working it all out frame by frame, and he couldn’t find a way in. The pages of the very first version of Town Matters he had pieced together from online tutorials; they worked, but they were ugly, and later Big Liu rewrote all of it. He could read Big Liu’s code, change a bit, spot where the logic was wrong, but ask him to write a game from scratch and he couldn’t do it.
+“Boss, how come you’re not training him yourself?” Big Liu asked once.
 
-So it was Big Liu who taught Huang Yingjun.
+“I can’t,” said Ye Zhixing. “The things I know are the wrong things. I write Python: scraping some data, doing the books, the batch scripts on the City Matters back end, I did all of those myself. C++ I picked up doing informatics competitions in middle school, and it’s enough for algorithm problems. But games want a whole different kit, JS, the engine, animation, working it all out frame by frame, and I can’t find the way in. I can read your code, and I can spot where the logic’s off, but ask me to write a game from scratch and I can’t do it.”
+
+“Fine. The apprentice is mine to train, then,” said Big Liu. “And you get to be the boss.”
 
 The two of them were on video, screen-sharing, Big Liu explaining at his end and Huang Yingjun writing at this end. On the first day they did variables; Big Liu said give it any name you like and store a number in it. Huang Yingjun named it “shuzi,” number.
 
@@ -10670,7 +10694,7 @@ Gu Jianguo’s eyes moved.
 
 For the next half hour, it was mostly the woman talking.
 
-She said the child had been rebellious since she was small, wouldn’t be told, couldn’t stand being at home, looked down on the family for being poor, for not being well off. She said the minute the holidays came she was off out, and she and the girl’s dad had tried every way of talking to her, and she just wouldn’t listen. She said over New Year her dad stood at the door every day waiting, till midnight. She said with the epidemic this bad, a sixteen-year-old girl out there on her own, what was she eating and drinking, where was she living, if anything happened what would they say to her dead—“to her real mum,” she corrected herself.
+“This child’s been rebellious ever since she was small. Won’t be told, can’t stay put at home, thinks the family’s too poor, thinks the house isn’t good enough, and the minute there’s a holiday she’s off. Her dad and I have talked to her till we’re blue in the face and she just won’t listen,” she said. “Over New Year her dad stood at the door every single day waiting, waiting till midnight. With the epidemic this bad, a sixteen-year-old girl out there on her own—what’s she eating, what’s she drinking, where’s she living? If something were to happen, how would we answer to her late—to her birth mother?”
 
 By the end, she was crying again.
 
@@ -11068,9 +11092,9 @@ He put his bowl down on the windowsill.
 
 Su Tang looked at him.
 
-She didn’t understand. She didn’t know when “before” was, who “a lot of people” were, what “the way they look at you” looked like. But she looked at his profile, and when he said “a lot,” the muscle along his jaw moved.
+“When your ‘before’ was, who the ‘lot of people’ are, what that look is like, I don’t understand a single bit of it,” she said. “But when you said ‘a lot,’ your whole jaw went tight, right here.”
 
-“…Mm,” she said.
+“…Did it,” he said.
 
 “Don’t ask.”
 
@@ -11530,9 +11554,9 @@ She broke a segment off her half tangerine, put it in her mouth, chewed, swallow
 
 “That painting stayed up there,” she said. “Every night when I went to sleep, the moment I opened my eyes there it was. I looked at it for three years. After that, nothing scared me. Those things in the games, next to that painting, they’re all quite good-looking.”
 
-Su Tang said nothing. She looked at Gu Xuerong’s profile, at the way she chewed the tangerine, very slowly, one bite after another, as if chewing something perfectly ordinary.
+“Xuerong, when you say all this, how come it sounds like you’re talking about somebody else’s family?” said Su Tang.
 
-“She believes in another thing too,” said Gu Xuerong. “It’s called Three Redemptions Christ.”
+“Say it enough times and it turns into somebody else’s family,” said Gu Xuerong. “There’s one more thing she believes in. It’s called Three Redemptions Christ.”
 
 “…What?”
 
@@ -11564,11 +11588,11 @@ She ate another segment of tangerine.
 ·  ·  ·
 :::
 
-Su Tang sat on the edge of that bed for a long time.
+Su Tang sat on the edge of that bed for a good while.
 
-She thought of her mum. Her mum believed in things a bit too: burned incense at New Year, went to the temple on the first and fifteenth to kowtow. When she was little and had a fever, her mum went to the temple for a charm too and stuck it at the head of her bed. But after she got the charm, her mum still carried her to the county hospital, went to A&E, sat up all night in the corridor, and the next day her eyes were swollen like two peaches.
+“My mum believes in this stuff too,” she said. “Incense at New Year, off to the temple to kowtow on the first and the fifteenth. When I had a fever as a little kid she went to the temple and got a paper charm as well, and came back and stuck it over my bed. But once she’d got the charm, she still carried me to the county hospital, went through A&E, and sat up all night in the corridor, and the next day her eyes were swollen like two peaches.”
 
-Her mum had never said she’d come to collect a debt.
+She sniffed. “She has never once said I came to collect a debt.”
 
 “Xuerong,” she said, “um…”
 
@@ -12054,17 +12078,19 @@ Chen Xi’s classes moved to evening study.
 
 Not because he wanted to move them; there was no other way. Eight classes during the day, and after school, supper and then evening study, which ended at half past nine; by the time anyone got home it was past ten, and who was going to do an online class then? But that group of over a hundred people was still there, the problems still couldn’t be done, and the money was still wanted.
 
-So he taught during evening study.
+“So how are you running that class of yours now?” Ye Zhixing asked him.
 
-The method was simple. Evening study was for doing your own homework, and if there was something you couldn’t do, you could ask. The teacher on duty sat at the front marking, and didn’t usually bother with anything. Chen Xi sat in the row by the window; when someone brought over a paper to ask, he explained. When he’d explained, the person went back and carried on writing. Money wasn’t handed over in the classroom: there was a teacher on duty, and phones weren’t allowed—though everyone had one.
+“In evening study, where else,” said Chen Xi. “Evening study’s for doing your own homework, right, and if you’re stuck you can ask. I sit in the row by the window. Whoever comes over with a paper, I explain it, and when I’m done they go back and carry on. People sneak over from Class Three and Class Eight too and queue at the back door, and every time I finish one, another one comes in.”
 
-He could get through a dozen or more people a night. People from Class Three and Class Eight slipped over too, standing at Class Seven’s back door, poking their heads in, waiting for him to finish one so the next could come in.
+“And the teacher on duty just lets you?”
 
-The teacher on duty looked up a few times, and saw a group of students crowded round one student, holding papers, going through problems, maths and physics, very seriously, someone sometimes drawing a diagram with a pen on scrap paper. That’s a good thing, the teacher thought. And went back to marking.
+“He’s looked up quite a few times,” said Chen Xi. “What he sees is a bunch of students crowded round one student going through maths problems, with someone drawing diagrams. He thinks that’s a good thing, so he puts his head down and goes back to his marking.”
 
-The money was transferred in the toilets.
+“And the money? Aren’t phones banned in the classroom?”
 
-“You crafty little sod,” Ye Zhixing said when he heard.
+“Everybody’s got one on them. The money gets sent in the toilets.”
+
+“You’re a sly one, aren’t you.”
 
 “I don’t take money in class,” said Chen Xi. “I take it in the toilets. The duty teacher isn’t in charge of the toilets.”
 
@@ -12152,15 +12178,21 @@ Big Liu and Huang Yingjun did the second game, Ali did the third on his own, Men
 
 Of the five games, two nobody played, and they were taken down. Three stayed, and with Rice Cake’s Diet that made four games, and the daily ad revenue from all of them together passed several thousand.
 
-That evening, Ye Zhixing took a screenshot of the numbers in the back end and looked at it for a good while.
+That evening Big Liu sent him a voice message, with the baby crying in the background.
 
-Then he leaned back in his chair and let out a long breath.
+“Boss, have you looked at the dashboard? The four games together went over three thousand today.”
+
+“I saw.”
+
+“So next month’s wages…”
+
+“Paid as normal, every penny. There’s enough for the next six months,” said Ye Zhixing. “Let Xiaowen and the others know too, so everybody knows where they stand.”
+
+He leaned back in his chair and let out a long breath.
 
 Rice Cake rolled over on his lap and spread its belly out.
 
 He reached down and stroked Rice Cake’s belly, stroked it twice, then stopped, his hand resting there, not taking it away.
-
-Enough. For the next six months at least, enough.
 
 ## 5. The Dorm
 
